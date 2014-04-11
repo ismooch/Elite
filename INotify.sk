@@ -1,0 +1,39 @@
+# Elite rendition of ping system
+
+command /toggleping:
+	permission: obam.free
+	executable by: players
+	trigger:
+		{_pping.%player%} is not set:
+			set {_off.sb.%player%} to false
+			stop
+		{_pping.%player%} is true:
+			set {_off.sb.%player%} to false
+			send "&ePlayer Ping Has Been Turned: &cOff" to player
+			stop
+		{_pping.%player%} is false:
+			set {_off.sb.%player%} to true
+			send "&ePlayer Ping Has Been Turned: &aOn" to player
+			
+on join:
+	{_pping.%player%} is not set:
+		set {_off.sb.%player%) to false
+		
+# I do not know whether to use on chat or on server chat send (the one you posted on the forums)
+
+on chat:
+	if chat message contains %player%:
+		if %player% has played before:
+			if %player% is online:
+				if %player% is not sender:
+					if {_pping.%player%} is false:
+						play raw sound "LEVEL_UP" at %player% with pitch 50 volume 50
+						#change the colour of the player name if possible
+on server chat send:
+	if packet message contains %player%:
+		if %player% has played before:
+			if %player% is online:
+				if %player% is not sender:
+					if {_pping.%player%} is false:
+						play raw sound "LEVEL_UP" at %player% with pitch 50 volume 50
+						#change the colour of the player name if possible
