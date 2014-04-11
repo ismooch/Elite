@@ -1,0 +1,62 @@
+#Elite rendition of ghost wars for skript
+command /gwhelpadmin:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+		message "&e"
+		message "&e"
+		message "&e"
+		message "&e"
+		message "&e"
+		message "&e"
+		message "&e"
+
+#Set Lobby Location
+command /gwlobbyset:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+		set {_gw.lobby} to location of player
+		send "&eGhost Wars Lobby Was Set To %player's location%" to player
+		
+#Add Spawn Point
+command /gwspawnadd [<text>]:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+		
+#List Spawn Points
+command /gwspawnlist:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+	
+#Remove Spawn Point
+command /gwspawnremove [<text>]:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+	
+#Game Mode List
+command /gwmodelist:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+	
+#Map Game Mode Set
+command /gwmodeset [<text>]:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+	
+#Map Game Mode Remove
+command /gwmoderemove [<text>]:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
+	
+#Map Current Game Mode
+command /gwmapmode:
+	permission: obam.admin.gw
+	executable by: players
+	trigger:
