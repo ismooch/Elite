@@ -1,0 +1,4 @@
+Please read the TicketsView and TicketsHistory as well.
+
+We need to make a page that talks about what Tickets are - and you can also view your Tickets History and Tickets Amount 
+... and how to obtain more (aka - forward them to the shop (buying more tickets))
