@@ -1,0 +1,24 @@
+every 10 seconds:
+	clear {db_fronts.who.2::*}
+	loop all players:
+		add loop-player to {db_fronts.who.2::*}
+
+
+command /who:
+	trigger:
+
+		loop all players:
+			add loop-player to {_cur.list::*}
+			clear {db_fronts.who.2::*}
+			set {db_fronts.who.2::*} to {_cur.list::*}
+			set {_size} to size of {db_hub.who::*}
+			set {_size2} to size of {db_wtf.who::*}
+			set {_size3} to size of {_cur.list::*}
+			set {_total} to {_size} + {_size2} + {_size3}
+		send "&fTotal Online Players: &e{_total}"
+		send "&9--------------------------------------------------"
+		send "&eHub: &a%{db_hub.who::*}%"
+		send "&9--------------------------------------------------"
+		send "&eWTF: &a%{db_wtf.who::*}%"
+		send "&9--------------------------------------------------"
+		send "&eFronts: &a%{_cur.list::*}%"
