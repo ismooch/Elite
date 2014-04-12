@@ -1,0 +1,49 @@
+Vine Events:
+
+If you break a vine in a jungle biome
+
+pick a random number between 1-40
+
+if the number is 2,4,6,8, or 10 say the person has been bitten by a snake and is poisened for a few seconds
+
+if the number is 22,24,26,28,or 30 say they have recieved poison ivy - and are poisened for a few seconds
+
+if the number is anything else nothing happens
+
+------------------------------------
+
+Plant Events:
+
+If you break a cactus
+
+      pick a random number between 1-5
+      
+           if the number is 2 or 4 say 'careful, don't get pricked by the needles'
+           if the number is 3 say 'ouch, you just got pricked' and take 1/2 heart damage
+           
+if you break a flower
+
+      pick a random number between 1-10
+      
+           if the number is 5 say 'ouch, you just touched a thorn' and take 1/2 heart damage
+           
+if you break grass
+
+      pick a random number between 1-20
+      
+           if the number is 5, 10, or 15 say 'the grass is starting to irritate your skin'
+           
+           this will just be for word events - nothing will happen
+           
+------------------------------------
+
+Power Outage Event (suggestible)
+
+If lightning strikes near you - if lamps are nearby - flicker them on and off - 
+and say to anyone in range 'your power is flickering' ... 
+
+if the lamps flicker and the message is sent .... pick a random number between 1-10
+
+if the number is 5 .... turn the lamps out completely.
+
+and then say 'your power just went out'
