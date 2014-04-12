@@ -3,3 +3,5 @@ Please read the TicketsPage and TicketsHistory as well.
 We need to make a system to upload people's tickets to an online-based database ... 
 
 and if the person on the forum's name is 'blank' then display their tickets amount as 'blank.amount'
+
+on their profile (for just them) and on the main page under their avatar.
