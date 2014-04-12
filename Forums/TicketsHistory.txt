@@ -1,0 +1,41 @@
+Please read the TicketsView and TicketsPage as well.
+
+We need to make an online database to show the player's current tickets and the history of their tickets,
+
+how they obtained them, who or what system it came from, the time the money was added or deducted, 
+
+and the current amount at the time it was added or removed.
+
+examples)
+
+150 tickets were added by voting on planet minecraft | 4/12/2014 7:14:23pm | New Balance: 24750
+25 tickets were removed by leaving the kit pvp arena | 4/12/2014 7:12:50pm | New Balance: 24600
+
+{_amount.difference.%player%.%now%} if difference is lower say 'were removed' if difference is higher say 'were added'
+
+{_ticket.main.area.reasons.%player%.%now%} which is 'by leaving' ... 
+
+and the system the reason was for {_ticket.main.area.%player%.%now%}
+
+
+-the system will list all of these according to the %player% being equal to the website player
+
+-the system will list all of these on the history page according to adding a %now% - and keeping 
+
+that value on a database - adding each value to a seperate area, instead of updating it.
+
+-the system will also list the %now% in the tickets history - to visually show when it occured.
+
+- the system will also show the {_amount.total.%player%.%now%} at the time of the ticket update.
+
+---------------
+
+all of the variables here - most likely will not occur in a minecraft database - we'll have to
+
+probably upload them somewhere online ....
+
+---------------
+
+On the website, if someone has set permission - we also need to add a search feature for some staff members
+
+so if a problem occurs we will have record of the player's tickets, and will be able to assess the situation accordingly
