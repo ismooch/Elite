@@ -1,0 +1,9 @@
+On Disable:
+  set {db_inv.survival.%player%} to inventory of player in world fronts
+  set {db_inv.skyblock.%player%} to inventory of player in world skyblock
+  
+On Enable:
+  set inventory of player in world fronts to {db_inv.survival.%player%}
+  set inventory of player in world skyblocks to {db_inv.skyblock.%player%}
+  
+#change this up, but this is a basic system of how we should check the system of inventories on reboots/reloads
