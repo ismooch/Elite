@@ -6,11 +6,11 @@ on login:
 	{db_uuids.idset::%UUID of player%} exists:
 		if {db_uuids.list.idset::%UUID of player%} is {tempid.%name of player%}
 			if {db_uuids.list.names::%Name of player%} is not {tempname.%name of player%}
-				set {db_uuid.list.names::%{db_uuids.current.names::%name of player%}%} to Name of player
+				set Name of player to {db_uuid.list.names::%{db_uuids.current.names::%UUID of player%}%}
 				
 		if {db_uuids.%name of player%.nameset} is {tempname.%name of player%}
-			if {db_uuid::idlists} is not {tempid.%name of player%}
-				
+			if {db_uuids.list.idset::%Name of player%} is not {tempid.%name of player%}
+				if {db_uuids.current.idset::*} contains
 	else:
 		add UUID of player to {db_uuids.list.idset::*}
 		add Name of player to {db_uuids.list.names::*}
