@@ -37,6 +37,46 @@ if you break grass
            
 ------------------------------------
 
+Chunk Generation Events:
+
+To counteract the downside of the difficulty of deserts and jungles - maybe even oceans
+
+on chunk generate:
+      biome at player is desert
+            set inventory of block
+                  if block is chest
+                        add random {_wtf.chest.list}
+      biome at player is jungle
+            set inventory of block
+                  if block is chest
+                        add random {_wtf.chest.list}
+      biome at player is ocean
+            {perhaps add a treasure in the bottom of the ocean}
+      biome at player is deep ocean
+            {perhaps add in a sunken ship and treasure}
+            
+-------------------------------------
+
+Ocean | Deep Ocean Event:
+
+If location of player is (biome ocean or biome deep ocean)
+      set {jaz.%player%} = 1
+      while {jaz.%player%} = 1
+            pick a random number between 1-200
+                  if the number is 50 or 100 or 150 or 200 send 'Fish are swarming around you.' to player
+                  if the number is 25 or 75 or 125 or 175 send 'A shark is after you' to player
+                        wait 10 seconds
+                              if location of player is (biome ocean or biome deep ocean)
+                                    damage player by 4 hearts
+                                    send 'The shark just bit you, luckily it swam away.' to player
+                              if location of player is not (biome ocean or biome deep ocean)
+                                    send 'Whew, you avoided the shark...' to player
+            wait 20 seconds
+If location of player is not (biome ocean or biome deep ocean)
+      set {jaz.%player%} = 0
+      
+--------------------------------------
+
 Power Outage Event (suggestible)
 
 If lightning strikes near you - if lamps are nearby - flicker them on and off - 
