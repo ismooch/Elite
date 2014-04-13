@@ -1,0 +1,12 @@
+#change (name of player) to (player) when the uuid system is updated.
+on login:
+	set {tempid} to UUID of player
+	set {tempname} to Name of player
+	{_uuids.%name of player%.idlists} exists:
+		if {_uuids.%name of player%.idlists} is {tempid}:
+			if {_uuid.%name of player%.nameset} is not {tempname}:
+				set {_uuid.%name of player%.nameset} to Name of player
+	else:
+		set {_uuids.%name of player%.idlists} to UUID of player
+		set {_uuids.%name of player%.nameset} to Name of player
+	  
