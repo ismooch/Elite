@@ -1,151 +1,222 @@
-command /rankup <offlineplayer>:
+command /rankup <text>:
 	permission: valerian.rank.curator
 	aliases: /ru
 	trigger:
-		%argument% is set:
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
+		if %argument% is set:
+			if %argument% has played before:
+				if %argument% has permission valerian.rank.guest
+					send "&e%argument% is now rank: &aMember" to player
+					set %argument% permission to valerian.rank.member
+					stop
+				if %argument% has permission valerian.rank.member
+					send "&e%argument% is now rank: &aApprentice" to player
+					set %argument% permission to valerian.rank.apprentice
+					stop
+				if %argument% has permission valerian.rank.apprentice
+					send "&e%argument% is now rank: &aJourneyMan" to player
+					set %argument% permission to valerian.rank.journeyman
+					stop
+				if %argument% has permission valerian.rank.journeyman
+					send "&e%argument% is now rank: &aEngineer" to player
+					set %argument% permission to valerian.rank.engineer
+					stop
+				if %argument% has permission valerian.rank.engineer
+					send "&e%argument% is now rank: &aCraftsman" to player
+					set %argument% permission to valerian.rank.craftsman
+					stop
+				if %argument% has permission valerian.rank.craftsman
+					send "&e%argument% is now at the highest rank: &aCurator" to player
+					set %argument% permission to valerian.rank.curator
+					stop
+				if %argument% has permission valerian.rank.curator
+					send "&e%argument% is already at the highest rank: &aCurator" to player
+					stop
 				
-command /rankdown <offlineplayer>:
+command /rankdown <text>:
 	permission: valerian.rank.curator
 	aliases: /rd
 	trigger:
-		%argument% is set:
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
-			if %argument% has permission valerian.rank.guest
-				set %argument% permission to valerian.rank.member
+		if %argument% is set:
+			if %argument% has played before:
+				if %argument% has permission valerian.rank.guest
+					send "%argument% is already at lowest rank: guest" to player
+					stop
+				if %argument% has permission valerian.rank.member
+					set %argument% permission to valerian.rank.guest
+					stop
+				if %argument% has permission valerian.rank.apprentice
+					set %argument% permission to valerian.rank.member
+					stop
+				if %argument% has permission valerian.rank.journeyman
+					set %argument% permission to valerian.rank.apprentice
+					stop
+				if %argument% has permission valerian.rank.engineer
+					set %argument% permission to valerian.rank.journeyman
+					stop
+				if %argument% has permission valerian.rank.craftsman
+					set %argument% permission to valerian.rank.engineer
+					stop
+				if %argument% has permission valerian.rank.curator
+					send "&4You may not rank down a curator." to player
+					stop
 				
-command /rankset <offlineplayer> <text>:
+command /rankset <text> <text>:
 	permission: valerian.rank.curator
 	aliases: /rs
 	trigger:
-		if argument 1 is set:
-			if argument 1 has played before:
+		if %argument 1% is set:
+			if %argument 1% has played before:
 				if %argument 1% has permission valerian.rank.guest
 					if %argument 2% is "1" or "guest":
 						set %argument 1% permission to valerian.rank.guest
+						stop
 					if %argument 2% is "2" or "member":
 						set %argument 1% permission to valerian.rank.member
+						stop
 					if %argument 2% is "3" or "apprentice":
 						set %argument 1% permission to valerian.rank.apprentice
+						stop
 					if %argument 2% is "4" or "journeyman":
 						set %argument 1% permission to valerian.rank.journeyman
+						stop
 					if %argument 2% is "5" or "engineer":
 						set %argument 1% permission to valerian.rank.engineer
+						stop
 					if %argument 2% is "6" or "craftsman":
 						set %argument 1% permission to valerian.rank.craftsman
+						stop
 					if %argument 2% is "7" or "curator":
 						set %argument 1% permission to valerian.rank.curator
+						stop
 				if %argument 1% has permission valerian.rank.member
 					if %argument 2% is "1" or "guest":
 						set %argument 1% permission to valerian.rank.guest
+						stop
 					if %argument 2% is "2" or "member":
 						set %argument 1% permission to valerian.rank.member
+						stop
 					if %argument 2% is "3" or "apprentice":
 						set %argument 1% permission to valerian.rank.apprentice
+						stop
 					if %argument 2% is "4" or "journeyman":
 						set %argument 1% permission to valerian.rank.journeyman
+						stop
 					if %argument 2% is "5" or "engineer":
 						set %argument 1% permission to valerian.rank.engineer
+						stop
 					if %argument 2% is "6" or "craftsman":
 						set %argument 1% permission to valerian.rank.craftsman
+						stop
 					if %argument 2% is "7" or "curator":
 						set %argument 1% permission to valerian.rank.curator
+						stop
 				if %argument 1% has permission valerian.rank.apprentice
 					if %argument 2% is "1" or "guest":
 						set %argument 1% permission to valerian.rank.guest
+						stop
 					if %argument 2% is "2" or "member":
 						set %argument 1% permission to valerian.rank.member
+						stop
 					if %argument 2% is "3" or "apprentice":
 						set %argument 1% permission to valerian.rank.apprentice
+						stop
 					if %argument 2% is "4" or "journeyman":
 						set %argument 1% permission to valerian.rank.journeyman
+						stop
 					if %argument 2% is "5" or "engineer":
 						set %argument 1% permission to valerian.rank.engineer
+						stop
 					if %argument 2% is "6" or "craftsman":
 						set %argument 1% permission to valerian.rank.craftsman
+						stop
 					if %argument 2% is "7" or "curator":
 						set %argument 1% permission to valerian.rank.curator
+						stop
 				if %argument 1% has permission valerian.rank.journeyman
 					if %argument 2% is "1" or "guest":
 						set %argument 1% permission to valerian.rank.guest
+						stop
 					if %argument 2% is "2" or "member":
 						set %argument 1% permission to valerian.rank.member
+						stop
 					if %argument 2% is "3" or "apprentice":
 						set %argument 1% permission to valerian.rank.apprentice
+						stop
 					if %argument 2% is "4" or "journeyman":
 						set %argument 1% permission to valerian.rank.journeyman
+						stop
 					if %argument 2% is "5" or "engineer":
 						set %argument 1% permission to valerian.rank.engineer
+						stop
 					if %argument 2% is "6" or "craftsman":
 						set %argument 1% permission to valerian.rank.craftsman
+						stop
 					if %argument 2% is "7" or "curator":
 						set %argument 1% permission to valerian.rank.curator
+						stop
 				if %argument 1% has permission valerian.rank.engineer
 					if %argument 2% is "1" or "guest":
 						set %argument 1% permission to valerian.rank.guest
+						stop
 					if %argument 2% is "2" or "member":
 						set %argument 1% permission to valerian.rank.member
+						stop
 					if %argument 2% is "3" or "apprentice":
 						set %argument 1% permission to valerian.rank.apprentice
+						stop
 					if %argument 2% is "4" or "journeyman":
 						set %argument 1% permission to valerian.rank.journeyman
+						stop
 					if %argument 2% is "5" or "engineer":
 						set %argument 1% permission to valerian.rank.engineer
+						stop
 					if %argument 2% is "6" or "craftsman":
 						set %argument 1% permission to valerian.rank.craftsman
+						stop
 					if %argument 2% is "7" or "curator":
 						set %argument 1% permission to valerian.rank.curator
+						stop
 				if %argument 1% has permission valerian.rank.craftsman
 					if %argument 2% is "1" or "guest":
 						set %argument 1% permission to valerian.rank.guest
+						stop
 					if %argument 2% is "2" or "member":
 						set %argument 1% permission to valerian.rank.member
+						stop
 					if %argument 2% is "3" or "apprentice":
 						set %argument 1% permission to valerian.rank.apprentice
+						stop
 					if %argument 2% is "4" or "journeyman":
 						set %argument 1% permission to valerian.rank.journeyman
+						stop
 					if %argument 2% is "5" or "engineer":
 						set %argument 1% permission to valerian.rank.engineer
+						stop
 					if %argument 2% is "6" or "craftsman":
 						set %argument 1% permission to valerian.rank.craftsman
+						stop
 					if %argument 2% is "7" or "curator":
 						set %argument 1% permission to valerian.rank.curator
+						stop
 				if %argument 1% has permission valerian.rank.curator
 					if %argument 2% is "1" or "guest":
 						set %argument 1% permission to valerian.rank.guest
+						stop
 					if %argument 2% is "2" or "member":
 						set %argument 1% permission to valerian.rank.member
+						stop
 					if %argument 2% is "3" or "apprentice":
 						set %argument 1% permission to valerian.rank.apprentice
+						stop
 					if %argument 2% is "4" or "journeyman":
 						set %argument 1% permission to valerian.rank.journeyman
+						stop
 					if %argument 2% is "5" or "engineer":
 						set %argument 1% permission to valerian.rank.engineer
+						stop
 					if %argument 2% is "6" or "craftsman":
 						set %argument 1% permission to valerian.rank.craftsman
+						stop
 					if %argument 2% is "7" or "curator":
 						set %argument 1% permission to valerian.rank.curator
+						stop
