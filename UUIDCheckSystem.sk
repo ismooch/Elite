@@ -2,11 +2,12 @@
 on login:
 	set {tempid} to UUID of player
 	set {tempname} to Name of player
-	{_uuids.%name of player%.idlists} exists:
-		if {_uuids.%name of player%.idlists} is {tempid}:
-			if {_uuid.%name of player%.nameset} is not {tempname}:
-				set {_uuid.%name of player%.nameset} to Name of player
+	{db_uuids.%name of player%.idlists} exists:
+		if {db_uuids.%name of player%.idlists} is {tempid}:
+			if {db_uuid.%name of player%.nameset} is not {tempname}:
+				set {db_uuid.%name of player%.nameset} to Name of player
+				set {db_votetokens.%player%} to {db_votetokens.{db_uuid.%name of player%.nameset}}
 	else:
-		set {_uuids.%name of player%.idlists} to UUID of player
-		set {_uuids.%name of player%.nameset} to Name of player
+		set {db_uuids.%name of player%.idlists} to UUID of player
+		set {db_uuids.%name of player%.nameset} to Name of player
 	  
