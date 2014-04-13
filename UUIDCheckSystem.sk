@@ -13,10 +13,14 @@ on login:
 			if {db_uuid::idlists} is not {tempid.%name of player%}
 				
 	else:
-		add UUID of player to {db_uuids::idset.idlists}
-		add Name of player to {db_uuids::idset.nameset}
+		add UUID of player to {db_uuids.idset::*}
+		add Name of player to {db_uuids.names::*}
 		
-	if {db_uuids::idset.nameset} has played before
-		add Name of player to {db_uuids::current.nameset}
-		add UUID of player to {db_uuids::current.idlists}
+	if player has played before
+		if {db_uuids.current.%player%} = 1
+			cancel event
+		else
+			add Name of player to {db_uuids.current.idset::*}
+			add UUID of player to {db_uuids.current.names::*}
+			set {db_uuids.current.%player%} = 1
 	  
