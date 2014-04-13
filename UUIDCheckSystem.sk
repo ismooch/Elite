@@ -6,8 +6,15 @@ on login:
 		if {db_uuids.%name of player%.idlists} is {tempid}:
 			if {db_uuid.%name of player%.nameset} is not {tempname}:
 				set {db_uuid.%name of player%.nameset} to Name of player
-				set {db_votetokens.%player%} to {db_votetokens.{db_uuid.%name of player%.nameset}}
+				if {db_votetokens.%player%} to {db_votetokens.{db_uuid.%name of player%.nameset}}
+		if {db_uuids.%name of player%.nameset} is {tempname}:
+			if {db_uuid.%name of player%.idlists} is not {tempid}:
+				if {	
+				
 	else:
 		set {db_uuids.%name of player%.idlists} to UUID of player
 		set {db_uuids.%name of player%.nameset} to Name of player
+	if {db_uuids.%name of player%.nameset} has played before
+		set {db_uuids.%name of player%.current.nameset} to Name of player
+		set {db_uuids.%name of player%.current.idlists} to UUID of player
 	  
