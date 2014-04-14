@@ -1,45 +1,82 @@
 command /rankup <text>:
-	permission: valerian.rank.curator
-	permission message: "&4You must be a &aCurator &4to use this command."
 	aliases: /ru
 	trigger:
-		if %argument% is set:
-			if %argument% has played before:
-				if %argument% has permission valerian.rank.guest
-					send "&e%argument% is now rank: &aMember" to player
-					execute console command "/perm player %argument% setgroup valerian.rank.member"
+		if player has permission "valerian.rank.curator"
+			if %argument% is set:
+				if %argument% has played before:
+					if %argument% has permission valerian.rank.guest
+						send "&e%argument% is now rank: &aMember" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.member"
+						stop
+					if %argument% has permission valerian.rank.member
+						send "&e%argument% is now rank: &aApprentice" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.apprentice"
+						stop
+					if %argument% has permission valerian.rank.apprentice
+						send "&e%argument% is now rank: &aJourneyman" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.journeyman"
+						stop
+					if %argument% has permission valerian.rank.journeyman
+						send "&e%argument% is now rank: &aEngineer" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.engineer"
+						stop
+					if %argument% has permission valerian.rank.engineer
+						send "&e%argument% is now rank: &aCraftsman" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.craftsman"
+						stop
+					if %argument% has permission valerian.rank.craftsman
+						send "&4You do not have permission to promote someone to rank 7." to player
+						stop
+					if %argument% has permission valerian.rank.curator
+						send "&e%argument% is already at the highest rank: &aCurator" to player
+						stop
+			if %argument% is set:
+				if %argument% has not played before:
+					send "&4This player has not played on this server before." to player
 					stop
-				if %argument% has permission valerian.rank.member
-					send "&e%argument% is now rank: &aApprentice" to player
-					execute console command "/perm player %argument% setgroup valerian.rank.apprentice"
+				if %argument% is not set:
+					send "&4Please enter in a player name." to player
+					send "&eUsage: /RankUp <name>" to player
 					stop
-				if %argument% has permission valerian.rank.apprentice
-					send "&e%argument% is now rank: &aJourneyman" to player
-					execute console command "/perm player %argument% setgroup valerian.rank.journeyman"
+		if player has permission "valerian.group.admin"
+			if %argument% is set:
+				if %argument% has played before:
+					if %argument% has permission valerian.rank.guest
+						send "&e%argument% is now rank: &aMember" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.member"
+						stop
+					if %argument% has permission valerian.rank.member
+						send "&e%argument% is now rank: &aApprentice" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.apprentice"
+						stop
+					if %argument% has permission valerian.rank.apprentice
+						send "&e%argument% is now rank: &aJourneyman" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.journeyman"
+						stop
+					if %argument% has permission valerian.rank.journeyman
+						send "&e%argument% is now rank: &aEngineer" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.engineer"
+						stop
+					if %argument% has permission valerian.rank.engineer
+						send "&e%argument% is now rank: &aCraftsman" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.craftsman"
+						stop
+					if %argument% has permission valerian.rank.craftsman
+						send "&e%argument% is now rank: &aCurator" to player
+						execute console command "/perm player %argument% setgroup valerian.rank.curator"
+						stop
+					if %argument% has permission valerian.rank.curator
+						send "&e%argument% is already at the highest rank: &aCurator" to player
+						stop
+			if %argument% is set:
+				if %argument% has not played before:
+					send "&4This player has not played on this server before." to player
 					stop
-				if %argument% has permission valerian.rank.journeyman
-					send "&e%argument% is now rank: &aEngineer" to player
-					execute console command "/perm player %argument% setgroup valerian.rank.engineer"
+				if %argument% is not set:
+					send "&4Please enter in a player name." to player
+					send "&eUsage: /RankUp <name>" to player
 					stop
-				if %argument% has permission valerian.rank.engineer
-					send "&e%argument% is now rank: &aCraftsman" to player
-					execute console command "/perm player %argument% setgroup valerian.rank.craftsman"
-					stop
-				if %argument% has permission valerian.rank.craftsman
-					send "&e%argument% is now at the highest rank: &aCurator" to player
-					execute console command "/perm player %argument% setgroup valerian.rank.curator"
-					stop
-				if %argument% has permission valerian.rank.curator
-					send "&e%argument% is already at the highest rank: &aCurator" to player
-					stop
-		if %argument% is set:
-			if %argument% has not played before:
-				send "&4This player has not played on this server before." to player
-				stop
-			if %argument% is not set:
-				send "&4Please enter in a player name." to player
-				send "&eUsage: /RankUp <name>" to player
-				
+		send "&4You must be a &aCurator &4or &aAdmin &4to use this command." to player
 command /rankdown <text>:
 	aliases: /rd
 	trigger:
@@ -93,7 +130,8 @@ command /rankdown <text>:
 			if %argument% is not set:
 				send "&4Please enter in a player name." to player
 				send "&eUsage: /RankDown <name>" to player
-		send "&4You must be a &aCurator &4to use this command." to player
+				stop
+		send "&4You must be a &aCurator &4or &aAdmin &4to use this command." to player
 				
 command /rankset <text> <text>:
 	aliases: /rs
@@ -333,6 +371,7 @@ command /rankset <text> <text>:
 			if %argument 1% is not set:
 				send "&4Please enter in a player name and rank." to player
 				send "&eUsage: /RankSet <name> <rank>" to player
+				stop
 		if player has permission "valerian.group.admin":
 			if %argument 1% is set:
 				if %argument 1% has played before:
@@ -381,7 +420,8 @@ command /rankset <text> <text>:
 			if %argument 1% is not set:
 				send "&4Please enter in a player name and rank." to player
 				send "&eUsage: /RankSet <name> <rank>" to player
-		send "&4You must be a &aCurator &4to use this command." to player
+				stop
+		send "&4You must be a &aCurator &4or &aAdmin &4to use this command." to player
 command /ranklist:
 	alias: /rl
 	trigger:
@@ -405,7 +445,7 @@ command /ranklist:
 			send "&e6 - Craftsman" to player
 			send "&e7 - Curator" to player
 			stop
-		send "&4You must be a &aCurator &4to use this command." to player
+		send "&4You must be a &aCurator &4or &aAdmin &4to use this command." to player
 
 on region enter:
 	send "&eEntering &f%region%&e." to player
