@@ -25,7 +25,7 @@ command /rankup <text>:
 						execute console command "/perm player %argument% setgroup valerian.rank.craftsman"
 						stop
 					if %argument% has permission "valerian.rank.craftsman":
-						send "&4You do not have permission to promote someone to rank 7." to player
+						send "&4You do not have permission to promote someone to Curator." to player
 						stop
 					if %argument% has permission "valerian.rank.curator":
 						send "&e%argument% is already at the highest rank: &aCurator" to player
@@ -648,7 +648,6 @@ command /rankset <text> <text>:
 							send "&eIf you need a list of ranks type /RankList" to player
 							stop
 						send "&4Please type a correct rank." to player
-						send "&4Admins may only change the curator rank."
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
@@ -665,7 +664,7 @@ command /ranklist:
 	alias: /rl
 	trigger:
 		if player has permission "valerian.rank.curator"
-			send "&eRank List:
+			send "&eRank List:" to player
 			send "&e1 - Guest" to player
 			send "&e2 - Member" to player
 			send "&e3 - Apprentice" to player
@@ -675,7 +674,7 @@ command /ranklist:
 			send "&e7 - Curator" to player
 			stop
 		if player has permission "valerian.group.admin"
-			send "&eRank List:
+			send "&eRank List:" to player
 			send "&e1 - Guest" to player
 			send "&e2 - Member" to player
 			send "&e3 - Apprentice" to player
