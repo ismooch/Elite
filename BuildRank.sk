@@ -242,3 +242,21 @@ command /rankset <text> <text>:
 				if %argument 1% has permission valerian.rank.curator
 					send "&eYou may not set a curator rank to another rank." to player
 						stop
+on region enter:
+	send "&eEntering &f%region%&e." to player
+	
+on region exit:
+	send "&eLeaving &f%region%&e." to player
+	
+#next to do:
+
+#set region owned commands - so certain regions have to be a set permission to have someone build on it.
+
+#set curator notification - so if a player sends a build finished request - they can deny it or accept it, and leave a comment
+
+#set player notification - so if a player is denied they recieve the message ... or if it is accepted they are notified
+#that it is accepted - and that they have been promoted
+
+#also player notification for if they are promoted or demoted or rank set - if the curator sets their rank.
+
+#then set the ranks - what each are able to do
