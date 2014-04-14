@@ -1,5 +1,6 @@
 command /rankup <text>:
 	permission: valerian.rank.curator
+	permission message: "&4You must be a &aCurator &4or &aAdmin &4 to use this command."
 	aliases: /ru
 	trigger:
 		if %argument% is set:
@@ -34,6 +35,7 @@ command /rankup <text>:
 				
 command /rankdown <text>:
 	permission: valerian.rank.curator
+	permission message: "&4You must be a &aCurator &4or &aAdmin &4 to use this command."
 	aliases: /rd
 	trigger:
 		if %argument% is set:
@@ -67,6 +69,7 @@ command /rankdown <text>:
 				
 command /rankset <text> <text>:
 	permission: valerian.rank.curator
+	permission message: "&4You must be a &aCurator &4or &aAdmin &4 to use this command."
 	aliases: /rs
 	trigger:
 		if %argument 1% is set:
