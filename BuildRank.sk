@@ -187,7 +187,7 @@ command /rankset <text> <text>:
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
 						if %argument 2% is "7" or "curator":
-							send "&4You do not have permission to set a curator rank to another rank." to player
+							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
 						if %argument 2% is not set:
 							send "&4Please type a rank." to player
@@ -223,7 +223,7 @@ command /rankset <text> <text>:
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
 						if %argument 2% is "7" or "curator":
-							send "&4You do not have permission to set a curator rank to another rank." to player
+							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
 						if %argument 2% is not set:
 							send "&4Please type a rank." to player
@@ -259,7 +259,7 @@ command /rankset <text> <text>:
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
 						if %argument 2% is "7" or "curator":
-							send "&4You do not have permission to set a curator rank to another rank." to player
+							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
 						if %argument 2% is not set:
 							send "&4Please type a rank." to player
@@ -295,7 +295,7 @@ command /rankset <text> <text>:
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
 						if %argument 2% is "7" or "curator":
-							send "&4You do not have permission to set a curator rank to another rank." to player
+							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
 						if %argument 2% is not set:
 							send "&4Please type a rank." to player
@@ -331,7 +331,7 @@ command /rankset <text> <text>:
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
 						if %argument 2% is "7" or "curator":
-							send "&4You do not have permission to set a curator rank to another rank." to player
+							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
 						if %argument 2% is not set:
 							send "&4Please type a rank." to player
@@ -367,7 +367,7 @@ command /rankset <text> <text>:
 							send "&e%argument 1% is already rank: &aCraftsman" to player
 							stop
 						if %argument 2% is "7" or "curator":
-							send "&4You do not have permission to set a curator rank to another rank." to player
+							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
 						if %argument 2% is not set:
 							send "&4Please type a rank." to player
