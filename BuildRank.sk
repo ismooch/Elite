@@ -691,6 +691,37 @@ on region enter:
 on region exit:
 	send "&eLeaving &f%region%&e." to player
 	
+command /submitbuild:
+	aliases: /submit, /sb
+	trigger:
+		if player has permission "valerian.group.guest":
+			add {db_valerian.notify.%player%} to true
+			set {db_valerian.checklevel.%player%} to 1
+			set {db_valerian.checked.%player%} to false
+			stop
+		if player has permission "valerian.group.member":
+			add {db_valerian.notify.%player%} to true
+			set {db_valerian.checklevel.%player%} to 1
+			stop
+		if player has permission "valerian.group.apprentice":
+			add {db_valerian.notify.%player%} to true
+			set {db_valerian.checklevel.%player%} to 1
+			stop
+		if player has permission "valerian.group.journeyman":
+			add {db_valerian.notify.%player%} to true
+			set {db_valerian.checklevel.%player%} to 1
+			stop
+		if player has permission "valerian.group.engineer":
+			add {db_valerian.notify.%player%} to true
+			set {db_valerian.checklevel.%player%} to 1
+			stop
+		if player has permission "valerian.group.craftsman":
+			add {db_valerian.notify.%player%} to true
+			set {db_valerian.checklevel.%player%} to 2
+			stop
+			
+On Join:
+
 #next to do:
 
 #set region owned commands - so certain regions have to be a set permission to have someone build on it.
