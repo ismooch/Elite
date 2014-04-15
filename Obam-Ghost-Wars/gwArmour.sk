@@ -1,6 +1,30 @@
 #                  List of Armour
 #                 ~~~~~~~~~~~~~~~~~
-
+options:
+	#full outfits
+	
+	Bomb Squad Helmet: leather helmet dyed black;&fBomb Squad
+	Bomb Squad Chestplate: leather chestplate dyed black;&fBomb Squad
+	Bomb Squad Leggings: leather leggings dyed black;&fBomb Squad
+	Bomb Squad Boots: leather leggings dyed black;&fBomb Squad
+	
+	Stealth Suit Helmet: leather helmet dyed dark gray;&fStealth Suit
+	Stealth Suit Chestplate: leather chestplate dyed dark gray;&fStealth Suit
+	Stealth Suit Leggings: leather leggings dyed dark gray;&fStealth Suit
+	Stealth Suit Boots: leather boots dyed dark gray;&fStealth Suit
+	
+	#helmets
+	Default Helmet: leather helmet dyed gray;&fDefault
+	
+	#chest and gloves
+	Default Chestplate: leather chestplate dyed gray;&fDefault
+	
+	#pants
+	Default Leggings: leather leggings dyed gray;&fDefault
+	
+	#boots
+	Default Boots: leather boots dyed gray;&fDefault
+	
 #------------------------------------------------------
 #     Full Outfits (If selected others don't apply)
 #------------------------------------------------------
