@@ -60,7 +60,15 @@ options:
 #                    Gas Mask
 #             (Immune to toxic gases)
 
-
+if {_gw.player.armour.helmet.%player%} = "Gas Mask":
+	if {_gw.player.team.%player%} = "Mercenary":
+		set %player% helmet to daylight sensor named "&fGas Mask"
+		set {_gw.player.effect.toxic.%player%} to false
+	if {_gw.player.team.%player%} = "Free For All":
+		set %player% helmet to daylight sensor named "&fGas Mask"
+		set {_gw.player.effect.toxic.%player%} to false
+	if {_gw.player.team.%player%} = "Ghost":
+		set {_gw.player.effect.toxic.%player%} to false
 
 #------------------------------------------------------
 
