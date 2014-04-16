@@ -1,3 +1,19 @@
+options:
+	ML CTF:Red Wool;&fCapture The Flag
+	ML KOH:Skeleton Skull;&fKing of the Hill
+	ML SAB:Snow Ball;&fSabotage
+	ML DOM:Mob Spawner;&fDomination
+	ML TDM:Iron Sword;&fTeam Deathmatch
+	ML FFA:Leather Helmet dyed black;&fMulti-Life Free For All
+	SL FFA:Leather Helmet dyed white;&fSingle-Life Free For All
+	SL SAD:Repeater;&fSearch and Destroy
+	SL TEL:TNT;&fTeam Elimination
+	Hub:Sign;&fTeleport to Hub
+	Achievements:Map;&fAchievements
+	Help:Book;&fGhost Wars Help!
+	Close:Black Wool;&fClose Menu
+	
+
 #Elite rendition of ghost wars for skript
 command /gwhelpadmin:
 	permission: obam.admin.gw
@@ -60,3 +76,11 @@ command /gwmapmode:
 	permission: obam.admin.gw
 	executable by: players
 	trigger:
+	
+#Game Mode Select
+command /games:
+	permission: obam.free
+	aliases: /game, /gamemode, /gamemodes
+	executable by: players
+	trigger:
+		show "s;1;{@ML CTF};2;{@ML CTF};3;{@ML CTF};4;{@ML CTF};5;{@ML CTF};6;{@ML CTF};7;{@ML CTF};8;{@ML CTF};9;{@ML CTF};10;{@Hub};13;{@Achievements};15;{@Help};18;{@Close}" with 2 rows named "&9&lGhost Wars Games" to player
