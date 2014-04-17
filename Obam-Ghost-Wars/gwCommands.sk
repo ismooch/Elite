@@ -83,4 +83,4 @@ command /games:
 	aliases: /game, /gamemode, /gamemodes
 	executable by: players
 	trigger:
-		show "s;1;{@ML CTF};2;{@ML CTF};3;{@ML CTF};4;{@ML CTF};5;{@ML CTF};6;{@ML CTF};7;{@ML CTF};8;{@ML CTF};9;{@ML CTF};10;{@Hub};13;{@Achievements};15;{@Help};18;{@Close}" with 2 rows named "&9&lGhost Wars Games" to player
+		show "s;1;{@ML CTF};2;{@ML KOH};3;{@ML SAB};4;{@ML DOM};5;{@ML TDM};6;{@ML FFA};7;{@SL FFA};8;{@SL SAD};9;{@SL TEL};10;{@Hub};13;{@Achievements};15;{@Help};18;{@Close}" with 2 rows named "&9&lGhost Wars Games" to player
