@@ -15,29 +15,37 @@ options:
 	
 
 #Elite rendition of ghost wars for skript
-command /gwhelpadmin:
-	permission: obam.admin.gw
+command /gwhelp:
 	executable by: players
 	trigger:
-		message "&e"
-		message "&e"
-		message "&e"
-		message "&e"
-		message "&e"
-		message "&e"
-		message "&e"
-
+		if player has permission "obam.admin.gw"
+			message "&e/gwlobbyset &fSet Lobby and Location"
+			message "&e/gwspawnadd <text> &fAdd a map spawn point."
+			message "&e/gwspawnlist &fList the map spawn points."
+			message "&e/gwspawnremove <text> &fRemove a map spawn point."
+			message "&e/gwmodelist &fLists all the Game Modes."
+			message "&e/gwmodeset &fSet the Game Mode for the map."
+			message "&e/gwmoderemove &fRemove the Game Mode for the map."
+			message "&e/gwmapmode &fDisplays the Current Game Mode for a map."
+			stop
+		if player has permission "obam.mod.gw"
+			message "&e/gwmodelist &fLists all the Game Modes."
+			message "&e/gwmapmode &fDisplays the Current Game Mode for a map."
+			stop
+		message "&4Sorry, you do not have permission for this command."
 #Set Lobby Location
 command /gwlobbyset:
 	permission: obam.admin.gw
+	permission message: "&4Sorry, you do not have permission for this command."
 	executable by: players
 	trigger:
-		set {_gw.lobby} to location of player
+		set {_gw.lobby} to the location of the player
 		send "&eGhost Wars Lobby Was Set To %player's location%" to player
 		
 #Add Spawn Point
 command /gwspawnadd [<text>]:
 	permission: obam.admin.gw
+	permission message: "&4Sorry, you do not have permission for this command."
 	executable by: players
 	trigger:
 		
@@ -50,36 +58,46 @@ command /gwspawnlist:
 #Remove Spawn Point
 command /gwspawnremove [<text>]:
 	permission: obam.admin.gw
+	permission message: "&4Sorry, you do not have permission for this command."
 	executable by: players
 	trigger:
 	
 #Game Mode List
 command /gwmodelist:
-	permission: obam.admin.gw
 	executable by: players
 	trigger:
+		if player has permission "obam.admin.gw"
+			
+		if player has permission "obam.mod.gw"
+			
+		message: "&4Sorry, you do not have permission for this command."
 	
 #Map Game Mode Set
 command /gwmodeset [<text>]:
 	permission: obam.admin.gw
+	permission message: "&4Sorry, you do not have permission for this command."
 	executable by: players
 	trigger:
 	
 #Map Game Mode Remove
 command /gwmoderemove [<text>]:
 	permission: obam.admin.gw
+	permission message: "&4Sorry, you do not have permission for this command."
 	executable by: players
 	trigger:
 	
 #Map Current Game Mode
 command /gwmapmode:
-	permission: obam.admin.gw
 	executable by: players
 	trigger:
+		if player has permission "obam.admin.gw"
+			
+		if player has permission "obam.mod.gw"
+			
+		message: "&4Sorry, you do not have permission for this command."
 	
 #Game Mode Select
 command /games:
-	permission: obam.free
 	aliases: /game, /gamemode, /gamemodes
 	executable by: players
 	trigger:
