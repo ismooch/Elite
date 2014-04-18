@@ -38,5 +38,9 @@ iconcrack_*
 blockcrack_*_*
 blockdust_*_*
 
+play effect %string% at %locations% (not case sensitive)
+or
+play %number% of effect %string% with data %number% at %location% (this one is case sensitive)
+
 Visuals of particles:
 http://minecraft.gamepedia.com/Particles
