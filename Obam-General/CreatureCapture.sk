@@ -1,0 +1,31 @@
+options:
+	lead: named item stack from "book;&6&lOBAM&fCraft &3Guide;&7Right click with this book to learn the ins||&7and out of OBAM"
+	rods: named item stack from "ender pearl;&3Game Worlds;&7Right click with this to check the current Game Worlds!"
+	
+on right click on sign:
+	world is "CreatureCapture":
+		line 1 of block is "&fGet a"
+			line 2 of block is "&fLead":
+				if player has 1 lead:
+					send "&cYou already have a lead" to player
+					stop
+				execute console command "/give %player% 1 lead"
+			line 2 of block is "&fFishing Rod":
+				if player has 1 fishing rod:
+					send "&cYou already have a lead" to player
+					stop
+				give player 
+				
+
+on sign change:
+	world is "CreatureCapture":
+		line 1 is "give" or "Give":
+			set line 1 to "&fGet a"
+			set line 3 to "&fHERE"
+			set line 4 to ""
+		line 2 is "lead" or "Lead" or "Leash" or "leash":
+			set line 2 to "&fLead"
+			set line 4 to ""
+		line 2 is "rod" or "Rod" or "fishingrod" or "FishingRod" or "fishing rod" or "Fishing Rod"
+			set line 2 to "&fFishing Rod"
+			set line 4 to ""
