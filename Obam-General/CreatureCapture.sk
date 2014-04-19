@@ -40,7 +40,10 @@ on sign change:
 			set line 2 to "&fFishing Rod"
 			set line 4 to ""
 
-on rightclick holding a {@lead}:
+on rightclick on entity:
+	if player is holding a {@lead}:
+		if entity is a creeper:
+			
 	
 on drop:
 	cancel event
