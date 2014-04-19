@@ -1,21 +1,22 @@
 options:
-	lead: named item stack from "book;&6&lOBAM&fCraft &3Guide;&7Right click with this book to learn the ins||&7and out of OBAM"
-	rods: named item stack from "ender pearl;&3Game Worlds;&7Right click with this to check the current Game Worlds!"
+	lead: named item stack from "lead;&bLasso;&eRight click with this to turn mobs into eggs."
+	rods: named item stack from "fishing rod;&bCapture Rod;&eUse this rod to capture the mobs."
 	
-on right click on sign:
+on rightclick on sign:
 	world is "CreatureCapture":
 		line 1 of block is "&fGet a"
 			line 2 of block is "&fLead":
 				if player has 1 lead:
 					send "&cYou already have a lead" to player
 					stop
-				execute console command "/give %player% 1 lead"
+				give player {_lead}
+				stop
 			line 2 of block is "&fFishing Rod":
 				if player has 1 fishing rod:
 					send "&cYou already have a lead" to player
 					stop
-				give player 
-				
+				give player {_rods}
+				stop
 
 on sign change:
 	world is "CreatureCapture":
@@ -29,3 +30,7 @@ on sign change:
 		line 2 is "rod" or "Rod" or "fishingrod" or "FishingRod" or "fishing rod" or "Fishing Rod"
 			set line 2 to "&fFishing Rod"
 			set line 4 to ""
+
+on rightclick holding a {@lead}:
+	
+on click with a {_rods}:
