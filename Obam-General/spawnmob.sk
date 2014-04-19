@@ -7,14 +7,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 			send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 			stop
 		%argument 1% is set:
-			%argument 1% is "cow" or "a cow" or "cows" or "heffer" or "hefer" or "heffers" or "bull" or "bulls" or "steer" or "steers" or or "calf" or "calves" or "calfs" or "icc" or "IcecreamCow"
+			%argument 1% is "cow" or "cows" or "heffer" or "hefer" or "heffers" or "bull" or "bulls" or "steer" or "steers" or or "calf" or "calves" or "calfs" or "icc" or "IcecreamCow"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 cow at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 cow named %argument 3% at the targeted block
-						stop
+					spawn 1 cow at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -27,14 +25,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "bat" or "a bat" or "bats"
+			%argument 1% is "bat" or "bats"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 bat at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 bat named %argument 3% at the targeted block
-						stop
+					spawn 1 bat at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -47,14 +43,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "chicken" or "a chicken" or "chickens" or "chick" or "chicklet" or "chicks" or "hatchling" or "hen" or "hens" or "rooster" or "roosters"
+			%argument 1% is "chicken" or "chickens" or "chick" or "chicklet" or "chicks" or "hatchling" or "hen" or "hens" or "rooster" or "roosters"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 chicken at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 chicken named %argument 3% at the targeted block
-						stop
+					spawn 1 chicken at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -67,14 +61,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "horse" or "a horse" or "horses" or "mare" or "foal" or "mares" or "colt" or "pony" or "ponies" or "brony" or "bronies" or "stallion" or "stallions"
+			%argument 1% is "horse" or "horses" or "mare" or "foal" or "mares" or "colt" or "pony" or "ponies" or "brony" or "bronies" or "stallion" or "stallions"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 horse at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 horse named %argument 3% at the targeted block
-						stop
+					spawn 1 horse at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -88,13 +80,11 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
 			#Please Add in Donkey and Mules Here Later - Elite
-			%argument 1% is "irongolem" or "an iron golem" or "irongolems" or "iron golem" or "iron golems"
+			%argument 1% is "irongolem" or "irongolems"
 				%argument 2% is not set:
-					%argument 3% is not set:
 						spawn 1 iron golem at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 iron golem named %argument 3% at the targeted block
+						send "&3To add a name please use the below format." to player
+						send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 						stop
 				%argument 2% is set:
 					%argument 2% is a number:
@@ -108,14 +98,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "mooshroom" or "a mooshroom" or "mooshrooms"
+			%argument 1% is "mooshroom" or "mooshrooms"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 mooshroom at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 mooshroom named %argument 3% at the targeted block
-						stop
+					spawn 1 mooshroom at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -128,14 +116,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "ocelot" or "an ocelot" or "ocelots" or "cat" or "cats" or "a cat" or "feline"
+			%argument 1% is "ocelot" or "ocelots" or "cat" or "cats" or "feline" or "felines"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 ocelot at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 ocelot named %argument 3% at the targeted block
-						stop
+					spawn 1 ocelot at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -148,14 +134,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "pig" or "a pig" or "pigs" or "hog" or "hogs" or "boar" or "boars"
+			%argument 1% is "pig" or "pigs" or "hog" or "hogs" or "boar" or "boars"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 pig at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 pig named %argument 3% at the targeted block
-						stop
+					spawn 1 pig at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -168,14 +152,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "sheep" or "a sheep" or "ram" or "rams" or "lamb" or "lambs"
+			%argument 1% is "sheep" or "ram" or "rams" or "lamb" or "lambs"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 sheep at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 sheep named %argument 3% at the targeted block
-						stop
+					spawn 1 sheep at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -188,14 +170,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "snow golem" or "snow golems" or "a snow golem" or "a snowgolem"
+			%argument 1% is "snowgolem" or "snowgolems"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 snow golem at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 snow golem named %argument 3% at the targeted block
-						stop
+					spawn 1 snow golem at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -208,14 +188,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "squid" or "a squid" or "squids" or "octupus" or "octupi" or "an octupus"
+			%argument 1% is "squid" or "squids" or "octupus" or "octupi"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 squid at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 squid named %argument 3% at the targeted block
-						stop
+					spawn 1 squid at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -228,14 +206,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "villager" or "a villager" or "villagers"
+			%argument 1% is "villager" or "villagers"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 villager at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 villager named %argument 3% at the targeted block
-						stop
+					spawn 1 villager at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -248,14 +224,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "wolf" or "a wolf" or "wolves" or "wolve" or "dog" or "dogs" or "puppy" or "puppies" or "puppie" or "doge" or "dogie" or "dogies" or "dogy" or "doggy" or "doggie" or "doggies"
+			%argument 1% is "wolf" or "wolves" or "wolve" or "dog" or "dogs" or "puppy" or "puppies" or "puppie" or "doge" or "dogie" or "dogies" or "dogy" or "doggy" or "doggie" or "doggies"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 wolf at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 wolf named %argument 3% at the targeted block
-						stop
+					spawn 1 wolf at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -268,14 +242,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "zombiepigmen" or "zombiepigman" or "zombie pigman" or "zombie pigmen" or "pigman" or "pigmen" or "a zombiepigman" or "a zombie pigman" or "a pigman"
+			%argument 1% is "zombiepigmen" or "zombiepigman" or "pigman" or "pigmen"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 zombie pigmen at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 zombie pigmen named %argument 3% at the targeted block
-						stop
+					spawn 1 zombie pigmen at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -288,14 +260,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "blaze" or "a blaze" or "blazes"
+			%argument 1% is "blaze" or "blazes"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 blaze at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 blaze named %argument 3% at the targeted block
-						stop
+					spawn 1 blaze at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -308,14 +278,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "cave spider" or "a cave spider" or "cavespider" or "cave spiders" or "cavespiders"
+			%argument 1% is "cavespider" or "cavespiders"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 cave spider at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 cave spider named %argument 3% at the targeted block
-						stop
+					spawn 1 cave spider at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -328,14 +296,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "creeper" or "a creeper" or "creepers"
+			%argument 1% is "creeper" or "creepers"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 creeper at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 creeper named %argument 3% at the targeted block
-						stop
+					spawn 1 creeper at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -348,14 +314,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "dragon" or "a dragon" or "dragons" or "enderdragon" or "an enderdragon" or "enderdragons" or "ender dragon" or "ender dragons"
-				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 enderdragon at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 enderdragon named %argument 3% at the targeted block
-						stop
+			%argument 1% is "dragon" or "dragons" or "enderdragon" or "enderdragons"
+				%argument 2% is not set::
+					spawn 1 enderdragon at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -368,14 +332,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "enderman" or "an enderman" or "endermen" or "endermens" or "endermans"
+			%argument 1% is "enderman" or "endermen" or "endermens" or "endermans"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 enderman at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 enderman named %argument 3% at the targeted block
-						stop
+					spawn 1 enderman at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -388,14 +350,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "ghast" or "a ghast" or "ghasts"
+			%argument 1% is "ghast" or "ghasts"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 ghast at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 ghast named %argument 3% at the targeted block
-						stop
+					spawn 1 ghast at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -408,14 +368,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "magma" or "a magma" or "magmas" or "magma cube" or "magma cubes" or "magmacube" or "magmacubes" or "magmaslime" or "magmaslimes" or "magma slime" or "magma slimes"
+			%argument 1% is "magma" or "magmas" or "magmacube" or "magmacubes" or "magmaslime" or "magmaslimes"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 magma cube at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 magma cube named %argument 3% at the targeted block
-						stop
+					spawn 1 magma cube at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -428,14 +386,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "silverfish" or "silver fish" or "a silverfish" or "a silver fish"
+			%argument 1% is "silverfish"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 silverfish at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 silverfish named %argument 3% at the targeted block
-						stop
+					spawn 1 silverfish at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -448,14 +404,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "skeleton" or "a skeleton" or "skeletons"
+			%argument 1% is "skeleton" or "skeletons"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 skeleton at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 skeleton named %argument 3% at the targeted block
-						stop
+					spawn 1 skeleton at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -468,14 +422,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "slime" or "a slime" or "slimes"
+			%argument 1% is "slime" or "slimes"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 slime at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 slime named %argument 3% at the targeted block
-						stop
+					spawn 1 slime at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -488,14 +440,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "spider" or "a spider" or "spiders"
+			%argument 1% is "spider" or "spiders"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 spider at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 spider named %argument 3% at the targeted block
-						stop
+					spawn 1 spider at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -508,14 +458,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "witch" or "a witch" or "witches"
+			%argument 1% is "witch" or "witches"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 witch at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 witch named %argument 3% at the targeted block
-						stop
+					spawn 1 witch at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -528,14 +476,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "wither skeleton" or "a wither skeleton" or "wither skeletons" or "witherskeleton" or "wither skeletons"
+			%argument 1% is "witherskeleton" or "witherskeletons"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 wither skeleton at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 wither skeleton named %argument 3% at the targeted block
-						stop
+					spawn 1 wither skeleton at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -548,14 +494,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "wither" or "a wither" or "withers"
+			%argument 1% is "wither" or "withers"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 wither at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 wither named %argument 3% at the targeted block
-						stop
+					spawn 1 wither at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
@@ -568,14 +512,12 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						send "&3Please type a number for the amount." to player
 						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 						stop
-			%argument 1% is "zombie" or "a zombie" or "zombies"
+			%argument 1% is "zombie" or "zombies"
 				%argument 2% is not set:
-					%argument 3% is not set:
-						spawn 1 zombie at the targeted block
-						stop
-					%argument 3% is set:
-						spawn 1 zombie named %argument 3% at the targeted block
-						stop
+					spawn 1 zombie at the targeted block
+					send "&3To add a name please use the below format." to player
+					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
+					stop
 				%argument 2% is set:
 					%argument 2% is a number:
 						%argument 3% is not set:
