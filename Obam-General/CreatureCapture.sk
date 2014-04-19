@@ -9,15 +9,24 @@ on rightclick on sign:
 				if player has 1 lead:
 					send "&cYou already have a lead" to player
 					stop
-				give player {_lead}
+				give player {@lead}
 				stop
 			line 2 of block is "&fFishing Rod":
 				if player has 1 fishing rod:
 					send "&cYou already have a lead" to player
 					stop
-				give player {_rods}
+				give player {@rods}
 				stop
 
+command /ccsign:
+	permission: obam.admin
+	permission message: "&cThis command is only available for Admins."
+	trigger:
+		world is "CreatureCapture"
+			send "&fSigns:" to player
+			send "&fType &agive &fon line 1" to player
+			send "&fType &alead &for &arod&f on line 2" to player
+			send "&f-----" to player
 on sign change:
 	world is "CreatureCapture":
 		line 1 is "give" or "Give":
@@ -33,4 +42,8 @@ on sign change:
 
 on rightclick holding a {@lead}:
 	
-on click with a {_rods}:
+on drop:
+	cancel event
+	
+on pickup:
+	cancel event
