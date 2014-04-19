@@ -1,21 +1,21 @@
 options:
 	lead: named item stack from "lead;&bLasso;&eRight click with this to turn mobs into eggs."
-	rods: named item stack from "fishing rod;&bCapture Rod;&eUse this rod to capture the mobs."
+	rod: named item stack from "fishing rod;&bCapture Rod;&eUse this rod to capture the mobs."
 	
 on rightclick on sign:
 	world is "CreatureCapture":
 		line 1 of block is "&fGet a"
 			line 2 of block is "&fLead":
-				if player has 1 lead:
+				if player has 1 {@lead}:
 					send "&cYou already have a lead" to player
 					stop
 				give player {@lead}
 				stop
 			line 2 of block is "&fFishing Rod":
-				if player has 1 fishing rod:
+				if player has 1 {@rod}:
 					send "&cYou already have a lead" to player
 					stop
-				give player {@rods}
+				give player {@rod}
 				stop
 
 command /ccsign:
