@@ -7,7 +7,7 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 			send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 			stop
 		argument 1 is set:
-			argument 1 is "cow" or "cows" or "heffer" or "hefer" or "heffers" or "bull" or "bulls" or "steer" or "steers" or or "calf" or "calves" or "calfs" or "icc" or "IcecreamCow"
+			argument 1 is "cow" or "cows" or "heffer" or "hefer" or "heffers" or "bull" or "bulls" or "steer" or "steers" or "calf" or "calves" or "calfs" or "icc" or "IcecreamCow"
 				argument 2 is not set:
 					spawn 1 cow at targeted block
 					send "&3To add a name please use the below format." to player
