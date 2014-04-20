@@ -36,7 +36,7 @@ on sign change:
 		line 2 is "lead" or "Lead" or "Leash" or "leash":
 			set line 2 to "&fLead"
 			set line 4 to ""
-		line 2 is "rod" or "Rod" or "fishingrod" or "FishingRod" or "fishing rod" or "Fishing Rod"
+		line 2 is "rod" or "Rod" or "fishingrod" or "FishingRod" or "fishing rod" or "Fishing Rod":
 			set line 2 to "&fFishing Rod"
 			set line 4 to ""
 
