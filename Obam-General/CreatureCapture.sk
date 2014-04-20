@@ -4,7 +4,7 @@ options:
 	
 on rightclick on sign:
 	world is "CreatureCapture":
-		line 1 of block is "&fGet a"
+		line 1 of block is "&fGet a":
 			line 2 of block is "&fLead":
 				if player has 1 {@lead}:
 					send "&cYou already have a lead" to player
@@ -41,103 +41,103 @@ on sign change:
 			set line 4 to ""
 
 on right click of entity with {@lead}:
-        world is "creature_capture":
-            if entity is bat:
-            	entity clear
-            	add 1 bat egg to player's inventory
-            	stop
-            if entity is chicken:
-            	entity clear
-            	add 1 chicken egg to player's inventory
-            	stop
-            if entity is cow:
-            	entity clear
-            	add 1 cow egg to player's inventory
-            	stop
-            if entity is horse:
-            	entity clear
-            	add 1 horse egg to player's inventory
-            	stop
-            if entity is mooshroom:
-            	entity clear
-            	add 1 mooshroom egg to player's inventory
-            	stop
-            if entity is ocelot:
-            	entity clear
-            	add 1 ocelot egg to player's inventory
-            	stop
-            if entity is pig:
-            	entity clear
-            	add 1 pig egg to player's inventory
-            	stop
-            if entity is sheep:
-            	entity clear
-            	add 1 sheep egg to player's inventory
-            	stop
-            if entity is squid:
-            	entity clear
-            	add 1 squid egg to player's inventory
-            	stop
-            if entity is villager:
-            	entity clear
-            	add 1 villager egg to player's inventory
-            	stop
-            if entity is wolf:
-            	entity clear
-            	add 1 wolf egg to player's inventory
-            	stop
-            if entity is zombie pigmen:
-            	entity clear
-            	add 1 zombie pigmen egg to player's inventory
-            	stop
-            if entity is blaze:
-            	entity clear
-            	add 1 blaze egg to player's inventory
-            	stop
-            if entity is cave spider:
-            	entity clear
-            	add 1 cave spider egg to player's inventory
-            	stop
-            if entity is creeper:
-            	entity clear
-            	add 1 creeper egg to player's inventory
-            	stop
-            if entity is enderman:
-            	entity clear
-            	add 1 enderman egg to player's inventory
-            	stop
-            if entity is ghast:
-            	entity clear
-            	add 1 ghast egg to player's inventory
-            	stop
-            if entity is magma cube:
-            	entity clear
-            	add 1 magma cube egg to player's inventory
-            	stop
-            if entity is silverfish:
-            	entity clear
-            	add 1 silverfish egg to player's inventory
-            	stop
-            if entity is skeleton:
-            	entity clear
-            	add 1 skeleton egg to player's inventory
-            	stop
-            if entity is slime:
-            	entity clear
-            	add 1 slime egg to player's inventory
-            	stop
-            if entity is spider:
-            	entity clear
-            	add 1 spider egg to player's inventory
-            	stop
-            if entity is witch:
-            	entity clear
-            	add 1 witch egg to player's inventory
-            	stop
-            if entity is zombie:
-            	entity clear
-            	add 1 zombie egg to player's inventory
-            	stop
+	world is "creature_capture":
+		if entity is bat:
+		    entity clear
+		    add 1 bat egg to player's inventory
+		    stop
+		if entity is chicken:
+		    entity clear
+		    add 1 chicken egg to player's inventory
+		    stop
+		if entity is cow:
+		    entity clear
+		    add 1 cow egg to player's inventory
+		    stop
+		if entity is horse:
+		    entity clear
+		    add 1 horse egg to player's inventory
+		    stop
+		if entity is mooshroom:
+		    entity clear
+		    add 1 mooshroom egg to player's inventory
+		    stop
+		if entity is ocelot:
+		    entity clear
+		    add 1 ocelot egg to player's inventory
+		    stop
+		if entity is pig:
+		    entity clear
+		    add 1 pig egg to player's inventory
+		    stop
+		if entity is sheep:
+		    entity clear
+		    add 1 sheep egg to player's inventory
+		    stop
+		if entity is squid:
+		    entity clear
+		    add 1 squid egg to player's inventory
+		    stop
+		if entity is villager:
+		    entity clear
+		    add 1 villager egg to player's inventory
+		    stop
+		if entity is wolf:
+		    entity clear
+		    add 1 wolf egg to player's inventory
+		    stop
+		if entity is zombie pigmen:
+		    entity clear
+		    add 1 zombie pigmen egg to player's inventory
+		    stop
+		if entity is blaze:
+		    entity clear
+		    add 1 blaze egg to player's inventory
+		    stop
+		if entity is cave spider:
+		    entity clear
+		    add 1 cave spider egg to player's inventory
+		    stop
+		if entity is creeper:
+		    entity clear
+		    add 1 creeper egg to player's inventory
+		    stop
+		if entity is enderman:
+		    entity clear
+		    add 1 enderman egg to player's inventory
+		    stop
+		if entity is ghast:
+		    entity clear
+		    add 1 ghast egg to player's inventory
+		    stop
+		if entity is magma cube:
+		    entity clear
+		    add 1 magma cube egg to player's inventory
+		    stop
+		if entity is silverfish:
+		    entity clear
+		    add 1 silverfish egg to player's inventory
+		    stop
+		if entity is skeleton:
+		    entity clear
+		    add 1 skeleton egg to player's inventory
+		    stop
+		if entity is slime:
+		    entity clear
+		    add 1 slime egg to player's inventory
+		    stop
+		if entity is spider:
+		    entity clear
+		    add 1 spider egg to player's inventory
+		    stop
+		if entity is witch:
+		    entity clear
+		    add 1 witch egg to player's inventory
+		    stop
+		if entity is zombie:
+		    entity clear
+		    add 1 zombie egg to player's inventory
+		    stop
 	
 on drop:
 	cancel event
