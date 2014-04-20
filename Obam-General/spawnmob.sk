@@ -18,7 +18,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of cow at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of cow named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn cow at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "bat" or "bats":
 				argument 2 is not set:
@@ -31,7 +33,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of bat at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of bat named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn bat at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "chicken" or "chickens" or "chick" or "chicklet" or "chicks" or "hatchling" or "hen" or "hens" or "rooster" or "roosters":
 				argument 2 is not set:
@@ -44,7 +48,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of chicken at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of chicken named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn chicken at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "horse" or "horses" or "mare" or "foal" or "mares" or "colt" or "pony" or "ponies" or "brony" or "bronies" or "stallion" or "stallions":
 				argument 2 is not set:
@@ -57,7 +63,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of horse at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of horse named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn horse at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			#Please Add in Donkey and Mules Here Later - Elite
 			argument 1 is "irongolem" or "irongolems":
@@ -84,7 +92,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of mooshroom at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of mooshroom named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn mooshroom at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "ocelot" or "ocelots" or "cat" or "cats" or "feline" or "felines":
 				argument 2 is not set:
@@ -97,7 +107,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of ocelot at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of ocelot named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn ocelot at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "pig" or "pigs" or "hog" or "hogs" or "boar" or "boars":
 				argument 2 is not set:
@@ -110,7 +122,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of pig at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of pig named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn pig at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "sheep" or "ram" or "rams" or "lamb" or "lambs":
 				argument 2 is not set:
@@ -123,7 +137,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of sheep at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of sheep named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn sheep at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "snowgolem" or "snowgolems":
 				argument 2 is not set:
@@ -136,7 +152,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of snow golem at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of snow golem named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn snow golem at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "squid" or "squids" or "octupus" or "octupi":
 				argument 2 is not set:
@@ -149,7 +167,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of squid at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of squid named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn squid at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "villager" or "villagers":
 				argument 2 is not set:
@@ -162,7 +182,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of villager at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of villager named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn villager at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "wolf" or "wolves" or "wolve" or "dog" or "dogs" or "puppy" or "puppies" or "puppie" or "doge" or "dogie" or "dogies" or "dogy" or "doggy" or "doggie" or "doggies":
 				argument 2 is not set:
@@ -175,7 +197,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of wolf at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of wolf named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn wolf at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "zombiepigmen" or "zombiepigman" or "pigman" or "pigmen":
 				argument 2 is not set:
@@ -188,7 +212,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 zombie pigman at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 zombie pigman named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn zombie pigman at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "blaze" or "blazes":
 				argument 2 is not set:
@@ -201,7 +227,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of blaze at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of blaze named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn blaze at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "cavespider" or "cavespiders":
 				argument 2 is not set:
@@ -214,7 +242,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of cave spider at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of cave spider named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn cave spider at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "creeper" or "creepers":
 				argument 2 is not set:
@@ -227,7 +257,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of creeper at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of creeper named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn creeper at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "dragon" or "dragons" or "enderdragon" or "enderdragons":
 				argument 2 is not set::
@@ -240,7 +272,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of enderdragon at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of enderdragon named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn enderdragon at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "enderman" or "endermen" or "endermens" or "endermans":
 				argument 2 is not set:
@@ -253,7 +287,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of enderman at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of enderman named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn enderman at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "ghast" or "ghasts":
 				argument 2 is not set:
@@ -266,7 +302,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of ghast at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of ghast named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn ghast at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "magma" or "magmas" or "magmacube" or "magmacubes" or "magmaslime" or "magmaslimes":
 				argument 2 is not set:
@@ -279,7 +317,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of magma cube at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of magma cube named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn magma cube at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "silverfish":
 				argument 2 is not set:
@@ -292,7 +332,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of silverfish at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of silverfish named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn silverfish at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "skeleton" or "skeletons":
 				argument 2 is not set:
@@ -305,7 +347,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of skeleton at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of skeleton named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn skeleton at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "slime" or "slimes":
 				argument 2 is not set:
@@ -318,7 +362,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of slime at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of slime named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn slime at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "spider" or "spiders":
 				argument 2 is not set:
@@ -331,7 +377,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of spider at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of spider named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn spider at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "witch" or "witches":
 				argument 2 is not set:
@@ -344,7 +392,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of witch at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of witch named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn witch at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "witherskeleton" or "witherskeletons":
 				argument 2 is not set:
@@ -357,7 +407,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of wither skeleton at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of wither skeleton named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn wither skeleton at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "wither" or "withers":
 				argument 2 is not set:
@@ -370,7 +422,9 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of wither at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of wither named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn wither at block above targeted block
+							set name of spawned entity to argument 3
 						stop
 			argument 1 is "zombie" or "zombies":
 				argument 2 is not set:
@@ -383,5 +437,7 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 						spawn argument 2 of zombie at targeted block
 						stop
 					argument 3 is set:
-						spawn argument 2 of zombie named "%argument 3%" at targeted block
+						loop argument 2 times:
+							spawn zombie at block above targeted block
+							set name of spawned entity to argument 3
 						stop
