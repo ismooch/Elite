@@ -7,526 +7,381 @@ command /spawnmob [<text>] [<integer>] [<text>]:
 			send "&fUsage: /spawnmob <mob> <amount> <name>" to player
 			stop
 		%argument 1% is set:
-			%argument 1% is "cow" or "cows" or "heffer" or "hefer" or "heffers" or "bull" or "bulls" or "steer" or "steers" or or "calf" or "calves" or "calfs" or "icc" or "IcecreamCow"
-				%argument 2% is not set:
+			argument 1 is "cow" or "cows" or "heffer" or "hefer" or "heffers" or "bull" or "bulls" or "steer" or "steers" or or "calf" or "calves" or "calfs" or "icc" or "IcecreamCow"
+				argument 2 is not set:
 					spawn 1 cow at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% cow at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% cow named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "bat" or "bats"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "bat" or "bats"
+				argument 2 is not set:
 					spawn 1 bat at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% bat at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% bat named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "chicken" or "chickens" or "chick" or "chicklet" or "chicks" or "hatchling" or "hen" or "hens" or "rooster" or "roosters"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "chicken" or "chickens" or "chick" or "chicklet" or "chicks" or "hatchling" or "hen" or "hens" or "rooster" or "roosters"
+				argument 2 is not set:
 					spawn 1 chicken at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% chicken at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% chicken named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "horse" or "horses" or "mare" or "foal" or "mares" or "colt" or "pony" or "ponies" or "brony" or "bronies" or "stallion" or "stallions"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "horse" or "horses" or "mare" or "foal" or "mares" or "colt" or "pony" or "ponies" or "brony" or "bronies" or "stallion" or "stallions"
+				argument 2 is not set:
 					spawn 1 horse at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% horse at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% horse named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
+						stop
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
 						stop
 			#Please Add in Donkey and Mules Here Later - Elite
-			%argument 1% is "irongolem" or "irongolems"
-				%argument 2% is not set:
+			argument 1 is "irongolem" or "irongolems"
+				argument 2 is not set:
 						spawn 1 iron golem at the targeted block
 						send "&3To add a name please use the below format." to player
 						send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 						stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% iron golem at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% iron golem named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "mooshroom" or "mooshrooms"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "mooshroom" or "mooshrooms"
+				argument 2 is not set:
 					spawn 1 mooshroom at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% mooshroom at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% mooshroom named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "ocelot" or "ocelots" or "cat" or "cats" or "feline" or "felines"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "ocelot" or "ocelots" or "cat" or "cats" or "feline" or "felines"
+				argument 2 is not set:
 					spawn 1 ocelot at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% ocelot at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% ocelot named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "pig" or "pigs" or "hog" or "hogs" or "boar" or "boars"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "pig" or "pigs" or "hog" or "hogs" or "boar" or "boars"
+				argument 2 is not set:
 					spawn 1 pig at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% pig at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% pig named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "sheep" or "ram" or "rams" or "lamb" or "lambs"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "sheep" or "ram" or "rams" or "lamb" or "lambs"
+				argument 2 is not set:
 					spawn 1 sheep at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% sheep at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% sheep named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "snowgolem" or "snowgolems"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "snowgolem" or "snowgolems"
+				argument 2 is not set:
 					spawn 1 snow golem at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% snow golem at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% snow golem named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "squid" or "squids" or "octupus" or "octupi"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "squid" or "squids" or "octupus" or "octupi"
+				argument 2 is not set:
 					spawn 1 squid at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% squid at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% squid named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "villager" or "villagers"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "villager" or "villagers"
+				argument 2 is not set:
 					spawn 1 villager at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% villager at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% villager named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "wolf" or "wolves" or "wolve" or "dog" or "dogs" or "puppy" or "puppies" or "puppie" or "doge" or "dogie" or "dogies" or "dogy" or "doggy" or "doggie" or "doggies"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "wolf" or "wolves" or "wolve" or "dog" or "dogs" or "puppy" or "puppies" or "puppie" or "doge" or "dogie" or "dogies" or "dogy" or "doggy" or "doggie" or "doggies"
+				argument 2 is not set:
 					spawn 1 wolf at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% wolf at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% wolf named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "zombiepigmen" or "zombiepigman" or "pigman" or "pigmen"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "zombiepigmen" or "zombiepigman" or "pigman" or "pigmen"
+				argument 2 is not set:
 					spawn 1 zombie pigmen at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% zombie pigmen at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% zombie pigmen named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "blaze" or "blazes"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "blaze" or "blazes"
+				argument 2 is not set:
 					spawn 1 blaze at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% blaze at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% blaze named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "cavespider" or "cavespiders"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "cavespider" or "cavespiders"
+				argument 2 is not set:
 					spawn 1 cave spider at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% cave spider at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% cave spider named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "creeper" or "creepers"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "creeper" or "creepers"
+				argument 2 is not set:
 					spawn 1 creeper at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% creeper at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% creeper named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "dragon" or "dragons" or "enderdragon" or "enderdragons"
-				%argument 2% is not set::
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "dragon" or "dragons" or "enderdragon" or "enderdragons"
+				argument 2 is not set::
 					spawn 1 enderdragon at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% enderdragon at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% enderdragon named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "enderman" or "endermen" or "endermens" or "endermans"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "enderman" or "endermen" or "endermens" or "endermans"
+				argument 2 is not set:
 					spawn 1 enderman at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% enderman at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% enderman named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "ghast" or "ghasts"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "ghast" or "ghasts"
+				argument 2 is not set:
 					spawn 1 ghast at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% ghast at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% ghast named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "magma" or "magmas" or "magmacube" or "magmacubes" or "magmaslime" or "magmaslimes"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "magma" or "magmas" or "magmacube" or "magmacubes" or "magmaslime" or "magmaslimes"
+				argument 2 is not set:
 					spawn 1 magma cube at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% magma cube at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% magma cube named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "silverfish"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "silverfish"
+				argument 2 is not set:
 					spawn 1 silverfish at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% silverfish at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% silverfish named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "skeleton" or "skeletons"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "skeleton" or "skeletons"
+				argument 2 is not set:
 					spawn 1 skeleton at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% skeleton at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% skeleton named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "slime" or "slimes"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "slime" or "slimes"
+				argument 2 is not set:
 					spawn 1 slime at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% slime at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% slime named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "spider" or "spiders"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "spider" or "spiders"
+				argument 2 is not set:
 					spawn 1 spider at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% spider at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% spider named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "witch" or "witches"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "witch" or "witches"
+				argument 2 is not set:
 					spawn 1 witch at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% witch at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% witch named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "witherskeleton" or "witherskeletons"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "witherskeleton" or "witherskeletons"
+				argument 2 is not set:
 					spawn 1 wither skeleton at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% wither skeleton at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% wither skeleton named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 cow at the targeted block
 						stop
-			%argument 1% is "wither" or "withers"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 cow named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "wither" or "withers"
+				argument 2 is not set:
 					spawn 1 wither at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% wither at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% wither named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 wither at the targeted block
 						stop
-			%argument 1% is "zombie" or "zombies"
-				%argument 2% is not set:
+					argument 3 is set:
+						spawn argument 2 wither named "%argument 3%" at the targeted block
+						stop
+			argument 1 is "zombie" or "zombies"
+				argument 2 is not set:
 					spawn 1 zombie at the targeted block
 					send "&3To add a name please use the below format." to player
 					send "&fUsage: /spawnmob <mob type> &b(Do not add spaces in mob type) &f<amount> <name>" to player
 					stop
-				%argument 2% is set:
-					%argument 2% is a number:
-						%argument 3% is not set:
-							spawn %argument 2% zombie at the targeted block
-							stop
-						%argument 3% is set:
-							spawn %argument 2% zombie named %argument 3% at the targeted block
-							stop
-					%argument 2% is not a number:
-						send "&3Please type a number for the amount." to player
-						send "&fUsage: /spawnmob <mob> <amount> <name>" to player
+				argument 2 is set:
+					argument 3 is not set:
+						spawn argument 2 zombie at the targeted block
+						stop
+					argument 3 is set:
+						spawn argument 2 zombie named "%argument 3%" at the targeted block
 						stop
