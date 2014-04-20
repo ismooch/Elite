@@ -5,15 +5,15 @@ options:
 	
 on rightclick on sign:
 	line 1 of block is "Get a":
-		line 2 of block is "Lead":
+		line 2 of block is "Lasso":
 			if player has {@lead}:
-				send "&cYou already have a lead" to player
+				send "&cYou already have a lasso" to player
 				stop
 			give player {@lead}
 			stop
-		line 2 of block is "Fishing Rod":
+		line 2 of block is "Capture Rod":
 			if player has {@rod}:
-				send "&cYou already have a lead" to player
+				send "&cYou already have a capture rod" to player
 				stop
 			give player {@rod}
 			stop
@@ -24,7 +24,7 @@ command /ccsign:
 	trigger:
 		send "&fSigns:" to player
 		send "&fType &agive &fon line 1" to player
-		send "&fType &alead &for &arod&f on line 2" to player
+		send "&fType &alasso &for &acapture rod&f on line 2" to player
 		send "&f-----" to player
 		
 on sign change:
@@ -32,11 +32,11 @@ on sign change:
 		set line 1 to "Get a"
 		set line 3 to "HERE"
 		set line 4 to ""
-	line 2 is "lead" or "Lead" or "Leash" or "leash":
-		set line 2 to "Lead"
+	line 2 is "lead" or "Lead" or "Leash" or "leash" or "lasso" or "Lasso":
+		set line 2 to "Lasso"
 		set line 4 to ""
-	line 2 is "rod" or "Rod" or "fishingrod" or "FishingRod" or "fishing rod" or "Fishing Rod":
-		set line 2 to "Fishing Rod"
+	line 2 is "rod" or "Rod" or "fishingrod" or "FishingRod" or "fishing rod" or "Fishing Rod" or "capturerod" or "CaptureRod" or "capture rod" or "Capture Rod":
+		set line 2 to "Capture Rod"
 		set line 4 to ""
 
 on right click on entity:
