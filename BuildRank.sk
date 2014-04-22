@@ -1,3 +1,6 @@
+#Valerian | Creative renditioned by Elite
+#for region owners per cluster ....cluster_UUID_RANKNAME_CLUSTERNUMBER
+
 command /rankup <text>:
 	aliases: /ru
 	trigger:
