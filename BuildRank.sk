@@ -2,77 +2,77 @@ command /rankup <text>:
 	aliases: /ru
 	trigger:
 		if player has permission "valerian.rank.curator":
-			if %argument% is set:
-				if %argument% has played before:
-					if %argument% has permission "valerian.rank.guest":
+			if argument is set:
+				if argument has played before:
+					if argument has permission "valerian.rank.guest":
 						send "&e%argument% is now rank: &aMember" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.member"
 						stop
-					if %argument% has permission "valerian.rank.member":
+					if argument has permission "valerian.rank.member":
 						send "&e%argument% is now rank: &aApprentice" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.apprentice"
 						stop
-					if %argument% has permission "valerian.rank.apprentice":
+					if argument has permission "valerian.rank.apprentice":
 						send "&e%argument% is now rank: &aJourneyman" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.journeyman"
 						stop
-					if %argument% has permission "valerian.rank.journeyman":
+					if argument has permission "valerian.rank.journeyman":
 						send "&e%argument% is now rank: &aEngineer" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.engineer"
 						stop
-					if %argument% has permission "valerian.rank.engineer":
+					if argument has permission "valerian.rank.engineer":
 						send "&e%argument% is now rank: &aCraftsman" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.craftsman"
 						stop
-					if %argument% has permission "valerian.rank.craftsman":
+					if argument has permission "valerian.rank.craftsman":
 						send "&4You do not have permission to promote someone to Curator." to player
 						stop
-					if %argument% has permission "valerian.rank.curator":
+					if argument has permission "valerian.rank.curator":
 						send "&e%argument% is already at the highest rank: &aCurator" to player
 						stop
-			if %argument% is set:
-				if %argument% has not played before:
+			if argument is set:
+				if argument has not played before:
 					send "&4This player has not played on this server before." to player
 					stop
-				if %argument% is not set:
+				if argument is not set:
 					send "&4Please enter in a player name." to player
 					send "&eUsage: /RankUp <name>" to player
 					stop
 		if player has permission "valerian.group.admin":
-			if %argument% is set:
-				if %argument% has played before:
-					if %argument% has permission "valerian.rank.guest":
+			if argument is set:
+				if argument has played before:
+					if argument has permission "valerian.rank.guest":
 						send "&e%argument% is now rank: &aMember" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.member"
 						stop
-					if %argument% has permission "valerian.rank.member":
+					if argument has permission "valerian.rank.member":
 						send "&e%argument% is now rank: &aApprentice" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.apprentice"
 						stop
-					if %argument% has permission "valerian.rank.apprentice":
+					if argument has permission "valerian.rank.apprentice":
 						send "&e%argument% is now rank: &aJourneyman" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.journeyman"
 						stop
-					if %argument% has permission "valerian.rank.journeyman":
+					if argument has permission "valerian.rank.journeyman":
 						send "&e%argument% is now rank: &aEngineer" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.engineer"
 						stop
-					if %argument% has permission "valerian.rank.engineer":
+					if argument has permission "valerian.rank.engineer":
 						send "&e%argument% is now rank: &aCraftsman" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.craftsman"
 						stop
-					if %argument% has permission "valerian.rank.craftsman":
+					if argument has permission "valerian.rank.craftsman":
 						send "&e%argument% is now rank: &aCurator" to player
 						execute console command "/perm player %argument% setgroup valerian.rank.curator"
 						stop
-					if %argument% has permission "valerian.rank.curator":
+					if argument has permission "valerian.rank.curator":
 						send "&e%argument% is already at the highest rank: &aCurator" to player
 						stop
-			if %argument% is set:
-				if %argument% has not played before:
+			if argument is set:
+				if argument has not played before:
 					send "&4This player has not played on this server before." to player
 					stop
-				if %argument% is not set:
+				if argument is not set:
 					send "&4Please enter in a player name." to player
 					send "&eUsage: /RankUp <name>" to player
 					stop
@@ -81,76 +81,76 @@ command /rankdown <text>:
 	aliases: /rd
 	trigger:
 		if player has permission "valerian.rank.curator":
-			if %argument% is set:
-				if %argument% has played before:
-					if %argument% has permission "valerian.rank.guest":
+			if argument is set:
+				if argument has played before:
+					if argument has permission "valerian.rank.guest":
 						send "&e%argument% is already at lowest rank: &aGuest" to player
 						stop
-					if %argument% has permission "valerian.rank.member":
+					if argument has permission "valerian.rank.member":
 						execute console command "/perm player %argument% setgroup valerian.rank.guest"
 						send "&e%argument% has been demoted to rank: &aGuest" to player
 						stop
-					if %argument% has permission "valerian.rank.apprentice":
+					if argument has permission "valerian.rank.apprentice":
 						execute console command "/perm player %argument% setgroup valerian.rank.member"
 						send "&e%argument% has been demoted to rank: &aMember" to player
 						stop
-					if %argument% has permission "valerian.rank.journeyman":
+					if argument has permission "valerian.rank.journeyman":
 						execute console command "/perm player %argument% setgroup valerian.rank.apprentice"
 						send "&e%argument% has been demoted to rank: &aApprentice" to player
 						stop
-					if %argument% has permission "valerian.rank.engineer":
+					if argument has permission "valerian.rank.engineer":
 						execute console command "/perm player %argument% setgroup valerian.rank.journeyman"
 						send "&e%argument% has been demoted to rank: &aJourneyman" to player
 						stop
-					if %argument% has permission "valerian.rank.craftsman":
+					if argument has permission "valerian.rank.craftsman":
 						execute console command "/perm player %argument% setgroup valerian.rank.engineer"
 						send "&e%argument% has been demoted to rank: &aEngineer" to player
 						stop
-					if %argument% has permission "valerian.rank.curator":
+					if argument has permission "valerian.rank.curator":
 						send "&4You may not rank down a curator." to player
 						stop
-			if %argument% is set:
-				if %argument% has not played before:
+			if argument is set:
+				if argument has not played before:
 					send "&4This player has not played on this server before." to player
 					stop
-			if %argument% is not set:
+			if argument is not set:
 				send "&4Please enter in a player name." to player
 				send "&eUsage: /RankDown <name>" to player
 		if player has permission "valerian.group.admin":
-			if %argument% is set:
-				if %argument% has played before:
-					if %argument% has permission "valerian.rank.guest":
+			if argument is set:
+				if argument has played before:
+					if argument has permission "valerian.rank.guest":
 						send "&e%argument% is already at lowest rank: &aGuest" to player
 						stop
-					if %argument% has permission "valerian.rank.member":
+					if argument has permission "valerian.rank.member":
 						execute console command "/perm player %argument% setgroup valerian.rank.guest"
 						send "&e%argument% has been demoted to rank: &aGuest" to player
 						stop
-					if %argument% has permission "valerian.rank.apprentice":
+					if argument has permission "valerian.rank.apprentice":
 						execute console command "/perm player %argument% setgroup valerian.rank.member"
 						send "&e%argument% has been demoted to rank: &aMember" to player
 						stop
-					if %argument% has permission "valerian.rank.journeyman":
+					if argument has permission "valerian.rank.journeyman":
 						execute console command "/perm player %argument% setgroup valerian.rank.apprentice"
 						send "&e%argument% has been demoted to rank: &aApprentice" to player
 						stop
-					if %argument% has permission "valerian.rank.engineer":
+					if argument has permission "valerian.rank.engineer":
 						execute console command "/perm player %argument% setgroup valerian.rank.journeyman"
 						send "&e%argument% has been demoted to rank: &aJourneyman" to player
 						stop
-					if %argument% has permission "valerian.rank.craftsman":
+					if argument has permission "valerian.rank.craftsman":
 						execute console command "/perm player %argument% setgroup valerian.rank.engineer"
 						send "&e%argument% has been demoted to rank: &aEngineer" to player
 						stop
-					if %argument% has permission "valerian.rank.curator":
+					if argument has permission "valerian.rank.curator":
 						execute console command "/perm player %argument% setgroup valerian.rank.engineer"
 						send "&e%argument% has been demoted to rank: &aCraftsman" to player
 						stop
-			if %argument% is set:
-				if %argument% has not played before:
+			if argument is set:
+				if argument has not played before:
 					send "&4This player has not played on this server before." to player
 					stop
-			if %argument% is not set:
+			if argument is not set:
 				send "&4Please enter in a player name." to player
 				send "&eUsage: /RankDown <name>" to player
 				stop
@@ -160,36 +160,36 @@ command /rankset <text> <text>:
 	aliases: /rs
 	trigger:
 		if player has permission "valerian.rank.curator":
-			if %argument 1% is set:
-				if %argument 1% has played before:
-					if %argument 1% has permission "valerian.rank.guest":
-						if %argument 2% is "1" or "guest":
+			if argument 1 is set:
+				if argument 1 has played before:
+					if argument 1 has permission "valerian.rank.guest":
+						if argument 2 is "1" or "guest":
 							send "&e%argument 1% is already rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -198,34 +198,34 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.member":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.member":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							send "&e%argument 1% is already rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -234,34 +234,34 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.apprentice":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.apprentice":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							send "&e%argument 1% is already rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -270,34 +270,34 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.journeyman":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.journeyman":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							send "&e%argument 1% is already rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -306,34 +306,34 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.engineer":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.engineer":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							send "&e%argument 1% is already rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -342,34 +342,34 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.craftsman":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.craftsman":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							send "&e%argument 1% is already rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							send "&4You do not have permission to set a player rank to a Curator." to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -378,49 +378,49 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission valerian.rank.curator
+					if argument 1 has permission valerian.rank.curator
 						send "&4You do not have permission to set a curator rank to another rank." to player
 						stop
-			if %argument 1% is set:
-				if %argument 1% has not played before:
+			if argument 1 is set:
+				if argument 1 has not played before:
 					send "&4This player has not played on this server before." to player
 					stop
-			if %argument 1% is not set:
+			if argument 1 is not set:
 				send "&4Please enter in a player name and rank." to player
 				send "&eUsage: /RankSet <name> <rank>" to player
 				stop
 		if player has permission "valerian.group.admin":
-			if %argument 1% is set:
-				if %argument 1% has played before:
-					if %argument 1% has permission "valerian.rank.guest":
-						if %argument 2% is "1" or "guest":
+			if argument 1 is set:
+				if argument 1 has played before:
+					if argument 1 has permission "valerian.rank.guest":
+						if argument 2 is "1" or "guest":
 							send "&e%argument 1% is already rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.curator"
 							send "&e%argument 1% now has rank: &aCurator" to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -429,35 +429,35 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.member":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.member":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							send "&e%argument 1% is already rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.curator"
 							send "&e%argument 1% now has rank: &aCurator" to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -466,35 +466,35 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.apprentice":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.apprentice":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							send "&e%argument 1% is already rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.curator"
 							send "&e%argument 1% now has rank: &aCurator" to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -503,35 +503,35 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.journeyman":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.journeyman":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							send "&e%argument 1% is already rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.curator"
 							send "&e%argument 1% now has rank: &aCurator" to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -540,35 +540,35 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.engineer":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.engineer":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							send "&e%argument 1% is already rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.curator"
 							send "&e%argument 1% now has rank: &aCurator" to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -577,35 +577,35 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.craftsman":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.craftsman":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							send "&e%argument 1% is already rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.curator"
 							send "&e%argument 1% now has rank: &aCurator" to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -614,35 +614,35 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-					if %argument 1% has permission "valerian.rank.curator":
-						if %argument 2% is "1" or "guest":
+					if argument 1 has permission "valerian.rank.curator":
+						if argument 2 is "1" or "guest":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.guest"
 							send "&e%argument 1% now has rank: &aGuest" to player
 							stop
-						if %argument 2% is "2" or "member":
+						if argument 2 is "2" or "member":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.member"
 							send "&e%argument 1% now has rank: &aMember" to player
 							stop
-						if %argument 2% is "3" or "apprentice":
+						if argument 2 is "3" or "apprentice":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.apprentice"
 							send "&e%argument 1% now has rank: &aApprentice" to player
 							stop
-						if %argument 2% is "4" or "journeyman":
+						if argument 2 is "4" or "journeyman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.journeyman"
 							send "&e%argument 1% now has rank: &aJourneyman" to player
 							stop
-						if %argument 2% is "5" or "engineer":
+						if argument 2 is "5" or "engineer":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.engineer"
 							send "&e%argument 1% now has rank: &aEngineer" to player
 							stop
-						if %argument 2% is "6" or "craftsman":
+						if argument 2 is "6" or "craftsman":
 							execute console command "/perm player %argument 1% setgroup valerian.rank.craftsman"
 							send "&e%argument 1% now has rank: &aCraftsman" to player
 							stop
-						if %argument 2% is "7" or "curator":
+						if argument 2 is "7" or "curator":
 							send "&e%argument 1% is already rank: &aCurator" to player
 							stop
-						if %argument 2% is not set:
+						if argument 2 is not set:
 							send "&4Please type a rank." to player
 							send "&eUsage: /RankSet <name> <rank>" to player
 							send "&eIf you need a list of ranks type /RankList" to player
@@ -651,11 +651,11 @@ command /rankset <text> <text>:
 						send "&eUsage: /RankSet <name> <rank>" to player
 						send "&eIf you need a list of ranks type /RankList" to player
 						stop
-			if %argument 1% is set:
-				if %argument 1% has not played before:
+			if argument 1 is set:
+				if argument 1 has not played before:
 					send "&4This player has not played on this server before." to player
 					stop
-			if %argument 1% is not set:
+			if argument 1 is not set:
 				send "&4Please enter in a player name and rank." to player
 				send "&eUsage: /RankSet <name> <rank>" to player
 				stop
@@ -690,47 +690,334 @@ on region enter:
 	
 on region exit:
 	send "&eLeaving &f%region%&e." to player
-	
-command /submitbuild:
-	aliases: /submit, /sb
+
+command /submit:
 	trigger:
-		if player has permission "valerian.group.guest":
-			add {db_valerian.notify.%player%} to true
-			set {db_valerian.checklevel.%player%} to 1
-			set {db_valerian.checked.%player%} to false
+		if player is the owner of the region:
+			if {
+			{db_bugs} is not set:
+				set {db_bugs} to 0
+			add 1 to {db_bugs}
+			set {_message} to "~%{db_bugs}% %argument%"
+			set {db_bugs.list::%{_message}%} to player
+			set {db_bugs.list::%{_message}%::status} to "&aOPEN"
+			set {db_bugs.list::%{_message}%::assigned} to "&cNone"
+			set {db_bugs.list::%{_message}%::number} to {db_bugs}
+			send "&aYour bug has been added"
 			stop
-		if player has permission "valerian.group.member":
-			add {db_valerian.notify.%player%} to true
-			set {db_valerian.checklevel.%player%} to 1
+		
+
+command /buga [<text>] [<text>] [<text>]:
+	permission: obam.mechanic
+	trigger:
+
+		argument 1 is "list":
+
+			argument 2 is not set:
+
+				loop {db_bugs.list::*}:
+					{db_bugs.list::%loop-index%::status} is not "&cClosed"
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+			argument 2 is "all":
+
+				loop {db_bugs.list::*}:
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+			argument 2 is "open":
+
+				loop {db_bugs.list::*}:
+					{db_bugs.list::%loop-index%::status} is "&aOpen" or "&aOPEN"
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+
+			argument 2 is "pending":
+
+				loop {db_bugs.list::*}:
+					{db_bugs.list::%loop-index%::status} is "&ePending"
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+
+
+			argument 2 is "player":
+				argument 3 is not set:
+					loop {db_bugs.list::*}:
+						{db_bugs.list::%loop-index%::assigned} is "&e%player%"
+						send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+					stop
+
+				argument 3 is set:
+					loop {db_bugs.list::*}:
+						{db_bugs.list::%loop-index%::assigned} is "&e%argument 3%"
+						send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+		argument 1 is "assign":
+
+			argument 2 is not set:
+				send "&cPlease select a number:&e/buga assign <number>"
+				stop
+			argument 3 is not set:
+				send "&cPlease specify a player! &e/buga assign %argument 2% <player>"
+				stop
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				set {db_bugs.list::%loop-index%::assigned} to "&e%argument 3%"
+				send "&aBug Number %argument 2% has been assigned to &e%argument 3%"
+
+		argument 1 is "check":
+
+			argument 2 is not set:
+				send "&cPlease specify a bug number:&e/buga <number>"
+				send "&cCheck bug numbers with &e/buga list"
+				stop
+
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				send "&a===================="
+				send "&e      Bug"
+				send "&e       %{_num}%"
+				send "&a===================="
+				send " "
+				send "&eBug:&a%loop-index%"
+				send " "
+				send "&eStatus:%{db_bugs.list::%loop-index%::status}%        &eAssigned:%{db_bugs.list::%loop-index%::assigned}%"
+				send " "
+				send "&eComments:"
+				loop {db_bugs.list::%loop-index%::comments::*}:
+					send "%loop-index-2% - %loop-value-2%"
+				stop
+
+		argument 1 is "delete":
+			player does not have permission "obam.admin":
+				send "&cOnly admins can delete bugs, please just set status to closed"
+				stop
+			argument 2 is not set:
+				send "&cPlease specify a bug number! &e/buga delete <number>"
+				stop
+
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				delete {db_bugs.list::%loop-index%}
+				send "&cDeleted"
+				stop
+
+		argument 1 is "comment":
+			argument 2 is not set:
+				send "&cPlease specify a bug number! &e/buga comment <number> <comment>"
+				stop
+			argument 3 is not set:
+				send "&cPlease specify a comment! &e/buga comment %argument 2% <comment>"
+				stop
+
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				set {_size} to size of {db_bugs.list::%loop-index%::comments::*}
+				{_size} is not set:
+					set {_size} to 0
+				add 1 to {_size}
+				set {_message} to "%{_size}% %argument 3%"
+				set {db_bugs.list::%loop-index%::comments::%{_message}%} to player
+				send "&aComment added to bug Number %argument 2%"
+				stop
+
+		argument 1 is "status":
+			argument 2 is not set:
+				send "&cPlease specify a bug number! &e/buga status <number> <open|pending|closed>"
+				stop
+			argument 3 is not "Open" or "Pending" or "Closed":
+				send "&cPlease specify a valid status! &e/buga status %argument 2% <open|pending|closed>"
+				stop
+
+			argument 3 is not set:
+				send "&cPlease specify a status! &e/buga status %argument 2% <open|pending|closed>"
+				stop
+
+			argument 3 is "open":
+				set {_stat} to "&aOpen"
+			argument 3 is "pending":
+				set {_stat} to "&ePending"
+			argument 3 is "closed":
+				set {_stat} to "&cClosed"
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				set {db_bugs.list::%loop-index%::status} to {_stat}
+				send "&aStatus Set"
+				stop
+				
+command /bug [<text>]:
+	trigger:
+		argument is not set:
+			send "&e/bug <text>"
+			send "&7Use this to report a bug directly to devs"
 			stop
-		if player has permission "valerian.group.apprentice":
-			add {db_valerian.notify.%player%} to true
-			set {db_valerian.checklevel.%player%} to 1
-			stop
-		if player has permission "valerian.group.journeyman":
-			add {db_valerian.notify.%player%} to true
-			set {db_valerian.checklevel.%player%} to 1
-			stop
-		if player has permission "valerian.group.engineer":
-			add {db_valerian.notify.%player%} to true
-			set {db_valerian.checklevel.%player%} to 1
-			stop
-		if player has permission "valerian.group.craftsman":
-			add {db_valerian.notify.%player%} to true
-			set {db_valerian.checklevel.%player%} to 2
-			stop
-			
-On Join:
 
-#next to do:
+		{db_bugs} is not set:
+			set {db_bugs} to 0
+		add 1 to {db_bugs}
+		set {_message} to "~%{db_bugs}% %argument%"
+		set {db_bugs.list::%{_message}%} to player
+		set {db_bugs.list::%{_message}%::status} to "&aOPEN"
+		set {db_bugs.list::%{_message}%::assigned} to "&cNone"
+		set {db_bugs.list::%{_message}%::number} to {db_bugs}
+		send "&aYour bug has been added"
+		stop
 
-#set region owned commands - so certain regions have to be a set permission to have someone build on it.
+command /buga [<text>] [<text>] [<text>]:
+	permission: obam.mechanic
+	trigger:
 
-#set curator notification - so if a player sends a build finished request - they can deny it or accept it, and leave a comment
+		argument 1 is "list":
 
-#set player notification - so if a player is denied they recieve the message ... or if it is accepted they are notified
-#that it is accepted - and that they have been promoted
+			argument 2 is not set:
 
-#also player notification for if they are promoted or demoted or rank set - if the curator sets their rank.
+				loop {db_bugs.list::*}:
+					{db_bugs.list::%loop-index%::status} is not "&cClosed"
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
 
-#then set the ranks - what each are able to do
+			argument 2 is "all":
+
+				loop {db_bugs.list::*}:
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+			argument 2 is "open":
+
+				loop {db_bugs.list::*}:
+					{db_bugs.list::%loop-index%::status} is "&aOpen" or "&aOPEN"
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+
+			argument 2 is "pending":
+
+				loop {db_bugs.list::*}:
+					{db_bugs.list::%loop-index%::status} is "&ePending"
+					send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+
+
+			argument 2 is "player":
+				argument 3 is not set:
+					loop {db_bugs.list::*}:
+						{db_bugs.list::%loop-index%::assigned} is "&e%player%"
+						send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+					stop
+
+				argument 3 is set:
+					loop {db_bugs.list::*}:
+						{db_bugs.list::%loop-index%::assigned} is "&e%argument 3%"
+						send "%{db_bugs.list::%loop-index%::number}%.&a%loop-index%...By:&e%loop-value%&a...%{db_bugs.list::%loop-index%::status}%"
+
+
+
+
+		argument 1 is "assign":
+
+			argument 2 is not set:
+				send "&cPlease select a number:&e/buga assign <number>"
+				stop
+			argument 3 is not set:
+				send "&cPlease specify a player! &e/buga assign %argument 2% <player>"
+				stop
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				set {db_bugs.list::%loop-index%::assigned} to "&e%argument 3%"
+				send "&aBug Number %argument 2% has been assigned to &e%argument 3%"
+
+		argument 1 is "check":
+
+			argument 2 is not set:
+				send "&cPlease specify a bug number:&e/buga <number>"
+				send "&cCheck bug numbers with &e/buga list"
+				stop
+
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				send "&a===================="
+				send "&e      Bug"
+				send "&e       %{_num}%"
+				send "&a===================="
+				send " "
+				send "&eBug:&a%loop-index%"
+				send " "
+				send "&eStatus:%{db_bugs.list::%loop-index%::status}%        &eAssigned:%{db_bugs.list::%loop-index%::assigned}%"
+				send " "
+				send "&eComments:"
+				loop {db_bugs.list::%loop-index%::comments::*}:
+					send "%loop-index-2% - %loop-value-2%"
+				stop
+
+		argument 1 is "delete":
+			player does not have permission "obam.admin":
+				send "&cOnly admins can delete bugs, please just set status to closed"
+				stop
+			argument 2 is not set:
+				send "&cPlease specify a bug number! &e/buga delete <number>"
+				stop
+
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				delete {db_bugs.list::%loop-index%}
+				send "&cDeleted"
+				stop
+
+		argument 1 is "comment":
+			argument 2 is not set:
+				send "&cPlease specify a bug number! &e/buga comment <number> <comment>"
+				stop
+			argument 3 is not set:
+				send "&cPlease specify a comment! &e/buga comment %argument 2% <comment>"
+				stop
+
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				set {_size} to size of {db_bugs.list::%loop-index%::comments::*}
+				{_size} is not set:
+					set {_size} to 0
+				add 1 to {_size}
+				set {_message} to "%{_size}% %argument 3%"
+				set {db_bugs.list::%loop-index%::comments::%{_message}%} to player
+				send "&aComment added to bug Number %argument 2%"
+				stop
+
+		argument 1 is "status":
+			argument 2 is not set:
+				send "&cPlease specify a bug number! &e/buga status <number> <open|pending|closed>"
+				stop
+			argument 3 is not "Open" or "Pending" or "Closed":
+				send "&cPlease specify a valid status! &e/buga status %argument 2% <open|pending|closed>"
+				stop
+
+			argument 3 is not set:
+				send "&cPlease specify a status! &e/buga status %argument 2% <open|pending|closed>"
+				stop
+
+			argument 3 is "open":
+				set {_stat} to "&aOpen"
+			argument 3 is "pending":
+				set {_stat} to "&ePending"
+			argument 3 is "closed":
+				set {_stat} to "&cClosed"
+			set {_num} to argument 2 parsed as integer
+			loop {db_bugs.list::*}:
+				set {_loop.count} to {db_bugs.list::%loop-index%::number}
+				{_loop.count} is {_num}
+				set {db_bugs.list::%loop-index%::status} to {_stat}
+				send "&aStatus Set"
+				stop
