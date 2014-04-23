@@ -20,10 +20,10 @@ on join:
 		set {pping.%player%) to true
 
 on chat:
-	if chat message contains %player%:
-		if %player% has played before:
-			if %player% is online:
-				if %player% is not sender:
+	if chat message contains "%player%":
+		if player has played before:
+			if player is online:
+				if player is not sender:
 					if {pping.%player%} is true:
 						play raw sound "LEVEL_UP" at %player% with pitch 50 volume 50
 						#change the colour of the player name if possible
