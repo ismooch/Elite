@@ -99,8 +99,8 @@ command /playerinfo [<offline player>]:
 			{_name} is not set:
 				set {_name} to "&f%player%"
 				{_supporter} is not set:
-						player has permission "obam.admin":
-							set {_supporter} to "&dAdmin"
+					player has permission "obam.admin":
+						set {_supporter} to "&dAdmin"
 					{_supporter} is not set:
 						player has permission "obam.mod":
 							set {_supporter} to "&2Moderator"
@@ -177,8 +177,8 @@ command /playerinfo [<offline player>]:
 			{_name} is not set:
 				set {_name} to "&f%player%"
 				{_supporter} is not set:
-						player has permission "obam.admin":
-							set {_supporter} to "&dAdmin"
+					player has permission "obam.admin":
+						set {_supporter} to "&dAdmin"
 					{_supporter} is not set:
 						player has permission "obam.mod":
 							set {_supporter} to "&2Moderator"
@@ -205,7 +205,7 @@ command /playerinfo [<offline player>]:
 			set {_days} to {db_count.%argument%}
 			{_days} is less than 2:
 				{_days} is 1:
-					message "%{_name} &ais &e1 &aday old."
+					message "%{_name}% &ais &e1 &aday old."
 					stop
 				{_days} is less than 1:
 					message "&aThis is &r%{_name}% &afirst day."
