@@ -99,8 +99,8 @@ command /playerinfo [<offline player>]:
 							set {_supporter} to "&eMechanic"
 					{_supporter} is not set:
 						set {_supporter} to "&fMember"
-			message "&aPlayer:&r%{_name}%"
-			message "&aRank:&r%{_supporter}%"
+			message "&aPlayer: &r%{_name}%"
+			message "&aRank: &r%{_supporter}%"
 			set {_days} to {db_timelist.players::%player%}
 			{_days} is less than 2:
 				{_days} is 1:
