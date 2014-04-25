@@ -2,12 +2,6 @@
 
 on join:
 	set {db_current.server.%player%} to "&eWTFronts"
-	{db_count.%player%} is not set:
-		set {db_count.%player%} to 0
-		
-every 24 hours:
-	if {db_count.%player%} is set:
-		set {db_count.%player%} to {db_count.%player%} + 1
 		
 on teleport:
 	if world is "world":
@@ -95,8 +89,8 @@ command /playerinfo [<offline player>]:
 			{_name} is not set:
 				set {_name} to "&f%player%"
 				{_supporter} is not set:
-					player has permission "obam.admin":
-						set {_supporter} to "&dAdmin"
+						player has permission "obam.admin":
+							set {_supporter} to "&dAdmin"
 					{_supporter} is not set:
 						player has permission "obam.mod":
 							set {_supporter} to "&2Moderator"
@@ -107,7 +101,7 @@ command /playerinfo [<offline player>]:
 						set {_supporter} to "&fMember"
 			message "&aPlayer:&r%{_name}%"
 			message "&aRank:&r%{_supporter}%"
-			set {_days} to {db_count.%player%}
+			set {_days} to {db_timelist.players::%player%}
 			{_days} is less than 2:
 				{_days} is 1:
 					message "&aYou are &e1 &aday old."
@@ -121,68 +115,68 @@ command /playerinfo [<offline player>]:
 				message "&e%argument% &chas not played on this server before."
 				stop
 			argument is not set:
-				player has permission "obam.admin":
-					set {_name} to "&d%player%"
-					set {_supporter} to "&dAdmin"
-				{_name} is not set:
-					player has permission "obam.mod":
-						set {_name} to "&2%player%"
-						set {_supporter} to "&2Moderator"
-				{_name} is not set:
-					player has permission "obam.ultimate":
-						set {_name} to "&6%player%"
-						{_supporter} is not set:
-							player has permission "obam.admin":
-								set {_supporter} to "&dAdmin"
-						{_supporter} is not set:
-							player has permission "obam.mod":
-								set {_supporter} to "&2Moderator"
-						{_supporter} is not set:
-							player has permission "obam.mechanic":
-								set {_supporter} to "&eMechanic"
-						{_supporter} is not set:
-							set {_supporter} to "&6Ultimate Supporter"
-				{_name} is not set:
-					player has permission "obam.plus":
-						set {_name} to "&b%player%"
-						{_supporter} is not set:
-							player has permission "obam.admin":
-								set {_supporter} to "&dAdmin"
-						{_supporter} is not set:
-							player has permission "obam.mod":
-								set {_supporter} to "&2Moderator"
-						{_supporter} is not set:
-							player has permission "obam.mechanic":
-								set {_supporter} to "&eMechanic"
-						{_supporter} is not set:
-							set {_supporter} to "&bPlus Supporter"
-				{_name} is not set:
-					player has permission "obam.supporter":
-						set {_name} to "&9%player%"
-						{_supporter} is not set:
-							player has permission "obam.admin":
-								set {_supporter} to "&dAdmin"
-						{_supporter} is not set:
-							player has permission "obam.mod":
-								set {_supporter} to "&2Moderator"
-						{_supporter} is not set:
-							player has permission "obam.mechanic":
-								set {_supporter} to "&eMechanic"
-						{_supporter} is not set:
-							set {_supporter} to "&9Supporter"		
-				{_name} is not set:
-					set {_name} to "&f%player%"
+			player has permission "obam.admin":
+				set {_name} to "&d%player%"
+				set {_supporter} to "&dAdmin"
+			{_name} is not set:
+				player has permission "obam.mod":
+					set {_name} to "&2%player%"
+					set {_supporter} to "&2Moderator"
+			{_name} is not set:
+				player has permission "obam.ultimate":
+					set {_name} to "&6%player%"
 					{_supporter} is not set:
 						player has permission "obam.admin":
 							set {_supporter} to "&dAdmin"
-						{_supporter} is not set:
-							player has permission "obam.mod":
-								set {_supporter} to "&2Moderator"
-						{_supporter} is not set:
-							player has permission "obam.mechanic":
-								set {_supporter} to "&eMechanic"
-						{_supporter} is not set:
-							set {_supporter} to "&fMember"
+					{_supporter} is not set:
+						player has permission "obam.mod":
+							set {_supporter} to "&2Moderator"
+					{_supporter} is not set:
+						player has permission "obam.mechanic":
+							set {_supporter} to "&eMechanic"
+					{_supporter} is not set:
+						set {_supporter} to "&6Ultimate Supporter"
+			{_name} is not set:
+				player has permission "obam.plus":
+					set {_name} to "&b%player%"
+					{_supporter} is not set:
+						player has permission "obam.admin":
+							set {_supporter} to "&dAdmin"
+					{_supporter} is not set:
+						player has permission "obam.mod":
+							set {_supporter} to "&2Moderator"
+					{_supporter} is not set:
+						player has permission "obam.mechanic":
+							set {_supporter} to "&eMechanic"
+					{_supporter} is not set:
+						set {_supporter} to "&bPlus Supporter"
+			{_name} is not set:
+				player has permission "obam.supporter":
+					set {_name} to "&9%player%"
+					{_supporter} is not set:
+						player has permission "obam.admin":
+							set {_supporter} to "&dAdmin"
+					{_supporter} is not set:
+						player has permission "obam.mod":
+							set {_supporter} to "&2Moderator"
+					{_supporter} is not set:
+						player has permission "obam.mechanic":
+							set {_supporter} to "&eMechanic"
+					{_supporter} is not set:
+						set {_supporter} to "&9Supporter"		
+			{_name} is not set:
+				set {_name} to "&f%player%"
+				{_supporter} is not set:
+						player has permission "obam.admin":
+							set {_supporter} to "&dAdmin"
+					{_supporter} is not set:
+						player has permission "obam.mod":
+							set {_supporter} to "&2Moderator"
+					{_supporter} is not set:
+						player has permission "obam.mechanic":
+							set {_supporter} to "&eMechanic"
+					{_supporter} is not set:
+						set {_supporter} to "&fMember"
 			argument is not online:
 				{db_current.server.%argument%} is not set:
 					set {_name} to "%argument% &7&o(Offline)"
@@ -198,10 +192,10 @@ command /playerinfo [<offline player>]:
 				send {_lastseen}
 			{_current.connect} is set:
 				send {_current.connect}
-			set {_days} to {db_count.%argument%}
+			set {_days} to {db_timelist.players::%argument%}
 			{_days} is less than 2:
 				{_days} is 1:
-					message "%{_name}% &ais &e1 &aday old."
+					message "%{_name} &ais &e1 &aday old."
 					stop
 				{_days} is less than 1:
 					message "&aThis is &r%{_name}% &afirst day."
