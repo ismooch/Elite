@@ -13,7 +13,10 @@ every 24 irl hours:
 	execute console command "/timesync"	
 				
 command /timesync:
-	executable by: console
+	description: Console command to sync the time of everyone for player info
+	permission: obam.admin
+	permission message: "Woah this isn't something you should mess with :P"
+	executable by: players and console
 	trigger:
 		loop {db_timelist.players::*}:
 			set {db_timelist.players::%loop-index%} to loop-value + 1	
