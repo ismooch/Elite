@@ -1,7 +1,7 @@
-#This one is for Test Server
+#This one is for Garage Server
 
 on join:
-	set {db_current.server.%player%} to "&eTest Server"
+	set {db_current.server.%player%} to "&eGarage"
 	{db_count.%player%} is not set:
 		set {db_count.%player%} to 0
 		
@@ -11,11 +11,11 @@ every 24 hours:
 		
 on teleport:
 	if world is "world":
-		set {db_current.server.%player%} to "&eTest Server"
+		set {db_current.server.%player%} to "&eGarage"
 	if world is "world_the_end":
-		set {db_current.server.%player%} to "&eTest Server | In the End"
+		set {db_current.server.%player%} to "&eGarage | In the End"
 	if world is "world_nether":
-		set {db_current.server.%player%} to "&eTest Server | In the Nether"
+		set {db_current.server.%player%} to "&eGarage | In the Nether"
 		
 on disconnect:
 	set {db_lastseen.%player%} to "%now%"
