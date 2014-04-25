@@ -138,68 +138,68 @@ command /playerinfo [<offline player>]:
 				message "&e%argument% &chas not played on this server before."
 				stop
 			argument is not set:
-			player has permission "obam.admin":
-				set {_name} to "&d%player%"
-				set {_supporter} to "&dAdmin"
-			{_name} is not set:
-				player has permission "obam.mod":
-					set {_name} to "&2%player%"
-					set {_supporter} to "&2Moderator"
-			{_name} is not set:
-				player has permission "obam.ultimate":
-					set {_name} to "&6%player%"
+				player has permission "obam.admin":
+					set {_name} to "&d%player%"
+					set {_supporter} to "&dAdmin"
+				{_name} is not set:
+					player has permission "obam.mod":
+						set {_name} to "&2%player%"
+						set {_supporter} to "&2Moderator"
+				{_name} is not set:
+					player has permission "obam.ultimate":
+						set {_name} to "&6%player%"
+						{_supporter} is not set:
+							player has permission "obam.admin":
+								set {_supporter} to "&dAdmin"
+						{_supporter} is not set:
+							player has permission "obam.mod":
+								set {_supporter} to "&2Moderator"
+						{_supporter} is not set:
+							player has permission "obam.mechanic":
+								set {_supporter} to "&eMechanic"
+						{_supporter} is not set:
+							set {_supporter} to "&6Ultimate Supporter"
+				{_name} is not set:
+					player has permission "obam.plus":
+						set {_name} to "&b%player%"
+						{_supporter} is not set:
+							player has permission "obam.admin":
+								set {_supporter} to "&dAdmin"
+						{_supporter} is not set:
+							player has permission "obam.mod":
+								set {_supporter} to "&2Moderator"
+						{_supporter} is not set:
+							player has permission "obam.mechanic":
+								set {_supporter} to "&eMechanic"
+						{_supporter} is not set:
+							set {_supporter} to "&bPlus Supporter"
+				{_name} is not set:
+					player has permission "obam.supporter":
+						set {_name} to "&9%player%"
+						{_supporter} is not set:
+							player has permission "obam.admin":
+								set {_supporter} to "&dAdmin"
+						{_supporter} is not set:
+							player has permission "obam.mod":
+								set {_supporter} to "&2Moderator"
+						{_supporter} is not set:
+							player has permission "obam.mechanic":
+								set {_supporter} to "&eMechanic"
+						{_supporter} is not set:
+							set {_supporter} to "&9Supporter"		
+				{_name} is not set:
+					set {_name} to "&f%player%"
 					{_supporter} is not set:
 						player has permission "obam.admin":
 							set {_supporter} to "&dAdmin"
-					{_supporter} is not set:
-						player has permission "obam.mod":
-							set {_supporter} to "&2Moderator"
-					{_supporter} is not set:
-						player has permission "obam.mechanic":
-							set {_supporter} to "&eMechanic"
-					{_supporter} is not set:
-						set {_supporter} to "&6Ultimate Supporter"
-			{_name} is not set:
-				player has permission "obam.plus":
-					set {_name} to "&b%player%"
-					{_supporter} is not set:
-						player has permission "obam.admin":
-							set {_supporter} to "&dAdmin"
-					{_supporter} is not set:
-						player has permission "obam.mod":
-							set {_supporter} to "&2Moderator"
-					{_supporter} is not set:
-						player has permission "obam.mechanic":
-							set {_supporter} to "&eMechanic"
-					{_supporter} is not set:
-						set {_supporter} to "&bPlus Supporter"
-			{_name} is not set:
-				player has permission "obam.supporter":
-					set {_name} to "&9%player%"
-					{_supporter} is not set:
-						player has permission "obam.admin":
-							set {_supporter} to "&dAdmin"
-					{_supporter} is not set:
-						player has permission "obam.mod":
-							set {_supporter} to "&2Moderator"
-					{_supporter} is not set:
-						player has permission "obam.mechanic":
-							set {_supporter} to "&eMechanic"
-					{_supporter} is not set:
-						set {_supporter} to "&9Supporter"		
-			{_name} is not set:
-				set {_name} to "&f%player%"
-				{_supporter} is not set:
-					player has permission "obam.admin":
-						set {_supporter} to "&dAdmin"
-					{_supporter} is not set:
-						player has permission "obam.mod":
-							set {_supporter} to "&2Moderator"
-					{_supporter} is not set:
-						player has permission "obam.mechanic":
-							set {_supporter} to "&eMechanic"
-					{_supporter} is not set:
-						set {_supporter} to "&fMember"
+						{_supporter} is not set:
+							player has permission "obam.mod":
+								set {_supporter} to "&2Moderator"
+						{_supporter} is not set:
+							player has permission "obam.mechanic":
+								set {_supporter} to "&eMechanic"
+						{_supporter} is not set:
+							set {_supporter} to "&fMember"
 			argument is not online:
 				{db_current.server.%argument%} is not set:
 					set {_name} to "%argument% &7&o(Offline)"
