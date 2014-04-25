@@ -204,8 +204,8 @@ command /playerinfo [<offline player>]:
 				{db_current.server.%argument%} is not set:
 					{db_color.%argument%} is set:
 						set {_name} to {db_color.%argument%}
-					set {_lastseen} to "&aLast seen: &e%{db_lastseen.%argument%}% &eon %{db_current.server.%player%}%"
-					message "&aPlayer: &r%{_name}% &7&0(Offline)"
+					set {_lastseen} to "&aLast seen: &e%{db_lastseen.%argument%}% &eon %{db_current.server.%argument%}%"
+					message "&aPlayer: &r%{_name}% &7&o(Offline)"
 					message "&aRank: &r%{_supporter}%"
 					{_lastseen} is set:
 						send {_lastseen}
