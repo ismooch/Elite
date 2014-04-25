@@ -1,4 +1,4 @@
-#This one is for Garage Server
+#This one is for Garage
 
 on join:
 	set {db_current.server.%player%} to "&eGarage"
