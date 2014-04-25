@@ -176,22 +176,20 @@ command /playerinfo [<offline player>]:
 							player has permission "obam.mechanic":
 								set {_supporter} to "&eMechanic"
 						{_supporter} is not set:
-							set {_supporter} to "&fMember"
+							set {_supporter} to "&fMember"						
 			argument is not online:
 				{db_current.server.%argument%} is not set:
-					set {_name} to "%argument% &7&o(Offline)"
 					{db_color.%argument%} is set:
 						set {_name} to {db_color.%argument%}
-					set {_lastseen} to "&aLast seen: &e%{db_lastseen.%argument%}% &eon {db_current.server.%player%}"
-				{db_current.server.%argument%} is set:
-					{db_color.%argument%} is set:
-						set {_name} to {db_color.%argument%}
-					set {_current.connect} to "&aCurrently connected to %{db_current.server.%argument%}%"						
-			message "&aPlayer:&r %{_name}%"
-			{_lastseen} is set:
-				send {_lastseen}
-			{_current.connect} is set:
-				send {_current.connect}
+					set {_lastseen} to "&aLast seen: &e%{db_lastseen.%argument%}% &eon %{db_current.server.%player%}%"
+					message "&aPlayer: &r%{_name}% &7&0(Offline)"
+					message "&aRank: &r%{_supporter}%"
+					{_lastseen} is set:
+						send {_lastseen}
+					stop
+			message "&aPlayer: &r%{_name}%"
+			message "&aRank: &r%{_supporter}%"
+			message "%{_name}% &ais currently connected to &e%{db_current.server.%argument%}%"
 			set {_days} to {db_timelist.players::%argument%}
 			{_days} is less than 2:
 				{_days} is 1:
@@ -201,3 +199,4 @@ command /playerinfo [<offline player>]:
 					message "&aThis is &r%{_name}% &afirst day."
 					stop
 			message "%{_name}% &ais &e%{_days}% &adays old."
+			stop
