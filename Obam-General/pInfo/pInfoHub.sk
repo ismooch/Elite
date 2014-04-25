@@ -8,6 +8,10 @@ on first join:
 	
 on join:
 	set {db_current.server.%player%} to "&eHub"
+	if {db_timelist.players::%player%} is not set:
+		add player to {db_timelist.players::*}
+		wait 1 second
+		set {db_timelist.players::%player%} to 0
 		
 every 24 irl hours:
 	execute console command "/timesync"	
