@@ -10,6 +10,9 @@ on region enter:
 	region is {GRID N0}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
+		create an explosion of force 0 at the player
+		broadcast "Player %{PlayerNumber.%UUID%}% has been killed"
+		
 	region is {GRID N1}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
