@@ -1,0 +1,163 @@
+#Renditioned by Elite
+
+Options:
+	SchoolDoor: Iron Door;&fSchool Door
+	BRMap: Map;&fGRID MAP
+	
+on region enter:
+	#Auto Danger Zones
+	region is {GRID N0}
+	region is {GRID N1}
+	region is {GRID N2}
+	region is {GRID N3}
+	region is {GRID N4}
+	region is {GRID N5}
+	region is {GRID N6}
+	region is {GRID N7}
+	region is {GRID N8}
+	region is {GRID N9}
+	region is {GRID N10}
+	region is {GRID N11}
+	region is {GRID NA}
+	region is {GRID NB}
+	region is {GRID NC}
+	region is {GRID ND}
+	region is {GRID NE}
+	region is {GRID NF}
+	region is {GRID NG}
+	region is {GRID NH}
+	region is {GRID NI}
+	region is {GRID NJ}
+	region is {GRID NK}
+	region is {GRID A1}
+	region is {GRID A2}
+	region is {GRID A3}
+	region is {GRID A4}
+	region is {GRID A11}	
+	region is {GRID B1}
+	region is {GRID B2}
+	region is {GRID B3}
+	region is {GRID B11}
+	region is {GRID C1}	
+	region is {GRID C11}
+	region is {GRID D11}	
+	
+	
+	#Normal Zones
+
+	region is {GRID A5}
+	region is {GRID A6}
+	region is {GRID A7}
+	region is {GRID A8}
+	region is {GRID A9}
+	region is {GRID A10}
+	region is {GRID B4}
+	region is {GRID B5}
+	region is {GRID B6}
+	region is {GRID B7}
+	region is {GRID B8}
+	region is {GRID B9}
+	region is {GRID B10}
+	region is {GRID C2}
+	region is {GRID C3}
+	region is {GRID C4}
+	region is {GRID C5}
+	region is {GRID C6}
+	region is {GRID C7}
+	region is {GRID C8}
+	region is {GRID C9}
+	region is {GRID C10}
+	region is {GRID D1}
+	region is {GRID D2}
+	region is {GRID D3}
+	region is {GRID D4}
+	region is {GRID D5}
+	region is {GRID D6}
+	region is {GRID D7}
+	region is {GRID D8}
+	region is {GRID D9}
+	region is {GRID D10}
+	region is {GRID E1}
+	region is {GRID E2}
+	region is {GRID E3}
+	region is {GRID E4}
+	region is {GRID E5}
+	region is {GRID E6}
+	region is {GRID E7}
+	region is {GRID E8}
+	region is {GRID E9}
+	region is {GRID E10}
+	region is {GRID E11}
+	region is {GRID F1}
+	region is {GRID F2}
+	region is {GRID F3}
+	region is {GRID F4}
+	region is {GRID F5}
+	region is {GRID F6}
+	region is {GRID F7}
+	region is {GRID F8}
+	region is {GRID F9}
+	region is {GRID F10}
+	region is {GRID F11}
+	region is {GRID G1}
+	region is {GRID G2}
+	region is {GRID G3}
+	region is {GRID G4}
+	region is {GRID G5}
+	region is {GRID G6}
+	region is {GRID G7}
+	region is {GRID G8}
+	region is {GRID G9}
+	region is {GRID G10}
+	region is {GRID G11}
+	region is {GRID H1}
+	region is {GRID H2}
+	region is {GRID H3}
+	region is {GRID H4}
+	region is {GRID H5}
+	region is {GRID H6}
+	region is {GRID H7}
+	region is {GRID H8}
+	region is {GRID H9}
+	region is {GRID H10}
+	region is {GRID H11}
+	region is {GRID I1}
+	region is {GRID I2}
+	region is {GRID I3}
+	region is {GRID I4}
+	region is {GRID I5}
+	region is {GRID I6}
+	region is {GRID I7}
+	region is {GRID I8}
+	region is {GRID I9}
+	region is {GRID I10}
+	region is {GRID I11}
+	region is {GRID J1}
+	region is {GRID J2}
+	region is {GRID J3}
+	region is {GRID J4}
+	region is {GRID J5}
+	region is {GRID J6}
+	region is {GRID J7}
+	region is {GRID J8}
+	region is {GRID J9}
+	region is {GRID J10}
+	region is {GRID J11}
+	region is {GRID K1}
+	region is {GRID K2}
+	region is {GRID K3}
+	region is {GRID K4}
+	region is {GRID K5}
+	region is {GRID K6}
+	region is {GRID K7}
+	region is {GRID K8}
+	region is {GRID K9}
+	region is {GRID K10}
+	region is {GRID K11}
+	message "You are now in grid %region%."
+	
+	
+on region enter:
+	region is {a1}
+	cancel the event
+A2
