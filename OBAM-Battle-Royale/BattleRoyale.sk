@@ -7,7 +7,7 @@ Options:
 on region enter:
 	#Auto Danger Zones
 	
-	region is {GRID N0}:
+	region is {GRID-N0}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
 		
@@ -15,22 +15,23 @@ on region enter:
 		#create an explosion of force 0 at the player
 		#broadcast "Player %{PlayerNumber.%UUID%}% has been killed"
 		
-	region is {GRID N1}:
+	region is {GRID-N1}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
-	region is {GRID N2}:
+		stop
+	region is {GRID-N2}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
-	region is {GRID N3}:
+	region is {GRID-N3}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
-	region is {GRID N4}:
+	region is {GRID-N4}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
-	region is {GRID N5}:
+	region is {GRID-N5}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
-	region is {GRID N6}:
+	region is {GRID-N6}:
 		message "&4You are entering a Danger Zone!"
 		set {deathalert.%uuid%} to true
 	region is {GRID N7}:
