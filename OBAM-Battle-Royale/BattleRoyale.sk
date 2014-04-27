@@ -6,6 +6,7 @@ Options:
 	
 on region enter:
 	#Auto Danger Zones
+	
 	region is {GRID N0}
 	region is {GRID N1}
 	region is {GRID N2}
@@ -154,9 +155,3 @@ on region enter:
 	region is {GRID J4}
 	region is {GRID J5}
 	region is {GRID J6}
-	message "You are now in grid %region%."
-	
-	
-on region enter:
-	region is {a1}
-	cancel the event
