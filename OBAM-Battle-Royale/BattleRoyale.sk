@@ -41,6 +41,31 @@ on region enter:
 	region is {GRID C1}	
 	region is {GRID C11}
 	region is {GRID D11}	
+	region is {GRID E11}
+	region is {GRID F11}
+	region is {GRID G11}
+	region is {GRID H10}
+	region is {GRID H11}
+	region is {GRID I9}
+	region is {GRID I10}
+	region is {GRID I11}
+	region is {GRID J1}
+	region is {GRID J7}
+	region is {GRID J8}
+	region is {GRID J9}
+	region is {GRID J10}
+	region is {GRID J11}
+	region is {GRID K1}
+	region is {GRID K2}
+	region is {GRID K3}
+	region is {GRID K4}
+	region is {GRID K5}
+	region is {GRID K6}
+	region is {GRID K7}
+	region is {GRID K8}
+	region is {GRID K9}
+	region is {GRID K10}
+	region is {GRID K11}
 	
 	
 	#Normal Zones
@@ -87,7 +112,6 @@ on region enter:
 	region is {GRID E8}
 	region is {GRID E9}
 	region is {GRID E10}
-	region is {GRID E11}
 	region is {GRID F1}
 	region is {GRID F2}
 	region is {GRID F3}
@@ -98,7 +122,6 @@ on region enter:
 	region is {GRID F8}
 	region is {GRID F9}
 	region is {GRID F10}
-	region is {GRID F11}
 	region is {GRID G1}
 	region is {GRID G2}
 	region is {GRID G3}
@@ -109,7 +132,6 @@ on region enter:
 	region is {GRID G8}
 	region is {GRID G9}
 	region is {GRID G10}
-	region is {GRID G11}
 	region is {GRID H1}
 	region is {GRID H2}
 	region is {GRID H3}
@@ -119,8 +141,6 @@ on region enter:
 	region is {GRID H7}
 	region is {GRID H8}
 	region is {GRID H9}
-	region is {GRID H10}
-	region is {GRID H11}
 	region is {GRID I1}
 	region is {GRID I2}
 	region is {GRID I3}
@@ -129,35 +149,14 @@ on region enter:
 	region is {GRID I6}
 	region is {GRID I7}
 	region is {GRID I8}
-	region is {GRID I9}
-	region is {GRID I10}
-	region is {GRID I11}
-	region is {GRID J1}
 	region is {GRID J2}
 	region is {GRID J3}
 	region is {GRID J4}
 	region is {GRID J5}
 	region is {GRID J6}
-	region is {GRID J7}
-	region is {GRID J8}
-	region is {GRID J9}
-	region is {GRID J10}
-	region is {GRID J11}
-	region is {GRID K1}
-	region is {GRID K2}
-	region is {GRID K3}
-	region is {GRID K4}
-	region is {GRID K5}
-	region is {GRID K6}
-	region is {GRID K7}
-	region is {GRID K8}
-	region is {GRID K9}
-	region is {GRID K10}
-	region is {GRID K11}
 	message "You are now in grid %region%."
 	
 	
 on region enter:
 	region is {a1}
 	cancel the event
-A2
