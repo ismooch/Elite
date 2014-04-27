@@ -7,67 +7,186 @@ Options:
 on region enter:
 	#Auto Danger Zones
 	
-	region is {GRID N0}
-	region is {GRID N1}
-	region is {GRID N2}
-	region is {GRID N3}
-	region is {GRID N4}
-	region is {GRID N5}
-	region is {GRID N6}
-	region is {GRID N7}
-	region is {GRID N8}
-	region is {GRID N9}
-	region is {GRID N10}
-	region is {GRID N11}
-	region is {GRID NA}
-	region is {GRID NB}
-	region is {GRID NC}
-	region is {GRID ND}
-	region is {GRID NE}
-	region is {GRID NF}
-	region is {GRID NG}
-	region is {GRID NH}
-	region is {GRID NI}
-	region is {GRID NJ}
-	region is {GRID NK}
-	region is {GRID A1}
-	region is {GRID A2}
-	region is {GRID A3}
-	region is {GRID A4}
-	region is {GRID A11}	
-	region is {GRID B1}
-	region is {GRID B2}
-	region is {GRID B3}
-	region is {GRID B11}
-	region is {GRID C1}	
-	region is {GRID C11}
-	region is {GRID D11}	
-	region is {GRID E11}
-	region is {GRID F11}
-	region is {GRID G11}
-	region is {GRID H10}
-	region is {GRID H11}
-	region is {GRID I9}
-	region is {GRID I10}
-	region is {GRID I11}
-	region is {GRID J1}
-	region is {GRID J7}
-	region is {GRID J8}
-	region is {GRID J9}
-	region is {GRID J10}
-	region is {GRID J11}
-	region is {GRID K1}
-	region is {GRID K2}
-	region is {GRID K3}
-	region is {GRID K4}
-	region is {GRID K5}
-	region is {GRID K6}
-	region is {GRID K7}
-	region is {GRID K8}
-	region is {GRID K9}
-	region is {GRID K10}
-	region is {GRID K11}
-	
+	region is {GRID N0}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N1}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N2}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N3}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N4}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N5}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N6}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N7}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N8}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N9}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N10}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID N11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NA}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NB}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NC}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID ND}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NE}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NF}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NG}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NH}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NI}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NJ}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID NK}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID A1}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID A2}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID A3}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID A4}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID A11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID B1}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID B2}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID B3}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID B11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID C1}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID C11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID D11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID E11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID F11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID G11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID H10}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID H11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID I9}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID I10}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID I11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID J1}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID J7}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID J8}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID J9}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID J10}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID J11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K1}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K2}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K3}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K4}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K5}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K6}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K7}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K8}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K9}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K10}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
+	region is {GRID K11}:
+		message "&4You are entering a Danger Zone!"
+		set {deathalert.%uuid%} to true
 	
 	#Normal Zones
 
