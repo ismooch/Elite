@@ -87,3 +87,15 @@ if the lamps flicker and the message is sent .... pick a random number between 1
 if the number is 5 .... turn the lamps out completely.
 
 and then say 'your power just went out'
+
+
+alternatively instead of lightning - if you can have it so if rain touches a torch*
+
+replace torch with a custom item ... with id 75 (unlit redstone torch) ....so it can be separate 
+from regular unlit/lit redstone torches
+
+and then on break of block - if block is that custom item ... destroy it .... and replace it with regular torch
+
+--but* the only way to do this without block updating .... and i'm not even sure if it will work or not ... is the
+
+on physics event ... if block updating is included - then maybe you can disable it :)
