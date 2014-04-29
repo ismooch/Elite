@@ -1,12 +1,19 @@
 #Garage - Battle Royale - Renditioned by Elite
 #when database is added - change toggled alerts to database
 #move map related danger zone defaults to another skript when databases are added
+#set opt system to database when one is added later
 
 Options:
 	SchoolDoor: Iron Door;&fSchool Door
 	BRMap: Map;&fGRID MAP
 	
-command "/gridalert":
+on teleport:
+	world is "battleroyale":
+		if {deathcount.%player%} is not set:
+			set {deathcount.%player%} to false
+		if
+		
+command /gridalert:
 	aliases: /ga, /togglealert, /togglegrid, /togglemessage, /ta, /tg, /tm
 	trigger:
 		if {gridalert.%player%} is not set:
@@ -19,1738 +26,2185 @@ command "/gridalert":
 			set {gridalert.%player%} to true
 			stop
 			
+command /optout:
+	aliases: /oo, /toggleopt, /toggleplay
+	trigger:
+		if player has permission "obam.admin":
+			if {optout.%player%} is not set:
+				set {optout.%player%} to true
+				stop
+			if {optout.%player%} is true:
+				set {optout.%player%} to false
+				stop
+			if {optout.%player%} is false:
+				set {optout.%player%} to true
+				stop
+		if player has permission "obam.mod
+		
 on region enter:		
 	region is {grid-n0}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N0" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N0 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true					
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+					
 	region is {grid-n2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true	
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-n11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-N11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-N11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-na}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NA" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NA - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-nb}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NB" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NB - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-nc}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NC" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NC - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-nd}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-ND" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-ND - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-ne}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NE" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NE - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-nf}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NF" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NF - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-ng}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NG" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NG - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-nh}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NH" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NH - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-ni}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NI" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NI - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-nj}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NJ" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NJ - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-nk}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-NK" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-NK - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-k11}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-K11" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-K11 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 
 	#Normal Zones
 
 	region is {grid-a5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-a10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-A10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-A10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-b10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-B10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-B10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-c10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-C10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-C10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-d10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-D10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-D10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-e10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-E10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-E10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-f10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-F10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-F10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-g10}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-G10" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-G10 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-h9}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-H9" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-H9 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i1}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I1" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I1 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+				
 	region is {grid-i4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+				
 	region is {grid-i6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i7}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I7" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I7 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-i8}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-I8" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-I8 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j2}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J2" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J2 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j3}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J3" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J3 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j4}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J4" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J4 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
 				set {deathcount.%player%} to true		
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+								
 	region is {grid-j5}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J5" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J5 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+						
 	region is {grid-j6}:
 		if {deathalert.%region%} is false:
 			if {gridalert.%player%} is true:
-				send "&eEntering - grid-n0" to player
+				send "&eEntering - GRID-J6" to player
 			if {deathcount.%player%} is true:
 				set {deathcount.%player%} to false
 			if {countset.%player%} is true:
 				set {countset.%player%} to false
 		if {deathalert.%region%} is true:
-			send "&eEntering grid-n0 - This is a &4Danger Zone" to player
+			send "&eEntering GRID-J6 - This is a &4Danger Zone" to player
 			if {deathcount.%player%} is false:
-				set {deathcount.%player%} to true		
+				set {deathcount.%player%} to true	
+			if {countset.%player%} is false:
+				set {countset.%player%} to true
+				
 	if {countset.%player%} is true:
 		if {deathcount.%player%} is true:
 			send "&ePlease leave the &4Danger Zone &eif you want to live." to player
