@@ -1,0 +1,98 @@
+command /ignore <text>:
+	description: "Someone annoying you? Don't yell at them, just ignore them."
+	trigger:
+		if argument is not set:
+			send "&eCorrect Usage:" to player
+			send "&e/ignore <name> &fTo not see chat or receive pm's from a player." to player
+			send "&e/ignore list &fTo see the list of every player you ignored." to player
+			stop
+		if argument is "list":
+			if size of {ignorelist.%player%::*} is 0:
+				send "&eYou have no one ignored." to player
+				stop
+			loop
+			set {ignorelist.%player%::*} to {text} split at ","
+			stop
+		if argument has not played before:
+			send "&4This player has not played before on this server." to player
+			stop
+		if argument has played before:
+			if argument has permission "obam.admin":
+				send "&4You may not ignore an admin." to player
+				stop
+			if argument has permission "obam.smod":
+				send "&4You may not ignore a senior mod." to player
+				stop
+			if argument has permission "obam.mod":
+				send "&4You may not ignore a mod." to player
+				stop
+			if argument has permission "obam.mechanic":
+				send "&4You may not ignore a developer." to player
+				stop
+			if {db_ignorelist.%player%::*}
+command /unignore <text>:
+	description: "You two settled your differences? Great! Let us unignore them."
+	trigger:
+		if argument is not set:
+			send "&eCorrect Usage:" to player
+			send "&e/unignore <name> &fTo remove a player from the ignore list." to player
+			send "&e/ignore list &fTo see the list of every player you ignored." to player
+			stop
+
+command /ignorecheck <text>:
+	description: "Staff check system to see who a player is ignoring."
+	trigger:
+		if player has permission "obam.admin":
+			if argument is not set:
+				send "&eCorrect Usage:" to player
+				send "&e/ignorecheck <name> &fTo see the list of players someone has ignored." to player
+				stop
+			if argument has not played before:
+				send "&4This player has not played before on this server." to player
+				stop
+			if size of {ignorelist.%argument%::*} is 0:
+				send "&e%argument% has no one ignored." to player
+				stop
+		if player has permission "obam.smod":
+			if argument is not set:
+				send "&eCorrect Usage:" to player
+				send "&e/ignorecheck <name> &fTo see the list of players someone has ignored." to player
+				stop
+			if argument has not played before:
+				send "&4This player has not played before on this server." to player
+				stop
+			if size of {ignorelist.%argument%::*} is 0:
+				send "&e%argument% has no one ignored." to player
+				stop
+		if player has permission "obam.mod":
+			if argument is not set:
+				send "&eCorrect Usage:" to player
+				send "&e/ignorecheck <name> &fTo see the list of players someone has ignored." to player
+				stop
+			if argument has not played before:
+				send "&4This player has not played before on this server." to player
+				stop
+			if size of {ignorelist.%argument%::*} is 0:
+				send "&e%argument% has no one ignored." to player
+				stop
+		send "&4You do not have permission to use this command."
+		stop
+on chat:
+	cancel event
+	
+	{_pre} is not set:
+		player has permission "obam.admin":
+			set {_pre} to "&d[A] %player%"
+	{_pre} is not set:
+		player has permission "obam.mod":
+			set {_pre} to "&2[M] %player%"
+	{_pre} is not set:
+		player has permission "obam.ultimate":
+			set {_pre} to "&6[^] %player%"
+	{_pre} is not set:
+		player has permission "obam.plus":
+			set {_pre} to "&b[+] %player%"
+	{_pre} is not set:
+		set {_pre} to "&f%player%"	
+	loop all players:
+		clear {_player}
