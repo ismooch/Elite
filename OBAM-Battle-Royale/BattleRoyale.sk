@@ -11,7 +11,16 @@ on teleport:
 	world is "battleroyale":
 		if {deathcount.%player%} is not set:
 			set {deathcount.%player%} to false
-		if
+		if {optout.%player%} is not set:
+			set {optout.%player%} to false
+		if {gridalert.%player%} is not set:
+			set {gridalert.%player%} to true
+		if {countset.%player%} is not set:
+			set {countset.%player%} to false
+	world is not "battleroyale":
+		
+on death:
+	remove {@BRMap} from the drops	
 		
 command /gridalert:
 	aliases: /ga, /togglealert, /togglegrid, /togglemessage, /ta, /tg, /tm
@@ -27,19 +36,48 @@ command /gridalert:
 			stop
 			
 command /optout:
-	aliases: /oo, /toggleopt, /toggleplay
+	aliases: /toggleopt, /toggleplay, /to
 	trigger:
 		if player has permission "obam.admin":
 			if {optout.%player%} is not set:
 				set {optout.%player%} to true
+				send "&eOpt Out &aEnabled" to player
 				stop
 			if {optout.%player%} is true:
 				set {optout.%player%} to false
+				send "&eOpt Out &4Disabled" to player
 				stop
 			if {optout.%player%} is false:
 				set {optout.%player%} to true
+				send "&eOpt Out &aEnabled" to player
 				stop
-		if player has permission "obam.mod
+		if player has permission "obam.mod":
+			if {optout.%player%} is not set:
+				set {optout.%player%} to true
+				send "&eOpt Out &aEnabled" to player
+				stop
+			if {optout.%player%} is true:
+				set {optout.%player%} to false
+				send "&eOpt Out &4Disabled" to player
+				stop
+			if {optout.%player%} is false:
+				set {optout.%player%} to true
+				send "&eOpt Out &aEnabled" to player
+				stop
+		if player is op:
+			if {optout.%player%} is not set:
+				set {optout.%player%} to true
+				send "&eOpt Out &aEnabled" to player
+				stop
+			if {optout.%player%} is true:
+				set {optout.%player%} to false
+				send "&eOpt Out &4Disabled" to player
+				stop
+			if {optout.%player%} is false:
+				set {optout.%player%} to true
+				send "&eOpt Out &aEnabled" to player
+				stop
+		send "&4You are not allowed to opt out." to player
 		
 on region enter:		
 	region is {grid-n0}:
