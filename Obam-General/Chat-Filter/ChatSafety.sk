@@ -1,0 +1,119 @@
+#Elite's Rendition of filters
+
+on join:
+	if {chatsafety.%player%} is not set:
+		set {chatsafety.%player%} to 2
+		
+command /togglefilter:
+	trigger:
+		if {chatsafety.%player%} is not set:
+			set {chatsafety.%player%} to 1
+			send "&eChat filter turned &aon &eto &adefault" to player
+			stop
+		if {chatsafety.%player%} is 2:
+			set {chatsafety.%player%} to 1
+			send "&eChat filter turned &aon &eto &adefault" to player 
+			stop
+		if {chatsafety.%player%} is 1:
+			set {chatsafety.%player%} to 0
+			send "&eChat filter turned &aon &eto &arandomizer" to player
+			stop
+		if {chatsafety.%player%} is 0:
+			set {chatsafety.%player%} to 2
+			send "&eChat filter turned &coff" to player
+			stop
+
+on chat:
+	cancel event
+	{_pre} is not set:
+		player has permission "obam.admin":
+			set {_pre} to "&d[A] %player%"
+	{_pre} is not set:
+		player has permission "obam.mod":
+			set {_pre} to "&2[M] %player%"
+	{_pre} is not set:
+		player has permission "obam.ultimate":
+			set {_pre} to "&6[^] %player%"
+	{_pre} is not set:
+		player has permission "obam.plus":
+			set {_pre} to "&b[+] %player%"
+	{_pre} is not set:
+		set {_pre} to "&f%player%"	
+	loop all players:
+		clear {_player}
+		if {chatsafety.%loop-player%} is 1:
+			message contains "fucking":
+				replace every "fucking" with "*******" in the message
+			message contains "fuckin":
+				replace every "fuckin" with "******" in the message
+			message contains "fucker":
+				replace every "fucker" with "******" in the message
+			message contains "fucks":
+				replace every "fucks" with "*****" in the message
+			message contains "fuck":
+				replace every "fuck" with "****" in the message
+			message contains "asses":
+				replace every "asses" with "*****" in the message
+			message contains "ass":
+				replace every "ass" with "***" in the message
+			message contains "bitches":
+				replace every "bitches" with "*******" in the message
+			message contains "bitch":
+				replace every "bitch" with "*****" in the message
+			message contains "shits":
+				replace every "shits" with "*****" in the message
+			message contains "shit":
+				replace every "shit" with "****" in the message
+			message contains "nigger":
+				replace every "nigger" with "******" in the message
+			message contains "whore":
+				replace every "whore" with "*****" in the message
+			message contains "slut":
+				replace every "slut" with "****" in the message
+			message contains "vagina":
+				replace every "vagina" with "******" in the message
+			message contains "cunt":
+				replace every "cunt" with "****" in the message
+			message contains "gay":
+				replace every "gay" with "***" in the message
+			message contains "retarded":
+				replace every "retarded" with "********" in the message
+			message contains "retard":
+				replace every "retard" with "******" in the message
+			message contains "bastard":
+				replace every "bastard" with "*******" in the message
+			set message to "&f%message%"
+			set {_message1.%loop-player%} to "%{_pre}%: %message%"
+			send "%{_message1.%loop-player%}%" to loop-player
+		if {chatsafety.%loop-player%} is 0:
+			replace every "fucking" with "really" in the message
+			replace every "fuckin" with "fo shizzle" in the message
+			replace every "fucker" with "teddy bear" in the message
+			replace every "fucks" with "likes" in the message
+			replace every "fuck" with "love" in the message
+			replace every "asses" with "shoes" in the message
+			replace every "ass" with "candy" in the message
+			replace every "bitches" with "bookshelves" in the message
+			replace every "bitch" with "nice lady" in the message
+			replace every "shits" with "warrior" in the message
+			replace every "shit" with "rattlesnake" in the message
+			replace every "nigger" with "nice person" in the message
+			replace every "whore" with "sales clerk" in the message
+			replace every "slut" with "track star" in the message
+			replace every "vagina" with "revolving door" in the message
+			replace every "cunt" with "sprinkler system" in the message
+			replace every "gay" with "a cute person" in the message
+			replace every "retarded" with "popular" in the message
+			replace every "retard" with "smart person" in the message
+			replace every "bastard" with "kitten" in the message
+			set message to "&f%message%"
+			set {_message2.%loop-player%} to "%{_pre}%: %message%"
+			send "%{_message2.%loop-player%}%" to loop-player
+		if {chatsafety.%loop-player%} is 2:
+			set message to "&f%message%"
+			set {_message3.%loop-player%} to "%{_pre}%: %message%"
+			send "%{_message3.%loop-player%}%" to loop-player
+		if {chatsafety.%loop-player%} is not set:
+			set message to "&f%message%"
+			set {_message4.%loop-player%} to "%{_pre}%: %message%"
+			send "%{_message4.%loop-player%}%" to loop-player
