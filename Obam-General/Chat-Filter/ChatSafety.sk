@@ -23,6 +23,25 @@ command /togglefilter:
 			send "&eChat filter turned &coff" to player
 			stop
 
+every 3 seconds:
+	loop all players:
+		if loop-player has permission "obam.supporter":
+			set loop-player's tablist name to "&7%name of loop-player%"	
+		if loop-player has permission "obam.plus":
+			set loop-player's tablist name to "&b%name of loop-player%"
+		if loop-player has permission "obam.ultimate":
+			set loop-player's tablist name to "&6%name of loop-player%"
+		if loop-player has permission "obam.mechanic":
+			set loop-player's tablist name to "&e%name of loop-player%"
+		if loop-player has permission "obam.mod":
+			set loop-player's tablist name to "&2%name of loop-player%"
+		if loop-player has permission "obam.smod":
+			set loop-player's tablist name to "&a%name of loop-player%"
+		if loop-player has permission "obam.admin":
+			set loop-player's tablist name to "&d%name of loop-player%"
+		if loop-player is op:
+			set loop-player's tablist name to "&5%name of loop-player%"
+			
 on chat:
 	cancel event
 	{_pre} is not set:
