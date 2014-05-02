@@ -24,49 +24,49 @@ options:
 
 on join:
 	#world is "death-hub"
-	world is "world"
-	give player {@toybox}
-	if {boatstop.%player%} is not set:
-		set {boatstop.%player%} to false
-	if {boatstop.%player%} is true:
-		set {boatstop.%player%} to false
-	if {cartstop.%player%} is not set:
-		set {cartstop.%player%} to false
-	if {cartstop.%player%} is true:
-		set {cartstop.%player%} to false
-	if {toybox.boat.%player%} is not set:
-		set {toybox.boat.%player%} to 0
-	if {toybox.cart.%player%} is not set:
-		set {toybox.cart.%player%} to 0
-	if {toybox.boat.%player%} is 1:
-		set {toybox.boat.%player%} to 0
-	if {toybox.cart.%player%} is 1:
-		set {toybox.cart.%player%} to 0			
+	world is "world":
+		give player {@toybox}
+		if {boatstop.%player%} is not set:
+			set {boatstop.%player%} to false
+		if {boatstop.%player%} is true:
+			set {boatstop.%player%} to false
+		if {cartstop.%player%} is not set:
+			set {cartstop.%player%} to false
+		if {cartstop.%player%} is true:
+			set {cartstop.%player%} to false
+		if {toybox.boat.%player%} is not set:
+			set {toybox.boat.%player%} to 0
+		if {toybox.cart.%player%} is not set:
+			set {toybox.cart.%player%} to 0
+		if {toybox.boat.%player%} is 1:
+			set {toybox.boat.%player%} to 0
+		if {toybox.cart.%player%} is 1:
+			set {toybox.cart.%player%} to 0			
 	
 on teleport:
 	#world is "death-hub"
-	world is "world"
-	if player does not have a {@toybox}:
-		give player 1 {@toybox}
-	if {toybox.boat.%player%} is not set:
-		set {toybox.boat.%player%} to 0
-	if {toybox.boat.%player%} is 1:
-		set {toybox.boat.%player%} to 0
-	if {toybox.cart.%player%} is not set:
-		set {toybox.cart.%player%} to 0
-	if {toybox.cart.%player%} is 1:
-		set {toybox.cart.%player%} to 0		
-	world was "world"
-	if {toybox.boat.%player%} is 1:
-		set {toybox.boat.%player%} to 0
-	if {toybox.cart.%player%} is 1:
-		set {toybox.cart.%player%} to 0	
-	if player has {@toybox} in his inventory:
-		remove {@toybox} from player's inventory
-	if player has {@gBoat} in his inventory:
-		remove {@gBoat} from player's inventory
-	if player has {@gCart} in his inventory:
-		remove {@gCart} from player's inventory			
+	world is "world":
+		if player does not have a {@toybox}:
+			give player 1 {@toybox}
+		if {toybox.boat.%player%} is not set:
+			set {toybox.boat.%player%} to 0
+		if {toybox.boat.%player%} is 1:
+			set {toybox.boat.%player%} to 0
+		if {toybox.cart.%player%} is not set:
+			set {toybox.cart.%player%} to 0
+		if {toybox.cart.%player%} is 1:
+			set {toybox.cart.%player%} to 0		
+	world was "world":
+		if {toybox.boat.%player%} is 1:
+			set {toybox.boat.%player%} to 0
+		if {toybox.cart.%player%} is 1:
+			set {toybox.cart.%player%} to 0	
+		if player has {@toybox} in his inventory:
+			remove {@toybox} from player's inventory
+		if player has {@gBoat} in his inventory:
+			remove {@gBoat} from player's inventory
+		if player has {@gCart} in his inventory:
+			remove {@gCart} from player's inventory			
 			
 on place of {@gBoat}:
 	if {boatstop.%player%} is false:
@@ -118,11 +118,6 @@ on disconnect:
 			remove {@gBoat} from player's inventory
 		if player has {@gCart} in his inventory:
 			remove {@gCart} from player's inventory
-			
-on vehicle damage:
-	#world is "death-hub"
-	world is "world":
-		cancel event	
 	
 on drop:
 	world is "world":
