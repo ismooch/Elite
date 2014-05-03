@@ -100,6 +100,13 @@ on vehicle damage:
 		if player does not have permission "obam.admin":
 			cancel event
 
+on vehicle destroy:
+	world is "world":
+		if {boatstop.%player%} is true:
+			cancel event
+		if {cartstop.%player%} is true:
+			cancel event
+			
 on disconnect:
 	#world is "death-hub"
 	world is "world":
@@ -112,13 +119,13 @@ on disconnect:
 		if {toybox.boat.%player%} is 1:
 			set {toybox.boat.%player%} to 0
 		if {toybox.cart.%player%} is 1:
-			set {toybox.cart.%player%} to 0	
+			set {toybox.cart.%player%} to 0
 		if player has {@toybox} in his inventory:
 			remove {@toybox} from player's inventory
 		if player has {@gBoat} in his inventory:
 			remove {@gBoat} from player's inventory
 		if player has {@gCart} in his inventory:
-			remove {@gCart} from player's inventory
+			remove {@gCart} from player's inventory	
 	
 on drop:
 	world is "world":
@@ -133,55 +140,65 @@ command /toybox [<text>]:
 			argument is not set:
 				if {toybox.boat.%player%} is 1:
 					if {toybox.cart.%player%} is 0:
-						send "&eOpening the majestical &2Toy&9Box" to player
+						send "&eOpening the majestical &2Toy&9Box &e. . ." to player
 						show "s;4;{@eBoat};s;6;{@dCart}" with 1 row named "&2Toy&9Box" to player
 					if {toybox.cart.%player%} is 1:
-						send "&eOpening the majestical &2Toy&9Box" to player
+						send "&eOpening the majestical &2Toy&9Box &e. . ." to player
 						show "s;4;{@eBoat};s;6;{@eCart}" with 1 row named "&2Toy&9Box" to player
 				if {toybox.boat.%player%} is 0:
 					if {toybox.cart.%player%} is 0:
-						send "&eOpening the majestical &2Toy&9Box" to player
+						send "&eOpening the majestical &2Toy&9Box &e. . ." to player
 						show "s;4;{@dBoat};s;6;{@dCart}" with 1 row named "&2Toy&9Box" to player
 					if {toybox.cart.%player%} is 1:
-						send "&eOpening the majestical &2Toy&9Box" to player
+						send "&eOpening the majestical &2Toy&9Box &e. . ." to player
 						show "s;4;{@dBoat};s;6;{@eCart}" with 1 row named "&2Toy&9Box" to player
 			argument is "boat":
-				if {toybox.boat.%player%} is 0:
-					if player does not have {@gBoat} in his inventory:
-						if player has {@gCart} in his inventory:
-							remove {@gCart} from player's inventory
-							set {_tb.cart.%player%} to 0
-						if {boatstop.%player%} is true:
-							send "You already have a boat out." to player
-							stop
-						give player {@gBoat}
-						set {toybox.boat.%player%} to 1
-						set {boatstop.%player%} to true
-						send "You have received a boat." to player
-						stop
-				if {toybox.%player%} is 1:
-					if player has {@gBoat} in his inventory:
-						remove {@gBoat} from player's inventory
-						set {toybox.boat.%player%} to 0
-						set {boatstop.%player%} to false
-						stop
+				make player execute command "/boat"
 			argument is "minecart":
-				if {toybox.cart.%player%} is 0:
-					if player does not have {@gCart} in his inventory:
-						if player has {@gBoat} in his inventory:
-							remove {@gBoat} from player's inventory
-							set {toybox.boat.%player%} to 0
-						if {cartstop.%player%} is true:
-							send "You already have a minecart out." to player
-							stop
-						give player {@gCart}
-						set {toybox.cart.%player%} to 1
-						set {cartstop.%player%} to true
-						send "You have received a minecart." to player
-						stop
-				if {toybox.cart.%player%} is 1:
+				make player execute command "/cart"
+				
+command /boat:
+	trigger:
+		world is "world":
+			if {toybox.boat.%player%} is 0:
+				if player does not have {@gBoat} in his inventory:
 					if player has {@gCart} in his inventory:
 						remove {@gCart} from player's inventory
 						set {toybox.cart.%player%} to 0
-						set {cartstop.%player%} to false
+					if {boatstop.%player%} is true:
+						send "You already have a boat out." to player
 						stop
+					give player {@gBoat}
+					set {toybox.boat.%player%} to 1
+					set {boatstop.%player%} to true
+					send "You have received a boat." to player
+					stop
+			if {toybox.%player%} is 1:
+				if player has {@gBoat} in his inventory:
+					remove {@gBoat} from player's inventory
+					set {toybox.boat.%player%} to 0
+					set {boatstop.%player%} to false
+					stop
+					
+command /cart:
+	trigger:
+		world is "world":
+			if {toybox.cart.%player%} is 0:
+				if player does not have {@gCart} in his inventory:
+					if player has {@gBoat} in his inventory:
+						remove {@gBoat} from player's inventory
+						set {toybox.boat.%player%} to 0
+					if {cartstop.%player%} is true:
+						send "You already have a minecart out." to player
+						stop
+					give player {@gCart}
+					set {toybox.cart.%player%} to 1
+					set {cartstop.%player%} to true
+					send "You have received a minecart." to player
+					stop
+			if {toybox.cart.%player%} is 1:
+				if player has {@gCart} in his inventory:
+					remove {@gCart} from player's inventory
+					set {toybox.cart.%player%} to 0
+					set {cartstop.%player%} to false
+					stop
