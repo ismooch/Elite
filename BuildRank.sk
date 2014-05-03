@@ -688,11 +688,41 @@ command /ranklist:
 			stop
 		send "&4You must be a &aCurator &4or &aAdmin &4to use this command." to player
 
+on join:
+	if {toggle.region.%player%} is not set:
+		set {toggle.region.%player%} to true
+		
+command /togglemessage:
+	executable by: players
+	aliases: /toggleregion
+	trigger:
+		if {toggle.region.%player%} is not set:
+			set {toggle.region.%player%} to true
+			stop
+		if {toggle.region.%player%} is true:
+			set {toggle.region.%player%} to false
+			stop
+		if {toggle.region.%player%} is false:
+			set {toggle.region.%player%} to true
+			stop
+	
 on region enter:
-	send "&eEntering &f%region%&e." to player
+	if {toggle.region.%player%} is true:
+		execute console command "enterregion %player% %region%"
+
+command /enterregion <player> <text> in world <text>:
+	executable by: console
+	trigger:
+        	send "Entering %arg 2%" to arg 1
 	
 on region exit:
-	send "&eLeaving &f%region%&e." to player
+	if {toggle.region.%player%} is true:
+		execute console command "exitregion %player% %region%"
+
+command /exitregion <player> <text> in world <text>:
+	executable by: console
+    	trigger:
+        	send "Leaving %arg 2%" to arg 1
 
 command /submit:
 	trigger:
