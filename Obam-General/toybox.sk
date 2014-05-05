@@ -4,29 +4,21 @@
 #d = 0 (disabled) not in use - or deactivated
 
 options:
-	toybox: named item stack from "Ender Chest;&2Toy&9Box;&6Right click to open the toy box.||&6See what toys you may use."
+	toybox: named item stack from "ender chest;&2Toy&9Box;&6Right click to open the toy box.||&6See what toys you may use."
+	#
 	eBoat: i;boat;n;&6Boat &aEnabled;c;sudo %player% toybox boat
 	dBoat: i;boat;n;&6Boat &cDisabled;c;sudo %player% toybox boat
-	gBoat: named item stack from "boat;&3Boat;&6Travel the magestic waters||&6of the hub with this boat!"
-	eCart: i;342;n;&6MineCart &aEnabled;c;sudo %player% toybox minecart
-	dCart: i;343;n;&6MineCart &cDisabled;c;sudo %player% toybox minecart
-	gCart: named item stack from "328;&3Cart;&6Place this magical cart on a track."
-	#nbPiston: i;piston;n;
-	#ePiston: i;piston;n;
-	#dPiston: i;piston;n;
-	#nbFirework: i;firework;n;
-	#eFirework: i;firework;n;
-	#dFirework: i;firework;n;
-	#boxInstrument: 
-	#nbInstrument:
-	#eInstrument:
-	#dInstrument:
+	gBoat: named item stack from "boat;&3Boat;&6Travel the majestic waters||&6of the hub with this boat!"
+	#
+	eCart: i;chest minecart;n;&6MineCart &aEnabled;c;sudo %player% toybox minecart
+	dCart: i;powered minecart;n;&6MineCart &cDisabled;c;sudo %player% toybox minecart
+	gCart: named item stack from "minecart;&3Cart;&6Want to sore on the track?||&6Place this cart down . . .|| ||&6Let's take it for a spin."
 
 on join:
 	#world is "death-hub"
 	world is "world":
-		if player does not have {@toybox} in his inventory:
-			give player {@toybox}
+		player does not have {@toybox}:
+			give {@toybox} to player
 		if {boatstop.%player%} is not set:
 			set {boatstop.%player%} to false
 		if {boatstop.%player%} is true:
@@ -47,8 +39,8 @@ on join:
 on teleport:
 	#world is "death-hub"
 	world is "world":
-		if player does not have {@toybox} in his inventory:
-			give player {@toybox}
+		if player does not have {@toybox}:
+			give {@toybox} to player
 		if {toybox.boat.%player%} is not set:
 			set {toybox.boat.%player%} to 0
 		if {toybox.boat.%player%} is 1:
@@ -62,28 +54,31 @@ on teleport:
 			set {toybox.boat.%player%} to 0
 		if {toybox.cart.%player%} is 1:
 			set {toybox.cart.%player%} to 0	
-		if player has {@toybox} in his inventory:
-			remove {@toybox} from player's inventory
-		if player has {@gBoat} in his inventory:
-			remove {@gBoat} from player's inventory
-		if player has {@gCart} in his inventory:
-			remove {@gCart} from player's inventory			
+		if player has {@toybox}:
+			remove {@toybox}
+		if player has {@gBoat}:
+			remove {@gBoat}
+		if player has {@gCart}:
+			remove {@gCart}			
 			
-on place:
+on place of boat:
 	player's tool is {@gBoat}:
 		if {boatstop.%player%} is false:
 			set {boatstop.%player%} to true
 			stop
+
+on place of minecart:
 	player's tool is {@gCart}:
 		if {cartstop.%player%} is false:
 			set {cartstop.%player%} to true
 			stop
+			
+on place of ender chest:
 	player's tool is {@toybox}:
 		cancel event
 	
-on click:
-	if player is holding {@toybox}:
-		make player execute command "/toybox"
+on click holding {@toybox}:
+	make player execute command "/toybox"
 	
 on vehicle exit:
 	#world is "death-hub"
@@ -120,16 +115,20 @@ on disconnect:
 			set {toybox.boat.%player%} to 0
 		if {toybox.cart.%player%} is 1:
 			set {toybox.cart.%player%} to 0
-		if player has {@toybox} in his inventory:
-			remove {@toybox} from player's inventory
-		if player has {@gBoat} in his inventory:
-			remove {@gBoat} from player's inventory
-		if player has {@gCart} in his inventory:
-			remove {@gCart} from player's inventory	
+		if player has {@toybox}:
+			remove {@toybox}
+		if player has {@gBoat}:
+			remove {@gBoat}
+		if player has {@gCart}:
+			remove {@gCart}	
 	
 on drop:
 	world is "world":
-		event-item is {@toybox} or {@gBoat} or {@gCart}:
+		event-item is {@toybox}:
+			cancel event
+		event-item is {@gBoat}:
+			cancel event
+		event-item is {@gCart}:
 			cancel event
 	
 command /toybox [<text>]:
@@ -168,7 +167,7 @@ command /boat:
 					if {boatstop.%player%} is true:
 						send "You already have a boat out." to player
 						stop
-					give player {@gBoat}
+					give {@gBoat} to player
 					set {toybox.boat.%player%} to 1
 					set {boatstop.%player%} to true
 					send "You have received a boat." to player
@@ -191,7 +190,7 @@ command /cart:
 					if {cartstop.%player%} is true:
 						send "You already have a minecart out." to player
 						stop
-					give player {@gCart}
+					give {@gCart} to player
 					set {toybox.cart.%player%} to 1
 					set {cartstop.%player%} to true
 					send "You have received a minecart." to player
