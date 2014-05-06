@@ -3,6 +3,7 @@
 #nb = not bought (requires certain supporter level or bought with tickets or bought in store)
 #e = 1 (enabled) in use - or activated
 #d = 0 (disabled) not in use - or deactivated
+#g = given item - the item the player is able to use outside of the chest gui.
 
 options:
 	toybox: ender chest named "&2Toy&9Box" with lore "&6Right click to open the toy box.||&6See what toys you may use."
