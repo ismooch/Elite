@@ -7,12 +7,12 @@
 options:
 	toybox: ender chest named "&2Toy&9Box" with lore "&6Right click to open the toy box.||&6See what toys you may use."
 	#
-	eBoat: i;boat;n;&6Boat &aEnabled;c;sudo %player% boat
-	dBoat: i;boat;n;&6Boat &cDisabled;c;sudo %player% boat
+	eBoat: i;boat;n;&6Boat &aEnabled;c;sudo %player% toybox boat
+	dBoat: i;boat;n;&6Boat &cDisabled;c;sudo %player% toybox boat
 	gBoat: boat named "&3Boat" with lore "&6Travel the majestic waters||&6of the hub with this boat!"
 	#
-	eCart: i;storage minecart;n;&6MineCart &aEnabled;c;sudo %player% cart
-	dCart: i;powered minecart;n;&6MineCart &cDisabled;c;sudo %player% cart
+	eCart: i;storage minecart;n;&6MineCart &aEnabled;c;sudo %player% toybox cart
+	dCart: i;powered minecart;n;&6MineCart &cDisabled;c;sudo %player% toybox cart
 	gCart: minecart named "&3Cart" with lore "&6Want to sore on the track?||&6Place this cart down . . .|| ||&6Let's take it for a spin."
 
 on join:
