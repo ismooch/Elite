@@ -12,10 +12,18 @@ options:
 	dBoat: i;boat;n;&6Boat &cDisabled;c;sudo %player% toybox boat
 	gBoat: boat named "&3Boat" with lore "&6Travel the majestic waters||&6of the hub with this boat!"
 	#
-	eCart: i;storage minecart;n;&6MineCart &aEnabled;c;sudo %player% toybox cart
-	dCart: i;powered minecart;n;&6MineCart &cDisabled;c;sudo %player% toybox cart
+	eCart: i;minecart;n;&6MineCart &aEnabled;c;sudo %player% toybox cart
+	dCart: i;minecart;n;&6MineCart &cDisabled;c;sudo %player% toybox cart
 	gCart: minecart named "&3Cart" with lore "&6Want to sore on the track?||&6Place this cart down . . .|| ||&6Let's take it for a spin."
-
+	#
+	eFirework: i;firework;n;&6OBAM&fCraft &6Firework &aEnabled
+	dFirework: i;firework;n;&6OBAM&fCraft &6Firework &cDisabled
+	gFirework: firework named "&6OBAM&fCraft &3Firework" with lore "&6Right click to see a random||&6OBAM themed firework effect.|| ||&710 Second Cooldown"
+	#
+	ePiston: i;piston;n;&6Piston-Pusher &aEnabled
+	dPiston: i;piston;n;&6Piston-Pusher &cDisabled
+	gPiston: piston named "&3Piston-Pusher" with lore "&6Use this to push players around.|| ||&710 Second Cooldown"
+	
 on join:
 	#player is in "death-hub"
 	player is in "world":
