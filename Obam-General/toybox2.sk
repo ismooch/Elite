@@ -48,6 +48,8 @@ on join:
 	
 on respawn:
 	player is in "world":
+		player does not have a {@toybox}:
+			give 1 {@toybox} to player
 		if {boatstop.%player%} is not set:
 			set {boatstop.%player%} to false
 		if {boatstop.%player%} is true:
@@ -94,33 +96,42 @@ on teleport:
 			remove {@gBoat} from player's inventory
 		if player has {@gCart}:
 			remove {@gCart} from player's inventory
-		set {_CartName} to name of {@gCart}
-		set {_BoatName} to name of {@gBoat}
+		set {_CartName.%player%} to "&3%player%'s Cart"
+		set {_BoatName.%player%} to "&3%player%'s Boat"
 		loop all entities:
 			if loop-entity is {@gCart}:
-				if name of loop-entity is "%{_CartName}%":
+				if name of loop-entity is "%{_CartName.%player%}%":
 					delete loop-entity
 			if loop-entity is {@gBoat}:
-				if name of loop-entity is "%{_BoatName}%":
+				if name of loop-entity is "%{_BoatName.%player%}%":
 					delete loop-entity
 			
 on place of boat:
 	player is in "world":
 		player's tool is {@gBoat}:
-			if {boatstop.%player%} is false:
-				set {boatstop.%player%} to true
-				remove {@gBoat} from player's inventory
-				stop
+			player's gamemode is survival:
+				if {boatstop.%player%} is false:
+					set {boatstop.%player%} to true
+					stop
+			player's gamemode is creative:
+				if {boatstop.%player%} is false:
+					set {boatstop.%player%} to true
+					remove {@gBoat} from player's inventory
+					stop
 			
-
 on place of minecart:
 	player is in "world":
 		player's tool is {@gCart}:
-			if {cartstop.%player%} is false:
-				set {cartstop.%player%} to true
-				remove {@gCart} from player's inventory
-				stop
-			
+			player's gamemode is survival:
+				if {cartstop.%player%} is false:
+					set {cartstop.%player%} to true
+					stop
+			player's gamemode is creative:
+				if {cartstop.%player%} is false:
+					set {cartstop.%player%} to true
+					remove {@gCart} from player's inventory
+					stop
+					
 on place of ender chest:
 	player is in "world":
 		player's tool is {@toybox}:
@@ -164,14 +175,14 @@ on disconnect:
 			remove {@gBoat} from player's inventory
 		if player has {@gCart}:
 			remove {@gCart} from player's inventory
-		set {_CartName} to name of {@gCart}
-		set {_BoatName} to name of {@gBoat}
+		set {_CartName.%player%} to "&3%player%'s Cart"
+		set {_BoatName.%player%} to "&3%player%'s Boat"
 		loop all entities:
 			if loop-entity is {@gCart}:
-				if name of loop-entity is "%{_CartName}%":
+				if name of loop-entity is "%{_CartName.%player%}%":
 					delete loop-entity
 			if loop-entity is {@gBoat}:
-				if name of loop-entity is "%{_BoatName}%":
+				if name of loop-entity is "%{_BoatName.%player%}%":
 					delete loop-entity
 	
 on drop:
@@ -214,10 +225,10 @@ command /boat:
 			if {toybox.boat.%player%} is 0:
 				if player does not have {@gBoat} in his inventory:
 					if {cartstop.%player%} is true:
-						set {_CartName} to name of {@gCart}
+						set {_CartName.%player%} to "&3%player%'s Cart"
 						loop all entities:
 							if loop-entity is {@gCart}:
-								if name of loop-entity is "%{_CartName}%":
+								if name of loop-entity is "%{_CartName.%player%}%":
 									delete loop-entity
 					if player has {@gCart} in his inventory:
 						remove {@gCart} from player's inventory
@@ -233,10 +244,10 @@ command /boat:
 					stop
 			if {toybox.boat.%player%} is 1:
 				if {boatstop.%player%} is true:
-					set {_BoatName} to name of {@gBoat}
+					set {_BoatName.%player%} to "&3%player%'s Boat"
 					loop all entities:
 						if loop-entity is {@gBoat}:
-							if name of loop-entity is "%{_BoatName}%":
+							if name of loop-entity is "%{_BoatName.%player%}%":
 								delete loop-entity
 				if player has {@gBoat} in his inventory:
 					remove {@gBoat} from player's inventory
@@ -250,10 +261,10 @@ command /cart:
 			if {toybox.cart.%player%} is 0:
 				if player does not have {@gCart} in his inventory:
 					if {boatstop.%player%} is true:
-						set {_BoatName} to name of {@gBoat}
+						set {_BoatName.%player%} to "&3%player%'s Boat"
 						loop all entities:
 							if loop-entity is {@gBoat}:
-								if name of loop-entity is "%{_BoatName}%":
+								if name of loop-entity is "%{_BoatName.%player%}%":
 									delete loop-entity
 					if player has {@gBoat} in his inventory:
 						remove {@gBoat} from player's inventory
@@ -269,10 +280,10 @@ command /cart:
 					stop
 			if {toybox.cart.%player%} is 1:
 				if {cartstop.%player%} is true:
-					set {_CartName} to name of {@gCart}
+					set {_CartName.%player%} to "&3%player%'s Cart"
 					loop all entities:
 						if loop-entity is {@gCart}:
-							if name of loop-entity is "%{_CartName}%":
+							if name of loop-entity is "%{_CartName.%player%}%":
 								delete loop-entity
 				if player has {@gCart} in his inventory:
 					remove {@gCart} from player's inventory
