@@ -1,0 +1,211 @@
+on skript load:
+	if {switchcount} is not set:
+		set {switchcount} to 0
+	wait 1 second
+	
+	if {switchcount} is 0:
+		loop all players
+			set {_amount.%loop-player%} to {db_votetokens.%loop-player%}
+			remove loop-player from {db_votetokens.%loop-player%}
+			add uuid of loop-player to {db_votetokens.uuid.%uuid of loop-player%}
+			set {db_votetokens.uuid.%uuid of loop-player%} to {_amount.%loop-player%}
+		set {switchcount} to 1
+		broadcast "System Switch 1 Complete"
+		wait 1 second		
+		
+	if {switchcount} is 1:
+		loop all players
+			set {_amount.%loop-player%} to {db_winnings.chest.%loop-player%.fronts::*}
+		set {switchcount} to 2
+		broadcast "System Switch 2 Complete"
+		wait 1 second
+		
+	if {switchcount} is 2:
+		loop all players
+			#
+		set {switchcount} to 3
+		broadcast "System Switch 3 Complete"
+		wait 1 second
+		
+	if {switchcount} is 3:
+		loop all players
+			#
+		set {switchcount} to 4
+		broadcast "System Switch 4 Complete"
+		wait 1 second
+		
+	if {switchcount} is 4:
+		loop all players
+			#
+		set {switchcount} to 5
+		broadcast "System Switch 5 Complete"
+		wait 1 second
+		
+	if {switchcount} is 5:
+		loop all players
+			#
+		set {switchcount} to 6
+		broadcast "System Switch 6 Complete"
+		wait 1 second
+		
+	if {switchcount} is 6:
+		loop all players
+			#
+		set {switchcount} to 7
+		broadcast "System Switch 7 Complete"
+		wait 1 second
+		
+	if {switchcount} is 7:
+		loop all players
+			#
+		set {switchcount} to 8
+		broadcast "System Switch 8 Complete"
+		wait 1 second
+		
+	if {switchcount} is 8:
+		loop all players
+			#
+		set {switchcount} to 9
+		broadcast "System Switch 9 Complete"
+		wait 1 second
+		
+	if {switchcount} is 9:
+		loop all players
+			#
+		set {switchcount} to 10
+		broadcast "System Switch 10 Complete"
+		wait 1 second
+		
+	if {switchcount} is 10:
+		loop all players
+			#
+		set {switchcount} to 11
+		broadcast "System Switch 11 Complete"
+		wait 1 second
+		
+	if {switchcount} is 11:
+		loop all players
+			#
+		set {switchcount} to 12
+		broadcast "System Switch 12 Complete"
+		wait 1 second
+		
+	if {switchcount} is 12:
+		loop all players
+			#
+		set {switchcount} to 13
+		broadcast "System Switch 13 Complete"
+		wait 1 second
+		
+	if {switchcount} is 13:
+		loop all players
+			#
+		set {switchcount} to 14
+		broadcast "System Switch 14 Complete"
+		wait 1 second
+		
+	if {switchcount} is 14:
+		loop all players
+			#
+		set {switchcount} to 15
+		broadcast "System Switch 15 Complete"
+		wait 1 second
+		
+	if {switchcount} is 15:
+		loop all players
+			#
+		set {switchcount} to 16
+		broadcast "System Switch 16 Complete"
+		wait 1 second
+		
+	if {switchcount} is 16:
+		loop all players
+			#
+		set {switchcount} to 17
+		broadcast "System Switch 17 Complete"
+		wait 1 second
+		
+	if {switchcount} is 17:
+		loop all players
+			#
+		set {switchcount} to 18
+		broadcast "System Switch 18 Complete"
+		wait 1 second
+		
+	if {switchcount} is 18:
+		loop all players
+			#
+		set {switchcount} to 19
+		broadcast "System Switch 19 Complete"
+		wait 1 second
+		
+	if {switchcount} is 19:
+		loop all players
+			#
+		set {switchcount} to 20
+		broadcast "System Switch 20 Complete"
+		wait 1 second
+		
+	if {switchcount} is 20:
+		loop all players
+			#
+		set {switchcount} to 21
+		broadcast "System Switch 21 Complete"
+		wait 1 second
+		
+	if {switchcount} is 21:
+		loop all players
+			#
+		set {switchcount} to 22
+		broadcast "System Switch 22 Complete"
+		wait 1 second
+		
+	if {switchcount} is 22:
+		loop all players
+			#
+		set {switchcount} to 23
+		broadcast "System Switch 23 Complete"
+		wait 1 second
+		
+	if {switchcount} is 23:
+		loop all players
+			#
+		set {switchcount} to 24
+		broadcast "System Switch 24 Complete"
+		wait 1 second
+		
+	if {switchcount} is 24:
+		loop all players
+			#
+		set {switchcount} to 25
+		broadcast "System Switch 25 Complete"
+		wait 1 second
+		
+	if {switchcount} is 25:
+		loop all players
+			#
+		set {switchcount} to 26
+		broadcast "System Switch 26 Complete"
+		wait 1 second
+		
+	if {switchcount} is 26:
+		loop all players
+			#
+		set {switchcount} to 27
+		broadcast "System Switch 27 Complete"
+		wait 1 second
+		
+	if {switchcount} is 27:
+		loop all players
+			#
+		set {switchcount} to 28
+		broadcast "System Switch 28 Complete"
+		wait 1 second
+		
+	if {switchcount} is 28:
+		loop all players
+			#
+		set {switchcount} to 29
+		broadcast "System Switch 29 Complete"
+		wait 1 second
+		
