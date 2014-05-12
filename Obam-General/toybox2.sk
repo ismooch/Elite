@@ -1,6 +1,8 @@
 #toybox for 2.0 - rendition by Elite
 #box = Toybox inside the toybox
-#nb = not bought (requires certain supporter level or bought with tickets or bought in store)
+#n = not unlocked (requires certain supporter level or bought with tickets or bought in store)
+#b = bought shop item
+#u = unbought shop item
 #e = 1 (enabled) in use - or activated
 #d = 0 (disabled) not in use - or deactivated
 #g = given item - the item the player is able to use outside of the chest gui.
@@ -16,12 +18,16 @@ options:
 	dCart: i;powered minecart;n;&6MineCart;l;&cDisabled;c;sudo %player% toybox cart
 	gCart: minecart named "&3%player%'s Cart" with lore "&6Want to sore on the track?||&6Place this cart down . . .|| ||&6Let's take it for a spin."
 	#
-	nbFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.
+	uFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.;c;sudo %player% toy firework
+	bFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% toy firework
+	nFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.;c;sudo %player% toy shop
 	eFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&aEnabled;c;sudo %player% toybox firework
 	dFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&cDisabled;c;sudo %player% toybox firework
 	gFirework: firework rocket named "&6OBAM&fCraft &3Firework" with lore "&6Right click to see a random||&6OBAM themed firework effect.|| ||&710 Second Cooldown"
 	#
-	nbPiston: i;piston base;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.
+	uPiston: i;piston base;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.;c;sudo %player% toy piston
+	bPiston: i;piston base;n;&6Player&fPusher;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% toy piston
+	nPiston: i;piston base;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.;c;sudo %player% toy shop
 	ePiston: i;piston base;n;&6Player&fPusher;l;&aEnabled;c;sudo %player% toybox piston
 	dPiston: i;piston base;n;&6Player&FPusher;l;&cDisabled;c;sudo %player% toybox piston
 	gPiston: piston base named "&3Piston&fPusher" with lore "&6Use this to push players around.|| ||&710 Second Cooldown"
@@ -261,12 +267,68 @@ on death:
 	
 command /toy <text>:
 	trigger:
-		argument is not set:
-			send "&eCorrect Usage: /toy shop" to player
-			stop
-		argument is "shop":
-			send "&eEntering the &2Toy &9Shop &e. . ." to player
+		player is in "world":
+			argument is not set:
+				send "&eCorrect Usage: /toy shop" to player
+				stop
+			argument is "shop":
+				send "&eEntering the &2Toy &9Shop &e. . ." to player
+				if {db_toyshop.firework.%player%} is 1:
+					set {_firework.%player%} to {@bFirework}
+				if {db_toyshop.firework.%player%} is 0:
+					set {_firework.%player%} to {@uFirework}	
+				if {db_toyshop.piston.%player%} is 1:
+					set {_piston.%player%} to {@bPiston}
+				if {db_toyshop.piston.%player%} is 0:
+					set {_piston.%player%} to {@uPiston}		
+				show "s;3;{_firework.%player%};s;7;{_piston.%player%}" with 1 row named "&2Toy &9Shop" to player
+				stop
+			argument is "firework":
+				make player execute command "/buy firework"
+				stop
+			argument is "piston":
+				make player execute command "/buy piston"
+				stop
 	
+command /buy <text>:
+	trigger:
+		player is in "world":
+			argument is not set:
+				send "&eCorrect Usage: &F/buy <item>" to player
+				send "&eFor a list of current items type &f/buy list" to player
+				stop
+			argument is "list":
+				send "&eBuyable Toy List:" to player
+				send "&f-Player Pusher: &a2500 tickets" to player
+				send "&f-OBAM Firework: &a5000 tickets" to player
+				stop
+			argument is "piston":
+				if {db_toyshop.piston.%player%} is 1:
+					send "&6Player&fPusher &ehas already been bought." to player
+					stop
+				if {db_toyshop.piston.%player%} is 0:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less 2500:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 2500 from player's balance
+					send "&aYou have just purchased the &bPlayerPusher &afrom the Toy Shop!" to player
+					set {db_toyshop.piston.%player%} to 1
+					stop
+			argument is "firework":
+				if {db_toyshop.firework.%player%} is 1:
+					send "&6OBAM&fFirework &ehas already been bought." to player
+					stop
+				if {db_toyshop.firework.%player%} is 0:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less 5000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 5000 from player's balance
+					send "&aYou have just purchased the &bOBAMFirework &afrom the Toy Shop!" to player
+					set {db_toyshop.firework.%player%} to 1
+					stop
+						
 command /toybox [<text>]:
 	trigger:
 		#player is in "Death-hub":
