@@ -7,18 +7,24 @@
 
 options:
 	toybox: ender chest named "&2Toy&9Box" with lore "&6Right click to open the toy box.||&6See what toys you may use."
+	#
 	eBoat: i;boat;n;&6Boat;l;&aEnabled;c;sudo %player% toybox boat
 	dBoat: i;boat;n;&6Boat;l;&cDisabled;c;sudo %player% toybox boat
 	gBoat: boat named "&3%player%'s Boat" with lore "&6Travel the majestic waters||&6of the hub with this boat!"
+	#
 	eCart: i;storage minecart;n;&6MineCart;l;&aEnabled;c;sudo %player% toybox cart
 	dCart: i;powered minecart;n;&6MineCart;l;&cDisabled;c;sudo %player% toybox cart
 	gCart: minecart named "&3%player%'s Cart" with lore "&6Want to sore on the track?||&6Place this cart down . . .|| ||&6Let's take it for a spin."
+	#
+	nbFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.
 	eFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&aEnabled;c;sudo %player% toybox firework
 	dFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&cDisabled;c;sudo %player% toybox firework
 	gFirework: firework rocket named "&6OBAM&fCraft &3Firework" with lore "&6Right click to see a random||&6OBAM themed firework effect.|| ||&710 Second Cooldown"
+	#
+	nbPiston: i;piston;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.
 	ePiston: i;piston;n;&6Player&fPusher;l;&aEnabled;c;sudo %player% toybox piston
 	dPiston: i;piston;n;&6Player&FPusher;l;&cDisabled;c;sudo %player% toybox piston
-	gPiston: piston named "&3Piston-Pusher" with lore "&6Use this to push players around.|| ||&710 Second Cooldown"
+	gPiston: piston named "&3Piston&fPusher" with lore "&6Use this to push players around.|| ||&710 Second Cooldown"
 	
 on join:
 	#player is in "death-hub"
@@ -256,8 +262,15 @@ on death:
 		remove {@gFirework} from drops
 		remove {@gPiston} from drops
 	
+command /toy <text>:
+	trigger:
+		argument is not set:
+			send "&eCorrect Usage: /toy shop" to player
+			stop
+		argument is "shop":
+			send "&eEntering the &2Toy &9Shop &e. . ." to player
+	
 command /toybox [<text>]:
-	permission: obam.free
 	trigger:
 		#player is in "Death-hub":
 		player is in "world":
@@ -361,3 +374,71 @@ command /cart:
 					set {toybox.cart.%player%} to 0
 					set {cartstop.%player%} to false
 					stop
+					
+command /firework:
+	trigger:
+		player is in "world":
+			if {toybox.firework.%player%} is 0:
+				if {boatstop.%player%} is true:
+					set {_BoatName.%player%} to "&3%player%'s Boat"
+					loop all entities:
+						if loop-entity is {@gBoat}:
+							if name of loop-entity is "%{_BoatName.%player%}%":
+								delete loop-entity
+				if {cartstop.%player%} is true:
+					set {_CartName.%player%} to "&3%player%'s Cart"
+					loop all entities:
+						if loop-entity is {@gCart}:
+							if name of loop-entity is "%{_CartName.%player%}%":
+								delete loop-entity
+				if player has {@gBoat} in his inventory:
+					remove {@gBoat} from player's inventory
+					set {toybox.boat.%player%} to 0
+					set {boatstop.%player%} to false
+				if player has {@gCart} in his inventory:
+					remove {@gCart} from player's inventory
+					set {toybox.cart.%player%} to 0
+					set {cartstop.%player%} to false
+				if player has {@gPiston} in his inventory:
+					remove {@gPiston} from player's inventory
+					set {toybox.piston.%player%} to 0
+				give player {@gFirework}
+				set {toybox.firework.%player%} to 1
+			if {toybox.firework.%player%} is 1:
+				if player has {@gFirework} in his inventory:
+					remove {@gFirework} from player's inventory
+					set {toybox.firework.%player%} to 0
+					
+command /piston:
+	trigger:
+		player is in "world":
+			if {toybox.piston.%player%} is 0:
+				if {boatstop.%player%} is true:
+					set {_BoatName.%player%} to "&3%player%'s Boat"
+					loop all entities:
+						if loop-entity is {@gBoat}:
+							if name of loop-entity is "%{_BoatName.%player%}%":
+								delete loop-entity
+				if {cartstop.%player%} is true:
+					set {_CartName.%player%} to "&3%player%'s Cart"
+					loop all entities:
+						if loop-entity is {@gCart}:
+							if name of loop-entity is "%{_CartName.%player%}%":
+								delete loop-entity
+				if player has {@gBoat} in his inventory:
+					remove {@gBoat} from player's inventory
+					set {toybox.boat.%player%} to 0
+					set {boatstop.%player%} to false
+				if player has {@gCart} in his inventory:
+					remove {@gCart} from player's inventory
+					set {toybox.cart.%player%} to 0
+					set {cartstop.%player%} to false
+				if player has {@gFirework} in his inventory:
+					remove {@gFirework} from player's inventory
+					set {toybox.firework.%player%} to 0
+				give player {@gPiston}
+				set {toybox.piston.%player%} to 1
+			if {toybox.piston.%player%} is 1:
+				if player has {@gPiston} in his inventory:
+					remove {@gPiston} from player's inventory
+					set {toybox.piston.%player%} to 0
