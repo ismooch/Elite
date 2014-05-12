@@ -109,6 +109,7 @@ command /purge <text>:
 				loop all players in player's world:
 					set {boatstop.%loop-player%} to false
 					set {toybox.boat.%loop-player%} to 0
+					remove {@gBoat} from loop-player's inventory
 			broadcast "&fPurging all boats!" to the player's world
 			stop
 		if argument is "cart" or "minecart":
@@ -119,6 +120,7 @@ command /purge <text>:
 				loop all players in player's world:
 					set {cartstop.%loop-player%} to false
 					set {toybox.cart.%loop-player%} to 0
+					remove {@gCart} from loop-player's inventory
 			broadcast "&fPurging all carts!" to the player's world
 			stop
 		send "&fPlease Use The Correct Usage:" to player
