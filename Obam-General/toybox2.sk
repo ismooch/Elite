@@ -273,16 +273,23 @@ command /toy <text>:
 				stop
 			argument is "shop":
 				send "&eEntering the &2Toy &9Shop &e. . ." to player
-				if {db_toyshop.firework.%player%} is 1:
-					set {_firework.%player%} to {@bFirework}
 				if {db_toyshop.firework.%player%} is 0:
-					set {_firework.%player%} to {@uFirework}	
-				if {db_toyshop.piston.%player%} is 1:
-					set {_piston.%player%} to {@bPiston}
-				if {db_toyshop.piston.%player%} is 0:
-					set {_piston.%player%} to {@uPiston}		
-				show "s;3;{_firework.%player%};s;7;{_piston.%player%}" with 1 row named "&2Toy &9Shop" to player
-				stop
+					if {db_toyshop.piston.%player%} is 0:	
+						show "s;3;{@uFirework};s;7;{@uPiston}" with 1 row named "&2Toy &9Shop" to player
+						stop
+				if {db_toyshop.firework.%player%} is 1:
+					if {db_toyshop.piston.%player%} is 0:	
+						show "s;3;{@bFirework};s;7;{@uPiston}" with 1 row named "&2Toy &9Shop" to player
+						stop
+				if {db_toyshop.firework.%player%} is 0:
+					if {db_toyshop.piston.%player%} is 1:	
+						show "s;3;{@uFirework};s;7;{@bPiston}" with 1 row named "&2Toy &9Shop" to player
+						stop
+				if {db_toyshop.firework.%player%} is 1:
+					if {db_toyshop.piston.%player%} is 1:	
+						show "s;3;{@bFirework};s;7;{@bPiston}" with 1 row named "&2Toy &9Shop" to player
+						stop
+
 			argument is "firework":
 				make player execute command "/buy firework"
 				stop
@@ -294,7 +301,7 @@ command /buy <text>:
 	trigger:
 		player is in "world":
 			argument is not set:
-				send "&eCorrect Usage: &F/buy <item>" to player
+				send "&eCorrect Usage: &F/buy (item)" to player
 				send "&eFor a list of current items type &f/buy list" to player
 				stop
 			argument is "list":
