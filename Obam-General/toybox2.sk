@@ -21,10 +21,10 @@ options:
 	dFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&cDisabled;c;sudo %player% toybox firework
 	gFirework: firework rocket named "&6OBAM&fCraft &3Firework" with lore "&6Right click to see a random||&6OBAM themed firework effect.|| ||&710 Second Cooldown"
 	#
-	nbPiston: i;piston;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.
-	ePiston: i;piston;n;&6Player&fPusher;l;&aEnabled;c;sudo %player% toybox piston
-	dPiston: i;piston;n;&6Player&FPusher;l;&cDisabled;c;sudo %player% toybox piston
-	gPiston: piston named "&3Piston&fPusher" with lore "&6Use this to push players around.|| ||&710 Second Cooldown"
+	nbPiston: i;piston base;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.
+	ePiston: i;piston base;n;&6Player&fPusher;l;&aEnabled;c;sudo %player% toybox piston
+	dPiston: i;piston base;n;&6Player&FPusher;l;&cDisabled;c;sudo %player% toybox piston
+	gPiston: piston base named "&3Piston&fPusher" with lore "&6Use this to push players around.|| ||&710 Second Cooldown"
 	
 on join:
 	#player is in "death-hub"
@@ -145,47 +145,44 @@ on teleport:
 				if name of loop-entity is "%{_BoatName.%player%}%":
 					delete loop-entity
 			
-on place of boat:
-	player is in "world":
-		player's tool is {@gBoat}:
-			player's gamemode is survival:
-				if {boatstop.%player%} is false:
-					set {boatstop.%player%} to true
-					stop
-			player's gamemode is creative:
-				if {boatstop.%player%} is false:
-					set {boatstop.%player%} to true
-					remove {@gBoat} from player's inventory
-					stop
-			
-on place of minecart:
-	player is in "world":
-		player's tool is {@gCart}:
-			player's gamemode is survival:
-				if {cartstop.%player%} is false:
-					set {cartstop.%player%} to true
-					stop
-			player's gamemode is creative:
-				if {cartstop.%player%} is false:
-					set {cartstop.%player%} to true
-					remove {@gCart} from player's inventory
-					stop
-					
-on place of ender chest:
+on place:
 	player is in "world":
 		player's tool is {@toybox}:
 			cancel event
-			
-on place of piston:
-	player is in "world":
+			remove {@toybox} from player's inventory
+			give 1 {@toybox} to player
+			stop
 		player's tool is {@gPiston}:
 			cancel event
-	
+			remove {@gPiston} from player's inventory
+			give 1 {@gPiston} to player
+			stop
+		player's tool is {@gBoat}:
+			if {boatstop.%player%} is false:
+				set {boatstop.%player%} to true
+				if player has {@gBoat}:
+					remove {@gBoat} from player's inventory
+				stop
+		player's tool is {@gCart}:
+			if {cartstop.%player%} is false:
+				set {cartstop.%player%} to true
+				if player has {@gCart}:
+					remove {@gCart} from player's inventory
+				stop
+				
 on click:
 	player is in "world":
 		player's tool is {@toybox}:
 			make player execute command "/toybox"
-	
+
+on damage:
+	world is "world":
+		cancel event
+		attacker is a player:
+			victim is a player:
+				attacker's tool is {@gPiston}:
+					push the victim in the direction of the attacker at speed 1
+			
 on vehicle exit:
 	#player is in "death-hub"
 	player is in "world":
@@ -307,25 +304,30 @@ command /boat:
 	trigger:
 		player is in "world":
 			if {toybox.boat.%player%} is 0:
-				if player does not have {@gBoat} in his inventory:
-					if {cartstop.%player%} is true:
-						set {_CartName.%player%} to "&3%player%'s Cart"
-						loop all entities:
-							if loop-entity is {@gCart}:
-								if name of loop-entity is "%{_CartName.%player%}%":
-									delete loop-entity
-					if player has {@gCart} in his inventory:
-						remove {@gCart} from player's inventory
-						set {toybox.cart.%player%} to 0
-						set {cartstop.%player%} to false
-					if {boatstop.%player%} is true:
-						send "You already have a boat out." to player
-						stop
-					give 1 {@gBoat} to player
-					set {toybox.boat.%player%} to 1
-					set {boatstop.%player%} to true
-					send "You have received a boat." to player
+				if {cartstop.%player%} is true:
+					set {_CartName.%player%} to "&3%player%'s Cart"
+					loop all entities:
+						if loop-entity is {@gCart}:
+							if name of loop-entity is "%{_CartName.%player%}%":
+								delete loop-entity
+				if player has {@gFirework} in his inventory:
+					remove {@gFirework} from player's inventory
+					set {toybox.firework.%player%} to 0
+				if player has {@gPiston} in his inventory:
+					remove {@gPiston} from player's inventory
+					set {toybox.piston.%player%} to 0
+				if player has {@gCart} in his inventory:
+					remove {@gCart} from player's inventory
+					set {toybox.cart.%player%} to 0
+					set {cartstop.%player%} to false
+				if {boatstop.%player%} is true:
+					send "You already have a boat out." to player
 					stop
+				give 1 {@gBoat} to player
+				set {toybox.boat.%player%} to 1
+				set {boatstop.%player%} to true
+				send "You have received a boat." to player
+				stop
 			if {toybox.boat.%player%} is 1:
 				if {boatstop.%player%} is true:
 					set {_BoatName.%player%} to "&3%player%'s Boat"
@@ -343,25 +345,30 @@ command /cart:
 	trigger:
 		player is in "world":
 			if {toybox.cart.%player%} is 0:
-				if player does not have {@gCart} in his inventory:
-					if {boatstop.%player%} is true:
-						set {_BoatName.%player%} to "&3%player%'s Boat"
-						loop all entities:
-							if loop-entity is {@gBoat}:
-								if name of loop-entity is "%{_BoatName.%player%}%":
-									delete loop-entity
-					if player has {@gBoat} in his inventory:
-						remove {@gBoat} from player's inventory
-						set {toybox.boat.%player%} to 0
-						set {boatstop.%player%} to false
-					if {cartstop.%player%} is true:
-						send "You already have a minecart out." to player
-						stop
-					give 1 {@gCart} to player
-					set {toybox.cart.%player%} to 1
-					set {cartstop.%player%} to true
-					send "You have received a minecart." to player
+				if {boatstop.%player%} is true:
+					set {_BoatName.%player%} to "&3%player%'s Boat"
+					loop all entities:
+						if loop-entity is {@gBoat}:
+							if name of loop-entity is "%{_BoatName.%player%}%":
+								delete loop-entity
+				if player has {@gFirework} in his inventory:
+					remove {@gFirework} from player's inventory
+					set {toybox.firework.%player%} to 0
+				if player has {@gPiston} in his inventory:
+					remove {@gPiston} from player's inventory
+					set {toybox.piston.%player%} to 0
+				if player has {@gBoat} in his inventory:
+					remove {@gBoat} from player's inventory
+					set {toybox.boat.%player%} to 0
+					set {boatstop.%player%} to false
+				if {cartstop.%player%} is true:
+					send "You already have a minecart out." to player
 					stop
+				give 1 {@gCart} to player
+				set {toybox.cart.%player%} to 1
+				set {cartstop.%player%} to true
+				send "You have received a minecart." to player
+				stop
 			if {toybox.cart.%player%} is 1:
 				if {cartstop.%player%} is true:
 					set {_CartName.%player%} to "&3%player%'s Cart"
@@ -402,12 +409,15 @@ command /firework:
 				if player has {@gPiston} in his inventory:
 					remove {@gPiston} from player's inventory
 					set {toybox.piston.%player%} to 0
-				give player {@gFirework}
+				give 1 {@gFirework} to player
 				set {toybox.firework.%player%} to 1
+				send "You have received an OBAM Firework" to player
+				stop
 			if {toybox.firework.%player%} is 1:
 				if player has {@gFirework} in his inventory:
 					remove {@gFirework} from player's inventory
 					set {toybox.firework.%player%} to 0
+					stop
 					
 command /piston:
 	trigger:
@@ -436,9 +446,12 @@ command /piston:
 				if player has {@gFirework} in his inventory:
 					remove {@gFirework} from player's inventory
 					set {toybox.firework.%player%} to 0
-				give player {@gPiston}
+				give 1 {@gPiston} to player
 				set {toybox.piston.%player%} to 1
+				send "You have received a player pusher" to player
+				stop
 			if {toybox.piston.%player%} is 1:
 				if player has {@gPiston} in his inventory:
 					remove {@gPiston} from player's inventory
 					set {toybox.piston.%player%} to 0
+					stop
