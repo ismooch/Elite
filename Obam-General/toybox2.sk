@@ -28,9 +28,9 @@ options:
 	uPiston: i;piston base;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.;c;sudo %player% toy piston
 	bPiston: i;piston base;n;&6Player&fPusher;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% toy piston
 	nPiston: i;piston base;n;&6Player&fPusher;l;&3Not Bought|| ||&eType &f/toy shop &eor||buy on OBAM shop to unlock.;c;sudo %player% toy shop
-	ePiston: i;piston sticky base;n;&6Player&fPusher;l;&aEnabled;c;sudo %player% toybox piston
+	ePiston: i;piston base;n;&6Player&fPusher;l;&aEnabled;c;sudo %player% toybox piston
 	dPiston: i;piston base;n;&6Player&FPusher;l;&cDisabled;c;sudo %player% toybox piston
-	gPiston: piston base named "&3Piston&fPusher" with lore "&6Use this to push players around.|| ||&5How to use: Punch someone while holding it."
+	gPiston: piston base named "&3Player&fPusher" with lore "&6Use this to push players around.|| ||&5How to use: Punch someone while holding it."
 	
 on join:
 	#player is in "death-hub"
@@ -218,7 +218,7 @@ on right click:
 			cancel event
 			if {time.set.%player%} is not set:
 				set {time.set.%player%} to now
-				send "this is a placeholder" to player
+				send "&apew pew - the firework has shot" to player
 				stop
 			if {time.set.%player%} is set:
 				if difference between {time.set.%player%} and now is smaller than 1 second:
@@ -252,15 +252,12 @@ on right click:
 					send "&eYou must wait 1 second before you may use this." to player
 					stop
 				set {time.set.%player%} to now
-				send "this is a placeholder" to player
+				send "&apew pew - the firework has shot" to player
 				stop
 				
 on damage:
 	world is "world":
-		victim is a player:
-			cancel event
-		attacker is a player:
-			cancel event
+		cancel event
 		attacker is a player:
 			victim is a player:
 				attacker's tool is {@gPiston}:
@@ -275,21 +272,14 @@ on vehicle exit:
 		if {cartstop.%player%} is true:
 			delete vehicle of player
 			set {cartstop.%player%} to false
-		
-on block damage:
-	player is in "world":
-		if block is {@gCart}:
-			cancel event
-		if block is {@gBoat}:
-			cancel event
-		
-on break:
-	player is in "world":
-		if block is {@gCart}:
-			cancel event
-		if block is {@gBoat}:
-			cancel event	
 			
+on vehicle damage:
+	world is "world":
+		cancel event
+		
+on vehicle destroy:
+	world is "world":
+		cancel event
 on disconnect:
 	#player is in "death-hub"
 	player is in "world":
