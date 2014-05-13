@@ -176,6 +176,28 @@ command /purge <text>:
 on teleport:
 	#player is in "death-hub"
 	player is in "world":
+		player does not have a {@gHelp}:
+			give 1 {@gHelp} to player
+		player does not have a {@gWorlds}:
+			give 1 {@gWorlds} to player
+		player does not have a {@gFly}:
+			give 1 {@gFly} to player			
+		give 1 stone to player
+		give 1 grass block to player
+		give 1 dirt to player
+		player does not have a {@gToybox}:
+			give 1 {@gToybox} to player
+		give 1 cobblestone to player
+		player does not have a {@gEffectmachine}:
+			give 1 {@gEffectmachine} to player
+		if {boatstop.%player%} is not set:
+			set {boatstop.%player%} to false
+		if {boatstop.%player%} is true:
+			set {boatstop.%player%} to false
+		if {cartstop.%player%} is not set:
+			set {cartstop.%player%} to false
+		if {cartstop.%player%} is true:
+			set {cartstop.%player%} to false
 		if {toybox.boat.%player%} is not set:
 			set {toybox.boat.%player%} to 0
 		if {toybox.cart.%player%} is not set:
@@ -191,7 +213,11 @@ on teleport:
 		if {toybox.firework.%player%} is 1:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
-			set {toybox.piston.%player%} to 0	
+			set {toybox.piston.%player%} to 0
+		remove all stone from player's inventory
+		remove all grass block from player's inventory
+		remove all dirt from player's inventory
+		remove all cobblestone from player's inventory
 	player is not in "world":
 		if {boatstop.%player%} is true:
 			delete vehicle of player
@@ -301,6 +327,7 @@ on right click:
 			if {time.set.%player%} is not set:
 				set {time.set.%player%} to now
 				send "&apew pew - the firework has shot" to player
+				shoot firework rocket from player's location at speed 1 upward
 				stop
 			if {time.set.%player%} is set:
 				if difference between {time.set.%player%} and now is smaller than 1 second:
@@ -335,8 +362,35 @@ on right click:
 					stop
 				set {time.set.%player%} to now
 				send "&apew pew - the firework has shot" to player
+				shoot firework rocket from player's location at speed 1 upward
 				stop
 				
+on projectile hit:
+	world is "world":
+		projectile is firework rocket:
+			set {_firework.location.%shooter%} to location of projectile
+			set {_ran.type.num.%shooter%} to a random number between 1 and 5
+			wait 1 second
+			if {_ran.type.num.%shooter%} is 1:
+				set {_ran.type.type.%shooter%} to "ball"
+			if {_ran.type.num.%shooter%} is 2:
+				set {_ran.type.type.%shooter%} to "ball large"
+			if {_ran.type.num.%shooter%} is 3:
+				set {_ran.type.type.%shooter%} to "burst"
+			if {_ran.type.num.%shooter%} is 4:
+				set {_ran.type.type.%shooter%} to "creeper"
+			if {_ran.type.num.%shooter%} is 5:
+				set {_ran.type.type.%shooter%} to "star"
+			set {_ran.color.num.%shooter%} to a random number between 1 and 3
+			wait 1 second
+			if {_ran.color.num.%shooter%} is 1:
+				set {_ran.color.color.%shooter%} to "gold"
+			if {_ran.color.num.%shooter%} is 2:
+				set {_ran.color.color.%shooter%} to "cyan"
+			if {_ran.color.num.%shooter%} is 3:
+				set {_ran.color.color.%shooter%} to "cyan and gold"
+			pop {_ran.type.type.%shooter%} colored {_ran.color.color.%shooter%} at {_firework.location.%shooter%}
+			
 on damage:
 	world is "world":
 		cancel event
