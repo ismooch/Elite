@@ -91,6 +91,10 @@ on join:
 		remove all dirt from player's inventory
 		remove all cobblestone from player's inventory
 		
+on inventory click:
+	player is in "world":
+		cancel event
+		
 on respawn:
 	#player is in "death-hub"
 	player is in "world":
@@ -266,16 +270,40 @@ on place:
 		player's tool is {@gToybox}:
 			cancel event
 			remove all {@gToybox} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
 			give 1 {@gToybox} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
 			stop
 		player's tool is {@gEffectmachine}:
 			cancel event
 			remove all {@gEffectmachine} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
+			if {toybox.boat.%player%} is 0:
+				if {toybox.cart.%player%} is 0:
+					if {toybox.firework.%player%} is 0:
+						if {toybox.piston.%player%} is 0:
+							give 1 cobblestone to player				
 			give 1 {@gEffectmachine} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
+			remove all cobblestone from player's inventory		
 		player's tool is {@gPiston}:
 			cancel event
 			remove all {@gPiston} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
 			give 1 {@gPiston} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
 			stop
 		player's tool is {@gBoat}:
 			if {boatstop.%player%} is false:
@@ -328,6 +356,28 @@ on right click:
 				set {time.set.%player%} to now
 				send "&apew pew - the firework has shot" to player
 				shoot firework rocket from player's location at speed 1 upward
+				set {_firework.location.%player%} to location of projectile
+				set {_ran.type.num.%player%} to a random number between 1 and 5
+				wait 1 second
+				if {_ran.type.num.%player%} is 1:
+					set {_ran.type.type.%player%} to "ball"
+				if {_ran.type.num.%player%} is 2:
+					set {_ran.type.type.%player%} to "ball large"
+				if {_ran.type.num.%player%} is 3:
+					set {_ran.type.type.%player%} to "burst"
+				if {_ran.type.num.%player%} is 4:
+					set {_ran.type.type.%player%} to "creeper"
+				if {_ran.type.num.%player%} is 5:
+					set {_ran.type.type.%player%} to "star"
+				set {_ran.color.num.%player%} to a random number between 1 and 3
+				wait 1 second
+				if {_ran.color.num.%player%} is 1:
+					set {_ran.color.color.%player%} to "gold"
+				if {_ran.color.num.%player%} is 2:
+					set {_ran.color.color.%player%} to "cyan"
+				if {_ran.color.num.%player%} is 3:
+					set {_ran.color.color.%player%} to "cyan and gold"
+				pop {_ran.type.type.%player%} colored {_ran.color.color.%player%} at {_firework.location.%player%}
 				stop
 			if {time.set.%player%} is set:
 				if difference between {time.set.%player%} and now is smaller than 1 second:
@@ -363,33 +413,29 @@ on right click:
 				set {time.set.%player%} to now
 				send "&apew pew - the firework has shot" to player
 				shoot firework rocket from player's location at speed 1 upward
+				set {_firework.location.%player%} to location of projectile
+				set {_ran.type.num.%player%} to a random number between 1 and 5
+				wait 1 second
+				if {_ran.type.num.%player%} is 1:
+					set {_ran.type.type.%player%} to "ball"
+				if {_ran.type.num.%player%} is 2:
+					set {_ran.type.type.%player%} to "ball large"
+				if {_ran.type.num.%player%} is 3:
+					set {_ran.type.type.%player%} to "burst"
+				if {_ran.type.num.%player%} is 4:
+					set {_ran.type.type.%player%} to "creeper"
+				if {_ran.type.num.%player%} is 5:
+					set {_ran.type.type.%player%} to "star"
+				set {_ran.color.num.%player%} to a random number between 1 and 3
+				wait 1 second
+				if {_ran.color.num.%player%} is 1:
+					set {_ran.color.color.%player%} to "gold"
+				if {_ran.color.num.%player%} is 2:
+					set {_ran.color.color.%player%} to "cyan"
+				if {_ran.color.num.%player%} is 3:
+					set {_ran.color.color.%player%} to "cyan and gold"
+				pop {_ran.type.type.%player%} colored {_ran.color.color.%player%} at {_firework.location.%player%}
 				stop
-				
-on projectile hit:
-	world is "world":
-		projectile is firework rocket:
-			set {_firework.location.%shooter%} to location of projectile
-			set {_ran.type.num.%shooter%} to a random number between 1 and 5
-			wait 1 second
-			if {_ran.type.num.%shooter%} is 1:
-				set {_ran.type.type.%shooter%} to "ball"
-			if {_ran.type.num.%shooter%} is 2:
-				set {_ran.type.type.%shooter%} to "ball large"
-			if {_ran.type.num.%shooter%} is 3:
-				set {_ran.type.type.%shooter%} to "burst"
-			if {_ran.type.num.%shooter%} is 4:
-				set {_ran.type.type.%shooter%} to "creeper"
-			if {_ran.type.num.%shooter%} is 5:
-				set {_ran.type.type.%shooter%} to "star"
-			set {_ran.color.num.%shooter%} to a random number between 1 and 3
-			wait 1 second
-			if {_ran.color.num.%shooter%} is 1:
-				set {_ran.color.color.%shooter%} to "gold"
-			if {_ran.color.num.%shooter%} is 2:
-				set {_ran.color.color.%shooter%} to "cyan"
-			if {_ran.color.num.%shooter%} is 3:
-				set {_ran.color.color.%shooter%} to "cyan and gold"
-			pop {_ran.type.type.%shooter%} colored {_ran.color.color.%shooter%} at {_firework.location.%shooter%}
 			
 on damage:
 	world is "world":
@@ -655,7 +701,13 @@ command /boat:
 				if {boatstop.%player%} is true:
 					send "You already have a boat out." to player
 					stop
+				give 1 stone to player
+				give 1 grass block to player
+				give 1 dirt to player
 				give 1 {@gBoat} to player
+				remove all stone from player's inventory
+				remove all grass block from player's inventory
+				remove all dirt from player's inventory
 				set {toybox.boat.%player%} to 1
 				set {boatstop.%player%} to true
 				send "You have received a boat." to player
@@ -696,7 +748,13 @@ command /cart:
 				if {cartstop.%player%} is true:
 					send "You already have a minecart out." to player
 					stop
+				give 1 stone to player
+				give 1 grass block to player
+				give 1 dirt to player
 				give 1 {@gCart} to player
+				remove all stone from player's inventory
+				remove all grass block from player's inventory
+				remove all dirt from player's inventory
 				set {toybox.cart.%player%} to 1
 				set {cartstop.%player%} to true
 				send "You have received a minecart." to player
@@ -741,7 +799,13 @@ command /firework:
 				if player has {@gPiston} in his inventory:
 					remove all {@gPiston} from player's inventory
 					set {toybox.piston.%player%} to 0
+				give 1 stone to player
+				give 1 grass block to player
+				give 1 dirt to player
 				give 1 {@gFirework} to player
+				remove all stone from player's inventory
+				remove all grass block from player's inventory
+				remove all dirt from player's inventory
 				set {toybox.firework.%player%} to 1
 				send "You have received an OBAM Firework" to player
 				stop
@@ -778,7 +842,13 @@ command /piston:
 				if player has {@gFirework} in his inventory:
 					remove all {@gFirework} from player's inventory
 					set {toybox.firework.%player%} to 0
+				give 1 stone to player
+				give 1 grass block to player
+				give 1 dirt to player
 				give 1 {@gPiston} to player
+				remove all stone from player's inventory
+				remove all grass block from player's inventory
+				remove all dirt from player's inventory
 				set {toybox.piston.%player%} to 1
 				send "You have received a player pusher" to player
 				stop
