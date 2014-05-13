@@ -357,28 +357,53 @@ on right click:
 				send "&apew pew - the firework has shot" to player
 				shoot firework rocket from player's location at speed 1 upward
 				set {_firework.location.%player%} to location of projectile
-				set {_ran.type.num.%player%} to a random number between 1 and 5
+				set {_ran.type.num.%player%} to a random number between 1 and 15
 				wait 1 second
 				if {_ran.type.num.%player%} is 1:
-					set {_ran.type.type.%player%} to "ball"
+					pop ball colored gold at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 2:
-					set {_ran.type.type.%player%} to "ball large"
+					pop ball colored cyan at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 3:
-					set {_ran.type.type.%player%} to "burst"
+					pop ball colored gold and cyan at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 4:
-					set {_ran.type.type.%player%} to "creeper"
+					pop ball large colored gold at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 5:
-					set {_ran.type.type.%player%} to "star"
-				set {_ran.color.num.%player%} to a random number between 1 and 3
-				wait 1 second
-				if {_ran.color.num.%player%} is 1:
-					set {_ran.color.color.%player%} to "gold"
-				if {_ran.color.num.%player%} is 2:
-					set {_ran.color.color.%player%} to "cyan"
-				if {_ran.color.num.%player%} is 3:
-					set {_ran.color.color.%player%} to "cyan and gold"
-				pop {_ran.type.type.%player%} colored {_ran.color.color.%player%} at {_firework.location.%player%}
-				stop
+					pop ball large colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 6:
+					pop ball large colored gold and cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 7:
+					pop burst colored gold at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 8:
+					pop burst colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 9:
+					pop burst colored gold and cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 10:
+					pop creeper colored gold at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 11:
+					pop creeper colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 12:
+					pop creeper colored gold and cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 13:
+					pop star colored gold at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 14:
+					pop star colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 15:
+					pop star colored gold and cyan at {_firework.location.%player%}
+					stop
 			if {time.set.%player%} is set:
 				if difference between {time.set.%player%} and now is smaller than 1 second:
 					send "&eYou must wait 10 seconds before you may use this." to player
@@ -414,28 +439,53 @@ on right click:
 				send "&apew pew - the firework has shot" to player
 				shoot firework rocket from player's location at speed 1 upward
 				set {_firework.location.%player%} to location of projectile
-				set {_ran.type.num.%player%} to a random number between 1 and 5
+				set {_ran.type.num.%player%} to a random number between 1 and 15
 				wait 1 second
 				if {_ran.type.num.%player%} is 1:
-					set {_ran.type.type.%player%} to "ball"
+					pop ball colored gold at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 2:
-					set {_ran.type.type.%player%} to "ball large"
+					pop ball colored cyan at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 3:
-					set {_ran.type.type.%player%} to "burst"
+					pop ball colored gold and cyan at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 4:
-					set {_ran.type.type.%player%} to "creeper"
+					pop ball large colored gold at {_firework.location.%player%}
+					stop
 				if {_ran.type.num.%player%} is 5:
-					set {_ran.type.type.%player%} to "star"
-				set {_ran.color.num.%player%} to a random number between 1 and 3
-				wait 1 second
-				if {_ran.color.num.%player%} is 1:
-					set {_ran.color.color.%player%} to "gold"
-				if {_ran.color.num.%player%} is 2:
-					set {_ran.color.color.%player%} to "cyan"
-				if {_ran.color.num.%player%} is 3:
-					set {_ran.color.color.%player%} to "cyan and gold"
-				pop {_ran.type.type.%player%} colored {_ran.color.color.%player%} at {_firework.location.%player%}
-				stop
+					pop ball large colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 6:
+					pop ball large colored gold and cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 7:
+					pop burst colored gold at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 8:
+					pop burst colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 9:
+					pop burst colored gold and cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 10:
+					pop creeper colored gold at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 11:
+					pop creeper colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 12:
+					pop creeper colored gold and cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 13:
+					pop star colored gold at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 14:
+					pop star colored cyan at {_firework.location.%player%}
+					stop
+				if {_ran.type.num.%player%} is 15:
+					pop star colored gold and cyan at {_firework.location.%player%}
+					stop
 			
 on damage:
 	world is "world":
