@@ -1,0 +1,309 @@
+command /ft [<text>] [<text>]:
+	permission: obam.admin
+	trigger:
+		argument 1 is not set:
+			send "&fPlease type: &e/ft &f<&etype&f> <&ecolor&f>" to player
+			send "&fFor a list of commands type &e/ft list type" to player
+			send "&fFor a list of colors type &e/ft list color" to player
+			stop
+		argument 1 is "list":
+			argument 2 is not set:
+				send "&fPlease type: &e/ft list type &for &e/ft list color" to player
+				stop
+			argument 2 is "type":
+				send "&fList of firework types:" to player
+				send "&eball" to player
+				send "&eball large &F(for the command, please type ball_large) " to player
+				send "&eburst" to player
+				send "&ecreeper" to player
+				send "&estar" to player
+				stop
+			argument 2 is "color":
+				send "&fList of colors:" to player
+				send "&0Black" to player
+				send "&1Dark Blue" to player
+				send "&2Dark Green" to player
+				send "&3Dark Aqua" to player
+				send "&4Dark Red" to player
+				send "&5Dark Purple" to player
+				send "&6Gold" to player
+				send "&7Gray" to player
+				send "&8Dark Gray" to player
+				send "&9Blue" to player
+				send "&aGreen" to player
+				send "&bAqua" to player
+				send "&cRed" to player
+				send "&dLight Purple" to player
+				send "&eYellow" to player
+				send "&fWhite" to player
+				stop
+		argument 1 is "ball":
+			set {_firework.loc.%player%} to location of player
+			add 10 to y-coordinate of {_firework.loc.%player%}
+			argument 2 is not set:
+				pop ball colored white at {_firework.loc.%player%}
+				stop
+			argument 2 is "black":
+				pop ball colored black at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark blue":
+				pop ball colored dark blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark green":
+				pop ball colored dark green at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark aqua":
+				pop ball colored dark aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark red":
+				pop ball colored dark red at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark purple":
+				pop ball colored dark purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "gold":
+				pop ball colored gold at {_firework.loc.%player%}
+				stop	
+			argument 2 is "gray":
+				pop ball colored gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark gray":
+				pop ball colored dark gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "blue":
+				pop ball colored blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "green":
+				pop ball colored green at {_firework.loc.%player%}
+				stop	
+			argument 2 is "aqua":
+				pop ball colored aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "red":
+				pop ball colored red at {_firework.loc.%player%}
+				stop
+			argument 2 is "light purple":
+				pop ball colored light purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "yellow":
+				pop ball colored yellow at {_firework.loc.%player%}
+				stop	
+			argument 2 is "white":
+				pop ball colored white at {_firework.loc.%player%}
+				stop
+		argument 1 is "ball_large":
+			set {_firework.loc.%player%} to location of player
+			add 10 to y-coordinate of {_firework.loc.%player%}
+			argument 2 is not set:
+				pop ball large colored white at {_firework.loc.%player%}
+				stop
+			argument 2 is "black":
+				pop ball large colored black at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark blue":
+				pop ball large colored dark blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark green":
+				pop ball large colored dark green at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark aqua":
+				pop ball large colored dark aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark red":
+				pop ball large colored dark red at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark purple":
+				pop ball large colored dark purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "gold":
+				pop ball large colored gold at {_firework.loc.%player%}
+				stop	
+			argument 2 is "gray":
+				pop ball large colored gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark gray":
+				pop ball large colored dark gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "blue":
+				pop ball large colored blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "green":
+				pop ball large colored green at {_firework.loc.%player%}
+				stop	
+			argument 2 is "aqua":
+				pop ball large colored aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "red":
+				pop ball large colored red at {_firework.loc.%player%}
+				stop
+			argument 2 is "light purple":
+				pop ball large colored light purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "yellow":
+				pop ball large colored yellow at {_firework.loc.%player%}
+				stop	
+			argument 2 is "white":
+				pop ball large colored white at {_firework.loc.%player%}
+				stop		
+		argument 1 is "burst":
+			set {_firework.loc.%player%} to location of player
+			add 10 to y-coordinate of {_firework.loc.%player%}
+			argument 2 is not set:
+				pop burst colored white at {_firework.loc.%player%}
+				stop
+			argument 2 is "black":
+				pop burst colored black at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark blue":
+				pop burst colored dark blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark green":
+				pop burst colored dark green at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark aqua":
+				pop burst colored dark aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark red":
+				pop burst colored dark red at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark purple":
+				pop burst colored dark purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "gold":
+				pop burst colored gold at {_firework.loc.%player%}
+				stop	
+			argument 2 is "gray":
+				pop burst colored gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark gray":
+				pop burst colored dark gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "blue":
+				pop burst colored blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "green":
+				pop burst colored green at {_firework.loc.%player%}
+				stop	
+			argument 2 is "aqua":
+				pop burst colored aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "red":
+				pop burst colored red at {_firework.loc.%player%}
+				stop
+			argument 2 is "light purple":
+				pop burst colored light purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "yellow":
+				pop burst colored yellow at {_firework.loc.%player%}
+				stop	
+			argument 2 is "white":
+				pop burst colored white at {_firework.loc.%player%}
+				stop		
+		argument 1 is "creeper":
+			set {_firework.loc.%player%} to location of player
+			add 10 to y-coordinate of {_firework.loc.%player%}
+			argument 2 is not set:
+				pop creeper colored white at {_firework.loc.%player%}
+				stop
+			argument 2 is "black":
+				pop creeper colored black at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark blue":
+				pop creeper colored dark blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark green":
+				pop creeper colored dark green at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark aqua":
+				pop creeper colored dark aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark red":
+				pop creeper colored dark red at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark purple":
+				pop creeper colored dark purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "gold":
+				pop creeper colored gold at {_firework.loc.%player%}
+				stop	
+			argument 2 is "gray":
+				pop creeper colored gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark gray":
+				pop creeper colored dark gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "blue":
+				pop creeper colored blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "green":
+				pop creeper colored green at {_firework.loc.%player%}
+				stop	
+			argument 2 is "aqua":
+				pop creeper colored aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "red":
+				pop creeper colored red at {_firework.loc.%player%}
+				stop
+			argument 2 is "light purple":
+				pop creeper colored light purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "yellow":
+				pop creeper colored yellow at {_firework.loc.%player%}
+				stop	
+			argument 2 is "white":
+				pop creeper colored white at {_firework.loc.%player%}
+				stop		
+		argument 1 is "star":
+			set {_firework.loc.%player%} to location of player
+			add 10 to y-coordinate of {_firework.loc.%player%}
+			argument 2 is not set:
+				pop star colored white at {_firework.loc.%player%}
+				stop
+			argument 2 is "black":
+				pop star colored black at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark blue":
+				pop star colored dark blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark green":
+				pop star colored dark green at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark aqua":
+				pop star colored dark aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark red":
+				pop star colored dark red at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark purple":
+				pop star colored dark purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "gold":
+				pop star colored gold at {_firework.loc.%player%}
+				stop	
+			argument 2 is "gray":
+				pop star colored gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "dark gray":
+				pop star colored dark gray at {_firework.loc.%player%}
+				stop
+			argument 2 is "blue":
+				pop star colored blue at {_firework.loc.%player%}
+				stop
+			argument 2 is "green":
+				pop star colored green at {_firework.loc.%player%}
+				stop	
+			argument 2 is "aqua":
+				pop star colored aqua at {_firework.loc.%player%}
+				stop
+			argument 2 is "red":
+				pop star colored red at {_firework.loc.%player%}
+				stop
+			argument 2 is "light purple":
+				pop star colored light purple at {_firework.loc.%player%}
+				stop
+			argument 2 is "yellow":
+				pop star colored yellow at {_firework.loc.%player%}
+				stop	
+			argument 2 is "white":
+				pop star colored white at {_firework.loc.%player%}
+				stop			
