@@ -353,56 +353,59 @@ on right click:
 		player's tool is {@gFirework}:
 			cancel event
 			if {time.set.%player%} is not set:
+				if distance between player and targeted block is greater than 6:
+					stop
 				set {time.set.%player%} to now
 				send "&apew pew - the firework has shot" to player
-				shoot firework rocket from player's location at speed 1 upward
-				set {_firework.location.%player%} to location of projectile
+				shoot firework rocket from targeted block at speed 1 upward
+				set {_firework.loc.%player%} to location of targeted block
+				add 10 to y-coordinate of {_firework.loc.%player%}
+				wait 2 seconds
 				set {_ran.type.num.%player%} to a random number between 1 and 15
-				wait 1 second
 				if {_ran.type.num.%player%} is 1:
-					pop ball colored gold at {_firework.location.%player%}
+					pop ball colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 2:
-					pop ball colored cyan at {_firework.location.%player%}
+					pop ball colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 3:
-					pop ball colored gold and cyan at {_firework.location.%player%}
+					pop ball colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 4:
-					pop ball large colored gold at {_firework.location.%player%}
+					pop ball large colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 5:
-					pop ball large colored cyan at {_firework.location.%player%}
+					pop ball large colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 6:
-					pop ball large colored gold and cyan at {_firework.location.%player%}
+					pop ball large colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 7:
-					pop burst colored gold at {_firework.location.%player%}
+					pop burst colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 8:
-					pop burst colored cyan at {_firework.location.%player%}
+					pop burst colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 9:
-					pop burst colored gold and cyan at {_firework.location.%player%}
+					pop burst colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 10:
-					pop creeper colored gold at {_firework.location.%player%}
+					pop creeper colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 11:
-					pop creeper colored cyan at {_firework.location.%player%}
+					pop creeper colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 12:
-					pop creeper colored gold and cyan at {_firework.location.%player%}
+					pop creeper colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 13:
-					pop star colored gold at {_firework.location.%player%}
+					pop star colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 14:
-					pop star colored cyan at {_firework.location.%player%}
+					pop star colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 15:
-					pop star colored gold and cyan at {_firework.location.%player%}
+					pop star colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 			if {time.set.%player%} is set:
 				if difference between {time.set.%player%} and now is smaller than 1 second:
@@ -435,58 +438,61 @@ on right click:
 				if difference between {time.set.%player%} and now is smaller than 10 seconds:
 					send "&eYou must wait 1 second before you may use this." to player
 					stop
+				if distance between player and targeted block is greater than 6:
+					stop
 				set {time.set.%player%} to now
 				send "&apew pew - the firework has shot" to player
-				shoot firework rocket from player's location at speed 1 upward
-				set {_firework.location.%player%} to location of projectile
+				shoot firework rocket from targeted block at speed 1 upward
+				set {_firework.loc.%player%} to location of targeted block
+				add 10 to y-coordinate of {_firework.loc.%player%}
+				wait 2 seconds
 				set {_ran.type.num.%player%} to a random number between 1 and 15
-				wait 1 second
 				if {_ran.type.num.%player%} is 1:
-					pop ball colored gold at {_firework.location.%player%}
+					pop ball colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 2:
-					pop ball colored cyan at {_firework.location.%player%}
+					pop ball colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 3:
-					pop ball colored gold and cyan at {_firework.location.%player%}
+					pop ball colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 4:
-					pop ball large colored gold at {_firework.location.%player%}
+					pop ball large colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 5:
-					pop ball large colored cyan at {_firework.location.%player%}
+					pop ball large colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 6:
-					pop ball large colored gold and cyan at {_firework.location.%player%}
+					pop ball large colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 7:
-					pop burst colored gold at {_firework.location.%player%}
+					pop burst colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 8:
-					pop burst colored cyan at {_firework.location.%player%}
+					pop burst colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 9:
-					pop burst colored gold and cyan at {_firework.location.%player%}
+					pop burst colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 10:
-					pop creeper colored gold at {_firework.location.%player%}
+					pop creeper colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 11:
-					pop creeper colored cyan at {_firework.location.%player%}
+					pop creeper colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 12:
-					pop creeper colored gold and cyan at {_firework.location.%player%}
+					pop creeper colored gold and dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 13:
-					pop star colored gold at {_firework.location.%player%}
+					pop star colored gold at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 14:
-					pop star colored cyan at {_firework.location.%player%}
+					pop star colored dark aqua at {_firework.loc.%player%}
 					stop
 				if {_ran.type.num.%player%} is 15:
-					pop star colored gold and cyan at {_firework.location.%player%}
+					pop star colored gold and dark aqua at {_firework.loc.%player%}
 					stop
-			
+				
 on damage:
 	world is "world":
 		cancel event
