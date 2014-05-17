@@ -349,17 +349,17 @@ on right click:
 		player's tool is {@gFly}:
 			{fly.hub.%player%} is not set:
 				set {fly.hub.%player%} to true
-				allow player to fly
+				set player's fly state to true
 				send "&aYou can fly!" to player
 				stop
 			{fly.hub.%player%} is true:
 				set {fly.hub.%player%} to false
-				disallow player to fly
+				set player's fly state to false
 				send "&cYou can no longer fly!" to player
 				stop
 			{fly.hub.%player%} is false:
 				set {fly.hub.%player%} to true
-				allow player to fly
+				set player's fly state to true
 				send "&aYou can fly!" to player
 				stop
 		player's tool is {@gFirework}:
@@ -367,11 +367,12 @@ on right click:
 			if {time.set.%player%} is not set:
 				if distance between player and targeted block is less than 6:
 					set {time.set.%player%} to now
+					set {_firework.loc.%player%} to location of targeted block
 					shoot firework rocket from targeted block at speed 1 upward
-					set {_firework.loc.%player%} to targeted block
 					add 10 to y-coordinate of {_firework.loc.%player%}
-					wait 2 seconds
+					wait 1 second
 					set {_ran.type.num.%player%} to a random number between 1 and 15
+					wait 1 second
 					if {_ran.type.num.%player%} is 1:
 						pop ball colored gold at {_firework.loc.%player%}
 						stop
@@ -434,11 +435,12 @@ on right click:
 					stop
 				if distance between player and targeted block is less than 6:
 					set {time.set.%player%} to now
+					set {_firework.loc.%player%} to location of targeted block
 					shoot firework rocket from targeted block at speed 1 upward
-					set {_firework.loc.%player%} to targeted block
 					add 10 to y-coordinate of {_firework.loc.%player%}
-					wait 2 seconds
+					wait 1 second
 					set {_ran.type.num.%player%} to a random number between 1 and 15
+					wait 1 second
 					if {_ran.type.num.%player%} is 1:
 						pop ball colored gold at {_firework.loc.%player%}
 						stop
