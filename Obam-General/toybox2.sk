@@ -17,7 +17,7 @@ options:
 	dWtfronts: i;magma cream;n;&6WTFronts;l;&cBETA TESTING|| ||&7Extreme Survival with extreme payoffs!;c;sudo %player% worlds wtf
 	dKitpvp: i;blaze rod;n;&6Kit PVP;l;&7Play OBAM's KitPvP with new original kits!;c;sudo %player% worlds kit
 	#
-	gToybox: ender chest named "&2Toy&9Box" with lore "&6Click to open the toy box.||&6See what toys you may use."
+	gToybox: ender chest named "&2Toy &9Box" with lore "&6Click to open the toy box.||&6See what toys you may use."
 	#
 	gEffectmachine: ender portal frame named "&3The &2Effect &3Machine" with lore "&6Click to activate||&6the effect machine."
 	#
@@ -34,7 +34,7 @@ options:
 	nFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&3Not Bought|| ||&eType &f/toy shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% toy shop
 	eFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox firework
 	dFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox firework
-	gFirework: firework rocket named "&6OBAM&fCraft &3Firework" with lore "&6Right click to see a random||&6OBAM themed firework effect.|| ||&710 Second Cooldown"
+	gFirework: firework rocket named "&6OBAM&fCraft &3Firework" with lore "&6Right click to see a random||&6OBAM themed firework effect.|| ||&73 Second Cooldown"
 	#
 	uPiston: i;piston base;n;&6Player&fPusher;l;&3Not Bought|| ||&aPrice: 5,000 tickets||&5Click to Buy.;c;sudo %player% toy piston
 	bPiston: i;piston base;n;&6Player&fPusher;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% toy piston
@@ -86,6 +86,7 @@ on join:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		clear {time.set.%player%}
 		remove all stone from player's inventory
 		remove all grass block from player's inventory
 		remove all dirt from player's inventory
@@ -136,6 +137,7 @@ on respawn:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		clear {time.set.%player%}
 		remove all stone from player's inventory
 		remove all grass block from player's inventory
 		remove all dirt from player's inventory
@@ -154,7 +156,7 @@ command /purge <text>:
 			loop all entities in player's world:
 				if loop-entity is a boat:
 					delete loop-entity
-			if player is in world "world":
+			if player is in "world":
 				loop all players in player's world:
 					set {boatstop.%loop-player%} to false
 					set {toybox.boat.%loop-player%} to 0
@@ -165,7 +167,7 @@ command /purge <text>:
 			loop all entities in player's world:
 				if loop-entity is a minecart:
 					delete loop-entity
-			if player is in world "world":
+			if player is in "world":
 				loop all players in player's world:
 					set {cartstop.%loop-player%} to false
 					set {toybox.cart.%loop-player%} to 0
@@ -180,6 +182,7 @@ command /purge <text>:
 on teleport:
 	#player is in "death-hub"
 	player is in "world":
+		cancel event
 		player does not have a {@gHelp}:
 			give 1 {@gHelp} to player
 		player does not have a {@gWorlds}:
@@ -222,7 +225,9 @@ on teleport:
 		remove all grass block from player's inventory
 		remove all dirt from player's inventory
 		remove all cobblestone from player's inventory
+		uncancel event
 	player is not in "world":
+		cancel event
 		if {boatstop.%player%} is true:
 			delete vehicle of player
 			set {boatstop.%player%} to false
@@ -255,6 +260,7 @@ on teleport:
 			remove all {@gFirework} from player's inventory
 		if player has {@gPiston}:
 			remove all {@gPiston} from player's inventory
+		clear {time.set.%player%}
 		set {_CartName.%player%} to "&3%player%'s Cart"
 		set {_BoatName.%player%} to "&3%player%'s Boat"
 		loop all entities:
@@ -264,6 +270,7 @@ on teleport:
 			if loop-entity is a {@gBoat}:
 				if name of loop-entity is "%{_BoatName.%player%}%":
 					delete loop-entity
+		uncancel event
 			
 on place:
 	player is in "world":
@@ -325,6 +332,11 @@ on click:
 		player's tool is {@gEffectmachine}:
 			make player execute command "/effectmachine"
 			
+on entity target:
+	entity's target is a player:
+		player's tool is {@gPiston}:
+			push the entity in the direction of the player at speed 1
+			
 on right click:
 	player is in "world":
 		player's tool is {@gHelp}:
@@ -353,154 +365,134 @@ on right click:
 		player's tool is {@gFirework}:
 			cancel event
 			if {time.set.%player%} is not set:
-				if distance between player and targeted block is greater than 6:
-					stop
-				set {time.set.%player%} to now
-				send "&apew pew - the firework has shot" to player
-				shoot firework rocket from targeted block at speed 1 upward
-				set {_firework.loc.%player%} to location of targeted block
-				add 10 to y-coordinate of {_firework.loc.%player%}
-				wait 2 seconds
-				set {_ran.type.num.%player%} to a random number between 1 and 15
-				if {_ran.type.num.%player%} is 1:
-					pop ball colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 2:
-					pop ball colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 3:
-					pop ball colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 4:
-					pop ball large colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 5:
-					pop ball large colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 6:
-					pop ball large colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 7:
-					pop burst colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 8:
-					pop burst colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 9:
-					pop burst colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 10:
-					pop creeper colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 11:
-					pop creeper colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 12:
-					pop creeper colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 13:
-					pop star colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 14:
-					pop star colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 15:
-					pop star colored gold and dark aqua at {_firework.loc.%player%}
-					stop
+				if distance between player and targeted block is less than 6:
+					set {time.set.%player%} to now
+					shoot firework rocket from targeted block at speed 1 upward
+					set {_firework.loc.%player%} to targeted block
+					add 10 to y-coordinate of {_firework.loc.%player%}
+					wait 2 seconds
+					set {_ran.type.num.%player%} to a random number between 1 and 15
+					if {_ran.type.num.%player%} is 1:
+						pop ball colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 2:
+						pop ball colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 3:
+						pop ball colored gold at {_firework.loc.%player%}
+						pop ball colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 4:
+						pop ball large colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 5:
+						pop ball large colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 6:
+						pop ball large colored gold at {_firework.loc.%player%}
+						pop ball large colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 7:
+						pop burst colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 8:
+						pop burst colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 9:
+						pop burst colored gold at {_firework.loc.%player%}
+						pop burst colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 10:
+						pop creeper colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 11:
+						pop creeper colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 12:
+						pop creeper colored gold at {_firework.loc.%player%}
+						pop creeper colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 13:
+						pop star colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 14:
+						pop star colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 15:
+						pop star colored gold at {_firework.loc.%player%}
+						pop star colored dark aqua at {_firework.loc.%player%}
+						stop
 			if {time.set.%player%} is set:
 				if difference between {time.set.%player%} and now is smaller than 1 second:
-					send "&eYou must wait 10 seconds before you may use this." to player
-					stop
-				if difference between {time.set.%player%} and now is smaller than 2 seconds:
-					send "&eYou must wait 9 seconds before you may use this." to player
-					stop
-				if difference between {time.set.%player%} and now is smaller than 3 seconds:
-					send "&eYou must wait 8 seconds before you may use this." to player
-					stop
-				if difference between {time.set.%player%} and now is smaller than 4 seconds:
-					send "&eYou must wait 7 seconds before you may use this." to player
-					stop
-				if difference between {time.set.%player%} and now is smaller than 5 seconds:
-					send "&eYou must wait 6 seconds before you may use this." to player
-					stop
-				if difference between {time.set.%player%} and now is smaller than 6 seconds:
-					send "&eYou must wait 5 seconds before you may use this." to player
-					stop
-				if difference between {time.set.%player%} and now is smaller than 7 seconds:
-					send "&eYou must wait 4 seconds before you may use this." to player
-					stop
-				if difference between {time.set.%player%} and now is smaller than 8 seconds:
 					send "&eYou must wait 3 seconds before you may use this." to player
 					stop
-				if difference between {time.set.%player%} and now is smaller than 9 seconds:
+				if difference between {time.set.%player%} and now is smaller than 2 seconds:
 					send "&eYou must wait 2 seconds before you may use this." to player
 					stop
-				if difference between {time.set.%player%} and now is smaller than 10 seconds:
+				if difference between {time.set.%player%} and now is smaller than 3 seconds:
 					send "&eYou must wait 1 second before you may use this." to player
 					stop
-				if distance between player and targeted block is greater than 6:
-					stop
-				set {time.set.%player%} to now
-				send "&apew pew - the firework has shot" to player
-				shoot firework rocket from targeted block at speed 1 upward
-				set {_firework.loc.%player%} to location of targeted block
-				add 10 to y-coordinate of {_firework.loc.%player%}
-				wait 2 seconds
-				set {_ran.type.num.%player%} to a random number between 1 and 15
-				if {_ran.type.num.%player%} is 1:
-					pop ball colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 2:
-					pop ball colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 3:
-					pop ball colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 4:
-					pop ball large colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 5:
-					pop ball large colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 6:
-					pop ball large colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 7:
-					pop burst colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 8:
-					pop burst colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 9:
-					pop burst colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 10:
-					pop creeper colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 11:
-					pop creeper colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 12:
-					pop creeper colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 13:
-					pop star colored gold at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 14:
-					pop star colored dark aqua at {_firework.loc.%player%}
-					stop
-				if {_ran.type.num.%player%} is 15:
-					pop star colored gold and dark aqua at {_firework.loc.%player%}
-					stop
-				
-on damage:
-	world is "world":
-		cancel event
-		attacker is a player:
-			victim is a player:
-				attacker's tool is {@gPiston}:
-					push the victim in the direction of the attacker at speed 1
+				if distance between player and targeted block is less than 6:
+					set {time.set.%player%} to now
+					shoot firework rocket from targeted block at speed 1 upward
+					set {_firework.loc.%player%} to targeted block
+					add 10 to y-coordinate of {_firework.loc.%player%}
+					wait 2 seconds
+					set {_ran.type.num.%player%} to a random number between 1 and 15
+					if {_ran.type.num.%player%} is 1:
+						pop ball colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 2:
+						pop ball colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 3:
+						pop ball colored gold at {_firework.loc.%player%}
+						pop ball colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 4:
+						pop ball large colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 5:
+						pop ball large colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 6:
+						pop ball large colored gold at {_firework.loc.%player%}
+						pop ball large colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 7:
+						pop burst colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 8:
+						pop burst colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 9:
+						pop burst colored gold at {_firework.loc.%player%}
+						pop burst colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 10:
+						pop creeper colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 11:
+						pop creeper colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 12:
+						pop creeper colored gold at {_firework.loc.%player%}
+						pop creeper colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 13:
+						pop star colored gold at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 14:
+						pop star colored dark aqua at {_firework.loc.%player%}
+						stop
+					if {_ran.type.num.%player%} is 15:
+						pop star colored gold at {_firework.loc.%player%}
+						pop star colored dark aqua at {_firework.loc.%player%}
+						stop
 			
+on pick up:
+	cancel event
+	
 on vehicle exit:
 	#player is in "death-hub"
 	player is in "world":
@@ -553,6 +545,7 @@ on disconnect:
 			remove all {@gFirework} from player's inventory
 		if player has {@gPiston}:
 			remove all {@gPiston} from player's inventory
+		clear {time.set.%player%}
 		set {_CartName.%player%} to "&3%player%'s Cart"
 		set {_BoatName.%player%} to "&3%player%'s Boat"
 		loop all entities:
@@ -578,16 +571,72 @@ on drop:
 			cancel event
 		event-item is {@gToybox}:
 			cancel event
+			remove all {@gToybox} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
+			give 1 {@gToybox} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
 		event-item is {@gEffectmachine}:
 			cancel event
-		event-item is {@gBoat}:
-			cancel event
-		event-item is {@gCart}:
-			cancel event
-		event-item is {@gFirework}:
-			cancel event
+			remove all {@gEffectmachine} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
+			if {toybox.boat.%player%} is 0:
+				if {toybox.cart.%player%} is 0:
+					if {toybox.firework.%player%} is 0:
+						if {toybox.piston.%player%} is 0:
+							if {boatstop.%player%} is false:
+								if {cartstop.%player%} is false:
+									give 1 cobblestone to player				
+			give 1 {@gEffectmachine} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
+			remove all cobblestone from player's inventory
 		event-item is {@gPiston}:
 			cancel event
+			remove all {@gPiston} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
+			give 1 {@gPiston} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
+		event-item is {@gBoat}:
+			cancel event
+			remove all {@gBoat} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
+			give 1 {@gBoat} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
+		event-item is {@gCart}:
+			cancel event
+			remove all {@gCart} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
+			give 1 {@gCart} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
+		event-item is {@gFirework}:
+			cancel event
+			remove all {@gFirework} from player's inventory
+			give 1 stone to player
+			give 1 grass block to player
+			give 1 dirt to player
+			give 1 {@gFirework} to player
+			remove all stone from player's inventory
+			remove all grass block from player's inventory
+			remove all dirt from player's inventory
 			
 on death:
 	player is in "world":
@@ -702,23 +751,23 @@ command /toybox [<text>]:
 		player is in "world":
 			argument is not set:
 				if {toybox.boat.%player%} is 1:
-					send "&eOpening the majestical &2Toy&9Box &e. . ." to player
-					show "s;2;{@eBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy&9Box" to player
+					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
+					show "s;2;{@eBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
 					stop
 				if {toybox.cart.%player%} is 1:
-					send "&eOpening the majestical &2Toy&9Box &e. . ." to player
-					show "s;2;{@dBoat};s;4;{@eCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy&9Box" to player
+					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
+					show "s;2;{@dBoat};s;4;{@eCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
 					stop
 				if {toybox.firework.%player%} is 1:
-					send "&eOpening the majestical &2Toy&9Box &e. . ." to player
-					show "s;2;{@dBoat};s;4;{@dCart};s;6;{@eFirework};s;8;{@dPiston}" with 1 row named "&2Toy&9Box" to player
+					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
+					show "s;2;{@dBoat};s;4;{@dCart};s;6;{@eFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
 					stop
 				if {toybox.piston.%player%} is 1:
-					send "&eOpening the majestical &2Toy&9Box &e. . ." to player
-					show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&2Toy&9Box" to player
+					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
+					show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&2Toy &9Box" to player
 					stop
-				send "&eOpening the majestical &2Toy&9Box &e. . ." to player
-				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy&9Box" to player
+				send "&eOpening the majestical &2Toy &9Box &e. . ." to player
+				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
 				stop
 			argument is "boat":
 				make player execute command "/boat"
