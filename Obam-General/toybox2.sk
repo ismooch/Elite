@@ -725,6 +725,7 @@ command /toy [<text>]:
 				send "&eCorrect Usage: /toy shop" to player
 				stop
 			argument is "shop":
+				wait 1 second
 				send "&eEntering the &2Toy &9Shop &e. . ." to player
 				if {db_toyshop.firework.%player%} is true:
 					if {db_toyshop.piston.%player%} is true:	
@@ -741,9 +742,11 @@ command /toy [<text>]:
 				show "s;3;{@uFirework};s;7;{@uPiston}" with 1 row named "&2Toy &9Shop" to player
 				stop
 			argument is "firework":
+				wait 1 second
 				make player execute command "/buy firework"
 				stop
 			argument is "piston":
+				wait 1 second
 				make player execute command "/buy piston"
 				stop
 				
@@ -754,25 +757,28 @@ command /effect [<text>]:
 				send "&eCorrect Usage: /effect shop" to player
 				stop
 			argument is "shop":
-				send "&eEntering the &2Effect &9Shop &e. . ." to player
+				wait 1 second
+				send "&eEntering the &9Effect &2Shop &e. . ." to player
 				if {db_effectshop.effect.%player%} is true:
 					if {db_effectshop.disguise.%player%} is true:	
-						show "s;3;{@bEffect};s;7;{@bDisguise}" with 1 row named "&2Effect &9Shop" to player
+						show "s;3;{@bEffect};s;7;{@bDisguise}" with 1 row named "&9Effect &2Shop" to player
 						stop
 				if {db_effectshop.effect.%player%} is true:
 					if {db_effectshop.disguise.%player%} is false:	
-						show "s;3;{@bEffect};s;7;{@uDisguise}" with 1 row named "&2Effect &9Shop" to player
+						show "s;3;{@bEffect};s;7;{@uDisguise}" with 1 row named "&9Effect &2Shop" to player
 						stop
 				if {db_effectshop.effect.%player%} is false:
 					if {db_effectshop.disguise.%player%} is true:	
-						show "s;3;{@uEffect};s;7;{@bDisguise}" with 1 row named "&2Effect &9Shop" to player
+						show "s;3;{@uEffect};s;7;{@bDisguise}" with 1 row named "&9Effect &2Shop" to player
 						stop
-				show "s;3;{@uEffect};s;7;{@uDisguise}" with 1 row named "&2Effect &9Shop" to player
+				show "s;3;{@uEffect};s;7;{@uDisguise}" with 1 row named "&9Effect &2Shop" to player
 				stop
 			argument is "magic":
+				wait 1 second
 				make player execute command "/buy effect"
 				stop
 			argument is "disguise":
+				wait 1 second
 				make player execute command "/buy disguise"
 				stop
 
