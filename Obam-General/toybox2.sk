@@ -67,6 +67,7 @@ on join:
 		set {db_toyshop.firework.%player%} to false
 	if {db_toyshop.piston.%player%} is not set:
 		set {db_toyshop.piston.%player%} to false
+	#
 	player is in "world":
 		player does not have a {@gHelp}:
 			give 1 {@gHelp} to player
@@ -81,7 +82,8 @@ on join:
 			give 1 {@gToybox} to player
 		give 1 cobblestone to player
 		player does not have a {@gEffectmachine}:
-			give 1 {@gEffectmachine} to player		
+			give 1 {@gEffectmachine} to player	
+		#
 		if {boatstop.%player%} is not set:
 			set {boatstop.%player%} to false
 		if {boatstop.%player%} is true:
@@ -98,6 +100,12 @@ on join:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is not set:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is not set:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is not set:
+			set {effects.disguise.%player%} to 0
+		#
 		if {toybox.boat.%player%} is 1:
 			set {toybox.boat.%player%} to 0
 		if {toybox.cart.%player%} is 1:
@@ -106,9 +114,17 @@ on join:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is 1:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is 1:
+			set {effects.disguise.%player%} to 0
+		#
 		clear {time.set.%player%}
+		#
 		{fly.hub.%player%} is true:
 			set fly state of player to true
+		#
 		remove all stone from player's inventory
 		remove all grass block from player's inventory
 		remove all dirt from player's inventory
@@ -120,6 +136,15 @@ on inventory click:
 		
 on respawn:
 	#player is in "death-hub"
+	if {db_effectshop.effect.%player%} is not set:
+		set {db_effectshop.effect.%player%} to false
+	if {db_effectshop.disguise.%player%} is not set:
+		set {db_effectshop.disguise.%player%} to false
+	if {db_toyshop.firework.%player%} is not set:
+		set {db_toyshop.firework.%player%} to false
+	if {db_toyshop.piston.%player%} is not set:
+		set {db_toyshop.piston.%player%} to false
+	#
 	player is in "world":
 		player does not have a {@gHelp}:
 			give 1 {@gHelp} to player
@@ -134,7 +159,8 @@ on respawn:
 			give 1 {@gToybox} to player
 		give 1 cobblestone to player
 		player does not have a {@gEffectmachine}:
-			give 1 {@gEffectmachine} to player
+			give 1 {@gEffectmachine} to player	
+		#
 		if {boatstop.%player%} is not set:
 			set {boatstop.%player%} to false
 		if {boatstop.%player%} is true:
@@ -151,6 +177,12 @@ on respawn:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is not set:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is not set:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is not set:
+			set {effects.disguise.%player%} to 0
+		#
 		if {toybox.boat.%player%} is 1:
 			set {toybox.boat.%player%} to 0
 		if {toybox.cart.%player%} is 1:
@@ -159,9 +191,17 @@ on respawn:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is 1:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is 1:
+			set {effects.disguise.%player%} to 0
+		#
 		clear {time.set.%player%}
+		#
 		{fly.hub.%player%} is true:
 			set fly state of player to true
+		#
 		remove all stone from player's inventory
 		remove all grass block from player's inventory
 		remove all dirt from player's inventory
@@ -223,6 +263,7 @@ on teleport:
 		give 1 cobblestone to player
 		player does not have a {@gEffectmachine}:
 			give 1 {@gEffectmachine} to player
+		#
 		if {boatstop.%player%} is not set:
 			set {boatstop.%player%} to false
 		if {boatstop.%player%} is true:
@@ -239,6 +280,12 @@ on teleport:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is not set:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is not set:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is not set:
+			set {effects.disguise.%player%} to 0
+		#
 		if {toybox.boat.%player%} is 1:
 			set {toybox.boat.%player%} to 0
 		if {toybox.cart.%player%} is 1:
@@ -247,6 +294,12 @@ on teleport:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is 1:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is 1:
+			set {effects.disguise.%player%} to 0
+		#
 		remove all stone from player's inventory
 		remove all grass block from player's inventory
 		remove all dirt from player's inventory
@@ -268,6 +321,12 @@ on teleport:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is 1:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is 1:
+			set {effects.disguise.%player%} to 0
+		#
 		if player has {@gHelp}:
 			remove all {@gHelp} from player's inventory
 		if player has {@gWorlds}:
@@ -287,6 +346,7 @@ on teleport:
 		if player has {@gPiston}:
 			remove all {@gPiston} from player's inventory
 		clear {time.set.%player%}
+		#
 		set {_CartName.%player%} to "&3%player%'s Cart"
 		set {_BoatName.%player%} to "&3%player%'s Boat"
 		loop all entities:
@@ -507,7 +567,7 @@ on right click:
 						stop
 			
 on pick up:
-	world is world:
+	world is "world":
 		cancel event
 	
 on vehicle exit:
@@ -527,6 +587,7 @@ on vehicle damage:
 on vehicle destroy:
 	world is "world":
 		cancel event
+		
 on disconnect:
 	#player is in "death-hub"
 	player is in "world":
@@ -544,6 +605,12 @@ on disconnect:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		#
+		if {effects.magic.%player%} is 1:
+			set {effects.magic.%player%} to 0
+		if {effects.disguise.%player%} is 1:
+			set {effects.disguise.%player%} to 0
+		#
 		if player has {@gHelp}:
 			remove all {@gHelp} from player's inventory
 		if player has {@gWorlds}:
@@ -563,6 +630,7 @@ on disconnect:
 		if player has {@gPiston}:
 			remove all {@gPiston} from player's inventory
 		clear {time.set.%player%}
+		#
 		set {_CartName.%player%} to "&3%player%'s Cart"
 		set {_BoatName.%player%} to "&3%player%'s Boat"
 		loop all entities:
@@ -826,29 +894,29 @@ command /buy [<text>]:
 					stop
 			argument is "effect":
 				if {db_effectshop.effect.%player%} is true:
-					send "&6OBAM&fFirework &ehas already been bought." to player
+					send "&6Unstable &fGases &ehave already been bought." to player
 					stop
-				if {db_toyshop.firework.%player%} is false:
+				if {db_effectshop.effect.%player%} is false:
 					set {_amount.%player%} to player's balance
 					if {_amount.%player%} is less than 5000:
 						send "&cYou do not have enough tickets for that!" to player
 						stop
 					subtract 5000 from player's balance
-					send "&aYou have just purchased the &bOBAMFirework &afrom the Toy Shop!" to player
-					set {db_toyshop.firework.%player%} to true
+					send "&aYou have just purchased &6Unstable &fGases &afrom the Effect Shop!" to player
+					set {db_effectshop.effect.%player%} to true
 					stop
 			argument is "disguise":
 				if {db_effectshop.disguise.%player%} is true:
-					send "&6OBAM&fFirework &ehas already been bought." to player
+					send "&fMob &6Disguises &ehave already been bought." to player
 					stop
-				if {db_toyshop.firework.%player%} is false:
+				if {db_effectshop.disguise.%player%} is false:
 					set {_amount.%player%} to player's balance
-					if {_amount.%player%} is less than 5000:
+					if {_amount.%player%} is less than 2500:
 						send "&cYou do not have enough tickets for that!" to player
 						stop
 					subtract 5000 from player's balance
-					send "&aYou have just purchased the &bOBAMFirework &afrom the Toy Shop!" to player
-					set {db_toyshop.firework.%player%} to true
+					send "&aYou have just purchased &fMob &6Disguises &afrom the Effect Shop!" to player
+					set {db_effectshop.disguise.%player%} to true
 					stop
 						
 command /toybox [<text>]:
@@ -949,16 +1017,20 @@ command /effectmachine [<text>]:
 							show "s;3;{@nEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
 							stop
 				if {db_effectshop.disguise.%player%} is false:
+					if {db_effectshop.effect.%player%} is false:
+						send "&ePowering the &2Effect &3Machine &e. . ." to player
+						show "s;3;{@nEffect};s;7;{@nDisguise}" with 1 row named "&2Effect &3Machine" to player
+						stop
 					if {db_effectshop.effect.%player%} is true:
-						if {effects.effect.%player%} is 1:
+						if {effects.magic.%player%} is 1:
 							send "&ePowering the &2Effect &3Machine &e. . ." to player
 							show "s;3;{@eEffect};s;7;{@nDisguise}" with 1 row named "&2Effect &3Machine" to player
 							stop
-						if {effects.effect.%player%} is 0:
+						if {effects.magic.%player%} is 0:
 							send "&ePowering the &2Effect &3Machine &e. . ." to player
 							show "s;3;{@dEffect};s;7;{@nDisguise}" with 1 row named "&2Effect &3Machine" to player
 							stop
-				if {effects.effect.%player%} is 1:
+				if {effects.magic.%player%} is 1:
 					send "&ePowering the &2Effect &3Machine &e. . ." to player
 					show "s;3;{@eEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
 					stop
@@ -970,6 +1042,7 @@ command /effectmachine [<text>]:
 				show "s;3;{@dEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
 				stop
 			argument is "disguise":
+				wait 1 second
 				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&2Mob &3Disguises" to player
 				stop
 			argument is "magic":
@@ -979,11 +1052,11 @@ command /magic:
 	trigger:
 		player is in "world":
 			if {db_effectshop.effect.%player%} is true:
-				if {effect.magic.%player%} is true:
+				if {effects.magic.%player%} is 1:
 					spawn 100 of red dust data 1 offset with 1, 1, 1 at location of player
 					wait 10 seconds
 					make player execute command "/magic"
-				if {effect.magic.%player%} is false:
+				if {effects.magic.%player%} is 0:
 					stop
 			send "&eSorry, You have not unlocked this yet." to player
 			stop
