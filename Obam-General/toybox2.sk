@@ -9,8 +9,8 @@
 
 options:
 	gHelp: book named "&6&lOBAM&fCraft &3Guide" with lore "&7Right click with this book to learn the ins||&7and out of OBAM"
-	gWorlds: ender pearl named "&3Game Worlds" with lore "&7Right click with this to check the current Game Worlds!"
-	gFly: feather named "&3Fly!" with lore "&7Right click with this feather to fly in the hub!"
+	gWorlds: ender pearl named "&3Game &dWorlds" with lore "&7Right click with this to check the current Game Worlds!"
+	gFly: feather named "&fFly!" with lore "&7Right click with this feather to fly in the hub!"
 	#
 	dSkyblock: i;grass;n;&6Skyblock;l;&7Try our Skyblock world with custom challenges and ||&7Villager trading!;c;sudo %player% worlds skyblock
 	dFronts: i;cobblestone;n;&6Fronts;l;&7Our Special flavour of Survival with immediate||&7land claiming!;c;sudo %player% worlds survival
@@ -746,7 +746,7 @@ command /worlds [<text>]:
 		world is "world":
 			argument is not set:
 				send "&eOpening the &fWorld &3Viewer &e. . ."
-				show "s;2;{@dSkyblock};s;4;{@dKitpvp};s;6;{@dFronts};s;8;{@dWtfronts}" with 1 row named "&fWorld &3Viewer" to player
+				show "s;2;{@dSkyblock};s;4;{@dKitpvp};s;6;{@dFronts};s;8;{@dWtfronts}" with 1 row named "&7World &3Viewer" to player
 			argument is "survival":
 				send "&eYou are being summoned to Fronts." to player
 				make player execute command "/transfer survival"
@@ -1046,20 +1046,31 @@ command /effectmachine [<text>]:
 				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&2Mob &3Disguises" to player
 				stop
 			argument is "magic":
-				make player execute command "/magic"
+				make player execute command "/magic default"
 				
-command /magic:
+command /magic [<text>]:
 	trigger:
 		player is in "world":
 			if {db_effectshop.effect.%player%} is true:
-				if {effects.magic.%player%} is 1:
-					spawn 100 of red dust data 1 offset with 1, 1, 1 at location of player
-					wait 10 seconds
-					make player execute command "/magic"
-				if {effects.magic.%player%} is 0:
-					stop
-			send "&eSorry, You have not unlocked this yet." to player
-			stop
+				if argument is "default":
+					if {effects.magic.%player%} is 0:
+						set {effects.magic.%player%} to 1
+						send "&fYou are now &cunstable&f." to player
+						make player execute command "/magic effect"
+						stop
+					if {effects.magic.%player%} is 1:
+						set {effects.magic.%player%} to 0
+						send "&fYou are now &astable&f." to player
+						stop
+				if argument is "effect":
+					if {effects.magic.%player%} is 1:
+						set {_magic.loc.%player%} to location of player
+						spawn 100 of red dust data 1 offset with 1, 1, 1 at {_magic.loc.%player%}
+						wait 7 seconds
+						make player execute command "/magic effect"
+			if {db_effectshop.effect.%player%} is false:
+				send "&eSorry, You have not unlocked this yet." to player
+				stop
 			
 command /boat:
 	trigger:
