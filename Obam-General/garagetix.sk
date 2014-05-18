@@ -1,0 +1,66 @@
+command /tickadd <integer> <offlineplayer>:
+	trigger:
+		if argument 2 is not set:
+			add argument 1 to player's balance
+			send "You added %argument 1% to your balance." to player
+			stop
+		if argument 2 is set:
+			if argument 2 has played before:
+				add argument 1 to argument 2's balance
+				send "You added %argument 1% to %argument 2%'s balance." to player
+				stop
+			send "This player has not played before."
+			stop
+			
+command /tickset <integer> <offlineplayer>:
+	trigger:
+		if argument 2 is not set:
+			set player's balance to argument 1
+			send "You set %argument 1% as your new balance." to player
+			stop
+		if argument 2 is set:
+			if argument 2 has played before:
+				set argument 2's balance to argument 1
+				send "You set %argument 1% as %argument 2%'s balance." to player
+				stop
+			send "This player has not played before."
+			stop
+			
+command /tickrem <integer> <offlineplayer>:
+	trigger:
+		if argument 2 is not set:
+			subtract argument 1 from player's balance
+			send "You removed %argument 1% from your balance." to player
+			wait 1 second
+			if player's balance is less than 0:
+				set player's balance to 0
+			stop
+		if argument 2 is set:
+			if argument 2 has played before:
+				subtract argument 1 from argument 2's balance
+				send "You removed %argument 1% from %argument 2%'s balance." to player
+				if argument 2's balance is less than 0:
+					set argument 2's balance to 0
+				stop
+			send "This player has not played before."
+			stop
+			
+command /tix <offlineplayer>:
+	trigger:
+		if argument is not set:
+			set {_tix.%player%} to player's balance
+			if {_tix.%player%} is 0:
+				send "Your account is empty." to player
+				stop
+			send "Your balance is %{_tix.%player%}%." to player
+			stop
+		if argument is set:
+			if argument has played before:
+				set {_tix.%player%} to argument's balance
+				if {_tix.%player%} is 0:
+					send "%argument%'s account is empty." to player
+					stop
+				send "%argument%'s balance is %{_tix.%player%}%." to player
+				stop
+			send "This player has not played before."
+			stop
