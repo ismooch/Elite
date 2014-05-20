@@ -10,7 +10,7 @@
 options:
 	gHelp: book named "&6&lOBAM&fCraft &3Guide" with lore "&7Right click this book||&7to &6learn&7 all about OBAM."
 	gWorlds: ender pearl named "&3Game &dWorlds" with lore "&7Right click this item to &dview&7||&7the available Game Worlds!"
-	gFly: feather named "&9Fly" with lore "&7Right click this||&7to &9fly &7in hub!"
+	gFly: feather named "&9≋Fly" with lore "&7Right click this||&7to &9fly &7in hub!"
 	#
 	dSkyblock: i;grass;n;&6Skyblock;l;&7Try our Skyblock world||&7with &dCustom Challenges||&7and &9Villager Trading&7!;c;sudo %player% worlds skyblock
 	dFronts: i;cobblestone;n;&6Fronts;l;&7Our Special flavour of||&7Survival with &binstant&7||&7land claiming!;c;sudo %player% worlds survival
@@ -28,33 +28,33 @@ options:
 	eEffect: i;nether star;n;&6Unstable &fGases;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% effectmachine magic
 	dEffect: i;nether star;n;&6Unstable &fGases;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% effectmachine magic
 	#
-	uDisguise: i;creeper head;n;&fMob &6Disguises;l;&3Not Purchased|| ||&aPrice: 2,500 tickets||&5Click to Buy.;c;sudo %player% effect disguise
-	bDisguise: i;player head;n;&fMob &6Disguises;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect disguise
-	nDisguise: i;player head;n;&fMob &6Disguises;l;&3Not Unlocked|| ||&eType &f/effect shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% effect shop
-	eDisguise: i;skeleton head;n;&fMob &6Disguises;l;&aYou are Disguised|| ||&fClick to open your wardrobe.;c;sudo %player% effectmachine disguise
-	dDisguise: i;wither skeleton head;n;&fMob &6Disguises;l;&cYou are not Disguised|| ||&fClick to open your wardrobe;c;sudo %player% effectmachine disguise
+	uDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&3Not Purchased|| ||&aPrice: 2,500 tickets||&5Click to Buy.;c;sudo %player% effect disguise
+	bDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect disguise
+	nDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&3Not Unlocked|| ||&eType &f/effect shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% effect shop
+	eDisguise: i;iron door item;n;&6Disguise &fCloset;l;&aYou are Disguised|| ||&fClick to open your wardrobe.;c;sudo %player% effectmachine disguise
+	dDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&cYou are not Disguised|| ||&fClick to open your wardrobe;c;sudo %player% effectmachine disguise
 	#
 	eBoat: i;boat;n;&6Boat;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox boat
 	dBoat: i;boat;n;&6Boat;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox boat
-	gBoat: boat named "&3%player%'s Boat" with lore "&6Travel the majestic waters||&6of the hub with this boat!"
+	gBoat: boat named "&3%player%'s &fBoat" with lore "&3Travel&7 the majestic waters||&7of the hub with this boat!"
 	#
 	eCart: i;storage minecart;n;&6MineCart;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox cart
-	dCart: i;powered minecart;n;&6MineCart;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox cart/pr
-	gCart: minecart named "&3%player%'s Cart" with lore "&6Want to sore on the track?||&6Place this cart down . . .|| ||&5Let's take it for a spin."
+	dCart: i;powered minecart;n;&6MineCart;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox cart
+	gCart: minecart named "&3%player%'s &fCart" with lore "&7Want to sore on the track?||&3Place&7 this cart down . . .|| ||&5Let's take it for a spin."
 	#
 	uFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&3Not Purchased|| ||&aPrice: 2,500 tickets||&5Click to Buy.;c;sudo %player% toy firework
 	bFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% toy firework
 	nFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&3Not Unlocked|| ||&eType &f/toy shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% toy shop
 	eFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox firework
 	dFirework: i;firework rocket;n;&6OBAM&fCraft &6Firework;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox firework
-	gFirework: firework rocket named "&6OBAM&fCraft &3Firework" with lore "&6Right click to see a random||&6OBAM themed firework effect.|| ||&73 Second Cooldown"
+	gFirework: firework rocket named "&6OBAM&fCraft &3Firework" with lore "&7Right click to &3see&7 a random||&7OBAM themed firework effect.|| ||&73 Second Cooldown"
 	#
 	uPiston: i;piston base;n;&6Player&fPusher;l;&3Not Purchased|| ||&aPrice: 5,000 tickets||&5Click to Buy.;c;sudo %player% toy piston
 	bPiston: i;piston base;n;&6Player&fPusher;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% toy piston
 	nPiston: i;piston base;n;&6Player&fPusher;l;&3Not Unlocked|| ||&eType &f/toy shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% toy shop
 	ePiston: i;piston base;n;&6Player&fPusher;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox piston
 	dPiston: i;piston base;n;&6Player&FPusher;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox piston
-	gPiston: piston base named "&3Player&fPusher" with lore "&6Use this to push players around.|| ||&5How to use: Punch someone while holding it."
+	gPiston: piston base named "&3Player&fPusher" with lore "&7Use this to &3push&7 players around.|| ||&5How to use: Punch someone while holding it."
 	
 on join:
 	#execute console command "/mv tp %player% Death-Hub"
@@ -348,14 +348,12 @@ on teleport:
 			remove all {@gPiston} from player's inventory
 		clear {time.set.%player%}
 		#
-		set {_CartName.%player%} to "&3%player%'s Cart"
-		set {_BoatName.%player%} to "&3%player%'s Boat"
-		loop all entities:
-			if loop-entity is a {@gCart}:
-				if name of loop-entity is "%{_CartName.%player%}%":
+		loop all entities in player's world:
+			if loop-entity is a boat:
+				if name of loop-entity is "&3%player%'s &fBoat":
 					delete loop-entity
-			if loop-entity is a {@gBoat}:
-				if name of loop-entity is "%{_BoatName.%player%}%":
+			if loop-entity is a minecart:
+				if name of loop-entity is "&3%player%'s &fCart":
 					delete loop-entity
 			
 on place:
@@ -566,7 +564,20 @@ on right click:
 						pop star colored gold at {_firework.loc.%player%}
 						pop star colored dark aqua at {_firework.loc.%player%}
 						stop
-			
+	
+on vehicle enter:
+	world is "world":
+		if vehicle is a boat:
+			if the name of the boat is not "&3%player%'s &fBoat":
+				cancel event
+				send "&fThis is not your boat." to player
+				stop
+		if vehicle is a minecart:
+			if the name of the minecart is not "&3%player%'s &fCart":
+				cancel event
+				send "&fThis is not your cart." to player
+				stop
+				
 on pick up:
 	world is "world":
 		cancel event
@@ -632,14 +643,12 @@ on disconnect:
 			remove all {@gPiston} from player's inventory
 		clear {time.set.%player%}
 		#
-		set {_CartName.%player%} to "&3%player%'s Cart"
-		set {_BoatName.%player%} to "&3%player%'s Boat"
-		loop all entities:
-			if loop-entity is {@gCart}:
-				if name of loop-entity is "%{_CartName.%player%}%":
+		loop all entities in player's world:
+			if loop-entity is a boat:
+				if name of loop-entity is "&3%player%'s &fBoat":
 					delete loop-entity
-			if loop-entity is {@gBoat}:
-				if name of loop-entity is "%{_BoatName.%player%}%":
+			if loop-entity is a minecart:
+				if name of loop-entity is "&3%player%'s &fCart":
 					delete loop-entity
 	
 on shoot:
@@ -903,8 +912,9 @@ command /buy [<text>]:
 					subtract 2500 from player's balance
 					set {_amount.%player%} to player's balance
 					send "&aYou have just purchased the &bPlayerPusher &afrom the Toy Shop!" to player
-					send "&aYour new balance is now: &e%{_amount.%player%}% tickets." to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_toyshop.piston.%player%} to true
+					log "%player% bought PlayerPusher for 2,500 tickets at %now%" to ".../shop/toys/PlayerPusher.log"
 					stop
 			argument is "firework":
 				if {db_toyshop.firework.%player%} is true:
@@ -918,8 +928,9 @@ command /buy [<text>]:
 					subtract 5000 from player's balance
 					set {_amount.%player%} to player's balance
 					send "&aYou have just purchased the &bOBAMFirework &afrom the Toy Shop!" to player
-					send "&aYour new balance is now: &e%{_amount.%player%}% tickets." to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_toyshop.firework.%player%} to true
+					log "%player% bought ObamFirework for 5,000 tickets at %now%" to ".../shop/toys/ObamFirework.log"
 					stop
 			argument is "effect":
 				if {db_effectshop.effect.%player%} is true:
@@ -933,12 +944,13 @@ command /buy [<text>]:
 					subtract 5000 from player's balance
 					set {_amount.%player%} to player's balance
 					send "&aYou have just purchased &6Unstable &fGases &afrom the Effect Shop!" to player
-					send "&aYour new balance is now: &e%{_amount.%player%}% tickets." to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.effect.%player%} to true
+					log "%player% bought Unstable Gases for 5,000 tickets at %now%" to ".../shop/effects/UnstableGases.log"
 					stop
 			argument is "disguise":
 				if {db_effectshop.disguise.%player%} is true:
-					send "&fMob &6Disguises &ehave already been bought." to player
+					send "&6Disguise &fCloset &ehas already been bought." to player
 					stop
 				if {db_effectshop.disguise.%player%} is false:
 					set {_amount.%player%} to player's balance
@@ -947,9 +959,10 @@ command /buy [<text>]:
 						stop
 					subtract 2500 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased &fMob &6Disguises &afrom the Effect Shop!" to player
-					send "&aYour new balance is now: &e%{_amount.%player%}% tickets." to player
+					send "&aYou have just purchased the &6Disguise &fCloset &afrom the Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguise.%player%} to true
+					log "%player% bought the Disguise Closet for 2,500 tickets at %now%" to ".../shop/effects/DisguiseCloset.log"
 					stop
 						
 command /toybox [<text>]:
@@ -1076,7 +1089,8 @@ command /effectmachine [<text>]:
 				stop
 			argument is "disguise":
 				wait 1 second
-				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&2Mob &3Disguises" to player
+				send "&eOpening up your wardrobe." to player
+				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&3Disguise &2Closet" to player
 				stop
 			argument is "magic":
 				make player execute command "/magic default"
@@ -1110,10 +1124,9 @@ command /boat:
 		player is in "world":
 			if {toybox.boat.%player%} is 0:
 				if {cartstop.%player%} is true:
-					set {_CartName.%player%} to "&3%player%'s Cart"
-					loop all entities:
-						if loop-entity is {@gCart}:
-							if name of loop-entity is "%{_CartName.%player%}%":
+					loop all entities in player's world:
+						if loop-entity is a minecart:
+							if name of loop-entity is "&3%player%'s &fCart":
 								delete loop-entity
 				if player has {@gFirework} in his inventory:
 					remove all {@gFirework} from player's inventory
@@ -1141,10 +1154,9 @@ command /boat:
 				stop
 			if {toybox.boat.%player%} is 1:
 				if {boatstop.%player%} is true:
-					set {_BoatName.%player%} to "&3%player%'s Boat"
-					loop all entities:
-						if loop-entity is {@gBoat}:
-							if name of loop-entity is "%{_BoatName.%player%}%":
+					loop all entities in player's world:
+						if loop-entity is a boat:
+							if name of loop-entity is "&3%player%'s &fBoat":
 								delete loop-entity
 				if player has {@gBoat} in his inventory:
 					remove all {@gBoat} from player's inventory
@@ -1157,10 +1169,9 @@ command /cart:
 		player is in "world":
 			if {toybox.cart.%player%} is 0:
 				if {boatstop.%player%} is true:
-					set {_BoatName.%player%} to "&3%player%'s Boat"
-					loop all entities:
-						if loop-entity is {@gBoat}:
-							if name of loop-entity is "%{_BoatName.%player%}%":
+					loop all entities in player's world:
+						if loop-entity is a boat:
+							if name of loop-entity is "&3%player%'s &fBoat":
 								delete loop-entity
 				if player has {@gFirework} in his inventory:
 					remove all {@gFirework} from player's inventory
@@ -1188,10 +1199,9 @@ command /cart:
 				stop
 			if {toybox.cart.%player%} is 1:
 				if {cartstop.%player%} is true:
-					set {_CartName.%player%} to "&3%player%'s Cart"
-					loop all entities:
-						if loop-entity is {@gCart}:
-							if name of loop-entity is "%{_CartName.%player%}%":
+					loop all entities in player's world:
+						if loop-entity is a minecart:
+							if name of loop-entity is "&3%player%'s &fCart":
 								delete loop-entity
 				if player has {@gCart} in his inventory:
 					remove all {@gCart} from player's inventory
@@ -1205,16 +1215,14 @@ command /firework:
 			if {db_toyshop.firework.%player%} is true:
 				if {toybox.firework.%player%} is 0:
 					if {boatstop.%player%} is true:
-						set {_BoatName.%player%} to "&3%player%'s Boat"
-						loop all entities:
-							if loop-entity is {@gBoat}:
-								if name of loop-entity is "%{_BoatName.%player%}%":
+						loop all entities in player's world:
+							if loop-entity is a boat:
+								if name of loop-entity is "&3%player%'s &fBoat":
 									delete loop-entity
 					if {cartstop.%player%} is true:
-						set {_CartName.%player%} to "&3%player%'s Cart"
-						loop all entities:
-							if loop-entity is {@gCart}:
-								if name of loop-entity is "%{_CartName.%player%}%":
+						loop all entities in player's world:
+							if loop-entity is a minecart:
+								if name of loop-entity is "&3%player%'s &fCart":
 									delete loop-entity
 					if player has {@gBoat} in his inventory:
 						remove all {@gBoat} from player's inventory
@@ -1251,16 +1259,14 @@ command /piston:
 			if {db_toyshop.piston.%player%} is true:
 				if {toybox.piston.%player%} is 0:
 					if {boatstop.%player%} is true:
-						set {_BoatName.%player%} to "&3%player%'s Boat"
-						loop all entities:
-							if loop-entity is {@gBoat}:
-								if name of loop-entity is "%{_BoatName.%player%}%":
+						loop all entities in player's world:
+							if loop-entity is a boat:
+								if name of loop-entity is "&3%player%'s &fBoat":
 									delete loop-entity
 					if {cartstop.%player%} is true:
-						set {_CartName.%player%} to "&3%player%'s Cart"
-						loop all entities:
-							if loop-entity is {@gCart}:
-								if name of loop-entity is "%{_CartName.%player%}%":
+						loop all entities in player's world:
+							if loop-entity is a minecart:
+								if name of loop-entity is "&3%player%'s &fCart":
 									delete loop-entity
 					if player has {@gBoat} in his inventory:
 						remove all {@gBoat} from player's inventory
