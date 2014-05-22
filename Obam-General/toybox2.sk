@@ -10,7 +10,7 @@
 options:
 	gHelp: book named "&6&lOBAM&fCraft &3Guide" with lore "&7Right click this book||&7to &6learn&7 all about OBAM."
 	gWorlds: ender pearl named "&3Game &dWorlds" with lore "&7Right click this item to &dview&7||&7the available Game Worlds!"
-	gFly: feather named "&9≋Fly" with lore "&7Right click this||&7to &9fly &7in hub!"
+	gFly: feather named "&6&l≾&3Fly&6&l≿" with lore "&7Right click this||&7to &3fly &7in hub!"
 	#
 	dSkyblock: i;grass;n;&6Skyblock;l;&7Try our Skyblock world||&7with &dCustom Challenges||&7and &9Villager Trading&7!;c;sudo %player% worlds skyblock
 	dFronts: i;cobblestone;n;&6Fronts;l;&7Our Special flavour of||&7Survival with &binstant&7||&7land claiming!;c;sudo %player% worlds survival
@@ -31,8 +31,8 @@ options:
 	uDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&3Not Purchased|| ||&aPrice: 2,500 tickets||&5Click to Buy.;c;sudo %player% effect disguise
 	bDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect disguise
 	nDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&3Not Unlocked|| ||&eType &f/effect shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% effect shop
-	eDisguise: i;iron door item;n;&6Disguise &fCloset;l;&aYou are Disguised|| ||&fClick to open your wardrobe.;c;sudo %player% effectmachine disguise
-	dDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&cYou are not Disguised|| ||&fClick to open your wardrobe;c;sudo %player% effectmachine disguise
+	eDisguise: i;iron door item;n;&6Disguise &fCloset;l;&aYou are Disguised|| ||&fClick to open your closet.;c;sudo %player% effectmachine disguise
+	dDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&cYou are not Disguised|| ||&fClick to open your closet;c;sudo %player% effectmachine disguise
 	#
 	eBoat: i;boat;n;&6Boat;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox boat
 	dBoat: i;boat;n;&6Boat;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox boat
@@ -55,6 +55,156 @@ options:
 	ePiston: i;piston base;n;&6Player&fPusher;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox piston
 	dPiston: i;piston base;n;&6Player&FPusher;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox piston
 	gPiston: piston base named "&3Player&fPusher" with lore "&7Use this to &3push&7 players around.|| ||&5How to use: Punch someone while holding it."
+	#
+	uD1: s;1;i;creeper spawn egg;n;&6Creeper
+	bD1: s;1;i;creeper spawn egg;n;&6Creeper
+	nD1: s;1;i;creeper spawn egg;n;&6Creeper
+	eD1: s;1;i;creeper spawn egg;n;&6Creeper
+	dD1: s;1;i;creeper spawn egg;n;&6Creeper
+	#
+	uD2: s;3;i;skeleton spawn egg;n;&6Skeleton
+	bD2: s;3;i;skeleton spawn egg;n;&6Skeleton
+	nD2: s;3;i;skeleton spawn egg;n;&6Skeleton
+	eD2: s;3;i;skeleton spawn egg;n;&6Skeleton
+	dD2: s;3;i;skeleton spawn egg;n;&6Skeleton
+	#
+	uD3: s;5;i;spider spawn egg;n;&6Spider
+	bD3: s;5;i;spider spawn egg;n;&6Spider
+	nD3: s;5;i;spider spawn egg;n;&6Spider
+	eD3: s;5;i;spider spawn egg;n;&6Spider
+	dD3: s;5;i;spider spawn egg;n;&6Spider
+	#
+	uD4: s;7;i;zombie spawn egg;n;&6Zombie
+	bD4: s;7;i;zombie spawn egg;n;&6Zombie
+	nD4: s;7;i;zombie spawn egg;n;&6Zombie
+	eD4: s;7;i;zombie spawn egg;n;&6Zombie
+	dD4: s;7;i;zombie spawn egg;n;&6Zombie
+	#
+	uD5: s;9;i;slime spawn egg;n;&6Slime
+	bD5: s;9;i;slime spawn egg;n;&6Slime
+	nD5: s;9;i;slime spawn egg;n;&6Slime
+	eD5: s;9;i;slime spawn egg;n;&6Slime
+	dD5: s;9;i;slime spawn egg;n;&6Slime
+	#
+	uD6: s;10;i;ghast spawn egg;n;&6Ghast
+	bD6: s;10;i;ghast spawn egg;n;&6Ghast
+	nD6: s;10;i;ghast spawn egg;n;&6Ghast
+	eD6: s;10;i;ghast spawn egg;n;&6Ghast
+	dD6: s;10;i;ghast spawn egg;n;&6Ghast
+	#
+	uD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman
+	bD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman
+	nD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman
+	eD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman
+	dD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman
+	#
+	uD8: s;14;i;enderman spawn egg;n;&6Enderman
+	bD8: s;14;i;enderman spawn egg;n;&6Enderman
+	nD8: s;14;i;enderman spawn egg;n;&6Enderman
+	eD8: s;14;i;enderman spawn egg;n;&6Enderman
+	dD8: s;14;i;enderman spawn egg;n;&6Enderman
+	#
+	uD9: s;16;i;cave spider spawn egg;n;&6Cave Spider
+	bD9: s;16;i;cave spider spawn egg;n;&6Cave Spider
+	nD9: s;16;i;cave spider spawn egg;n;&6Cave Spider
+	eD9: s;16;i;cave spider spawn egg;n;&6Cave Spider
+	dD9: s;16;i;cave spider spawn egg;n;&6Cave Spider
+	#
+	uD10: s;18;i;silverfish spawn egg;n;&6Silverfish
+	bD10: s;18;i;silverfish spawn egg;n;&6Silverfish
+	nD10: s;18;i;silverfish spawn egg;n;&6Silverfish
+	eD10: s;18;i;silverfish spawn egg;n;&6Silverfish
+	dD10: s;18;i;silverfish spawn egg;n;&6Silverfish
+	#
+	uD11: s;19;i;blaze spawn egg;n;&6Blaze
+	bD11: s;19;i;blaze spawn egg;n;&6Blaze
+	nD11: s;19;i;blaze spawn egg;n;&6Blaze
+	eD11: s;19;i;blaze spawn egg;n;&6Blaze
+	dD11: s;19;i;blaze spawn egg;n;&6Blaze
+	#
+	uD12: s;21;i;magma cube spawn egg;n;&6Magma Cube
+	bD12: s;21;i;magma cube spawn egg;n;&6Magma Cube
+	nD12: s;21;i;magma cube spawn egg;n;&6Magma Cube
+	eD12: s;21;i;magma cube spawn egg;n;&6Magma Cube
+	dD12: s;21;i;magma cube spawn egg;n;&6Magma Cube
+	#
+	uD13: s;23;i;bat spawn egg;n;&6Bat
+	bD13: s;23;i;bat spawn egg;n;&6Bat
+	nD13: s;23;i;bat spawn egg;n;&6Bat
+	eD13: s;23;i;bat spawn egg;n;&6Bat
+	dD13: s;23;i;bat spawn egg;n;&6Bat
+	#
+	uD14: s;25;i;witch spawn egg;n;&6Witch
+	bD14: s;25;i;witch spawn egg;n;&6Witch
+	nD14: s;25;i;witch spawn egg;n;&6Witch
+	eD14: s;25;i;witch spawn egg;n;&6Witch
+	dD14: s;25;i;witch spawn egg;n;&6Witch
+	#
+	uD15: s;27;i;pig spawn egg;n;&6Pig
+	bD15: s;27;i;pig spawn egg;n;&6Pig
+	nD15: s;27;i;pig spawn egg;n;&6Pig
+	eD15: s;27;i;pig spawn egg;n;&6Pig
+	dD15: s;27;i;pig spawn egg;n;&6Pig
+	#
+	uD16: s;28;i;sheep spawn egg;n;&6Sheep
+	bD16: s;28;i;sheep spawn egg;n;&6Sheep
+	nD16: s;28;i;sheep spawn egg;n;&6Sheep
+	eD16: s;28;i;sheep spawn egg;n;&6Sheep
+	dD16: s;28;i;sheep spawn egg;n;&6Sheep
+	#
+	uD17: s;30;i;cow spawn egg;n;&6Cow
+	bD17: s;30;i;cow spawn egg;n;&6Cow
+	nD17: s;30;i;cow spawn egg;n;&6Cow
+	eD17: s;30;i;cow spawn egg;n;&6Cow
+	dD17: s;30;i;cow spawn egg;n;&6Cow
+	#
+	uD18: s;32;i;chicken spawn egg;n;&6Chicken
+	bD18: s;32;i;chicken spawn egg;n;&6Chicken
+	nD18: s;32;i;chicken spawn egg;n;&6Chicken
+	eD18: s;32;i;chicken spawn egg;n;&6Chicken
+	dD18: s;32;i;chicken spawn egg;n;&6Chicken
+	#
+	uD19: s;34;i;squid spawn egg;n;&6Squid
+	bD19: s;34;i;squid spawn egg;n;&6Squid
+	nD19: s;34;i;squid spawn egg;n;&6Squid
+	eD19: s;34;i;squid spawn egg;n;&6Squid
+	dD19: s;34;i;squid spawn egg;n;&6Squid
+	#
+	uD20: s;36;i;wolf spawn egg;n;&6Wolf
+	bD20: s;36;i;wolf spawn egg;n;&6Wolf
+	nD20: s;36;i;wolf spawn egg;n;&6Wolf
+	eD20: s;36;i;wolf spawn egg;n;&6Wolf
+	dD20: s;36;i;wolf spawn egg;n;&6Wolf
+	#
+	uD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom
+	bD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom
+	nD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom
+	eD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom
+	dD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom
+	#
+	uD22: s;39;i;ocelot spawn egg;n;&6Ocelot
+	bD22: s;39;i;ocelot spawn egg;n;&6Ocelot
+	nD22: s;39;i;ocelot spawn egg;n;&6Ocelot
+	eD22: s;39;i;ocelot spawn egg;n;&6Ocelot
+	dD22: s;39;i;ocelot spawn egg;n;&6Ocelot
+	#
+	uD23: s;41;i;horse spawn egg;n;&6Horse
+	bD23: s;41;i;horse spawn egg;n;&6Horse
+	nD23: s;41;i;horse spawn egg;n;&6Horse
+	eD23: s;41;i;horse spawn egg;n;&6Horse
+	dD23: s;41;i;horse spawn egg;n;&6Horse
+	#
+	uD24: s;43;i;villager spawn egg;n;&6Villager
+	bD24: s;43;i;villager spawn egg;n;&6Villager
+	nD24: s;43;i;villager spawn egg;n;&6Villager
+	eD24: s;43;i;villager spawn egg;n;&6Villager
+	dD24: s;43;i;villager spawn egg;n;&6Villager
+	#
+	uDspecial: s;45;i;dragon egg;n;&9Specials
+	bDspecial: s;45;i;dragon egg;n;&9Specials
+	nDspecial: s;45;i;dragon egg;n;&9Specials
+	eDspecial: s;45;i;dragon egg;n;&9Specials
+	dDspecial: s;45;i;dragon egg;n;&9Specials
 	
 on join:
 	#execute console command "/mv tp %player% Death-Hub"
@@ -68,6 +218,54 @@ on join:
 		set {db_toyshop.firework.%player%} to false
 	if {db_toyshop.piston.%player%} is not set:
 		set {db_toyshop.piston.%player%} to false
+	if {db_effectshop.disguises.creeper.%player%} is not set:
+		set {db_effectshop.disguises.creeper.%player%} to false
+	if {db_effectshop.disguises.skeleton.%player%} is not set:
+		set {db_effectshop.disguises.skeleton.%player%} to false
+	if {db_effectshop.disguises.spider.%player%} is not set:
+		set {db_effectshop.disguises.spider.%player%} to false
+	if {db_effectshop.disguises.zombie.%player%} is not set:
+		set {db_effectshop.disguises.zombie.%player%} to false
+	if {db_effectshop.disguises.slime.%player%} is not set:
+		set {db_effectshop.disguises.slime.%player%} to false
+	if {db_effectshop.disguises.ghast.%player%} is not set:
+		set {db_effectshop.disguises.ghast.%player%} to false
+	if {db_effectshop.disguises.zombiepigman.%player%} is not set:
+		set {db_effectshop.disguises.zombiepigman.%player%} to false
+	if {db_effectshop.disguises.enderman.%player%} is not set:
+		set {db_effectshop.disguises.enderman.%player%} to false
+	if {db_effectshop.disguises.cavespider.%player%} is not set:
+		set {db_effectshop.disguises.cavespider.%player%} to false
+	if {db_effectshop.disguises.silverfish.%player%} is not set:
+		set {db_effectshop.disguises.silverfish.%player%} to false
+	if {db_effectshop.disguises.blaze.%player%} is not set:
+		set {db_effectshop.disguises.blaze.%player%} to false
+	if {db_effectshop.disguises.magmacube.%player%} is not set:
+		set {db_effectshop.disguises.magmacube.%player%} to false
+	if {db_effectshop.disguises.bat.%player%} is not set:
+		set {db_effectshop.disguises.bat.%player%} to false
+	if {db_effectshop.disguises.witch.%player%} is not set:
+		set {db_effectshop.disguises.witch.%player%} to false
+	if {db_effectshop.disguises.pig.%player%} is not set:
+		set {db_effectshop.disguises.pig.%player%} to false
+	if {db_effectshop.disguises.sheep.%player%} is not set:
+		set {db_effectshop.disguises.sheep.%player%} to false
+	if {db_effectshop.disguises.cow.%player%} is not set:
+		set {db_effectshop.disguises.cow.%player%} to false
+	if {db_effectshop.disguises.chicken.%player%} is not set:
+		set {db_effectshop.disguises.chicken.%player%} to false
+	if {db_effectshop.disguises.squid.%player%} is not set:
+		set {db_effectshop.disguises.squid.%player%} to false
+	if {db_effectshop.disguises.wolf.%player%} is not set:
+		set {db_effectshop.disguises.wolf.%player%} to false
+	if {db_effectshop.disguises.mooshroom.%player%} is not set:
+		set {db_effectshop.disguises.mooshroom.%player%} to false
+	if {db_effectshop.disguises.ocelot.%player%} is not set:
+		set {db_effectshop.disguises.ocelot.%player%} to false
+	if {db_effectshop.disguises.horse.%player%} is not set:
+		set {db_effectshop.disguises.horse.%player%} to false
+	if {db_effectshop.disguises.villager.%player%} is not set:
+		set {db_effectshop.disguises.villager.%player%} to false
 	#
 	player is in "world":
 		player does not have a {@gHelp}:
@@ -914,7 +1112,7 @@ command /buy [<text>]:
 					send "&aYou have just purchased the &bPlayerPusher &afrom the Toy Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_toyshop.piston.%player%} to true
-					log "%player% bought PlayerPusher for 2,500 tickets at %now%" to ".../shop/toys/PlayerPusher.log"
+					log "%player% bought PlayerPusher for 2,500 tickets at %now%" to "/shop/toys/PlayerPusher.log"
 					stop
 			argument is "firework":
 				if {db_toyshop.firework.%player%} is true:
@@ -930,7 +1128,7 @@ command /buy [<text>]:
 					send "&aYou have just purchased the &bOBAMFirework &afrom the Toy Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_toyshop.firework.%player%} to true
-					log "%player% bought ObamFirework for 5,000 tickets at %now%" to ".../shop/toys/ObamFirework.log"
+					log "%player% bought ObamFirework for 5,000 tickets at %now%" to "/shop/toys/ObamFirework.log"
 					stop
 			argument is "effect":
 				if {db_effectshop.effect.%player%} is true:
@@ -946,7 +1144,7 @@ command /buy [<text>]:
 					send "&aYou have just purchased &6Unstable &fGases &afrom the Effect Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.effect.%player%} to true
-					log "%player% bought Unstable Gases for 5,000 tickets at %now%" to ".../shop/effects/UnstableGases.log"
+					log "%player% bought Unstable Gases for 5,000 tickets at %now%" to "/shop/effects/UnstableGases.log"
 					stop
 			argument is "disguise":
 				if {db_effectshop.disguise.%player%} is true:
@@ -962,7 +1160,7 @@ command /buy [<text>]:
 					send "&aYou have just purchased the &6Disguise &fCloset &afrom the Effect Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguise.%player%} to true
-					log "%player% bought the Disguise Closet for 2,500 tickets at %now%" to ".../shop/effects/DisguiseCloset.log"
+					log "%player% bought the Disguise Closet for 2,500 tickets at %now%" to "/shop/effects/DisguiseCloset.log"
 					stop
 						
 command /toybox [<text>]:
@@ -1088,10 +1286,9 @@ command /effectmachine [<text>]:
 				show "s;3;{@dEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
 				stop
 			argument is "disguise":
+				send "&eUnlocking your closet. . ." to player
 				wait 1 second
-				send "&eOpening up your wardrobe." to player
-				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&3Disguise &2Closet" to player
-				stop
+				make player execute command "/disguiseset"
 			argument is "magic":
 				make player execute command "/magic default"
 				
@@ -1113,7 +1310,7 @@ command /magic [<text>]:
 					if {effects.magic.%player%} is 1:
 						set {_magic.loc.%player%} to location of player
 						spawn 100 of red dust data 1 offset with 1, 1, 1 at {_magic.loc.%player%}
-						wait 7 seconds
+						wait 2 seconds
 						make player execute command "/magic effect"
 			if {db_effectshop.effect.%player%} is false:
 				send "&eSorry, You have not unlocked this yet." to player
@@ -1296,3 +1493,178 @@ command /piston:
 						stop
 			send "&eSorry, You have not unlocked this yet." to player
 			stop
+			
+command /disguiseset [<text>]:
+	trigger:
+		if argument is not set:
+			send "&eOpening up your closet. . ." to player
+			if {db_effectshop.disguises.creeper.%player%} is true:
+				if {effects.disguises.creeper.%player%} is 0:
+					set {temp.d1.%player%} to "@dD1"
+				if {effects.disguises.creeper.%player%} is 1:
+					set {temp.d1.%player%} to "@eD1"
+			if {db_effectshop.disguises.creeper.%player%} is false:
+				set {temp.d1.%player%} to "@uD1"
+			if {db_effectshop.disguises.skeleton.%player%} is true:
+				if {effects.disguises.skeleton.%player%} is 0:
+					set {temp.d2.%player%} to "@dD2"
+				if {effects.disguises.skeleton.%player%} is 1:
+					set {temp.d2.%player%} to "@eD2"
+			if {db_effectshop.disguises.skeleton.%player%} is false:
+				set {temp.d2.%player%} to "@uD2"				
+			if {db_effectshop.disguises.spider.%player%} is true:
+				if {effects.disguises.spider.%player%} is 0:
+					set {temp.d3.%player%} to "@dD3"
+				if {effects.disguises.spider.%player%} is 1:
+					set {temp.d3.%player%} to "@eD3"
+			if {db_effectshop.disguises.spider.%player%} is false:
+				set {temp.d3.%player%} to "@uD3"		
+			if {db_effectshop.disguises.zombie.%player%} is true:
+				if {effects.disguises.zombie.%player%} is 0:
+					set {temp.d4.%player%} to "@dD4"
+				if {effects.disguises.zombie.%player%} is 1:
+					set {temp.d4.%player%} to "@eD4"
+			if {db_effectshop.disguises.zombie.%player%} is false:
+				set {temp.d4.%player%} to "@uD4"		
+			if {db_effectshop.disguises.slime.%player%} is true:
+				if {effects.disguises.slime.%player%} is 0:
+					set {temp.d5.%player%} to "@dD5"
+				if {effects.disguises.slime.%player%} is 1:
+					set {temp.d5.%player%} to "@eD5"
+			if {db_effectshop.disguises.slime.%player%} is false:
+				set {temp.d5.%player%} to "@uD5"	
+			if {db_effectshop.disguises.ghast.%player%} is true:
+				if {effects.disguises.ghast.%player%} is 0:
+					set {temp.d6.%player%} to "@dD6"
+				if {effects.disguises.ghast.%player%} is 1:
+					set {temp.d6.%player%} to "@eD6"
+			if {db_effectshop.disguises.ghast.%player%} is false:
+				set {temp.d6.%player%} to "@uD6"
+			if {db_effectshop.disguises.zombiepigman.%player%} is true:
+				if {effects.disguises.zombiepigman.%player%} is 0:
+					set {temp.d7.%player%} to "@dD7"
+				if {effects.disguises.zombiepigman.%player%} is 1:
+					set {temp.d7.%player%} to "@eD7"
+			if {db_effectshop.disguises.zombiepigman.%player%} is false:
+				set {temp.d7.%player%} to "@uD7"
+			if {db_effectshop.disguises.enderman.%player%} is true:
+				if {effects.disguises.enderman.%player%} is 0:
+					set {temp.d8.%player%} to "@dD8"
+				if {effects.disguises.enderman.%player%} is 1:
+					set {temp.d8.%player%} to "@eD8"
+			if {db_effectshop.disguises.enderman.%player%} is false:
+				set {temp.d8.%player%} to "@uD8"
+			if {db_effectshop.disguises.cavespider.%player%} is true:
+				if {effects.disguises.cavespider.%player%} is 0:
+					set {temp.d9.%player%} to "@dD9"
+				if {effects.disguises.cavespider.%player%} is 1:
+					set {temp.d9.%player%} to "@eD9"
+			if {db_effectshop.disguises.cavespider.%player%} is false:
+				set {temp.d9.%player%} to "@uD9"
+			if {db_effectshop.disguises.silverfish.%player%} is true:
+				if {effects.disguises.silverfish.%player%} is 0:
+					set {temp.d10.%player%} to "@dD10"
+				if {effects.disguises.silverfish.%player%} is 1:
+					set {temp.d10.%player%} to "@eD10"
+			if {db_effectshop.disguises.silverfish.%player%} is false:
+				set {temp.d10.%player%} to "@uD10"
+			if {db_effectshop.disguises.blaze.%player%} is true:
+				if {effects.disguises.blaze.%player%} is 0:
+					set {temp.d11.%player%} to "@dD11"
+				if {effects.disguises.blaze.%player%} is 1:
+					set {temp.d11.%player%} to "@eD11"
+			if {db_effectshop.disguises.blaze.%player%} is false:
+				set {temp.d11.%player%} to "@uD11"
+			if {db_effectshop.disguises.magmacube.%player%} is true:
+				if {effects.disguises.magmacube.%player%} is 0:
+					set {temp.d12.%player%} to "@dD12"
+				if {effects.disguises.magmacube.%player%} is 1:
+					set {temp.d12.%player%} to "@eD12"
+			if {db_effectshop.disguises.magmacube.%player%} is false:
+				set {temp.d12.%player%} to "@uD12"
+			if {db_effectshop.disguises.bat.%player%} is true:
+				if {effects.disguises.bat.%player%} is 0:
+					set {temp.d13.%player%} to "@dD13"
+				if {effects.disguises.bat.%player%} is 1:
+					set {temp.d13.%player%} to "@eD13"
+			if {db_effectshop.disguises.bat.%player%} is false:
+				set {temp.d13.%player%} to "@uD13"
+			if {db_effectshop.disguises.witch.%player%} is true:
+				if {effects.disguises.witch.%player%} is 0:
+					set {temp.d14.%player%} to "@dD14"
+				if {effects.disguises.witch.%player%} is 1:
+					set {temp.d14.%player%} to "@eD14"
+			if {db_effectshop.disguises.witch.%player%} is false:
+				set {temp.d14.%player%} to "@uD14"
+			if {db_effectshop.disguises.pig.%player%} is true:
+				if {effects.disguises.pig.%player%} is 0:
+					set {temp.d15.%player%} to "@dD15"
+				if {effects.disguises.pig.%player%} is 1:
+					set {temp.d15.%player%} to "@eD15"
+			if {db_effectshop.disguises.pig.%player%} is false:
+				set {temp.d15.%player%} to "@uD15"
+			if {db_effectshop.disguises.sheep.%player%} is true:
+				if {effects.disguises.sheep.%player%} is 0:
+					set {temp.d16.%player%} to "@dD16"
+				if {effects.disguises.sheep.%player%} is 1:
+					set {temp.d16.%player%} to "@eD16"
+			if {db_effectshop.disguises.sheep.%player%} is false:
+				set {temp.d16.%player%} to "@uD16"
+			if {db_effectshop.disguises.cow.%player%} is true:
+				if {effects.disguises.cow.%player%} is 0:
+					set {temp.d17.%player%} to "@dD17"
+				if {effects.disguises.cow.%player%} is 1:
+					set {temp.d17.%player%} to "@eD17"
+			if {db_effectshop.disguises.cow.%player%} is false:
+				set {temp.d17.%player%} to "@uD17"
+			if {db_effectshop.disguises.chicken.%player%} is true:
+				if {effects.disguises.chicken.%player%} is 0:
+					set {temp.d18.%player%} to "@dD18"
+				if {effects.disguises.chicken.%player%} is 1:
+					set {temp.d18.%player%} to "@eD18"
+			if {db_effectshop.disguises.chicken.%player%} is false:
+				set {temp.d18.%player%} to "@uD18"
+			if {db_effectshop.disguises.squid.%player%} is true:
+				if {effects.disguises.squid.%player%} is 0:
+					set {temp.d19.%player%} to "@dD19"
+				if {effects.disguises.squid.%player%} is 1:
+					set {temp.d19.%player%} to "@eD19"
+			if {db_effectshop.disguises.squid.%player%} is false:
+				set {temp.d19.%player%} to "@uD19"
+			if {db_effectshop.disguises.wolf.%player%} is true:
+				if {effects.disguises.wolf.%player%} is 0:
+					set {temp.d20.%player%} to "@dD20"
+				if {effects.disguises.wolf.%player%} is 1:
+					set {temp.d20.%player%} to "@eD20"
+			if {db_effectshop.disguises.wolf.%player%} is false:
+				set {temp.d20.%player%} to "@uD20"
+			if {db_effectshop.disguises.mooshroom.%player%} is true:
+				if {effects.disguises.mooshroom.%player%} is 0:
+					set {temp.d21.%player%} to "@dD21"
+				if {effects.disguises.mooshroom.%player%} is 1:
+					set {temp.d21.%player%} to "@eD21"
+			if {db_effectshop.disguises.mooshroom.%player%} is false:
+				set {temp.d21.%player%} to "@uD21"
+			if {db_effectshop.disguises.ocelot.%player%} is true:
+				if {effects.disguises.ocelot.%player%} is 0:
+					set {temp.d22.%player%} to "@dD22"
+				if {effects.disguises.ocelot.%player%} is 1:
+					set {temp.d22.%player%} to "@eD22"
+			if {db_effectshop.disguises.ocelot.%player%} is false:
+				set {temp.d22.%player%} to "@uD22"
+			if {db_effectshop.disguises.horse.%player%} is true:
+				if {effects.disguises.horse.%player%} is 0:
+					set {temp.d23.%player%} to "@@dD23"
+				if {effects.disguises.horse.%player%} is 1:
+					set {temp.d23.%player%} to "@eD23"
+			if {db_effectshop.disguises.horse.%player%} is false:
+				set {temp.d23.%player%} to "@uD23"
+			if {db_effectshop.disguises.villager.%player%} is true:
+				if {effects.disguises.villager.%player%} is 0:
+					set {temp.d24.%player%} to "@dD24"
+				if {effects.disguises.villager.%player%} is 1:
+					set {temp.d24.%player%} to "@eD24"
+			if {db_effectshop.disguises.villager.%player%} is false:
+				set {temp.d24.%player%} to "@uD24"
+			show "{%{temp.d1.%player%}%};{%{temp.d2.%player%}%};{%{temp.d3.%player%}%};{%{temp.d4.%player%}%};{%{temp.d5.%player%}%};{%{temp.d6.%player%}%};{%{temp.d7.%player%}%};{%{temp.d8.%player%}%};{%{temp.d9.%player%}%};{%{temp.d10.%player%}%};{%{temp.d11.%player%}%};{%{temp.d12.%player%}%};{%{temp.d13.%player%}%};{%{temp.d14.%player%}%};{%{temp.d15.%player%}%};{%{temp.d16.%player%}%};{%{temp.d17.%player%}%};{%{temp.d18.%player%}%};{%{temp.d19.%player%}%};{%{temp.d20.%player%}%};{%{temp.d21.%player%}%};{%{temp.d22.%player%}%};{%{temp.d23.%player%}%};{%{temp.d24.%player%}%};{@dDspecial}" with 5 rows named "&3Disguise &2Closet" to player
+			stop		
