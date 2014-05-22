@@ -1654,7 +1654,7 @@ command /disguiseset [<text>]:
 				set {temp.d22.%player%} to "@uD22"
 			if {db_effectshop.disguises.horse.%player%} is true:
 				if {effects.disguises.horse.%player%} is 0:
-					set {temp.d23.%player%} to "@@dD23"
+					set {temp.d23.%player%} to "@dD23"
 				if {effects.disguises.horse.%player%} is 1:
 					set {temp.d23.%player%} to "@eD23"
 			if {db_effectshop.disguises.horse.%player%} is false:
