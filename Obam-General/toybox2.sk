@@ -28,11 +28,7 @@ options:
 	eEffect: i;nether star;n;&6Unstable &fGases;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% effectmachine magic
 	dEffect: i;nether star;n;&6Unstable &fGases;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% effectmachine magic
 	#
-	uDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&3Not Purchased|| ||&aPrice: 2,500 tickets||&5Click to Buy.;c;sudo %player% effect disguise
-	bDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect disguise
-	nDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&3Not Unlocked|| ||&eType &f/effect shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% effect shop
-	eDisguise: i;iron door item;n;&6Disguise &fCloset;l;&aYou are Disguised|| ||&fClick to open your closet.;c;sudo %player% effectmachine disguise
-	dDisguise: i;wooden door item;n;&6Disguise &fCloset;l;&cYou are not Disguised|| ||&fClick to open your closet;c;sudo %player% effectmachine disguise
+	dDisguise: i;iron door item;n;&6Disguise &fCloset;l;&fClick to &9Open &fyour closet;c;sudo %player% effectmachine disguise
 	#
 	eBoat: i;boat;n;&6Boat;l;&aEnabled|| ||&fClick to &cDisable;c;sudo %player% toybox boat
 	dBoat: i;boat;n;&6Boat;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox boat
@@ -56,81 +52,86 @@ options:
 	dPiston: i;piston base;n;&6Player&FPusher;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox piston
 	gPiston: piston base named "&3Player&fPusher" with lore "&7Use this to &3push&7 players around.|| ||&5How to use: Punch someone while holding it."
 	#
-	bD1: s;1;i;creeper spawn egg;n;&6Creeper
-	nD1: s;1;i;creeper spawn egg;n;&6Creeper
+	Dexit: s;55;i;wooden door item;n;&eGo Back
 	#
-	bD2: s;3;i;skeleton spawn egg;n;&6Skeleton
-	nD2: s;3;i;skeleton spawn egg;n;&6Skeleton
+	Dshop: s;57;i;head item;n;&9Disguise Shop
 	#
-	bD3: s;5;i;spider spawn egg;n;&6Spider
-	nD3: s;5;i;spider spawn egg;n;&6Spider
+	Dstop: s;54;i;red wool;n; ;l;&fClick here to||&c Undisguise
 	#
-	bD4: s;7;i;zombie spawn egg;n;&6Zombie
-	nD4: s;7;i;zombie spawn egg;n;&6Zombie
+	#replace Dstop item with barrier after 1.8
 	#
-	bD5: s;9;i;slime spawn egg;n;&6Slime
-	nD5: s;9;i;slime spawn egg;n;&6Slime
+	uD1: s;1;i;creeper spawn egg;n;&6Creeper;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 1
+	bD1: s;1;i;creeper spawn egg;n;&6Creeper;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 1
 	#
-	bD6: s;10;i;ghast spawn egg;n;&6Ghast
-	nD6: s;10;i;ghast spawn egg;n;&6Ghast
+	uD2: s;3;i;skeleton spawn egg;n;&6Skeleton;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 2
+	bD2: s;3;i;skeleton spawn egg;n;&6Skeleton;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 2
 	#
-	bD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman
-	nD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman
+	uD3: s;5;i;spider spawn egg;n;&6Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 3
+	bD3: s;5;i;spider spawn egg;n;&6Spider;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 3
 	#
-	bD8: s;14;i;enderman spawn egg;n;&6Enderman
-	nD8: s;14;i;enderman spawn egg;n;&6Enderman
+	uD4: s;7;i;zombie spawn egg;n;&6Zombie;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 4
+	bD4: s;7;i;zombie spawn egg;n;&6Zombie;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 4
 	#
-	bD9: s;16;i;cave spider spawn egg;n;&6Cave Spider
-	nD9: s;16;i;cave spider spawn egg;n;&6Cave Spider
+	uD5: s;9;i;slime spawn egg;n;&6Slime;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 5
+	bD5: s;9;i;slime spawn egg;n;&6Slime;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 5
 	#
-	bD10: s;18;i;silverfish spawn egg;n;&6Silverfish
-	nD10: s;18;i;silverfish spawn egg;n;&6Silverfish
+	uD6: s;10;i;ghast spawn egg;n;&6Ghast;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 6
+	bD6: s;10;i;ghast spawn egg;n;&6Ghast;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 6
 	#
-	bD11: s;19;i;blaze spawn egg;n;&6Blaze
-	nD11: s;19;i;blaze spawn egg;n;&6Blaze
+	uD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 7
+	bD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 7
 	#
-	bD12: s;21;i;magma cube spawn egg;n;&6Magma Cube
-	nD12: s;21;i;magma cube spawn egg;n;&6Magma Cube
+	uD8: s;14;i;enderman spawn egg;n;&6Enderman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 8
+	bD8: s;14;i;enderman spawn egg;n;&6Enderman;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 8
 	#
-	bD13: s;23;i;bat spawn egg;n;&6Bat
-	nD13: s;23;i;bat spawn egg;n;&6Bat
+	uD9: s;16;i;cave spider spawn egg;n;&6Cave Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 9
+	bD9: s;16;i;cave spider spawn egg;n;&6Cave Spider;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 9
 	#
-	bD14: s;25;i;witch spawn egg;n;&6Witch
-	nD14: s;25;i;witch spawn egg;n;&6Witch
+	uD10: s;18;i;silverfish spawn egg;n;&6Silverfish;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 10
+	bD10: s;18;i;silverfish spawn egg;n;&6Silverfish;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 10
 	#
-	bD15: s;27;i;pig spawn egg;n;&6Pig
-	nD15: s;27;i;pig spawn egg;n;&6Pig
+	uD11: s;19;i;blaze spawn egg;n;&6Blaze;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 11
+	bD11: s;19;i;blaze spawn egg;n;&6Blaze;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 11
 	#
-	bD16: s;28;i;sheep spawn egg;n;&6Sheep
-	nD16: s;28;i;sheep spawn egg;n;&6Sheep
+	uD12: s;21;i;magma cube spawn egg;n;&6Magma Cube;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 12
+	bD12: s;21;i;magma cube spawn egg;n;&6Magma Cube;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 12
 	#
-	bD17: s;30;i;cow spawn egg;n;&6Cow
-	nD17: s;30;i;cow spawn egg;n;&6Cow
+	uD13: s;23;i;bat spawn egg;n;&6Bat;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 13
+	bD13: s;23;i;bat spawn egg;n;&6Bat;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 13
 	#
-	bD18: s;32;i;chicken spawn egg;n;&6Chicken
-	nD18: s;32;i;chicken spawn egg;n;&6Chicken
+	uD14: s;25;i;witch spawn egg;n;&6Witch;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 14
+	bD14: s;25;i;witch spawn egg;n;&6Witch;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 14
 	#
-	bD19: s;34;i;squid spawn egg;n;&6Squid
-	nD19: s;34;i;squid spawn egg;n;&6Squid
+	uD15: s;27;i;pig spawn egg;n;&6Pig;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 15
+	bD15: s;27;i;pig spawn egg;n;&6Pig;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 15
 	#
-	bD20: s;36;i;wolf spawn egg;n;&6Wolf
-	nD20: s;36;i;wolf spawn egg;n;&6Wolf
+	uD16: s;28;i;sheep spawn egg;n;&6Sheep;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 16
+	bD16: s;28;i;sheep spawn egg;n;&6Sheep;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 16
 	#
-	bD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom
-	nD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom
+	uD17: s;30;i;cow spawn egg;n;&6Cow;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 17
+	bD17: s;30;i;cow spawn egg;n;&6Cow;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 17
 	#
-	bD22: s;39;i;ocelot spawn egg;n;&6Ocelot
-	nD22: s;39;i;ocelot spawn egg;n;&6Ocelot
+	uD18: s;32;i;chicken spawn egg;n;&6Chicken;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 18
+	bD18: s;32;i;chicken spawn egg;n;&6Chicken;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 18
 	#
-	bD23: s;41;i;horse spawn egg;n;&6Horse
-	nD23: s;41;i;horse spawn egg;n;&6Horse
+	uD19: s;34;i;squid spawn egg;n;&6Squid;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 19
+	bD19: s;34;i;squid spawn egg;n;&6Squid;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 19
 	#
-	bD24: s;43;i;villager spawn egg;n;&6Villager
-	nD24: s;43;i;villager spawn egg;n;&6Villager
+	uD20: s;36;i;wolf spawn egg;n;&6Wolf;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 20
+	bD20: s;36;i;wolf spawn egg;n;&6Wolf;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 20
 	#
-	uDspecial: s;45;i;dragon egg;n;&9Specials
-	bDspecial: s;45;i;dragon egg;n;&9Specials
-	nDspecial: s;45;i;dragon egg;n;&9Specials
+	uD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 21
+	bD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 21
+	#
+	uD22: s;39;i;ocelot spawn egg;n;&6Ocelot;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 22
+	bD22: s;39;i;ocelot spawn egg;n;&6Ocelot;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 22
+	#
+	uD23: s;41;i;horse spawn egg;n;&6Horse;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 23
+	bD23: s;41;i;horse spawn egg;n;&6Horse;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 23
+	#
+	uD24: s;43;i;villager spawn egg;n;&6Villager;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 24
+	bD24: s;43;i;villager spawn egg;n;&6Villager;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 24
+	#
 	eDspecial: s;45;i;dragon egg;n;&9Specials
 	dDspecial: s;45;i;dragon egg;n;&9Specials
 	
@@ -988,26 +989,14 @@ command /effect [<text>]:
 				wait 1 second
 				send "&eEntering the &9Effect &2Shop &e. . ." to player
 				if {db_effectshop.effect.%player%} is true:
-					if {db_effectshop.disguise.%player%} is true:	
-						show "s;3;{@bEffect};s;7;{@bDisguise}" with 1 row named "&9Effect &2Shop" to player
-						stop
-				if {db_effectshop.effect.%player%} is true:
-					if {db_effectshop.disguise.%player%} is false:	
-						show "s;3;{@bEffect};s;7;{@uDisguise}" with 1 row named "&9Effect &2Shop" to player
-						stop
+					show "s;3;{@bEffect}" with 1 row named "&9Effect &2Shop" to player
+					stop
 				if {db_effectshop.effect.%player%} is false:
-					if {db_effectshop.disguise.%player%} is true:	
-						show "s;3;{@uEffect};s;7;{@bDisguise}" with 1 row named "&9Effect &2Shop" to player
-						stop
-				show "s;3;{@uEffect};s;7;{@uDisguise}" with 1 row named "&9Effect &2Shop" to player
-				stop
+					show "s;3;{@uEffect}" with 1 row named "&9Effect &2Shop" to player
+					stop
 			argument is "magic":
 				wait 1 second
 				make player execute command "/buy effect"
-				stop
-			argument is "disguise":
-				wait 1 second
-				make player execute command "/buy disguise"
 				stop
 
 command /buy [<text>]:
@@ -1175,44 +1164,17 @@ command /effectmachine [<text>]:
 		player is in "world":
 			argument is not set:
 				if {db_effectshop.effect.%player%} is false:
-					if {db_effectshop.disguise.%player%} is false:
-						send "&ePowering the &2Effect &3Machine &e. . ." to player
-						show "s;3;{@nEffect};s;7;{@nDisguise}" with 1 row named "&2Effect &3Machine" to player
-						stop
-					if {db_effectshop.disguise.%player%} is true:
-						if {effects.disguise.%player%} is 1:
-							send "&ePowering the &2Effect &3Machine &e. . ." to player
-							show "s;3;{@nEffect};s;7;{@eDisguise}" with 1 row named "&2Effect &3Machine" to player
-							stop
-						if {effects.disguise.%player%} is 0:
-							send "&ePowering the &2Effect &3Machine &e. . ." to player
-							show "s;3;{@nEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
-							stop
-				if {db_effectshop.disguise.%player%} is false:
-					if {db_effectshop.effect.%player%} is false:
-						send "&ePowering the &2Effect &3Machine &e. . ." to player
-						show "s;3;{@nEffect};s;7;{@nDisguise}" with 1 row named "&2Effect &3Machine" to player
-						stop
-					if {db_effectshop.effect.%player%} is true:
-						if {effects.magic.%player%} is 1:
-							send "&ePowering the &2Effect &3Machine &e. . ." to player
-							show "s;3;{@eEffect};s;7;{@nDisguise}" with 1 row named "&2Effect &3Machine" to player
-							stop
-						if {effects.magic.%player%} is 0:
-							send "&ePowering the &2Effect &3Machine &e. . ." to player
-							show "s;3;{@dEffect};s;7;{@nDisguise}" with 1 row named "&2Effect &3Machine" to player
-							stop
-				if {effects.magic.%player%} is 1:
 					send "&ePowering the &2Effect &3Machine &e. . ." to player
-					show "s;3;{@eEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
+					show "s;3;{@nEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
 					stop
-				if {effects.disguise.%player%} is 1:
-					send "&ePowering the &2Effect &3Machine &e. . ." to player
-					show "s;3;{@dEffect};s;7;{@eDisguise}" with 1 row named "&2Effect &3Machine" to player
-					stop
-				send "&ePowering the &2Effect &3Machine &e. . ." to player
-				show "s;3;{@dEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
-				stop
+				if {db_effectshop.effect.%player%} is true:
+					if {effects.magic.%player%} is 1:
+						send "&ePowering the &2Effect &3Machine &e. . ." to player
+						show "s;3;{@eEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
+						stop
+					if {effects.magic.%player%} is 0:
+						send "&ePowering the &2Effect &3Machine &e. . ." to player
+						show "s;3;{@dEffect};s;7;{@dDisguise}" with 1 row named "&2Effect &3Machine" to player
 			argument is "disguise":
 				send "&eUnlocking your closet. . ." to player
 				wait 1 second
@@ -1594,5 +1556,5 @@ command /disguiseset [<text>]:
 					set {temp.d24.%player%} to "s;43;i;villager spawn egg;n;&6Villager"
 			if {db_effectshop.disguises.villager.%player%} is false:
 				set {temp.d24.%player%} to "s;43;i;villager spawn egg;n;&6Villager"
-			show "%{temp.d1.%player%}%;%{temp.d2.%player%}%;%{temp.d3.%player%}%;%{temp.d4.%player%}%;%{temp.d5.%player%}%;%{temp.d6.%player%}%;%{temp.d7.%player%}%;%{temp.d8.%player%}%;%{temp.d9.%player%}%;%{temp.d10.%player%}%;%{temp.d11.%player%}%;%{temp.d12.%player%}%;%{temp.d13.%player%}%;%{temp.d14.%player%}%;%{temp.d15.%player%}%;%{temp.d16.%player%}%;%{temp.d17.%player%}%;%{temp.d18.%player%}%;%{temp.d19.%player%}%;%{temp.d20.%player%}%;%{temp.d21.%player%}%;%{temp.d22.%player%}%;%{temp.d23.%player%}%;%{temp.d24.%player%}%;{@dDspecial}" with 5 rows named "&3Disguise &2Closet" to player
+			show "%{temp.d1.%player%}%;%{temp.d2.%player%}%;%{temp.d3.%player%}%;%{temp.d4.%player%}%;%{temp.d5.%player%}%;%{temp.d6.%player%}%;%{temp.d7.%player%}%;%{temp.d8.%player%}%;%{temp.d9.%player%}%;%{temp.d10.%player%}%;%{temp.d11.%player%}%;%{temp.d12.%player%}%;%{temp.d13.%player%}%;%{temp.d14.%player%}%;%{temp.d15.%player%}%;%{temp.d16.%player%}%;%{temp.d17.%player%}%;%{temp.d18.%player%}%;%{temp.d19.%player%}%;%{temp.d20.%player%}%;%{temp.d21.%player%}%;%{temp.d22.%player%}%;%{temp.d23.%player%}%;%{temp.d24.%player%}%;{@dDspecial};{@Dstop}" with 6 rows named "&3Disguise &2Closet" to player
 			stop		
