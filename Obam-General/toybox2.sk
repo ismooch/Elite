@@ -443,8 +443,10 @@ on teleport:
 		#
 		if {effects.magic.%player%} is 1:
 			set {effects.magic.%player%} to 0
-		if {effects.disguise.%player%} is 1:
-			set {effects.disguise.%player%} to 0
+		#
+		if {disguise.set.%player%} is true:
+			make console execute command "/undisguiseplayer %player%"
+			set {disguise.set.%player%} to false
 		#
 		if player has {@gHelp}:
 			remove all {@gHelp} from player's inventory
@@ -738,8 +740,10 @@ on disconnect:
 		#
 		if {effects.magic.%player%} is 1:
 			set {effects.magic.%player%} to 0
-		if {effects.disguise.%player%} is 1:
-			set {effects.disguise.%player%} to 0
+		#
+		if {disguise.set.%player%} is true:
+			make console execute command "/undisguiseplayer %player%"
+			set {disguise.set.%player%} to false
 		#
 		if player has {@gHelp}:
 			remove all {@gHelp} from player's inventory
@@ -906,7 +910,7 @@ command /worlds [<text>]:
 				execute console command "mv tp %player% kitpvpkillingfields"
 			argument is "garage":
 				send "&eYou are being summoned to Garage." to player
-				make player execute command "/server garage"
+				make player execute command "/transfer garage"
 			
 command /flight:
 	trigger:
@@ -1568,74 +1572,350 @@ command /disguiseset [<text>]:
 			if {db_effectshop.disguises.creeper.%player%} is false:
 				send "&fYou need to unlock the creeper to disguise as it." to player
 		if argument is "skeleton":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.skeleton.%player%} is true:
+				if {effects.disguises.skeleton.%player%} is 1:
+					send "&fYou are already disguised as a skeleton." to player
+					stop
+				if {effects.disguises.skeleton.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.skeleton.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "skeleton"
+					make console execute command "/disguiseplayer %player% skeleton"
+					send "&eYou are now disguised as a skeleton." to player
+					stop
+			if {db_effectshop.disguises.skeleton.%player%} is false:
+				send "&fYou need to unlock the skeleton to disguise as it." to player
 		if argument is "spider":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.spider.%player%} is true:
+				if {effects.disguises.spider.%player%} is 1:
+					send "&fYou are already disguised as a spider." to player
+					stop
+				if {effects.disguises.spider.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.spider.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "spider"
+					make console execute command "/disguiseplayer %player% spider"
+					send "&eYou are now disguised as a spider." to player
+					stop
+			if {db_effectshop.disguises.spider.%player%} is false:
+				send "&fYou need to unlock the spider to disguise as it." to player
 		if argument is "zombie":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.zombie.%player%} is true:
+				if {effects.disguises.zombie.%player%} is 1:
+					send "&fYou are already disguised as a zombie." to player
+					stop
+				if {effects.disguises.zombie.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.zombie.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "zombie"
+					make console execute command "/disguiseplayer %player% zombie"
+					send "&eYou are now disguised as a zombie." to player
+					stop
+			if {db_effectshop.disguises.zombie.%player%} is false:
+				send "&fYou need to unlock the zombie to disguise as it." to player
 		if argument is "slime":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.slime.%player%} is true:
+				if {effects.disguises.slime.%player%} is 1:
+					send "&fYou are already disguised as a slime." to player
+					stop
+				if {effects.disguises.slime.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.slime.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "slime"
+					make console execute command "/disguiseplayer %player% slime"
+					send "&eYou are now disguised as a slime." to player
+					stop
+			if {db_effectshop.disguises.slime.%player%} is false:
+				send "&fYou need to unlock the slime to disguise as it." to player
 		if argument is "ghast":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.ghast.%player%} is true:
+				if {effects.disguises.ghast.%player%} is 1:
+					send "&fYou are already disguised as a ghast." to player
+					stop
+				if {effects.disguises.ghast.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.ghast.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "ghast"
+					make console execute command "/disguiseplayer %player% ghast"
+					send "&eYou are now disguised as a ghast." to player
+					stop
+			if {db_effectshop.disguises.ghast.%player%} is false:
+				send "&fYou need to unlock the ghast to disguise as it." to player
 		if argument is "zombiepigman":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.zombiepigman.%player%} is true:
+				if {effects.disguises.zombiepigman.%player%} is 1:
+					send "&fYou are already disguised as a zombie pigman." to player
+					stop
+				if {effects.disguises.zombiepigman.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.zombiepigman.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "zombiepigman"
+					make console execute command "/disguiseplayer %player% pig_zombie"
+					send "&eYou are now disguised as a zombie pigman." to player
+					stop
+			if {db_effectshop.disguises.zombiepigman.%player%} is false:
+				send "&fYou need to unlock the zombie pigman to disguise as it." to player
 		if argument is "enderman":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.enderman.%player%} is true:
+				if {effects.disguises.enderman.%player%} is 1:
+					send "&fYou are already disguised as a enderman." to player
+					stop
+				if {effects.disguises.enderman.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.enderman.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "enderman"
+					make console execute command "/disguiseplayer %player% enderman"
+					send "&eYou are now disguised as a enderman." to player
+					stop
+			if {db_effectshop.disguises.enderman.%player%} is false:
+				send "&fYou need to unlock the enderman to disguise as it." to player
 		if argument is "cavespider":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.cavespider.%player%} is true:
+				if {effects.disguises.cavespider.%player%} is 1:
+					send "&fYou are already disguised as a cave spider." to player
+					stop
+				if {effects.disguises.cavespider.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.cavespider.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "cavespider"
+					make console execute command "/disguiseplayer %player% cave_spider"
+					send "&eYou are now disguised as a cave spider." to player
+					stop
+			if {db_effectshop.disguises.cavespider.%player%} is false:
+				send "&fYou need to unlock the cave spider to disguise as it." to player
 		if argument is "silverfish":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.silverfish.%player%} is true:
+				if {effects.disguises.silverfish.%player%} is 1:
+					send "&fYou are already disguised as a silverfish." to player
+					stop
+				if {effects.disguises.silverfish.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.silverfish.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "silverfish"
+					make console execute command "/disguiseplayer %player% silverfish"
+					send "&eYou are now disguised as a silverfish." to player
+					stop
+			if {db_effectshop.disguises.silverfish.%player%} is false:
+				send "&fYou need to unlock the silverfish to disguise as it." to player
 		if argument is "blaze":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.blaze.%player%} is true:
+				if {effects.disguises.blaze.%player%} is 1:
+					send "&fYou are already disguised as a blaze." to player
+					stop
+				if {effects.disguises.blaze.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.blaze.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "blaze"
+					make console execute command "/disguiseplayer %player% blaze"
+					send "&eYou are now disguised as a blaze." to player
+					stop
+			if {db_effectshop.disguises.blaze.%player%} is false:
+				send "&fYou need to unlock the blaze to disguise as it." to player
 		if argument is "magmacube":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.magmacube.%player%} is true:
+				if {effects.disguises.magmacube.%player%} is 1:
+					send "&fYou are already disguised as a magma cube." to player
+					stop
+				if {effects.disguises.magmacube.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.magmacube.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "magmacube"
+					make console execute command "/disguiseplayer %player% magma_cube"
+					send "&eYou are now disguised as a magma cube." to player
+					stop
+			if {db_effectshop.disguises.magmacube.%player%} is false:
+				send "&fYou need to unlock the magma cube to disguise as it." to player
 		if argument is "bat":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.bat.%player%} is true:
+				if {effects.disguises.bat.%player%} is 1:
+					send "&fYou are already disguised as a bat." to player
+					stop
+				if {effects.disguises.bat.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.bat.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "bat"
+					make console execute command "/disguiseplayer %player% bat"
+					send "&eYou are now disguised as a bat." to player
+					stop
+			if {db_effectshop.disguises.bat.%player%} is false:
+				send "&fYou need to unlock the bat to disguise as it." to player
 		if argument is "witch":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.witch.%player%} is true:
+				if {effects.disguises.witch.%player%} is 1:
+					send "&fYou are already disguised as a witch." to player
+					stop
+				if {effects.disguises.witch.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.witch.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "witch"
+					make console execute command "/disguiseplayer %player% witch"
+					send "&eYou are now disguised as a witch." to player
+					stop
+			if {db_effectshop.disguises.witch.%player%} is false:
+				send "&fYou need to unlock the witch to disguise as it." to player
 		if argument is "pig":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.pig.%player%} is true:
+				if {effects.disguises.pig.%player%} is 1:
+					send "&fYou are already disguised as a pig." to player
+					stop
+				if {effects.disguises.pig.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.pig.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "pig"
+					make console execute command "/disguiseplayer %player% pig"
+					send "&eYou are now disguised as a pig." to player
+					stop
+			if {db_effectshop.disguises.pig.%player%} is false:
+				send "&fYou need to unlock the pig to disguise as it." to player
 		if argument is "sheep":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.sheep.%player%} is true:
+				if {effects.disguises.sheep.%player%} is 1:
+					send "&fYou are already disguised as a sheep." to player
+					stop
+				if {effects.disguises.sheep.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.sheep.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "sheep"
+					make console execute command "/disguiseplayer %player% sheep"
+					send "&eYou are now disguised as a sheep." to player
+					stop
+			if {db_effectshop.disguises.sheep.%player%} is false:
+				send "&fYou need to unlock the sheep to disguise as it." to player
 		if argument is "cow":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.cow.%player%} is true:
+				if {effects.disguises.cow.%player%} is 1:
+					send "&fYou are already disguised as a cow." to player
+					stop
+				if {effects.disguises.cow.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.cow.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "cow"
+					make console execute command "/disguiseplayer %player% cow"
+					send "&eYou are now disguised as a cow." to player
+					stop
+			if {db_effectshop.disguises.cow.%player%} is false:
+				send "&fYou need to unlock the cow to disguise as it." to player
 		if argument is "chicken":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.chicken.%player%} is true:
+				if {effects.disguises.chicken.%player%} is 1:
+					send "&fYou are already disguised as a chicken." to player
+					stop
+				if {effects.disguises.chicken.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.chicken.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "chicken"
+					make console execute command "/disguiseplayer %player% chicken"
+					send "&eYou are now disguised as a chicken." to player
+					stop
+			if {db_effectshop.disguises.chicken.%player%} is false:
+				send "&fYou need to unlock the chicken to disguise as it." to player
 		if argument is "squid":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.squid.%player%} is true:
+				if {effects.disguises.squid.%player%} is 1:
+					send "&fYou are already disguised as a squid." to player
+					stop
+				if {effects.disguises.squid.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.squid.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "squid"
+					make console execute command "/disguiseplayer %player% squid"
+					send "&eYou are now disguised as a squid." to player
+					stop
+			if {db_effectshop.disguises.squid.%player%} is false:
+				send "&fYou need to unlock the squid to disguise as it." to player
 		if argument is "wolf":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.wolf.%player%} is true:
+				if {effects.disguises.wolf.%player%} is 1:
+					send "&fYou are already disguised as a wolf." to player
+					stop
+				if {effects.disguises.wolf.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.wolf.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "wolf"
+					make console execute command "/disguiseplayer %player% wolf"
+					send "&eYou are now disguised as a wolf." to player
+					stop
+			if {db_effectshop.disguises.wolf.%player%} is false:
+				send "&fYou need to unlock the wolf to disguise as it." to player
 		if argument is "mooshroom":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.mooshroom.%player%} is true:
+				if {effects.disguises.mooshroom.%player%} is 1:
+					send "&fYou are already disguised as a mooshroom." to player
+					stop
+				if {effects.disguises.mooshroom.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.mooshroom.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "mooshroom"
+					make console execute command "/disguiseplayer %player% mushroom_cow"
+					send "&eYou are now disguised as a mooshroom." to player
+					stop
+			if {db_effectshop.disguises.mooshroom.%player%} is false:
+				send "&fYou need to unlock the mooshroom to disguise as it." to player
 		if argument is "ocelot":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.ocelot.%player%} is true:
+				if {effects.disguises.ocelot.%player%} is 1:
+					send "&fYou are already disguised as a ocelot." to player
+					stop
+				if {effects.disguises.ocelot.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.ocelot.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "ocelot"
+					make console execute command "/disguiseplayer %player% ocelot"
+					send "&eYou are now disguised as a ocelot." to player
+					stop
+			if {db_effectshop.disguises.ocelot.%player%} is false:
+				send "&fYou need to unlock the ocelot to disguise as it." to player
 		if argument is "horse":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.horse.%player%} is true:
+				if {effects.disguises.horse.%player%} is 1:
+					send "&fYou are already disguised as a horse." to player
+					stop
+				if {effects.disguises.horse.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.horse.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "horse"
+					make console execute command "/disguiseplayer %player% horse"
+					send "&eYou are now disguised as a horse." to player
+					stop
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as it." to player
 		if argument is "villager":
-			send "test" to player
-			stop
+			if {db_effectshop.disguises.villager.%player%} is true:
+				if {effects.disguises.villager.%player%} is 1:
+					send "&fYou are already disguised as a villager." to player
+					stop
+				if {effects.disguises.villager.%player%} is 0:
+					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+					set {effects.disguises.villager.%player%} to 1
+					set {disguise.set.%player%} to true
+					set {disguise.type.%player%} to "villager"
+					make console execute command "/disguiseplayer %player% villager"
+					send "&eYou are now disguised as a villager." to player
+					stop
+			if {db_effectshop.disguises.villager.%player%} is false:
+				send "&fYou need to unlock the villager to disguise as it." to player
 		if argument is "special":
 			send "test" to player
 			stop
