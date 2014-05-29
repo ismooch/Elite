@@ -1014,6 +1014,102 @@ command /effect [<text>]:
 				wait 1 second
 				make player execute command "/buy effect"
 				stop
+			argument is "d1":
+				wait 1 second
+				make player execute command "/buy d1"
+				stop
+			argument is "d2":
+				wait 1 second
+				make player execute command "/buy d2"
+				stop
+			argument is "d3":
+				wait 1 second
+				make player execute command "/buy d3"
+				stop
+			argument is "d4":
+				wait 1 second
+				make player execute command "/buy d4"
+				stop
+			argument is "d5":
+				wait 1 second
+				make player execute command "/buy d5"
+				stop
+			argument is "d6":
+				wait 1 second
+				make player execute command "/buy d6"
+				stop
+			argument is "d7":
+				wait 1 second
+				make player execute command "/buy d7"
+				stop
+			argument is "d8":
+				wait 1 second
+				make player execute command "/buy d8"
+				stop
+			argument is "d9":
+				wait 1 second
+				make player execute command "/buy d9"
+				stop
+			argument is "d10":
+				wait 1 second
+				make player execute command "/buy d10"
+				stop
+			argument is "d11":
+				wait 1 second
+				make player execute command "/buy d11"
+				stop
+			argument is "d12":
+				wait 1 second
+				make player execute command "/buy d12"
+				stop
+			argument is "d13":
+				wait 1 second
+				make player execute command "/buy d13"
+				stop
+			argument is "d14":
+				wait 1 second
+				make player execute command "/buy d14"
+				stop
+			argument is "d15":
+				wait 1 second
+				make player execute command "/buy d15"
+				stop
+			argument is "d16":
+				wait 1 second
+				make player execute command "/buy d16"
+				stop
+			argument is "d17":
+				wait 1 second
+				make player execute command "/buy d17"
+				stop
+			argument is "d18":
+				wait 1 second
+				make player execute command "/buy d18"
+				stop
+			argument is "d19":
+				wait 1 second
+				make player execute command "/buy d19"
+				stop
+			argument is "d20":
+				wait 1 second
+				make player execute command "/buy d20"
+				stop
+			argument is "d21":
+				wait 1 second
+				make player execute command "/buy d21"
+				stop
+			argument is "d22":
+				wait 1 second
+				make player execute command "/buy d22"
+				stop
+			argument is "d23":
+				wait 1 second
+				make player execute command "/buy d23"
+				stop
+			argument is "d24":
+				wait 1 second
+				make player execute command "/buy d24"
+				stop
 			argument is "disguise":
 				set {_amount.%player%} to player's balance
 				send "&f&eCurrent Balance: &f%{_amount.%player%}%" to player
@@ -1024,7 +1120,7 @@ command /effect [<text>]:
 					set {_shop.d1.%player%} to ""
 				if {db_effectshop.disguises.creeper.%player%} is false:
 					set {_slot.d1.%player%} to {_increment.closet.%player%}
-					set {_shop.d1.%player%} to "s;%{_slot.d1.%player%}%;i;creeper spawn egg;n;&6Creeper;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 1;"
+					set {_shop.d1.%player%} to "s;%{_slot.d1.%player%}%;i;creeper spawn egg;n;&6Creeper;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d1;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1087,7 +1183,7 @@ command /effect [<text>]:
 					set {_shop.d2.%player%} to ""
 				if {db_effectshop.disguises.skeleton.%player%} is false:
 					set {_slot.d2.%player%} to {_increment.closet.%player%}
-					set {_shop.d2.%player%} to "s;%{_slot.d2.%player%}%;i;skeleton spawn egg;n;&6Skeleton;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 2;"
+					set {_shop.d2.%player%} to "s;%{_slot.d2.%player%}%;i;skeleton spawn egg;n;&6Skeleton;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d2;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1150,7 +1246,7 @@ command /effect [<text>]:
 					set {_shop.d3.%player%} to ""						
 				if {db_effectshop.disguises.spider.%player%} is false:
 					set {_slot.d3.%player%} to {_increment.closet.%player%}
-					set {_shop.d3.%player%} to "s;%{_slot.d3.%player%}%;i;spider spawn egg;n;&6Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 3;"
+					set {_shop.d3.%player%} to "s;%{_slot.d3.%player%}%;i;spider spawn egg;n;&6Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d3;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1213,7 +1309,7 @@ command /effect [<text>]:
 					set {_shop.d4.%player%} to ""						
 				if {db_effectshop.disguises.zombie.%player%} is false:
 					set {_slot.d4.%player%} to {_increment.closet.%player%}
-					set {_shop.d4.%player%} to "s;%{_slot.d4.%player%}%;i;zombie spawn egg;n;&6Zombie;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 4;"
+					set {_shop.d4.%player%} to "s;%{_slot.d4.%player%}%;i;zombie spawn egg;n;&6Zombie;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d4;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1276,7 +1372,7 @@ command /effect [<text>]:
 					set {_shop.d5.%player%} to ""						
 				if {db_effectshop.disguises.slime.%player%} is false:
 					set {_slot.d5.%player%} to {_increment.closet.%player%}
-					set {_shop.d5.%player%} to "s;%{_slot.d5.%player%}%;i;slime spawn egg;n;&6Slime;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 5;"
+					set {_shop.d5.%player%} to "s;%{_slot.d5.%player%}%;i;slime spawn egg;n;&6Slime;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d5;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1339,7 +1435,7 @@ command /effect [<text>]:
 					set {_shop.d6.%player%} to ""						
 				if {db_effectshop.disguises.ghast.%player%} is false:
 					set {_slot.d6.%player%} to {_increment.closet.%player%}
-					set {_shop.d6.%player%} to "s;%{_slot.d6.%player%}%;i;ghast spawn egg;n;&6Ghast;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 6;"
+					set {_shop.d6.%player%} to "s;%{_slot.d6.%player%}%;i;ghast spawn egg;n;&6Ghast;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d6;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1402,7 +1498,7 @@ command /effect [<text>]:
 					set {_shop.d7.%player%} to ""						
 				if {db_effectshop.disguises.zombiepigman.%player%} is false:
 					set {_slot.d7.%player%} to {_increment.closet.%player%}
-					set {_shop.d7.%player%} to "s;%{_slot.d7.%player%}%;i;zombie pigman spawn egg;n;&6Zombie Pigman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 7;"
+					set {_shop.d7.%player%} to "s;%{_slot.d7.%player%}%;i;zombie pigman spawn egg;n;&6Zombie Pigman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d7;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1465,7 +1561,7 @@ command /effect [<text>]:
 					set {_shop.d8.%player%} to ""						
 				if {db_effectshop.disguises.enderman.%player%} is false:
 					set {_slot.d8.%player%} to {_increment.closet.%player%}
-					set {_shop.d8.%player%} to "s;%{_slot.d8.%player%}%;i;enderman spawn egg;n;&6Enderman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 8;"
+					set {_shop.d8.%player%} to "s;%{_slot.d8.%player%}%;i;enderman spawn egg;n;&6Enderman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d8;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1528,7 +1624,7 @@ command /effect [<text>]:
 					set {_shop.d9.%player%} to ""						
 				if {db_effectshop.disguises.cavespider.%player%} is false:
 					set {_slot.d9.%player%} to {_increment.closet.%player%}
-					set {_shop.d9.%player%} to "s;%{_slot.d9.%player%}%;i;cave spider spawn egg;n;&6Cave Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 9;"
+					set {_shop.d9.%player%} to "s;%{_slot.d9.%player%}%;i;cave spider spawn egg;n;&6Cave Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d9;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1591,7 +1687,7 @@ command /effect [<text>]:
 					set {_shop.d10.%player%} to ""
 				if {db_effectshop.disguises.silverfish.%player%} is false:
 					set {_slot.d10.%player%} to {_increment.closet.%player%}
-					set {_shop.d10.%player%} to "s;%{_slot.d10.%player%}%;i;silverfish spawn egg;n;&6Silverfish;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 10;"
+					set {_shop.d10.%player%} to "s;%{_slot.d10.%player%}%;i;silverfish spawn egg;n;&6Silverfish;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d10;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1654,7 +1750,7 @@ command /effect [<text>]:
 					set {_shop.d11.%player%} to ""
 				if {db_effectshop.disguises.blaze.%player%} is false:
 					set {_slot.d11.%player%} to {_increment.closet.%player%}
-					set {_shop.d11.%player%} to "s;%{_slot.d11.%player%}%;i;blaze spawn egg;n;&6Blaze;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 11;"
+					set {_shop.d11.%player%} to "s;%{_slot.d11.%player%}%;i;blaze spawn egg;n;&6Blaze;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d11;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1717,7 +1813,7 @@ command /effect [<text>]:
 					set {_shop.d12.%player%} to ""						
 				if {db_effectshop.disguises.magmacube.%player%} is false:
 					set {_slot.d12.%player%} to {_increment.closet.%player%}
-					set {_shop.d12.%player%} to "s;%{_slot.d12.%player%}%;i;magma cube spawn egg;n;&6Magma Cube;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 12;"
+					set {_shop.d12.%player%} to "s;%{_slot.d12.%player%}%;i;magma cube spawn egg;n;&6Magma Cube;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d12;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1780,7 +1876,7 @@ command /effect [<text>]:
 					set {_shop.d13.%player%} to ""						
 				if {db_effectshop.disguises.bat.%player%} is false:
 					set {_slot.d13.%player%} to {_increment.closet.%player%}
-					set {_shop.d13.%player%} to "s;%{_slot.d13.%player%}%;i;bat spawn egg;n;&6Bat;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 13;"
+					set {_shop.d13.%player%} to "s;%{_slot.d13.%player%}%;i;bat spawn egg;n;&6Bat;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d13;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1843,7 +1939,7 @@ command /effect [<text>]:
 					set {_shop.d14.%player%} to ""						
 				if {db_effectshop.disguises.witch.%player%} is false:
 					set {_slot.d14.%player%} to {_increment.closet.%player%}
-					set {_shop.d14.%player%} to "s;%{_slot.d14.%player%}%;i;witch spawn egg;n;&6Witch;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 14;"
+					set {_shop.d14.%player%} to "s;%{_slot.d14.%player%}%;i;witch spawn egg;n;&6Witch;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d14;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1906,7 +2002,7 @@ command /effect [<text>]:
 					set {_shop.d15.%player%} to ""						
 				if {db_effectshop.disguises.pig.%player%} is false:
 					set {_slot.d15.%player%} to {_increment.closet.%player%}
-					set {_shop.d15.%player%} to "s;%{_slot.d15.%player%}%;i;pig spawn egg;n;&6Pig;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 15;"
+					set {_shop.d15.%player%} to "s;%{_slot.d15.%player%}%;i;pig spawn egg;n;&6Pig;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d15;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -1969,7 +2065,7 @@ command /effect [<text>]:
 					set {_shop.d16.%player%} to ""						
 				if {db_effectshop.disguises.sheep.%player%} is false:
 					set {_slot.d16.%player%} to {_increment.closet.%player%}
-					set {_shop.d16.%player%} to "s;%{_slot.d16.%player%}%;i;sheep spawn egg;n;&6Sheep;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 16;"
+					set {_shop.d16.%player%} to "s;%{_slot.d16.%player%}%;i;sheep spawn egg;n;&6Sheep;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d16;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2032,7 +2128,7 @@ command /effect [<text>]:
 					set {_shop.d17.%player%} to ""						
 				if {db_effectshop.disguises.cow.%player%} is false:
 					set {_slot.d17.%player%} to {_increment.closet.%player%}
-					set {_shop.d17.%player%} to "s;%{_slot.d17.%player%}%;i;cow spawn egg;n;&6Cow;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 17;"
+					set {_shop.d17.%player%} to "s;%{_slot.d17.%player%}%;i;cow spawn egg;n;&6Cow;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d17;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2095,7 +2191,7 @@ command /effect [<text>]:
 					set {_shop.d18.%player%} to ""						
 				if {db_effectshop.disguises.chicken.%player%} is false:
 					set {_slot.d18.%player%} to {_increment.closet.%player%}
-					set {_shop.d18.%player%} to "s;%{_slot.d18.%player%}%;i;chicken spawn egg;n;&6Chicken;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 18;"
+					set {_shop.d18.%player%} to "s;%{_slot.d18.%player%}%;i;chicken spawn egg;n;&6Chicken;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d18;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2158,7 +2254,7 @@ command /effect [<text>]:
 					set {_shop.d19.%player%} to ""						
 				if {db_effectshop.disguises.squid.%player%} is false:
 					set {_slot.d19.%player%} to {_increment.closet.%player%}
-					set {_shop.d19.%player%} to "s;%{_slot.d19.%player%}%;i;squid spawn egg;n;&6Squid;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 19;"
+					set {_shop.d19.%player%} to "s;%{_slot.d19.%player%}%;i;squid spawn egg;n;&6Squid;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d19;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2221,7 +2317,7 @@ command /effect [<text>]:
 					set {_shop.d20.%player%} to ""						
 				if {db_effectshop.disguises.wolf.%player%} is false:
 					set {_slot.d20.%player%} to {_increment.closet.%player%}
-					set {_shop.d20.%player%} to "s;%{_slot.d20.%player%}%;i;wolf spawn egg;n;&6Wolf;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 20;"
+					set {_shop.d20.%player%} to "s;%{_slot.d20.%player%}%;i;wolf spawn egg;n;&6Wolf;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d20;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2284,7 +2380,7 @@ command /effect [<text>]:
 					set {_shop.d21.%player%} to ""									
 				if {db_effectshop.disguises.mooshroom.%player%} is false:
 					set {_slot.d21.%player%} to {_increment.closet.%player%}
-					set {_shop.d21.%player%} to "s;%{_slot.d21.%player%}%;i;mooshroom spawn egg;n;&6Mooshroom;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 21;"
+					set {_shop.d21.%player%} to "s;%{_slot.d21.%player%}%;i;mooshroom spawn egg;n;&6Mooshroom;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d21;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2347,7 +2443,7 @@ command /effect [<text>]:
 					set {_shop.d22.%player%} to ""									
 				if {db_effectshop.disguises.ocelot.%player%} is false:
 					set {_slot.d22.%player%} to {_increment.closet.%player%}
-					set {_shop.d22.%player%} to "s;%{_slot.d22.%player%}%;i;ocelot spawn egg;n;&6Ocelot;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 22;"
+					set {_shop.d22.%player%} to "s;%{_slot.d22.%player%}%;i;ocelot spawn egg;n;&6Ocelot;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d22;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2410,7 +2506,7 @@ command /effect [<text>]:
 					set {_shop.d23.%player%} to ""									
 				if {db_effectshop.disguises.horse.%player%} is false:
 					set {_slot.d23.%player%} to {_increment.closet.%player%}
-					set {_shop.d23.%player%} to "s;%{_slot.d23.%player%}%;i;horse spawn egg;n;&6Horse;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 23;"
+					set {_shop.d23.%player%} to "s;%{_slot.d23.%player%}%;i;horse spawn egg;n;&6Horse;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d23;"
 					if {_increment.closet.%player%} is 52:
 						add 2 to {_increment.closet.%player%}
 					if {_increment.closet.%player%} is 50:
@@ -2473,7 +2569,7 @@ command /effect [<text>]:
 					set {_shop.d24.%player%} to ""			
 				if {db_effectshop.disguises.villager.%player%} is false:
 					set {_slot.d24.%player%} to {_increment.closet.%player%}
-					set {_shop.d24.%player%} to "s;%{_slot.d24.%player%}%;i;villager spawn egg;n;&6Villager;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 24"
+					set {_shop.d24.%player%} to "s;%{_slot.d24.%player%}%;i;villager spawn egg;n;&6Villager;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect d24"
 					#if more are added - add a semicolon at the end of the variable
 					#add more incrementation values here later for more releases
 				show "%{_shop.d1.%player%}%%{_shop.d2.%player%}%%{_shop.d3.%player%}%%{_shop.d4.%player%}%%{_shop.d5.%player%}%%{_shop.d6.%player%}%%{_shop.d7.%player%}%%{_shop.d8.%player%}%%{_shop.d9.%player%}%%{_shop.d10.%player%}%%{_shop.d11.%player%}%%{_shop.d12.%player%}%%{_shop.d13.%player%}%%{_shop.d14.%player%}%%{_shop.d15.%player%}%%{_shop.d16.%player%}%%{_shop.d17.%player%}%%{_shop.d18.%player%}%%{_shop.d19.%player%}%%{_shop.d20.%player%}%%{_shop.d21.%player%}%%{_shop.d22.%player%}%%{_shop.d23.%player%}%%{_shop.d24.%player%}%" with 6 rows named "&3Disguise &2Shop" to player
@@ -2543,21 +2639,389 @@ command /buy [<text>]:
 					set {db_effectshop.effect.%player%} to true
 					log "%player% bought Unstable Gases for 5,000 tickets at %now%" to "/shop/effects/UnstableGases.log"
 					stop
-			argument is "disguise":
-				if {db_effectshop.disguise.%player%} is true:
-					send "&6Disguise &fCloset &ehas already been bought." to player
+			argument is "d1":
+				if {db_effectshop.disguises.creeper.%player%} is true:
+					send "&6Creeper &fDisguise &ehas already been bought." to player
 					stop
-				if {db_effectshop.disguise.%player%} is false:
+				if {db_effectshop.disguises.creeper.%player%} is false:
 					set {_amount.%player%} to player's balance
-					if {_amount.%player%} is less than 2500:
+					if {_amount.%player%} is less than 10000:
 						send "&cYou do not have enough tickets for that!" to player
 						stop
-					subtract 2500 from player's balance
+					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Disguise &fCloset &afrom the Effect Shop!" to player
+					send "&aYou have just purchased the &6Creeper &fDisguise &afrom the Disguise - Effect Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
-					set {db_effectshop.disguise.%player%} to true
-					log "%player% bought the Disguise Closet for 2,500 tickets at %now%" to "/shop/effects/DisguiseCloset.log"
+					set {db_effectshop.disguises.creeper.%player%} to true
+					log "%player% bought Creeper Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseCreeper.log"
+					stop
+			argument is "d2":
+				if {db_effectshop.disguises.skeleton.%player%} is true:
+					send "&6Skeleton &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.skeleton.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Skeleton &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.skeleton.%player%} to true
+					log "%player% bought Skeleton Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSkeleton.log"
+					stop
+			argument is "d3":
+				if {db_effectshop.disguises.spider.%player%} is true:
+					send "&6Spider &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.spider.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Spider &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.spider.%player%} to true
+					log "%player% bought Spider Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSpider.log"
+					stop
+			argument is "d4":
+				if {db_effectshop.disguises.zombie.%player%} is true:
+					send "&6Zombie &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.zombie.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Zombie &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.zombie.%player%} to true
+					log "%player% bought Zombie Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseZombie.log"
+					stop
+			argument is "d5":
+				if {db_effectshop.disguises.slime.%player%} is true:
+					send "&6Slime &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.slime.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Slime &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.slime.%player%} to true
+					log "%player% bought Slime Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSlime.log"
+					stop
+			argument is "d6":
+				if {db_effectshop.disguises.ghast.%player%} is true:
+					send "&6Ghast &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.ghast.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Ghast &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.ghast.%player%} to true
+					log "%player% bought Ghast Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseGhast.log"
+					stop
+			argument is "d7":
+				if {db_effectshop.disguises.zombiepigman.%player%} is true:
+					send "&6Zombie Pigman &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.zombiepigman.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Zombie Pigman &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.zombiepigman.%player%} to true
+					log "%player% bought Zombie Pigman Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseZombiePigman.log"
+					stop
+			argument is "d8":
+				if {db_effectshop.disguises.enderman.%player%} is true:
+					send "&6Enderman &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.enderman.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Enderman &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.enderman.%player%} to true
+					log "%player% bought Enderman Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseEnderman.log"
+					stop
+			argument is "d9":
+				if {db_effectshop.disguises.cavespider.%player%} is true:
+					send "&6Cave Spider &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.cavespider.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Cave Spider &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.cavespider.%player%} to true
+					log "%player% bought Cave Spider Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseCaveSpider.log"
+					stop
+			argument is "d10":
+				if {db_effectshop.disguises.silverfish.%player%} is true:
+					send "&6Silverfish &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.silverfish.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Silverfish &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.silverfish.%player%} to true
+					log "%player% bought Silverfish Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSilverfish.log"
+					stop
+			argument is "d11":
+				if {db_effectshop.disguises.blaze.%player%} is true:
+					send "&6Blaze &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.blaze.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Blaze &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.blaze.%player%} to true
+					log "%player% bought Blaze Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseBlaze.log"
+					stop
+			argument is "d12":
+				if {db_effectshop.disguises.magmacube.%player%} is true:
+					send "&6Magma Cube &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.magmacube.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Magma Cube &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.magmacube.%player%} to true
+					log "%player% bought Magma Cube Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseMagmaCube.log"
+					stop
+			argument is "d13":
+				if {db_effectshop.disguises.bat.%player%} is true:
+					send "&6Bat &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.bat.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Bat &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.bat.%player%} to true
+					log "%player% bought Bat Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseBat.log"
+					stop
+			argument is "d14":
+				if {db_effectshop.disguises.witch.%player%} is true:
+					send "&6Witch &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.witch.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Witch &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.witch.%player%} to true
+					log "%player% bought Witch Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseWitch.log"
+					stop
+			argument is "d15":
+				if {db_effectshop.disguises.pig.%player%} is true:
+					send "&6Pig &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.pig.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Pig &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.pig.%player%} to true
+					log "%player% bought Pig Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguisePig.log"
+					stop
+			argument is "d16":
+				if {db_effectshop.disguises.sheep.%player%} is true:
+					send "&6Sheep &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.sheep.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Sheep &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.sheep.%player%} to true
+					log "%player% bought Sheep Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSheep.log"
+					stop
+			argument is "d17":
+				if {db_effectshop.disguises.cow.%player%} is true:
+					send "&6Cow &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.cow.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Cow &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.cow.%player%} to true
+					log "%player% bought Cow Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseCow.log"
+					stop
+			argument is "d18":
+				if {db_effectshop.disguises.chicken.%player%} is true:
+					send "&6Chicken &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.chicken.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Chicken &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.chicken.%player%} to true
+					log "%player% bought Chicken Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseChicken.log"
+					stop
+			argument is "d19":
+				if {db_effectshop.disguises.squid.%player%} is true:
+					send "&6Squid &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.squid.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Squid &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.squid.%player%} to true
+					log "%player% bought Squid Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSquid.log"
+					stop
+			argument is "d20":
+				if {db_effectshop.disguises.wolf.%player%} is true:
+					send "&6Wolf &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.wolf.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Wolf &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.wolf.%player%} to true
+					log "%player% bought Wolf Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseWolf.log"
+					stop
+			argument is "d21":
+				if {db_effectshop.disguises.mooshroom.%player%} is true:
+					send "&6Mooshroom &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.mooshroom.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Mooshroom &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.mooshroom.%player%} to true
+					log "%player% bought Mooshroom Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseMooshroom.log"
+					stop
+			argument is "d22":
+				if {db_effectshop.disguises.ocelot.%player%} is true:
+					send "&6Ocelot &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.ocelot.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Ocelot &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.ocelot.%player%} to true
+					log "%player% bought Ocelot Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseOcelot.log"
+					stop
+			argument is "d23":
+				if {db_effectshop.disguises.horse.%player%} is true:
+					send "&6Horse &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.horse.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Horse &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.horse.%player%} to true
+					log "%player% bought Horse Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseHorse.log"
+					stop
+			argument is "d24":
+				if {db_effectshop.disguises.villager.%player%} is true:
+					send "&6Villager &fDisguise &ehas already been bought." to player
+					stop
+				if {db_effectshop.disguises.villager.%player%} is false:
+					set {_amount.%player%} to player's balance
+					if {_amount.%player%} is less than 10000:
+						send "&cYou do not have enough tickets for that!" to player
+						stop
+					subtract 10000 from player's balance
+					set {_amount.%player%} to player's balance
+					send "&aYou have just purchased the &6Villager &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
+					set {db_effectshop.disguises.villager.%player%} to true
+					log "%player% bought Villager Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseVillager.log"
 					stop
 						
 command /toybox [<text>]:
@@ -2569,66 +3033,66 @@ command /toybox [<text>]:
 					if {db_toyshop.piston.%player%} is true:
 						if {toybox.boat.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@eBoat};s;4;{@dCart};s;6;{@nFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@eBoat};s;3;{@dCart};s;5;{@nFirework};s;7;{@dPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						if {toybox.cart.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@dBoat};s;4;{@eCart};s;6;{@nFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@dBoat};s;3;{@eCart};s;5;{@nFirework};s;7;{@dPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						if {toybox.piston.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@dBoat};s;4;{@dCart};s;6;{@nFirework};s;8;{@ePiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@dBoat};s;3;{@dCart};s;5;{@nFirework};s;7;{@ePiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-						show "s;2;{@dBoat};s;4;{@dCart};s;6;{@nFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
+						show "s;1;{@dBoat};s;3;{@dCart};s;5;{@nFirework};s;7;{@dPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 						stop
 					if {db_toyshop.piston.%player%} is false:
 						if {toybox.boat.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@eBoat};s;4;{@dCart};s;6;{@nFirework};s;8;{@nPiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@eBoat};s;3;{@dCart};s;5;{@nFirework};s;7;{@nPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						if {toybox.cart.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@dBoat};s;4;{@eCart};s;6;{@nFirework};s;8;{@nPiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@dBoat};s;3;{@eCart};s;5;{@nFirework};s;7;{@nPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-						show "s;2;{@dBoat};s;4;{@dCart};s;6;{@nFirework};s;8;{@nPiston}" with 1 row named "&2Toy &9Box" to player
+						show "s;1;{@dBoat};s;3;{@dCart};s;5;{@nFirework};s;7;{@nPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 						stop
 				if {db_toyshop.piston.%player%} is false:
 					if {db_toyshop.firework.%player%} is true:
 						if {toybox.boat.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@eBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@nPiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@eBoat};s;3;{@dCart};s;5;{@dFirework};s;7;{@nPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						if {toybox.cart.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@dBoat};s;4;{@eCart};s;6;{@dFirework};s;8;{@nPiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@dBoat};s;3;{@eCart};s;5;{@dFirework};s;7;{@nPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						if {toybox.firework.%player%} is 1:
 							send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-							show "s;2;{@dBoat};s;4;{@dCart};s;6;{@eFirework};s;8;{@nPiston}" with 1 row named "&2Toy &9Box" to player
+							show "s;1;{@dBoat};s;3;{@dCart};s;5;{@eFirework};s;7;{@nPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 							stop
 						send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-						show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@nPiston}" with 1 row named "&2Toy &9Box" to player
+						show "s;1;{@dBoat};s;3;{@dCart};s;5;{@dFirework};s;7;{@nPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 						stop
 				if {toybox.boat.%player%} is 1:
 					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-					show "s;2;{@eBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
+					show "s;1;{@eBoat};s;3;{@dCart};s;5;{@dFirework};s;7;{@dPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 					stop
 				if {toybox.cart.%player%} is 1:
 					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-					show "s;2;{@dBoat};s;4;{@eCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
+					show "s;1;{@dBoat};s;3;{@eCart};s;5;{@dFirework};s;7;{@dPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 					stop
 				if {toybox.firework.%player%} is 1:
 					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-					show "s;2;{@dBoat};s;4;{@dCart};s;6;{@eFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
+					show "s;1;{@dBoat};s;3;{@dCart};s;5;{@eFirework};s;7;{@dPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 					stop
 				if {toybox.piston.%player%} is 1:
 					send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-					show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@ePiston}" with 1 row named "&2Toy &9Box" to player
+					show "s;1;{@dBoat};s;3;{@dCart};s;5;{@dFirework};s;7;{@ePiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 					stop
 				send "&eOpening the majestical &2Toy &9Box &e. . ." to player
-				show "s;2;{@dBoat};s;4;{@dCart};s;6;{@dFirework};s;8;{@dPiston}" with 1 row named "&2Toy &9Box" to player
+				show "s;1;{@dBoat};s;3;{@dCart};s;5;{@dFirework};s;7;{@dPiston};s;9;{@tShop}" with 1 row named "&2Toy &9Box" to player
 				stop
 			argument is "boat":
 				make player execute command "/boat"
