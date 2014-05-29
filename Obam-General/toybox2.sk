@@ -52,85 +52,11 @@ options:
 	dPiston: i;piston base;n;&6Player&FPusher;l;&cDisabled|| ||&fClick to &aEnable;c;sudo %player% toybox piston
 	gPiston: piston base named "&3Player&fPusher" with lore "&7Use this to &3push&7 players around.|| ||&5How to use: Punch someone while holding it."
 	#
-	Dexit: s;55;i;wooden door item;n;&eGo Back
-	#
 	Dshop: s;57;i;head item;n;&9Disguise Shop
 	#
 	Dstop: s;54;i;red wool;n; ;l;&fClick here to||&c Undisguise;c;sudo %player% disguiseset remove
 	#
 	#replace Dstop item with barrier after 1.8
-	#
-	uD1: s;1;i;creeper spawn egg;n;&6Creeper;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 1
-	bD1: s;1;i;creeper spawn egg;n;&6Creeper;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 1
-	#
-	uD2: s;3;i;skeleton spawn egg;n;&6Skeleton;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 2
-	bD2: s;3;i;skeleton spawn egg;n;&6Skeleton;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 2
-	#
-	uD3: s;5;i;spider spawn egg;n;&6Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 3
-	bD3: s;5;i;spider spawn egg;n;&6Spider;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 3
-	#
-	uD4: s;7;i;zombie spawn egg;n;&6Zombie;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 4
-	bD4: s;7;i;zombie spawn egg;n;&6Zombie;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 4
-	#
-	uD5: s;9;i;slime spawn egg;n;&6Slime;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 5
-	bD5: s;9;i;slime spawn egg;n;&6Slime;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 5
-	#
-	uD6: s;10;i;ghast spawn egg;n;&6Ghast;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 6
-	bD6: s;10;i;ghast spawn egg;n;&6Ghast;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 6
-	#
-	uD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 7
-	bD7: s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 7
-	#
-	uD8: s;14;i;enderman spawn egg;n;&6Enderman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 8
-	bD8: s;14;i;enderman spawn egg;n;&6Enderman;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 8
-	#
-	uD9: s;16;i;cave spider spawn egg;n;&6Cave Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 9
-	bD9: s;16;i;cave spider spawn egg;n;&6Cave Spider;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 9
-	#
-	uD10: s;18;i;silverfish spawn egg;n;&6Silverfish;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 10
-	bD10: s;18;i;silverfish spawn egg;n;&6Silverfish;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 10
-	#
-	uD11: s;19;i;blaze spawn egg;n;&6Blaze;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 11
-	bD11: s;19;i;blaze spawn egg;n;&6Blaze;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 11
-	#
-	uD12: s;21;i;magma cube spawn egg;n;&6Magma Cube;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 12
-	bD12: s;21;i;magma cube spawn egg;n;&6Magma Cube;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 12
-	#
-	uD13: s;23;i;bat spawn egg;n;&6Bat;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 13
-	bD13: s;23;i;bat spawn egg;n;&6Bat;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 13
-	#
-	uD14: s;25;i;witch spawn egg;n;&6Witch;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 14
-	bD14: s;25;i;witch spawn egg;n;&6Witch;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 14
-	#
-	uD15: s;27;i;pig spawn egg;n;&6Pig;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 15
-	bD15: s;27;i;pig spawn egg;n;&6Pig;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 15
-	#
-	uD16: s;28;i;sheep spawn egg;n;&6Sheep;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 16
-	bD16: s;28;i;sheep spawn egg;n;&6Sheep;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 16
-	#
-	uD17: s;30;i;cow spawn egg;n;&6Cow;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 17
-	bD17: s;30;i;cow spawn egg;n;&6Cow;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 17
-	#
-	uD18: s;32;i;chicken spawn egg;n;&6Chicken;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 18
-	bD18: s;32;i;chicken spawn egg;n;&6Chicken;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 18
-	#
-	uD19: s;34;i;squid spawn egg;n;&6Squid;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 19
-	bD19: s;34;i;squid spawn egg;n;&6Squid;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 19
-	#
-	uD20: s;36;i;wolf spawn egg;n;&6Wolf;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 20
-	bD20: s;36;i;wolf spawn egg;n;&6Wolf;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 20
-	#
-	uD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 21
-	bD21: s;37;i;mooshroom spawn egg;n;&6Mooshroom;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 21
-	#
-	uD22: s;39;i;ocelot spawn egg;n;&6Ocelot;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 22
-	bD22: s;39;i;ocelot spawn egg;n;&6Ocelot;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 22
-	#
-	uD23: s;41;i;horse spawn egg;n;&6Horse;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 23
-	bD23: s;41;i;horse spawn egg;n;&6Horse;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 23
-	#
-	uD24: s;43;i;villager spawn egg;n;&6Villager;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 24
-	bD24: s;43;i;villager spawn egg;n;&6Villager;l;&aBought|| ||&eYou already have this unlocked.;c;sudo %player% effect 24
 	#
 	eDspecial: s;45;i;dragon egg;n;&9Specials
 	dDspecial: s;45;i;dragon egg;n;&9Specials
@@ -240,6 +166,55 @@ on join:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is 1:
 			set {toybox.piston.%player%} to 0
+		#	
+		if {effects.disguises.creeper.%player%} is 1:
+			set {effects.disguises.creeper.%player%} to 0
+		if {effects.disguises.skeleton.%player%} is 1:
+			set {effects.disguises.skeleton.%player%} to 0		
+		if {effects.disguises.spider.%player%} is 1:
+			set {effects.disguises.spider.%player%} to 0
+		if {effects.disguises.zombie.%player%} is 1:
+			set {effects.disguises.zombie.%player%} to 0
+		if {effects.disguises.slime.%player%} is 1:
+			set {effects.disguises.slime.%player%} to 0
+		if {effects.disguises.ghast.%player%} is 1:
+			set {effects.disguises.ghast.%player%} to 0		
+		if {effects.disguises.zombiepigman.%player%} is 1:
+			set {effects.disguises.zombiepigman.%player%} to 0
+		if {effects.disguises.enderman.%player%} is 1:
+			set {effects.disguises.enderman.%player%} to 0
+		if {effects.disguises.cavespider.%player%} is 1:
+			set {effects.disguises.cavespider.%player%} to 0
+		if {effects.disguises.silverfish.%player%} is 1:
+			set {effects.disguises.silverfish.%player%} to 0		
+		if {effects.disguises.blaze.%player%} is 1:
+			set {effects.disguises.blaze.%player%} to 0
+		if {effects.disguises.magmacube.%player%} is 1:
+			set {effects.disguises.magmacube.%player%} to 0
+		if {effects.disguises.bat.%player%} is 1:
+			set {effects.disguises.bat.%player%} to 0
+		if {effects.disguises.witch.%player%} is 1:
+			set {effects.disguises.witch.%player%} to 0		
+		if {effects.disguises.pig.%player%} is 1:
+			set {effects.disguises.pig.%player%} to 0
+		if {effects.disguises.sheep.%player%} is 1:
+			set {effects.disguises.sheep.%player%} to 0
+		if {effects.disguises.cow.%player%} is 1:
+			set {effects.disguises.cow.%player%} to 0
+		if {effects.disguises.chicken.%player%} is 1:
+			set {effects.disguises.chicken.%player%} to 0		
+		if {effects.disguises.squid.%player%} is 1:
+			set {effects.disguises.squid.%player%} to 0
+		if {effects.disguises.wolf.%player%} is 1:
+			set {effects.disguises.wolf.%player%} to 0
+		if {effects.disguises.mooshroom.%player%} is 1:
+			set {effects.disguises.mooshroom.%player%} to 0
+		if {effects.disguises.ocelot.%player%} is 1:
+			set {effects.disguises.ocelot.%player%} to 0		
+		if {effects.disguises.horse.%player%} is 1:
+			set {effects.disguises.horse.%player%} to 0
+		if {effects.disguises.villager.%player%} is 1:
+			set {effects.disguises.villager.%player%} to 0
 		#
 		if {effects.magic.%player%} is 1:
 			set {effects.magic.%player%} to 0
@@ -300,9 +275,6 @@ on respawn:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is not set:
 			set {toybox.piston.%player%} to 0
-		#
-		if {effects.magic.%player%} is not set:
-			set {effects.magic.%player%} to 0
 		#
 		if {toybox.boat.%player%} is 1:
 			set {toybox.boat.%player%} to 0
@@ -399,7 +371,55 @@ on teleport:
 			set {toybox.firework.%player%} to 0
 		if {toybox.piston.%player%} is not set:
 			set {toybox.piston.%player%} to 0
-		#
+		#	
+		if {effects.disguises.creeper.%player%} is 1:
+			set {effects.disguises.creeper.%player%} to 0
+		if {effects.disguises.skeleton.%player%} is 1:
+			set {effects.disguises.skeleton.%player%} to 0		
+		if {effects.disguises.spider.%player%} is 1:
+			set {effects.disguises.spider.%player%} to 0
+		if {effects.disguises.zombie.%player%} is 1:
+			set {effects.disguises.zombie.%player%} to 0
+		if {effects.disguises.slime.%player%} is 1:
+			set {effects.disguises.slime.%player%} to 0
+		if {effects.disguises.ghast.%player%} is 1:
+			set {effects.disguises.ghast.%player%} to 0		
+		if {effects.disguises.zombiepigman.%player%} is 1:
+			set {effects.disguises.zombiepigman.%player%} to 0
+		if {effects.disguises.enderman.%player%} is 1:
+			set {effects.disguises.enderman.%player%} to 0
+		if {effects.disguises.cavespider.%player%} is 1:
+			set {effects.disguises.cavespider.%player%} to 0
+		if {effects.disguises.silverfish.%player%} is 1:
+			set {effects.disguises.silverfish.%player%} to 0		
+		if {effects.disguises.blaze.%player%} is 1:
+			set {effects.disguises.blaze.%player%} to 0
+		if {effects.disguises.magmacube.%player%} is 1:
+			set {effects.disguises.magmacube.%player%} to 0
+		if {effects.disguises.bat.%player%} is 1:
+			set {effects.disguises.bat.%player%} to 0
+		if {effects.disguises.witch.%player%} is 1:
+			set {effects.disguises.witch.%player%} to 0		
+		if {effects.disguises.pig.%player%} is 1:
+			set {effects.disguises.pig.%player%} to 0
+		if {effects.disguises.sheep.%player%} is 1:
+			set {effects.disguises.sheep.%player%} to 0
+		if {effects.disguises.cow.%player%} is 1:
+			set {effects.disguises.cow.%player%} to 0
+		if {effects.disguises.chicken.%player%} is 1:
+			set {effects.disguises.chicken.%player%} to 0		
+		if {effects.disguises.squid.%player%} is 1:
+			set {effects.disguises.squid.%player%} to 0
+		if {effects.disguises.wolf.%player%} is 1:
+			set {effects.disguises.wolf.%player%} to 0
+		if {effects.disguises.mooshroom.%player%} is 1:
+			set {effects.disguises.mooshroom.%player%} to 0
+		if {effects.disguises.ocelot.%player%} is 1:
+			set {effects.disguises.ocelot.%player%} to 0		
+		if {effects.disguises.horse.%player%} is 1:
+			set {effects.disguises.horse.%player%} to 0
+		if {effects.disguises.villager.%player%} is 1:
+			set {effects.disguises.villager.%player%} to 0
 		if {effects.magic.%player%} is not set:
 			set {effects.magic.%player%} to 0
 		if {effects.disguise.%player%} is not set:
@@ -416,8 +436,7 @@ on teleport:
 		#
 		if {effects.magic.%player%} is 1:
 			set {effects.magic.%player%} to 0
-		if {effects.disguise.%player%} is 1:
-			set {effects.disguise.%player%} to 0
+		set {disguise.type.%player%} to "creeper"
 		#
 		remove all stone from player's inventory
 		remove all grass block from player's inventory
@@ -993,7 +1012,1470 @@ command /effect [<text>]:
 				wait 1 second
 				make player execute command "/buy effect"
 				stop
-
+			argument is "disguise":
+				send "&f&eCurrent Balance: &f%{_amount.%player%}%" to player
+				wait 1 second
+				send "&eEntering the &9Disguise &2Shop &e. . ." to player
+				set {_increment.closet.%player%} to 1
+				if {db_effectshop.disguises.creeper.%player%} is true:
+					set {_shop.d1.%player%} to ""
+				if {db_effectshop.disguises.creeper.%player%} is false:
+					set {_slot.d1.%player%} to {_increment.closet.%player%}
+					set {_shop.d1.%player%} to "s;%{_slot.d1.%player%}%;i;creeper spawn egg;n;&6Creeper;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 1;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}						
+				if {db_effectshop.disguises.skeleton.%player%} is true:
+					set {_shop.d2.%player%} to ""
+				if {db_effectshop.disguises.skeleton.%player%} is false:
+					set {_slot.d2.%player%} to {_increment.closet.%player%}
+					set {_shop.d2.%player%} to "s;%{_slot.d2.%player%}%;i;skeleton spawn egg;n;&6Skeleton;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 2;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.spider.%player%} is true:
+					set {_shop.d3.%player%} to ""						
+				if {db_effectshop.disguises.spider.%player%} is false:
+					set {_slot.d3.%player%} to {_increment.closet.%player%}
+					set {_shop.d3.%player%} to "s;%{_slot.d3.%player%}%;i;spider spawn egg;n;&6Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 3;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.zombie.%player%} is true:
+					set {_shop.d4.%player%} to ""						
+				if {db_effectshop.disguises.zombie.%player%} is false:
+					set {_slot.d4.%player%} to {_increment.closet.%player%}
+					set {_shop.d4.%player%} to "s;%{_slot.d4.%player%}%;i;zombie spawn egg;n;&6Zombie;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 4;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.slime.%player%} is true:
+					set {_shop.d5.%player%} to ""						
+				if {db_effectshop.disguises.slime.%player%} is false:
+					set {_slot.d5.%player%} to {_increment.closet.%player%}
+					set {_shop.d5.%player%} to "s;%{_slot.d5.%player%}%;i;slime spawn egg;n;&6Slime;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 5;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.ghast.%player%} is true:
+					set {_shop.d6.%player%} to ""						
+				if {db_effectshop.disguises.ghast.%player%} is false:
+					set {_slot.d6.%player%} to {_increment.closet.%player%}
+					set {_shop.d6.%player%} to "s;%{_slot.d6.%player%}%;i;ghast spawn egg;n;&6Ghast;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 6;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.zombiepigman.%player%} is true:
+					set {_shop.d7.%player%} to ""						
+				if {db_effectshop.disguises.zombiepigman.%player%} is false:
+					set {_slot.d7.%player%} to {_increment.closet.%player%}
+					set {_shop.d7.%player%} to "s;%{_slot.d7.%player%}%;i;zombie pigman spawn egg;n;&6Zombie Pigman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 7;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.enderman.%player%} is true:
+					set {_shop.d8.%player%} to ""						
+				if {db_effectshop.disguises.enderman.%player%} is false:
+					set {_slot.d8.%player%} to {_increment.closet.%player%}
+					set {_shop.d8.%player%} to "s;%{_slot.d8.%player%}%;i;enderman spawn egg;n;&6Enderman;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 8;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.cavespider.%player%} is true:
+					set {_shop.d9.%player%} to ""						
+				if {db_effectshop.disguises.cavespider.%player%} is false:
+					set {_slot.d9.%player%} to {_increment.closet.%player%}
+					set {_shop.d9.%player%} to "s;%{_slot.d9.%player%}%;i;cave spider spawn egg;n;&6Cave Spider;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 9;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.silverfish.%player%} is true:
+					set {_shop.d10.%player%} to ""
+				if {db_effectshop.disguises.silverfish.%player%} is false:
+					set {_slot.d10.%player%} to {_increment.closet.%player%}
+					set {_shop.d10.%player%} to "s;%{_slot.d10.%player%}%;i;silverfish spawn egg;n;&6Silverfish;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 10;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}						
+				if {db_effectshop.disguises.blaze.%player%} is true:
+					set {_shop.d11.%player%} to ""
+				if {db_effectshop.disguises.blaze.%player%} is false:
+					set {_slot.d11.%player%} to {_increment.closet.%player%}
+					set {_shop.d11.%player%} to "s;%{_slot.d11.%player%}%;i;blaze spawn egg;n;&6Blaze;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 11;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}	
+				if {db_effectshop.disguises.magmacube.%player%} is true:
+					set {_shop.d12.%player%} to ""						
+				if {db_effectshop.disguises.magmacube.%player%} is false:
+					set {_slot.d12.%player%} to {_increment.closet.%player%}
+					set {_shop.d12.%player%} to "s;%{_slot.d12.%player%}%;i;magma cube spawn egg;n;&6Magma Cube;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 12;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}	
+				if {db_effectshop.disguises.bat.%player%} is true:
+					set {_shop.d13.%player%} to ""						
+				if {db_effectshop.disguises.bat.%player%} is false:
+					set {_slot.d13.%player%} to {_increment.closet.%player%}
+					set {_shop.d13.%player%} to "s;%{_slot.d13.%player%}%;i;bat spawn egg;n;&6Bat;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 13;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}				
+				if {db_effectshop.disguises.witch.%player%} is true:
+					set {_shop.d14.%player%} to ""						
+				if {db_effectshop.disguises.witch.%player%} is false:
+					set {_slot.d14.%player%} to {_increment.closet.%player%}
+					set {_shop.d14.%player%} to "s;%{_slot.d14.%player%}%;i;witch spawn egg;n;&6Witch;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 14;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}			
+				if {db_effectshop.disguises.pig.%player%} is true:
+					set {_shop.d15.%player%} to ""						
+				if {db_effectshop.disguises.pig.%player%} is false:
+					set {_slot.d15.%player%} to {_increment.closet.%player%}
+					set {_shop.d15.%player%} to "s;%{_slot.d15.%player%}%;i;pig spawn egg;n;&6Pig;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 15;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}	
+				if {db_effectshop.disguises.sheep.%player%} is true:
+					set {_shop.d16.%player%} to ""						
+				if {db_effectshop.disguises.sheep.%player%} is false:
+					set {_slot.d16.%player%} to {_increment.closet.%player%}
+					set {_shop.d16.%player%} to "s;%{_slot.d16.%player%}%;i;sheep spawn egg;n;&6Sheep;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 16;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}	
+				if {db_effectshop.disguises.cow.%player%} is true:
+					set {_shop.d17.%player%} to ""						
+				if {db_effectshop.disguises.cow.%player%} is false:
+					set {_slot.d17.%player%} to {_increment.closet.%player%}
+					set {_shop.d17.%player%} to "s;%{_slot.d17.%player%}%;i;cow spawn egg;n;&6Cow;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 17;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}		
+				if {db_effectshop.disguises.chicken.%player%} is true:
+					set {_shop.d18.%player%} to ""						
+				if {db_effectshop.disguises.chicken.%player%} is false:
+					set {_slot.d18.%player%} to {_increment.closet.%player%}
+					set {_shop.d18.%player%} to "s;%{_slot.d18.%player%}%;i;chicken spawn egg;n;&6Chicken;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 18;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}
+				if {db_effectshop.disguises.squid.%player%} is true:
+					set {_shop.d19.%player%} to ""						
+				if {db_effectshop.disguises.squid.%player%} is false:
+					set {_slot.d19.%player%} to {_increment.closet.%player%}
+					set {_shop.d19.%player%} to "s;%{_slot.d19.%player%}%;i;squid spawn egg;n;&6Squid;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 19;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}				
+				if {db_effectshop.disguises.wolf.%player%} is true:
+					set {_shop.d20.%player%} to ""						
+				if {db_effectshop.disguises.wolf.%player%} is false:
+					set {_slot.d20.%player%} to {_increment.closet.%player%}
+					set {_shop.d20.%player%} to "s;%{_slot.d20.%player%}%;i;wolf spawn egg;n;&6Wolf;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 20;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}		
+				if {db_effectshop.disguises.mooshroom.%player%} is true:
+					set {_shop.d21.%player%} to ""									
+				if {db_effectshop.disguises.mooshroom.%player%} is false:
+					set {_slot.d21.%player%} to {_increment.closet.%player%}
+					set {_shop.d21.%player%} to "s;%{_slot.d21.%player%}%;i;mooshroom spawn egg;n;&6Mooshroom;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 21;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}	
+				if {db_effectshop.disguises.ocelot.%player%} is true:
+					set {_shop.d22.%player%} to ""									
+				if {db_effectshop.disguises.ocelot.%player%} is false:
+					set {_slot.d22.%player%} to {_increment.closet.%player%}
+					set {_shop.d22.%player%} to "s;%{_slot.d22.%player%}%;i;ocelot spawn egg;n;&6Ocelot;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 22;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}	
+				if {db_effectshop.disguises.horse.%player%} is true:
+					set {_shop.d23.%player%} to ""									
+				if {db_effectshop.disguises.horse.%player%} is false:
+					set {_slot.d23.%player%} to {_increment.closet.%player%}
+					set {_shop.d23.%player%} to "s;%{_slot.d23.%player%}%;i;horse spawn egg;n;&6Horse;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 23;"
+					if {_increment.closet.%player%} is 52:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 50:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 48:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 46:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 45:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 43:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 41:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 39:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 37:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 36:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 34:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 32:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 30:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 28:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 27:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 25:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 23:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 21:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 19:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 18:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 16:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 14:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 12:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 10:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 9:
+						add 1 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 7:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 5:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 3:
+						add 2 to {_increment.closet.%player%}
+					if {_increment.closet.%player%} is 1:
+						add 2 to {_increment.closet.%player%}	
+				if {db_effectshop.disguises.villager.%player%} is true:
+					set {_shop.d24.%player%} to ""			
+				if {db_effectshop.disguises.villager.%player%} is false:
+					set {_slot.d24.%player%} to {_increment.closet.%player%}
+					set {_shop.d24.%player%} to "s;%{_slot.d24.%player%}%;i;villager spawn egg;n;&6Villager;l;&3Not Purchased|| ||&aPrice: 10,000 tickets||&5Click to Buy.;c;sudo %player% effect 24"
+					#if more are added - add a semicolon at the end of the variable
+					#add more incrementation values here later for more releases
+				show "%{_shop.d1.%player%}%%{_shop.d2.%player%}%%{_shop.d3.%player%}%%{_shop.d4.%player%}%%{_shop.d5.%player%}%%{_shop.d6.%player%}%%{_shop.d7.%player%}%%{_shop.d8.%player%}%%{_shop.d9.%player%}%%{_shop.d10.%player%}%%{_shop.d11.%player%}%%{_shop.d12.%player%}%%{_shop.d13.%player%}%%{_shop.d14.%player%}%%{_shop.d15.%player%}%%{_shop.d16.%player%}%%{_shop.d17.%player%}%%{_shop.d18.%player%}%%{_shop.d19.%player%}%%{_shop.d20.%player%}%%{_shop.d21.%player%}%%{_shop.d22.%player%}%%{_shop.d23.%player%}%%{_shop.d24.%player%}%" with 6 rows named "&3Disguise &2Shop" to player
+				stop
+			
 command /buy [<text>]:
 	trigger:
 		player is in "world":
@@ -1388,173 +2870,173 @@ command /disguiseset [<text>]:
 			send "&eOpening up your closet. . ." to player
 			if {db_effectshop.disguises.creeper.%player%} is true:
 				if {effects.disguises.creeper.%player%} is 0:
-					set {temp.d1.%player%} to "s;1;i;creeper spawn egg;n;&6Creeper"
+					set {_temp.d1.%player%} to "s;1;i;creeper spawn egg;n;&6Creeper"
 				if {effects.disguises.creeper.%player%} is 1:
-					set {temp.d1.%player%} to "s;1;i;creeper spawn egg;n;&6Creeper"
+					set {_temp.d1.%player%} to "s;1;i;creeper spawn egg;n;&6Creeper"
 			if {db_effectshop.disguises.creeper.%player%} is false:
-				set {temp.d1.%player%} to "s;1;i;ender portal;n;&6Creeper"
+				set {_temp.d1.%player%} to "s;1;i;ender portal;n;&6Creeper;l;&3Not Unlocked|| ||&eType &f/effect shop &eor||&ebuy on &fOBAM Shop &eto unlock.;c;sudo %player% effect shop"
 			if {db_effectshop.disguises.skeleton.%player%} is true:
 				if {effects.disguises.skeleton.%player%} is 0:
-					set {temp.d2.%player%} to "s;3;i;skeleton spawn egg;n;&6Skeleton"
+					set {_temp.d2.%player%} to "s;3;i;skeleton spawn egg;n;&6Skeleton"
 				if {effects.disguises.skeleton.%player%} is 1:
-					set {temp.d2.%player%} to "s;3;i;skeleton spawn egg;n;&6Skeleton"
+					set {_temp.d2.%player%} to "s;3;i;skeleton spawn egg;n;&6Skeleton"
 			if {db_effectshop.disguises.skeleton.%player%} is false:
-				set {temp.d2.%player%} to "s;3;i;ender portal;n;&6Skeleton"				
+				set {_temp.d2.%player%} to "s;3;i;ender portal;n;&6Skeleton"				
 			if {db_effectshop.disguises.spider.%player%} is true:
 				if {effects.disguises.spider.%player%} is 0:
-					set {temp.d3.%player%} to "s;5;i;spider spawn egg;n;&6Spider"
+					set {_temp.d3.%player%} to "s;5;i;spider spawn egg;n;&6Spider"
 				if {effects.disguises.spider.%player%} is 1:
-					set {temp.d3.%player%} to "s;5;i;spider spawn egg;n;&6Spider"
+					set {_temp.d3.%player%} to "s;5;i;spider spawn egg;n;&6Spider"
 			if {db_effectshop.disguises.spider.%player%} is false:
-				set {temp.d3.%player%} to "s;5;i;ender portal;n;&6Spider"		
+				set {_temp.d3.%player%} to "s;5;i;ender portal;n;&6Spider"		
 			if {db_effectshop.disguises.zombie.%player%} is true:
 				if {effects.disguises.zombie.%player%} is 0:
-					set {temp.d4.%player%} to "s;7;i;zombie spawn egg;n;&6Zombie"
+					set {_temp.d4.%player%} to "s;7;i;zombie spawn egg;n;&6Zombie"
 				if {effects.disguises.zombie.%player%} is 1:
-					set {temp.d4.%player%} to "s;7;i;zombie spawn egg;n;&6Zombie"
+					set {_temp.d4.%player%} to "s;7;i;zombie spawn egg;n;&6Zombie"
 			if {db_effectshop.disguises.zombie.%player%} is false:
-				set {temp.d4.%player%} to "s;7;i;ender portal;n;&6Zombie"		
+				set {_temp.d4.%player%} to "s;7;i;ender portal;n;&6Zombie"		
 			if {db_effectshop.disguises.slime.%player%} is true:
 				if {effects.disguises.slime.%player%} is 0:
-					set {temp.d5.%player%} to "s;9;i;slime spawn egg;n;&6Slime"
+					set {_temp.d5.%player%} to "s;9;i;slime spawn egg;n;&6Slime"
 				if {effects.disguises.slime.%player%} is 1:
-					set {temp.d5.%player%} to "s;9;i;slime spawn egg;n;&6Slime"
+					set {_temp.d5.%player%} to "s;9;i;slime spawn egg;n;&6Slime"
 			if {db_effectshop.disguises.slime.%player%} is false:
-				set {temp.d5.%player%} to "s;9;i;ender portal;n;&6Slime"	
+				set {_temp.d5.%player%} to "s;9;i;ender portal;n;&6Slime"	
 			if {db_effectshop.disguises.ghast.%player%} is true:
 				if {effects.disguises.ghast.%player%} is 0:
-					set {temp.d6.%player%} to "s;10;i;ghast spawn egg;n;&6Ghast"
+					set {_temp.d6.%player%} to "s;10;i;ghast spawn egg;n;&6Ghast"
 				if {effects.disguises.ghast.%player%} is 1:
-					set {temp.d6.%player%} to "s;10;i;ghast spawn egg;n;&6Ghast"
+					set {_temp.d6.%player%} to "s;10;i;ghast spawn egg;n;&6Ghast"
 			if {db_effectshop.disguises.ghast.%player%} is false:
-				set {temp.d6.%player%} to "s;10;i;ender portal;n;&6Ghast"
+				set {_temp.d6.%player%} to "s;10;i;ender portal;n;&6Ghast"
 			if {db_effectshop.disguises.zombiepigman.%player%} is true:
 				if {effects.disguises.zombiepigman.%player%} is 0:
-					set {temp.d7.%player%} to "s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman"
+					set {_temp.d7.%player%} to "s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman"
 				if {effects.disguises.zombiepigman.%player%} is 1:
-					set {temp.d7.%player%} to "s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman"
+					set {_temp.d7.%player%} to "s;12;i;zombie pigman spawn egg;n;&6Zombie Pigman"
 			if {db_effectshop.disguises.zombiepigman.%player%} is false:
-				set {temp.d7.%player%} to "s;12;i;ender portal;n;&6Zombie Pigman"
+				set {_temp.d7.%player%} to "s;12;i;ender portal;n;&6Zombie Pigman"
 			if {db_effectshop.disguises.enderman.%player%} is true:
 				if {effects.disguises.enderman.%player%} is 0:
-					set {temp.d8.%player%} to "s;14;i;enderman spawn egg;n;&6Enderman"
+					set {_temp.d8.%player%} to "s;14;i;enderman spawn egg;n;&6Enderman"
 				if {effects.disguises.enderman.%player%} is 1:
-					set {temp.d8.%player%} to "s;14;i;enderman spawn egg;n;&6Enderman"
+					set {_temp.d8.%player%} to "s;14;i;enderman spawn egg;n;&6Enderman"
 			if {db_effectshop.disguises.enderman.%player%} is false:
-				set {temp.d8.%player%} to "s;14;i;ender portal;n;&6Enderman"
+				set {_temp.d8.%player%} to "s;14;i;ender portal;n;&6Enderman"
 			if {db_effectshop.disguises.cavespider.%player%} is true:
 				if {effects.disguises.cavespider.%player%} is 0:
-					set {temp.d9.%player%} to "s;16;i;cave spider spawn egg;n;&6Cave Spider"
+					set {_temp.d9.%player%} to "s;16;i;cave spider spawn egg;n;&6Cave Spider"
 				if {effects.disguises.cavespider.%player%} is 1:
-					set {temp.d9.%player%} to "s;16;i;cave spider spawn egg;n;&6Cave Spider"
+					set {_temp.d9.%player%} to "s;16;i;cave spider spawn egg;n;&6Cave Spider"
 			if {db_effectshop.disguises.cavespider.%player%} is false:
-				set {temp.d9.%player%} to "s;16;i;ender portal;n;&6Cave Spider"
+				set {_temp.d9.%player%} to "s;16;i;ender portal;n;&6Cave Spider"
 			if {db_effectshop.disguises.silverfish.%player%} is true:
 				if {effects.disguises.silverfish.%player%} is 0:
-					set {temp.d10.%player%} to "s;18;i;silverfish spawn egg;n;&6Silverfish"
+					set {_temp.d10.%player%} to "s;18;i;silverfish spawn egg;n;&6Silverfish"
 				if {effects.disguises.silverfish.%player%} is 1:
-					set {temp.d10.%player%} to "s;18;i;silverfish spawn egg;n;&6Silverfish"
+					set {_temp.d10.%player%} to "s;18;i;silverfish spawn egg;n;&6Silverfish"
 			if {db_effectshop.disguises.silverfish.%player%} is false:
-				set {temp.d10.%player%} to "s;18;i;ender portal;n;&6Silverfish"
+				set {_temp.d10.%player%} to "s;18;i;ender portal;n;&6Silverfish"
 			if {db_effectshop.disguises.blaze.%player%} is true:
 				if {effects.disguises.blaze.%player%} is 0:
-					set {temp.d11.%player%} to "s;19;i;blaze spawn egg;n;&6Blaze"
+					set {_temp.d11.%player%} to "s;19;i;blaze spawn egg;n;&6Blaze"
 				if {effects.disguises.blaze.%player%} is 1:
-					set {temp.d11.%player%} to "s;19;i;blaze spawn egg;n;&6Blaze"
+					set {_temp.d11.%player%} to "s;19;i;blaze spawn egg;n;&6Blaze"
 			if {db_effectshop.disguises.blaze.%player%} is false:
-				set {temp.d11.%player%} to "s;19;i;ender portal;n;&6Blaze"
+				set {_temp.d11.%player%} to "s;19;i;ender portal;n;&6Blaze"
 			if {db_effectshop.disguises.magmacube.%player%} is true:
 				if {effects.disguises.magmacube.%player%} is 0:
-					set {temp.d12.%player%} to "s;21;i;magma cube spawn egg;n;&6Magma Cube"
+					set {_temp.d12.%player%} to "s;21;i;magma cube spawn egg;n;&6Magma Cube"
 				if {effects.disguises.magmacube.%player%} is 1:
-					set {temp.d12.%player%} to "s;21;i;magma cube spawn egg;n;&6Magma Cube"
+					set {_temp.d12.%player%} to "s;21;i;magma cube spawn egg;n;&6Magma Cube"
 			if {db_effectshop.disguises.magmacube.%player%} is false:
-				set {temp.d12.%player%} to "s;21;i;ender portal;n;&6Magma Cube"
+				set {_temp.d12.%player%} to "s;21;i;ender portal;n;&6Magma Cube"
 			if {db_effectshop.disguises.bat.%player%} is true:
 				if {effects.disguises.bat.%player%} is 0:
-					set {temp.d13.%player%} to "s;23;i;bat spawn egg;n;&6Bat"
+					set {_temp.d13.%player%} to "s;23;i;bat spawn egg;n;&6Bat"
 				if {effects.disguises.bat.%player%} is 1:
-					set {temp.d13.%player%} to "s;23;i;bat spawn egg;n;&6Bat"
+					set {_temp.d13.%player%} to "s;23;i;bat spawn egg;n;&6Bat"
 			if {db_effectshop.disguises.bat.%player%} is false:
-				set {temp.d13.%player%} to "s;23;i;ender portal;n;&6Bat"
+				set {_temp.d13.%player%} to "s;23;i;ender portal;n;&6Bat"
 			if {db_effectshop.disguises.witch.%player%} is true:
 				if {effects.disguises.witch.%player%} is 0:
-					set {temp.d14.%player%} to "s;25;i;witch spawn egg;n;&6Witch"
+					set {_temp.d14.%player%} to "s;25;i;witch spawn egg;n;&6Witch"
 				if {effects.disguises.witch.%player%} is 1:
-					set {temp.d14.%player%} to "s;25;i;witch spawn egg;n;&6Witch"
+					set {_temp.d14.%player%} to "s;25;i;witch spawn egg;n;&6Witch"
 			if {db_effectshop.disguises.witch.%player%} is false:
-				set {temp.d14.%player%} to "s;25;i;ender portal;n;&6Witch"
+				set {_temp.d14.%player%} to "s;25;i;ender portal;n;&6Witch"
 			if {db_effectshop.disguises.pig.%player%} is true:
 				if {effects.disguises.pig.%player%} is 0:
-					set {temp.d15.%player%} to "s;27;i;pig spawn egg;n;&6Pig"
+					set {_temp.d15.%player%} to "s;27;i;pig spawn egg;n;&6Pig"
 				if {effects.disguises.pig.%player%} is 1:
-					set {temp.d15.%player%} to "s;27;i;pig spawn egg;n;&6Pig"
+					set {_temp.d15.%player%} to "s;27;i;pig spawn egg;n;&6Pig"
 			if {db_effectshop.disguises.pig.%player%} is false:
-				set {temp.d15.%player%} to "s;27;i;ender portal;n;&6Pig"
+				set {_temp.d15.%player%} to "s;27;i;ender portal;n;&6Pig"
 			if {db_effectshop.disguises.sheep.%player%} is true:
 				if {effects.disguises.sheep.%player%} is 0:
-					set {temp.d16.%player%} to "s;28;i;sheep spawn egg;n;&6Sheep"
+					set {_temp.d16.%player%} to "s;28;i;sheep spawn egg;n;&6Sheep"
 				if {effects.disguises.sheep.%player%} is 1:
-					set {temp.d16.%player%} to "s;28;i;sheep spawn egg;n;&6Sheep"
+					set {_temp.d16.%player%} to "s;28;i;sheep spawn egg;n;&6Sheep"
 			if {db_effectshop.disguises.sheep.%player%} is false:
-				set {temp.d16.%player%} to "s;28;i;ender portal;n;&6Sheep"
+				set {_temp.d16.%player%} to "s;28;i;ender portal;n;&6Sheep"
 			if {db_effectshop.disguises.cow.%player%} is true:
 				if {effects.disguises.cow.%player%} is 0:
-					set {temp.d17.%player%} to "s;30;i;cow spawn egg;n;&6Cow"
+					set {_temp.d17.%player%} to "s;30;i;cow spawn egg;n;&6Cow"
 				if {effects.disguises.cow.%player%} is 1:
-					set {temp.d17.%player%} to "s;30;i;cow spawn egg;n;&6Cow"
+					set {_temp.d17.%player%} to "s;30;i;cow spawn egg;n;&6Cow"
 			if {db_effectshop.disguises.cow.%player%} is false:
-				set {temp.d17.%player%} to "s;30;i;ender portal;n;&6Cow"
+				set {_temp.d17.%player%} to "s;30;i;ender portal;n;&6Cow"
 			if {db_effectshop.disguises.chicken.%player%} is true:
 				if {effects.disguises.chicken.%player%} is 0:
-					set {temp.d18.%player%} to "s;32;i;chicken spawn egg;n;&6Chicken"
+					set {_temp.d18.%player%} to "s;32;i;chicken spawn egg;n;&6Chicken"
 				if {effects.disguises.chicken.%player%} is 1:
-					set {temp.d18.%player%} to "s;32;i;chicken spawn egg;n;&6Chicken"
+					set {_temp.d18.%player%} to "s;32;i;chicken spawn egg;n;&6Chicken"
 			if {db_effectshop.disguises.chicken.%player%} is false:
-				set {temp.d18.%player%} to "s;32;i;ender portal;n;&6Chicken"
+				set {_temp.d18.%player%} to "s;32;i;ender portal;n;&6Chicken"
 			if {db_effectshop.disguises.squid.%player%} is true:
 				if {effects.disguises.squid.%player%} is 0:
-					set {temp.d19.%player%} to "s;34;i;squid spawn egg;n;&6Squid"
+					set {_temp.d19.%player%} to "s;34;i;squid spawn egg;n;&6Squid"
 				if {effects.disguises.squid.%player%} is 1:
-					set {temp.d19.%player%} to "s;34;i;squid spawn egg;n;&6Squid"
+					set {_temp.d19.%player%} to "s;34;i;squid spawn egg;n;&6Squid"
 			if {db_effectshop.disguises.squid.%player%} is false:
-				set {temp.d19.%player%} to "s;34;i;ender portal;n;&6Squid"
+				set {_temp.d19.%player%} to "s;34;i;ender portal;n;&6Squid"
 			if {db_effectshop.disguises.wolf.%player%} is true:
 				if {effects.disguises.wolf.%player%} is 0:
-					set {temp.d20.%player%} to "s;36;i;wolf spawn egg;n;&6Wolf"
+					set {_temp.d20.%player%} to "s;36;i;wolf spawn egg;n;&6Wolf"
 				if {effects.disguises.wolf.%player%} is 1:
-					set {temp.d20.%player%} to "s;36;i;wolf spawn egg;n;&6Wolf"
+					set {_temp.d20.%player%} to "s;36;i;wolf spawn egg;n;&6Wolf"
 			if {db_effectshop.disguises.wolf.%player%} is false:
-				set {temp.d20.%player%} to "s;36;i;ender portal;n;&6Wolf"
+				set {_temp.d20.%player%} to "s;36;i;ender portal;n;&6Wolf"
 			if {db_effectshop.disguises.mooshroom.%player%} is true:
 				if {effects.disguises.mooshroom.%player%} is 0:
-					set {temp.d21.%player%} to "s;37;i;mooshroom spawn egg;n;&6Mooshroom"
+					set {_temp.d21.%player%} to "s;37;i;mooshroom spawn egg;n;&6Mooshroom"
 				if {effects.disguises.mooshroom.%player%} is 1:
-					set {temp.d21.%player%} to "s;37;i;mooshroom spawn egg;n;&6Mooshroom"
+					set {_temp.d21.%player%} to "s;37;i;mooshroom spawn egg;n;&6Mooshroom"
 			if {db_effectshop.disguises.mooshroom.%player%} is false:
-				set {temp.d21.%player%} to "s;37;i;ender portal;n;&6Mooshroom"
+				set {_temp.d21.%player%} to "s;37;i;ender portal;n;&6Mooshroom"
 			if {db_effectshop.disguises.ocelot.%player%} is true:
 				if {effects.disguises.ocelot.%player%} is 0:
-					set {temp.d22.%player%} to "s;39;i;ocelot spawn egg;n;&6Ocelot"
+					set {_temp.d22.%player%} to "s;39;i;ocelot spawn egg;n;&6Ocelot"
 				if {effects.disguises.ocelot.%player%} is 1:
-					set {temp.d22.%player%} to "s;39;i;ocelot spawn egg;n;&6Ocelot"
+					set {_temp.d22.%player%} to "s;39;i;ocelot spawn egg;n;&6Ocelot"
 			if {db_effectshop.disguises.ocelot.%player%} is false:
-				set {temp.d22.%player%} to "s;39;i;ender portal;n;&6Ocelot"
+				set {_temp.d22.%player%} to "s;39;i;ender portal;n;&6Ocelot"
 			if {db_effectshop.disguises.horse.%player%} is true:
 				if {effects.disguises.horse.%player%} is 0:
-					set {temp.d23.%player%} to "s;41;i;horse spawn egg;n;&6Horse"
+					set {_temp.d23.%player%} to "s;41;i;horse spawn egg;n;&6Horse"
 				if {effects.disguises.horse.%player%} is 1:
-					set {temp.d23.%player%} to "s;41;i;horse spawn egg;n;&6Horse"
+					set {_temp.d23.%player%} to "s;41;i;horse spawn egg;n;&6Horse"
 			if {db_effectshop.disguises.horse.%player%} is false:
-				set {temp.d23.%player%} to "s;41;i;ender portal;n;&6Horse"
+				set {_temp.d23.%player%} to "s;41;i;ender portal;n;&6Horse"
 			if {db_effectshop.disguises.villager.%player%} is true:
 				if {effects.disguises.villager.%player%} is 0:
-					set {temp.d24.%player%} to "s;43;i;villager spawn egg;n;&6Villager"
+					set {_temp.d24.%player%} to "s;43;i;villager spawn egg;n;&6Villager"
 				if {effects.disguises.villager.%player%} is 1:
-					set {temp.d24.%player%} to "s;43;i;villager spawn egg;n;&6Villager"
+					set {_temp.d24.%player%} to "s;43;i;villager spawn egg;n;&6Villager"
 			if {db_effectshop.disguises.villager.%player%} is false:
-				set {temp.d24.%player%} to "s;43;i;ender portal;n;&6Villager"
-			show "%{temp.d1.%player%}%;%{temp.d2.%player%}%;%{temp.d3.%player%}%;%{temp.d4.%player%}%;%{temp.d5.%player%}%;%{temp.d6.%player%}%;%{temp.d7.%player%}%;%{temp.d8.%player%}%;%{temp.d9.%player%}%;%{temp.d10.%player%}%;%{temp.d11.%player%}%;%{temp.d12.%player%}%;%{temp.d13.%player%}%;%{temp.d14.%player%}%;%{temp.d15.%player%}%;%{temp.d16.%player%}%;%{temp.d17.%player%}%;%{temp.d18.%player%}%;%{temp.d19.%player%}%;%{temp.d20.%player%}%;%{temp.d21.%player%}%;%{temp.d22.%player%}%;%{temp.d23.%player%}%;%{temp.d24.%player%}%;{@dDspecial};{@Dstop}" with 6 rows named "&3Disguise &2Closet" to player
+				set {_temp.d24.%player%} to "s;43;i;ender portal;n;&6Villager"
+			show "%{_temp.d1.%player%}%;%{_temp.d2.%player%}%;%{_temp.d3.%player%}%;%{_temp.d4.%player%}%;%{_temp.d5.%player%}%;%{_temp.d6.%player%}%;%{_temp.d7.%player%}%;%{_temp.d8.%player%}%;%{_temp.d9.%player%}%;%{_temp.d10.%player%}%;%{_temp.d11.%player%}%;%{_temp.d12.%player%}%;%{_temp.d13.%player%}%;%{_temp.d14.%player%}%;%{_temp.d15.%player%}%;%{_temp.d16.%player%}%;%{_temp.d17.%player%}%;%{_temp.d18.%player%}%;%{_temp.d19.%player%}%;%{_temp.d20.%player%}%;%{_temp.d21.%player%}%;%{_temp.d22.%player%}%;%{_temp.d23.%player%}%;%{_temp.d24.%player%}%;{@dDspecial};{@Dstop}" with 6 rows named "&3Disguise &2Closet" to player
 			stop
 		if argument is "creeper":
 			if {db_effectshop.disguises.creeper.%player%} is true:
