@@ -60,115 +60,115 @@ options:
 	#
 	#replace dStop item with barrier after 1.8
 	#
-	togAzombie: i;zombie spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBzombie: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
+	togAzombie: i;zombie spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBzombie: i;egg;n;&fBaby;c;execute console command /dset adult %player%
 	#
-	togAslime: i;ghast tear;n;&fSmall;c;execute console command "/dset size1 %player%"
-	togBslime: i;snowball;n;&fMedium;c;execute console command "/dset size2 %player%"
-	togCslime: i;snow;n;&fLarge;c;execute console command "/dset size3 %player%"
+	togAslime: i;ghast tear;n;&fSmall;c;execute console command /dset size1 %player%
+	togBslime: i;snowball;n;&fMedium;c;execute console command /dset size2 %player%
+	togCslime: i;snow;n;&fLarge;c;execute console command /dset size3 %player%
 	#
-	togApigman: i;zombie pigman spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBpigman: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
+	togApigman: i;zombie pigman spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBpigman: i;egg;n;&fBaby;c;execute console command /dset adult %player%
 	#
-	togAmagma: i;ghast tear;n;&fSmall;c;execute console command "/dset size1 %player%"
-	togBmagma: i;snowball;n;&fMedium;c;execute console command "/dset size2 %player%"
-	togCmagma: i;snow;n;&fLarge;c;execute console command "/dset size3 %player%"
+	togAmagma: i;ghast tear;n;&fSmall;c;execute console command /dset size1 %player%
+	togBmagma: i;snowball;n;&fMedium;c;execute console command /dset size2 %player%
+	togCmagma: i;snow;n;&fLarge;c;execute console command /dset size3 %player%
 	#
-	togApig: i;pig spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBpig: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
+	togApig: i;pig spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBpig: i;egg;n;&fBaby;c;execute console command /dset adult %player%
 	#
-	togAsheep: i;sheep spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBsheep: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
-	tog1sheep: i;wool;n;&fDefault;c;execute console command "/dset white %player%"
-	tog2sheep: i;orange wool;n;&fOrange;c;execute console command "/dset orange %player%"
-	tog3sheep: i;magenta wool;n;&fMagenta;c;execute console command "/dset magenta %player%"
-	tog4sheep: i;light blue wool;n;&fLight Blue;c;execute console command "/dset light_blue %player%"
-	tog5sheep: i;yellow wool;n;&fYellow;c;execute console command "/dset yellow %player%"
-	tog6sheep: i;lime wool;n;&fLime;c;execute console command "/dset lime %player%"
-	tog7sheep: i;pink wool;n;&fPink;c;execute console command "/dset pink %player%"
-	tog8sheep: i;gray wool;n;&fGray;c;execute console command "/dset gray %player%"
-	tog9sheep: i;light gray wool;n;&fSilver;c;execute console command "/dset silver %player%"
-	tog10sheep: i;cyan wool;n;&fCyan;c;execute console command "/dset cyan %player%"
-	tog11sheep: i;purple wool;n;&fPurple;c;execute console command "/dset purple %player%"
-	tog12sheep: i;blue wool;n;&fBlue;c;execute console command "/dset blue %player%"
-	tog13sheep: i;brown wool;n;&fBrown;c;execute console command "/dset brown %player%"
-	tog14sheep: i;green wool;n;&fGreen;c;execute console command "/dset green %player%"
-	tog15sheep: i;red wool;n;&fRed;c;execute console command "/dset red %player%"
-	tog16sheep: i;black wool;n;&fBlack;c;execute console command "/dset black %player%"
-	togRCsheep: i;bookshelf;n;&fRandom Colour;c;execute console command "/dset rc %player%" 
+	togAsheep: i;sheep spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBsheep: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	tog1sheep: i;wool;n;&fDefault;c;execute console command /dset white %player%
+	tog2sheep: i;orange wool;n;&fOrange;c;execute console command /dset orange %player%
+	tog3sheep: i;magenta wool;n;&fMagenta;c;execute console command /dset magenta %player%
+	tog4sheep: i;light blue wool;n;&fLight Blue;c;execute console command /dset light_blue %player%
+	tog5sheep: i;yellow wool;n;&fYellow;c;execute console command /dset yellow %player%
+	tog6sheep: i;lime wool;n;&fLime;c;execute console command /dset lime %player%
+	tog7sheep: i;pink wool;n;&fPink;c;execute console command /dset pink %player%
+	tog8sheep: i;gray wool;n;&fGray;c;execute console command /dset gray %player%
+	tog9sheep: i;light gray wool;n;&fSilver;c;execute console command /dset silver %player%
+	tog10sheep: i;cyan wool;n;&fCyan;c;execute console command /dset cyan %player%
+	tog11sheep: i;purple wool;n;&fPurple;c;execute console command /dset purple %player%
+	tog12sheep: i;blue wool;n;&fBlue;c;execute console command /dset blue %player%
+	tog13sheep: i;brown wool;n;&fBrown;c;execute console command /dset brown %player%
+	tog14sheep: i;green wool;n;&fGreen;c;execute console command /dset green %player%
+	tog15sheep: i;red wool;n;&fRed;c;execute console command /dset red %player%
+	tog16sheep: i;black wool;n;&fBlack;c;execute console command /dset black %player%
+	togRCsheep: i;bookshelf;n;&fRandom Colour;c;execute console command /dset rc %player% 
 	#
-	togAcow: i;cow spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBcow: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
+	togAcow: i;cow spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBcow: i;egg;n;&fBaby;c;execute console command /dset adult %player%
 	#
-	togAchicken: i;chicken spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBchicken: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
+	togAchicken: i;chicken spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBchicken: i;egg;n;&fBaby;c;execute console command /dset adult %player%
 	#
-	togAwolf: i;wolf spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBwolf: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
-	togWwolf: i;raw salmon;n;&fWild;execute console command "/dset wild %player%"
-	togTwolf: i;lead;n;&fTamed;execute console command "/dset tamed %player%"
-	tog1wolf: i;red wool;n;&fDefault;c;execute console command "/dset red %player%"
-	tog2wolf: i;orange wool;n;&fOrange;c;execute console command "/dset orange %player%"
-	tog3wolf: i;magenta wool;n;&fMagenta;c;execute console command "/dset magenta %player%"
-	tog4wolf: i;light blue wool;n;&fLight Blue;c;execute console command "/dset light_blue %player%"
-	tog5wolf: i;yellow wool;n;&fYellow;c;execute console command "/dset yellow %player%"
-	tog6wolf: i;lime wool;n;&fLime;c;execute console command "/dset lime %player%"
-	tog7wolf: i;pink wool;n;&fPink;c;execute console command "/dset pink %player%"
-	tog8wolf: i;gray wool;n;&fGray;c;execute console command "/dset gray %player%"
-	tog9wolf: i;light gray wool;n;&fSilver;c;execute console command "/dset silver %player%"
-	tog10wolf: i;cyan wool;n;&fCyan;c;execute console command "/dset cyan %player%"
-	tog11wolf: i;purple wool;n;&fPurple;c;execute console command "/dset purple %player%"
-	tog12wolf: i;blue wool;n;&fBlue;c;execute console command "/dset blue %player%"
-	tog13wolf: i;brown wool;n;&fBrown;c;execute console command "/dset brown %player%"
-	tog14wolf: i;green wool;n;&fGreen;c;execute console command "/dset green %player%"
-	tog15wolf: i;black wool;n;&fBlack;c;execute console command "/dset black %player%"
-	togRCwolf: i;bookshelf;n;&fRandom Collar Colour;c;execute console command "/dset rc %player%" 
+	togAwolf: i;wolf spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBwolf: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togWwolf: i;raw salmon;n;&fWild;execute console command /dset wild %player%
+	togTwolf: i;lead;n;&fTamed;execute console command /dset tamed %player%
+	tog1wolf: i;red wool;n;&fDefault;c;execute console command /dset red %player%
+	tog2wolf: i;orange wool;n;&fOrange;c;execute console command /dset orange %player%
+	tog3wolf: i;magenta wool;n;&fMagenta;c;execute console command /dset magenta %player%
+	tog4wolf: i;light blue wool;n;&fLight Blue;c;execute console command /dset light_blue %player%
+	tog5wolf: i;yellow wool;n;&fYellow;c;execute console command /dset yellow %player%
+	tog6wolf: i;lime wool;n;&fLime;c;execute console command /dset lime %player%
+	tog7wolf: i;pink wool;n;&fPink;c;execute console command /dset pink %player%
+	tog8wolf: i;gray wool;n;&fGray;c;execute console command /dset gray %player%
+	tog9wolf: i;light gray wool;n;&fSilver;c;execute console command /dset silver %player%
+	tog10wolf: i;cyan wool;n;&fCyan;c;execute console command /dset cyan %player%
+	tog11wolf: i;purple wool;n;&fPurple;c;execute console command /dset purple %player%
+	tog12wolf: i;blue wool;n;&fBlue;c;execute console command /dset blue %player%
+	tog13wolf: i;brown wool;n;&fBrown;c;execute console command /dset brown %player%
+	tog14wolf: i;green wool;n;&fGreen;c;execute console command /dset green %player%
+	tog15wolf: i;black wool;n;&fBlack;c;execute console command /dset black %player%
+	togRCwolf: i;bookshelf;n;&fRandom Collar Colour;c;execute console command /dset rc %player% 
 	#
-	togAmooshroom: i;mooshroom spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBmooshroom: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
+	togAmooshroom: i;mooshroom spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBmooshroom: i;egg;n;&fBaby;c;execute console command /dset adult %player%
 	#
-	togAocelot: i;ocelot spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBocelot: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
-	togWocelot: i;raw salmon;n;&fWild;c;execute console command "/dset wild %player%"
-	togTocelot: i;lead;n;&fTamed;c;execute console command "/dset tamed %player%"
-	tog1ocelot: i;black wool;n;&fBlack Cat;c;execute console command "/dset ct2 %player%"
-	tog2ocelot: i;red wool;n;&fRed Cat;c;execute console command "/dset ct3 %player%"
-	tog3ocelot: i;wool;n;&fSiamese Cat;c;execute console command "/dset ct4 %player%"
-	togRTocelot: i;bookshelf;n;&fRandom Type;c;execute console command "/dset rt %player%" 
+	togAocelot: i;ocelot spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBocelot: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togWocelot: i;raw salmon;n;&fWild;c;execute console command /dset wild %player%
+	togTocelot: i;lead;n;&fTamed;c;execute console command /dset tamed %player%
+	tog1ocelot: i;black wool;n;&fBlack Cat;c;execute console command /dset ct2 %player%
+	tog2ocelot: i;red wool;n;&fRed Cat;c;execute console command /dset ct3 %player%
+	tog3ocelot: i;wool;n;&fSiamese Cat;c;execute console command /dset ct4 %player%
+	togRTocelot: i;bookshelf;n;&fRandom Type;c;execute console command /dset rt %player% 
 	#
-	togHorse:
-	togDonkey:
-	togMule:
-	togAhorse: i;horse spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBhorse: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
-	togC1horse: i;quartz block;n;&fWhite;c;execute console command "/dset hc1 %player%"
-	togC2horse: i;white stained clay;n;&fCreamy;c;execute console command "/dset hc2 %player%"
-	togC3horse: i;hardened clay;n;&fChestnut;c;execute console command "/dset hc3 %player%"
-	togC4horse: i;brown stained clay;n;&fBrown;c;execute console command "/dset hc4 %player%"
-	togC5horse: i;block of coal;n;&fBlack;c;execute console command "/dset hc5 %player%"
-	togC6horse: i;cyan stained clay;n;&fGray;c;execute console command "/dset hc6 %player%"
-	togC7horse: i;black stained clay;n;&fDark Brown;c;execute console command "/dset hc7 %player%"
-	togRChorse: i;bookshelf;n;&fRandom Colour;c;execute console command "/dset rhc %player%" 
-	togS1horse: i;brown wool;n;&fPlain;c;execute console command "/dset hs1 %player%"
-	togS2horse: i;nether quartz ore;n;&fWhite;c;execute console command "/dset hs2 %player%"
-	togS3horse: i;birch log;n;&fWhitefield;c;execute console command "/dset hs3 %player%"
-	togS4horse: i;pumpkin seeds;n;&fWhite Dots;c;execute console command "/dset hs4 %player%"
-	togS5horse: i;melon seeds;n;&fBlack Dots;c;execute console command "/dset hs5 %player%"
-	togRShorse: i;bookshelf;n;&fRandom Style;c;execute console command "/dset rhs %player%" 
-	togAdonkey: i;horse spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBdonkey: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
-	togAmule: i;horse spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBmule: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
+	togHorse: i;horse spawn egg;n;&fHorse;c;execute console command /dset horse %player%
+	togDonkey: i;horse spawn egg;n;&fDonkey;c;execute console command /dset donkey %player%
+	togMule: i;horse spawn egg;n;&fMule;c;execute console command /dset mule %player%
+	togAhorse: i;horse spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBhorse: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togC1horse: i;quartz block;n;&fWhite;c;execute console command /dset hc1 %player%
+	togC2horse: i;white stained clay;n;&fCreamy;c;execute console command /dset hc2 %player%
+	togC3horse: i;hardened clay;n;&fChestnut;c;execute console command /dset hc3 %player%
+	togC4horse: i;brown stained clay;n;&fBrown;c;execute console command /dset hc4 %player%
+	togC5horse: i;block of coal;n;&fBlack;c;execute console command /dset hc5 %player%
+	togC6horse: i;cyan stained clay;n;&fGray;c;execute console command /dset hc6 %player%
+	togC7horse: i;black stained clay;n;&fDark Brown;c;execute console command /dset hc7 %player%
+	togRChorse: i;bookshelf;n;&fRandom Colour;c;execute console command /dset rhc %player% 
+	togS1horse: i;brown wool;n;&fPlain;c;execute console command /dset hs1 %player%
+	togS2horse: i;nether quartz ore;n;&fWhite;c;execute console command /dset hs2 %player%
+	togS3horse: i;birch log;n;&fWhitefield;c;execute console command /dset hs3 %player%
+	togS4horse: i;pumpkin seeds;n;&fWhite Dots;c;execute console command /dset hs4 %player%
+	togS5horse: i;melon seeds;n;&fBlack Dots;c;execute console command /dset hs5 %player%
+	togRShorse: i;bookshelf;n;&fRandom Style;c;execute console command /dset rhs %player% 
+	togAdonkey: i;horse spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBdonkey: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togAmule: i;horse spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBmule: i;egg;n;&fBaby;c;execute console command /dset adult %player%
 	
 	#
-	togAvillager: i;villager spawn egg;n;&fAdult;c;execute console command "/dset adult %player%"
-	togBvillager: i;egg;n;&fBaby;c;execute console command "/dset adult %player%"
-	tog1villager: i;wooden hoe;n;&fFarmer;c;execute console command "/dset p1 %player%"
-	tog2villager: i;book;n;&fLibrarian;c;execute console command "/dset p2 %player%"
-	tog3villager: i;nether star;n;&fPriest;c;execute console command "/dset p3 %player%"
-	tog4villager: i;anvil;n;&fBlacksmith;c;execute console command "/dset p4 %player%"
-	tog5villager: i;raw beef;n;&fButcher;c;execute console command "/dset p5 %player%"
-	togRPvillager: i;bookshelf;n;&fRandom Profession;c;execute console command "/dset rp %player%" 
+	togAvillager: i;villager spawn egg;n;&fAdult;c;execute console command /dset adult %player%
+	togBvillager: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	tog1villager: i;wooden hoe;n;&fFarmer;c;execute console command /dset p1 %player%
+	tog2villager: i;book;n;&fLibrarian;c;execute console command /dset p2 %player%
+	tog3villager: i;nether star;n;&fPriest;c;execute console command /dset p3 %player%
+	tog4villager: i;anvil;n;&fBlacksmith;c;execute console command /dset p4 %player%
+	tog5villager: i;raw beef;n;&fButcher;c;execute console command /dset p5 %player%
+	togRPvillager: i;bookshelf;n;&fRandom Profession;c;execute console command /dset rp %player% 
 	#
 	eDspecial: s;45;i;dragon egg;n;&9Specials
 	dDspecial: s;45;i;dragon egg;n;&9Specials
@@ -3620,7 +3620,7 @@ command /disguiseset [<text>]:
 					set {effects.disguises.zombie.%player%} to 1
 					set {disguise.set.%player%} to true
 					set {disguise.type.%player%} to "zombie"
-					show "s;3;{@togAzombie};s;7{@togBzombie}" with 1 row named "&2Choose an age" to player
+					show "s;3;{@togAzombie};s;7;{@togBzombie}" with 1 row named "&2Choose an age" to player
 					execute console command "/disguiseplayer %player% zombie"
 					send "&eYou are now disguised as a zombie." to player
 					stop
@@ -3943,147 +3943,147 @@ command /disguiseset [<text>]:
 command /dset <text> <player>:
 	executable by: console
 	trigger:
-		if argument is "baby":
+		if argument 1 is "baby":
 			set {disguise.baby.%argument 2%} to "true"
 			stop
-		if argument is "adult":
+		if argument 1 is "adult":
 			set {disguise.baby.%argument 2%} to "false"
 			stop
-		if argument is "black":
+		if argument 1 is "black":
 			set {disguise.color.%argument 2%} to "black"
 			stop
-		if argument is "blue":
+		if argument 1 is "blue":
 			set {disguise.color.%argument 2%} to "blue"
 			stop
-		if argument is "brown":
+		if argument 1 is "brown":
 			set {disguise.color.%argument 2%} to "brown"
 			stop
-		if argument is "cyan":
+		if argument 1 is "cyan":
 			set {disguise.color.%argument 2%} to "cyan"
 			stop
-		if argument is "gray":
+		if argument 1 is "gray":
 			set {disguise.color.%argument 2%} to "gray"
 			stop
-		if argument is "green":
+		if argument 1 is "green":
 			set {disguise.color.%argument 2%} to "green"
 			stop
-		if argument is "light_blue":
+		if argument 1 is "light_blue":
 			set {disguise.color.%argument 2%} to "light_blue"
 			stop
-		if argument is "lime":
+		if argument 1 is "lime":
 			set {disguise.color.%argument 2%} to "lime"
 			stop
-		if argument is "magenta":
+		if argument 1 is "magenta":
 			set {disguise.color.%argument 2%} to "magenta"
 			stop
-		if argument is "orange":
+		if argument 1 is "orange":
 			set {disguise.color.%argument 2%} to "orange"
 			stop
-		if argument is "pink":
+		if argument 1 is "pink":
 			set {disguise.color.%argument 2%} to "pink"
 			stop
-		if argument is "purple":
+		if argument 1 is "purple":
 			set {disguise.color.%argument 2%} to "purple"
 			stop
-		if argument is "red":
+		if argument 1 is "red":
 			set {disguise.color.%argument 2%} to "red"
 			stop
-		if argument is "silver":
+		if argument 1 is "silver":
 			set {disguise.color.%argument 2%} to "silver"
 			stop
-		if argument is "white":
+		if argument 1 is "white":
 			set {disguise.color.%argument 2%} to "white"
 			stop
-		if argument is "yellow":
+		if argument 1 is "yellow":
 			set {disguise.color.%argument 2%} to "yellow"
 			stop
-		if argument is "rc":
+		if argument 1 is "rc":
 			set {_temp.pick.rc.%argument 2%} to a random number between 1 and 16
 			if {_temp.pick.rc.%argument 2%} is 1:
-				set {disguise.color.%argument 2} to "black"
+				set {disguise.color.%argument 2%} to "black"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 2:
-				set {disguise.color.%argument 2} to "blue"
+				set {disguise.color.%argument 2%} to "blue"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 3:
-				set {disguise.color.%argument 2} to "brown"
+				set {disguise.color.%argument 2%} to "brown"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 4:
-				set {disguise.color.%argument 2} to "cyan"
+				set {disguise.color.%argument 2%} to "cyan"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 5:
-				set {disguise.color.%argument 2} to "gray"
+				set {disguise.color.%argument 2%} to "gray"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 6:
-				set {disguise.color.%argument 2} to "green"
+				set {disguise.color.%argument 2%} to "green"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 7:
-				set {disguise.color.%argument 2} to "light_blue"
+				set {disguise.color.%argument 2%} to "light_blue"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 8:
-				set {disguise.color.%argument 2} to "lime"
+				set {disguise.color.%argument 2%} to "lime"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 9:
-				set {disguise.color.%argument 2} to "magenta"
+				set {disguise.color.%argument 2%} to "magenta"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 10:
-				set {disguise.color.%argument 2} to "orange"
+				set {disguise.color.%argument 2%} to "orange"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 11:
-				set {disguise.color.%argument 2} to "pink"
+				set {disguise.color.%argument 2%} to "pink"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 12:
-				set {disguise.color.%argument 2} to "purple"
+				set {disguise.color.%argument 2%} to "purple"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 13:
-				set {disguise.color.%argument 2} to "red"
+				set {disguise.color.%argument 2%} to "red"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 14:
-				set {disguise.color.%argument 2} to "silver"
+				set {disguise.color.%argument 2%} to "silver"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 15:
-				set {disguise.color.%argument 2} to "white"
+				set {disguise.color.%argument 2%} to "white"
 				stop
 			if {_temp.pick.rc.%argument 2%} is 16:
-				set {disguise.color.%argument 2} to "yellow"
+				set {disguise.color.%argument 2%} to "yellow"
 				stop
-		if argument is "tamed":
+		if argument 1 is "tamed":
 			set {disguise.type.%argument 2%} to "tamed"
 			stop
-		if argument is "wild":
+		if argument 1 is "wild":
 			set {disguise.type.%argument 2%} to "wild"
 			stop
-		if argument is "size1":
+		if argument 1 is "size1":
 			set {disguise.size.%argument 2%} to "1"
 			stop
-		if argument is "size2":
+		if argument 1 is "size2":
 			set {disguise.size.%argument 2%} to "2"
 			stop
-		if argument is "size3":
+		if argument 1 is "size3":
 			set {disguise.size.%argument 2%} to "3"
 			stop
-		if argument is "hc1":
+		if argument 1 is "hc1":
 			set {disguise.horse.color.%argument 2%} to "white"
 			stop
-		if argument is "hc2":
+		if argument 1 is "hc2":
 			set {disguise.horse.color.%argument 2%} to "creamy"
 			stop
-		if argument is "hc3":
+		if argument 1 is "hc3":
 			set {disguise.horse.color.%argument 2%} to "chestnut"
 			stop
-		if argument is "hc4":
+		if argument 1 is "hc4":
 			set {disguise.horse.color.%argument 2%} to "brown"
 			stop
-		if argument is "hc5":
+		if argument 1 is "hc5":
 			set {disguise.horse.color.%argument 2%} to "black"
 			stop
-		if argument is "hc6":
+		if argument 1 is "hc6":
 			set {disguise.horse.color.%argument 2%} to "gray"
 			stop
-		if argument is "hc7":
+		if argument 1 is "hc7":
 			set {disguise.horse.color.%argument 2%} to "dark_brown"
 			stop
-		if argument is "rhc":
+		if argument 1 is "rhc":
 			set {_temp.pick.rhc.%argument 2%} to a random number between 1 and 7
 			if {_temp.pick.rhc.%argument 2%} is 1:
 				set {disguise.horse.color.%argument 2%} to "white"
@@ -4106,22 +4106,22 @@ command /dset <text> <player>:
 			if {_temp.pick.rhc.%argument 2%} is 7:
 				set {disguise.horse.color.%argument 2%} to "dark_brown"
 				stop
-		if argument is "hs1":
+		if argument 1 is "hs1":
 			set {disguise.horse.style.%argument 2%} to "none"
 			stop
-		if argument is "hs2":
+		if argument 1 is "hs2":
 			set {disguise.horse.style.%argument 2%} to "white"
 			stop
-		if argument is "hs3":
+		if argument 1 is "hs3":
 			set {disguise.horse.style.%argument 2%} to "whitefield"
 			stop
-		if argument is "hs4":
+		if argument 1 is "hs4":
 			set {disguise.horse.style.%argument 2%} to "white_dots"
 			stop
-		if argument is "hs5":
+		if argument 1 is "hs5":
 			set {disguise.horse.style.%argument 2%} to "black_dots"
 			stop
-		if argument is "rhs":
+		if argument 1 is "rhs":
 			set {_temp.pick.rhs.%argument 2%} to a random number between 1 and 5
 			if {_temp.pick.rhs.%argument 2%} is 1:
 				set {disguise.horse.style.%argument 2%} to "none"
@@ -4138,22 +4138,22 @@ command /dset <text> <player>:
 			if {_temp.pick.rhs.%argument 2%} is 5:
 				set {disguise.horse.style.%argument 2%} to "black_dots"
 				stop
-		if argument is "p1":
+		if argument 1 is "p1":
 			set {disguise.profession.%argument 2%} to "farmer"
 			stop
-		if argument is "p2":
+		if argument 1 is "p2":
 			set {disguise.profession.%argument 2%} to "librarian"
 			stop
-		if argument is "p3":
+		if argument 1 is "p3":
 			set {disguise.profession.%argument 2%} to "priest"
 			stop
-		if argument is "p4":
+		if argument 1 is "p4":
 			set {disguise.profession.%argument 2%} to "blacksmith"
 			stop
-		if argument is "p5":
+		if argument 1 is "p5":
 			set {disguise.profession.%argument 2%} to "butcher"
 			stop
-		if argument is "rp":
+		if argument 1 is "rp":
 			set {_temp.pick.rp.%argument 2%} to a random number between 1 and 5
 			if {_temp.pick.rp.%argument 2%} is 1:
 				set {disguise.profession.%argument 2%} to "farmer"
@@ -4170,19 +4170,19 @@ command /dset <text> <player>:
 			if {_temp.pick.rp.%argument 2%} is 5:
 				set {disguise.profession.%argument 2%} to "butcher"
 				stop
-		if argument is "ct1":
+		if argument 1 is "ct1":
 			set {disguise.cat.type.%argument 2%} to "wild_ocelot"
 			stop
-		if argument is "ct2":
+		if argument 1 is "ct2":
 			set {disguise.cat.type.%argument 2%} to "black_cat"
 			stop
-		if argument is "ct3":
+		if argument 1 is "ct3":
 			set {disguise.cat.type.%argument 2%} to "red_cat"
 			stop
-		if argument is "ct4":
+		if argument 1 is "ct4":
 			set {disguise.cat.type.%argument 2%} to "siamese_cat"
 			stop
-		if argument is "rt":
+		if argument 1 is "rt":
 			set {_temp.pick.rt.%argument 2%} to a random number between 1 and 3
 			if {_temp.pick.rt.%argument 2%} is 1:
 				set {disguise.cat.type.%argument 2%} to "black_cat"
@@ -4193,12 +4193,12 @@ command /dset <text> <player>:
 			if {_temp.pick.rt.%argument 2%} is 3:
 				set {disguise.cat.type.%argument 2%} to "siamese_cat"
 				stop
-		if argument is "horse":
+		if argument 1 is "horse":
 			set {disguise.horse.set.%argument 2%} to "1"
 			stop
-		if argument is "donkey":
+		if argument 1 is "donkey":
 			set {disguise.horse.set.%argument 2%} to "2"
 			stop
-		if argument is "mule":
+		if argument 1 is "mule":
 			set {disguise.horse.set.%argument 2%} to "3"
 			stop
