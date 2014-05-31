@@ -3612,35 +3612,30 @@ command /disguiseset [<text>]:
 				send "&fYou need to unlock the spider to disguise as it." to player
 		if argument is "zombie":
 			if {db_effectshop.disguises.zombie.%player%} is true:
-				if {effects.disguises.zombie.%player%} is 1:
-					send "&fYou are already disguised as a zombie." to player
-					stop
-				if {effects.disguises.zombie.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togAzombie};s;7;{@togBzombie}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% zombie setBaby %{disguise.baby.%player%}%"
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.zombie.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "zombie"
-					send "&eYou are now disguised as a zombie." to player
-					stop
+				wait 1 second
+				show "s;3;{@togAzombie};s;7;{@togBzombie}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% zombie setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.zombie.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "zombie"
+				send "&eYou are now disguised as a zombie." to player
+				stop
 			if {db_effectshop.disguises.zombie.%player%} is false:
 				send "&fYou need to unlock the zombie to disguise as it." to player
 		if argument is "slime":
 			if {db_effectshop.disguises.slime.%player%} is true:
-				if {effects.disguises.slime.%player%} is 1:
-					send "&fYou are already disguised as a slime." to player
-					stop
-				if {effects.disguises.slime.%player%} is 0:
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.slime.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "slime"
-					execute console command "/disguiseplayer %player% slime"
-					send "&eYou are now disguised as a slime." to player
-					stop
+				wait 1 second
+				show "s;2;{@togAslime};s;5;{@togBslime};s;8;{@togCslime}" with 1 row named "&2Choose a size" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% slime setSize %{disguise.size.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.slime.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "slime"
+				send "&eYou are now disguised as a slime." to player
+				stop
 			if {db_effectshop.disguises.slime.%player%} is false:
 				send "&fYou need to unlock the slime to disguise as it." to player
 		if argument is "ghast":
@@ -3660,20 +3655,16 @@ command /disguiseset [<text>]:
 				send "&fYou need to unlock the ghast to disguise as it." to player
 		if argument is "zombiepigman":
 			if {db_effectshop.disguises.zombiepigman.%player%} is true:
-				if {effects.disguises.zombiepigman.%player%} is 1:
-					send "&fYou are already disguised as a zombie pigman." to player
-					stop
-				if {effects.disguises.zombiepigman.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togAzombiepigman};s;7;{@togBzombiepigman}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% pig_zombie setBaby %{disguise.baby.%player%}%"
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.zombiepigman.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "zombiepigman"
-					send "&eYou are now disguised as a zombie pigman." to player
-					stop
+				wait 1 second
+				show "s;3;{@togAzombiepigman};s;7;{@togBzombiepigman}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% pig_zombie setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.zombiepigman.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "zombiepigman"
+				send "&eYou are now disguised as a zombie pigman." to player
+				stop
 			if {db_effectshop.disguises.zombiepigman.%player%} is false:
 				send "&fYou need to unlock the zombie pigman to disguise as it." to player
 		if argument is "enderman":
@@ -3738,17 +3729,16 @@ command /disguiseset [<text>]:
 				send "&fYou need to unlock the blaze to disguise as it." to player
 		if argument is "magmacube":
 			if {db_effectshop.disguises.magmacube.%player%} is true:
-				if {effects.disguises.magmacube.%player%} is 1:
-					send "&fYou are already disguised as a magma cube." to player
-					stop
-				if {effects.disguises.magmacube.%player%} is 0:
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.magmacube.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "magmacube"
-					execute console command "/disguiseplayer %player% magma_cube"
-					send "&eYou are now disguised as a magma cube." to player
-					stop
+				wait 1 second
+				show "s;2;{@togAmagma};s;5;{@togBmagma};s;8;{@togCmagma}" with 1 row named "&2Choose a size" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% magma_cube setSize %{disguise.size.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.magmacube.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "magmacube"
+				send "&eYou are now disguised as a magma cube." to player
+				stop
 			if {db_effectshop.disguises.magmacube.%player%} is false:
 				send "&fYou need to unlock the magma cube to disguise as it." to player
 		if argument is "bat":
@@ -3783,76 +3773,60 @@ command /disguiseset [<text>]:
 				send "&fYou need to unlock the witch to disguise as it." to player
 		if argument is "pig":
 			if {db_effectshop.disguises.pig.%player%} is true:
-				if {effects.disguises.pig.%player%} is 1:
-					send "&fYou are already disguised as a pig." to player
-					stop
-				if {effects.disguises.pig.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togApig};s;7;{@togBpig}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% pig setBaby %{disguise.baby.%player%}%"
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.pig.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "pig"
-					send "&eYou are now disguised as a pig." to player
-					stop
+				wait 1 second
+				show "s;3;{@togApig};s;7;{@togBpig}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% pig setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.pig.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "pig"
+				send "&eYou are now disguised as a pig." to player
+				stop
 			if {db_effectshop.disguises.pig.%player%} is false:
 				send "&fYou need to unlock the pig to disguise as it." to player
 		if argument is "sheep":
 			if {db_effectshop.disguises.sheep.%player%} is true:
-				if {effects.disguises.sheep.%player%} is 1:
-					send "&fYou are already disguised as a sheep." to player
-					stop
-				if {effects.disguises.sheep.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togAsheep};s;7;{@togBsheep}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					show "s;1;{@tog2sheep};s;3;{@tog3sheep};s;5;{@tog4sheep};s;7;{@tog5sheep};s;9;{@tog6sheep};s;10;{@tog7sheep};s;12;{@tog8sheep};s;14;{@tog9sheep};s;16;{@tog10sheep};s;18;{@tog11sheep};s;19;{@tog12sheep};s;21;{@tog13sheep};s;23;{@tog14sheep};s;25;{@tog15sheep};s;27;{@tog16sheep};s;37;{@tog1sheep};s;45;{@togRCsheep}" with 5 rows named "&2Select a colour" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% sheep setBaby %{disguise.baby.%player%}% setColor %{disguise.color.%player%}%"
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.sheep.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "sheep"
-					send "&eYou are now disguised as a sheep." to player
-					stop
+				wait 1 second
+				show "s;3;{@togAsheep};s;7;{@togBsheep}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				show "s;1;{@tog2sheep};s;3;{@tog3sheep};s;5;{@tog4sheep};s;7;{@tog5sheep};s;9;{@tog6sheep};s;10;{@tog7sheep};s;12;{@tog8sheep};s;14;{@tog9sheep};s;16;{@tog10sheep};s;18;{@tog11sheep};s;19;{@tog12sheep};s;21;{@tog13sheep};s;23;{@tog14sheep};s;25;{@tog15sheep};s;27;{@tog16sheep};s;37;{@tog1sheep};s;45;{@togRCsheep}" with 5 rows named "&2Select a colour" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% sheep setBaby %{disguise.baby.%player%}% setColor %{disguise.color.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.sheep.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "sheep"
+				send "&eYou are now disguised as a sheep." to player
+				stop
 			if {db_effectshop.disguises.sheep.%player%} is false:
 				send "&fYou need to unlock the sheep to disguise as it." to player
 		if argument is "cow":
 			if {db_effectshop.disguises.cow.%player%} is true:
-				if {effects.disguises.cow.%player%} is 1:
-					send "&fYou are already disguised as a cow." to player
-					stop
-				if {effects.disguises.cow.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togAcow};s;7;{@togBcow}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% cow setBaby %{disguise.baby.%player%}%"
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.cow.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "cow"
-					send "&eYou are now disguised as a cow." to player
-					stop
+				wait 1 second
+				show "s;3;{@togAcow};s;7;{@togBcow}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% cow setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.cow.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "cow"
+				send "&eYou are now disguised as a cow." to player
+				stop
 			if {db_effectshop.disguises.cow.%player%} is false:
 				send "&fYou need to unlock the cow to disguise as it." to player
 		if argument is "chicken":
 			if {db_effectshop.disguises.chicken.%player%} is true:
-				if {effects.disguises.chicken.%player%} is 1:
-					send "&fYou are already disguised as a chicken." to player
-					stop
-				if {effects.disguises.chicken.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togAchicken};s;7;{@togBchicken}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% chicken setBaby %{disguise.baby.%player%}%"
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.chicken.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "chicken"
-					send "&eYou are now disguised as a chicken." to player
-					stop
+				wait 1 second
+				show "s;3;{@togAchicken};s;7;{@togBchicken}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% chicken setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.chicken.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "chicken"
+				send "&eYou are now disguised as a chicken." to player
+				stop
 			if {db_effectshop.disguises.chicken.%player%} is false:
 				send "&fYou need to unlock the chicken to disguise as it." to player
 		if argument is "squid":
@@ -3872,27 +3846,13 @@ command /disguiseset [<text>]:
 				send "&fYou need to unlock the squid to disguise as it." to player
 		if argument is "wolf":
 			if {db_effectshop.disguises.wolf.%player%} is true:
-				if {effects.disguises.wolf.%player%} is 1:
-					send "&fYou are already disguised as a wolf." to player
-					stop
-				if {effects.disguises.wolf.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togAwolf};s;7;{@togBwolf}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					show "s;3;{@togWwolf};s;7;{@togTwolf}" with 1 row named "&2Wild or Tamed?" to player
-					wait 1 second
-					if {disguise.tamed.%player%} is "wild":
-						execute console command "/disguiseplayer %player%" wolf setBaby %{disguise.baby.%player%}% setTamed false"
-						set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-						set {effects.disguises.wolf.%player%} to 1
-						set {disguise.set.%player%} to true
-						set {disguise.type.%player%} to "wolf"
-						execute console command "/disguiseplayer %player% wolf"
-						send "&eYou are now disguised as a wolf." to player
-						stop
-					show "s;1;{@tog2sheep};s;3;{@tog3sheep};s;5;{@tog4sheep};s;7;{@tog5sheep};s;9;{@tog6sheep};s;10;{@tog7sheep};s;12;{@tog8sheep};s;14;{@tog9sheep};s;16;{@tog10sheep};s;18;{@tog11sheep};s;19;{@tog12sheep};s;21;{@tog13sheep};s;23;{@tog14sheep};s;25;{@tog15sheep};s;27;{@tog16sheep};s;37;{@tog1sheep};s;45;{@togRCsheep}" with 5 rows named "&2Select a colour" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% sheep setBaby %{disguise.baby.%player%}% setCollarColor %{disguise.color.%player%}%"
+				wait 1 second
+				show "s;3;{@togAwolf};s;7;{@togBwolf}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				show "s;3;{@togWwolf};s;7;{@togTwolf}" with 1 row named "&2Wild or Tamed?" to player
+				wait 1 second
+				if {disguise.tamed.%player%} is "wild":
+					execute console command "/disguiseplayer %player%" wolf setBaby %{disguise.baby.%player%}% setTamed false"
 					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 					set {effects.disguises.wolf.%player%} to 1
 					set {disguise.set.%player%} to true
@@ -3900,69 +3860,77 @@ command /disguiseset [<text>]:
 					execute console command "/disguiseplayer %player% wolf"
 					send "&eYou are now disguised as a wolf." to player
 					stop
+				show "s;1;{@tog2sheep};s;3;{@tog3sheep};s;5;{@tog4sheep};s;7;{@tog5sheep};s;9;{@tog6sheep};s;10;{@tog7sheep};s;12;{@tog8sheep};s;14;{@tog9sheep};s;16;{@tog10sheep};s;18;{@tog11sheep};s;19;{@tog12sheep};s;21;{@tog13sheep};s;23;{@tog14sheep};s;25;{@tog15sheep};s;27;{@tog16sheep};s;37;{@tog1sheep};s;45;{@togRCsheep}" with 5 rows named "&2Select a colour" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% sheep setBaby %{disguise.baby.%player%}% setCollarColor %{disguise.color.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.wolf.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "wolf"
+				execute console command "/disguiseplayer %player% wolf"
+				send "&eYou are now disguised as a wolf." to player
+				stop
 			if {db_effectshop.disguises.wolf.%player%} is false:
 				send "&fYou need to unlock the wolf to disguise as it." to player
 		if argument is "mooshroom":
 			if {db_effectshop.disguises.mooshroom.%player%} is true:
-				if {effects.disguises.mooshroom.%player%} is 1:
-					send "&fYou are already disguised as a mooshroom." to player
-					stop
-				if {effects.disguises.mooshroom.%player%} is 0:
-					wait 1 second
-					show "s;3;{@togAmooshroom};s;7;{@togBmooshroom}" with 1 row named "&2Choose an age" to player
-					wait 1 second
-					execute console command "/disguiseplayer %player% mushroom_cow setBaby %{disguise.baby.%player%}%"
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.mooshroom.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "mooshroom"
-					send "&eYou are now disguised as a mooshroom." to player
-					stop
+				wait 1 second
+				show "s;3;{@togAmooshroom};s;7;{@togBmooshroom}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				execute console command "/disguiseplayer %player% mushroom_cow setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.mooshroom.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "mooshroom"
+				send "&eYou are now disguised as a mooshroom." to player
+				stop
 			if {db_effectshop.disguises.mooshroom.%player%} is false:
 				send "&fYou need to unlock the mooshroom to disguise as it." to player
 		if argument is "ocelot":
 			if {db_effectshop.disguises.ocelot.%player%} is true:
-				if {effects.disguises.ocelot.%player%} is 1:
-					send "&fYou are already disguised as a ocelot." to player
-					stop
-				if {effects.disguises.ocelot.%player%} is 0:
+				wait 1 second
+				show "s;3;{@togAocelot};s;7;{@togBocelot}" with 1 row named "&2Choose an age" to player
+				wait 1 second
+				show "s;3;{@togWocelot};s;7;{@togTocelot}" with 1 row named "&2Wild or Tamed?" to player
+				wait 1 second
+				if {disguise.tamed.%player%} is "wild":
+					execute console command "/disguiseplayer %player%" ocelot setBaby %{disguise.baby.%player%}% setTamed false"
 					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 					set {effects.disguises.ocelot.%player%} to 1
 					set {disguise.set.%player%} to true
 					set {disguise.type.%player%} to "ocelot"
-					execute console command "/disguiseplayer %player% ocelot"
 					send "&eYou are now disguised as a ocelot." to player
 					stop
+				show "s;1;{@tog1ocelot};s;3;{@tog2ocelot};s;5;{@tog3ocelot};s;9;{@togRCocelot}" with 1 row named "&2Choose a type" to player
+				execute console command "/disguiseplayer %player% ocelot setBaby %{disguise.baby.%player%}% setTamed true setType %{disguise.cat.type.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.ocelot.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "ocelot"
+				send "&eYou are now disguised as a ocelot." to player
+				stop
 			if {db_effectshop.disguises.ocelot.%player%} is false:
 				send "&fYou need to unlock the ocelot to disguise as it." to player
 		if argument is "horse":
 			if {db_effectshop.disguises.horse.%player%} is true:
-				if {effects.disguises.horse.%player%} is 1:
-					send "&fYou are already disguised as a horse." to player
-					stop
-				if {effects.disguises.horse.%player%} is 0:
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.horse.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "horse"
-					execute console command "/disguiseplayer %player% horse"
-					send "&eYou are now disguised as a horse." to player
-					stop
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.horse.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "horse"
+				execute console command "/disguiseplayer %player% horse"
+				send "&eYou are now disguised as a horse." to player
+				stop
 			if {db_effectshop.disguises.horse.%player%} is false:
 				send "&fYou need to unlock the horse to disguise as it." to player
 		if argument is "villager":
 			if {db_effectshop.disguises.villager.%player%} is true:
-				if {effects.disguises.villager.%player%} is 1:
-					send "&fYou are already disguised as a villager." to player
-					stop
-				if {effects.disguises.villager.%player%} is 0:
-					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
-					set {effects.disguises.villager.%player%} to 1
-					set {disguise.set.%player%} to true
-					set {disguise.type.%player%} to "villager"
-					execute console command "/disguiseplayer %player% villager"
-					send "&eYou are now disguised as a villager." to player
-					stop
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.villager.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "villager"
+				execute console command "/disguiseplayer %player% villager"
+				send "&eYou are now disguised as a villager." to player
+				stop
 			if {db_effectshop.disguises.villager.%player%} is false:
 				send "&fYou need to unlock the villager to disguise as it." to player
 		if argument is "special":
