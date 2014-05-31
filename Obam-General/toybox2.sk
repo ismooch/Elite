@@ -3656,7 +3656,7 @@ command /disguiseset [<text>]:
 		if argument is "zombiepigman":
 			if {db_effectshop.disguises.zombiepigman.%player%} is true:
 				wait 1 second
-				show "s;3;{@togAzombiepigman};s;7;{@togBzombiepigman}" with 1 row named "&2Choose an age" to player
+				show "s;3;{@togApigman};s;7;{@togBpigman}" with 1 row named "&2Choose an age" to player
 				wait 1 second
 				execute console command "/disguiseplayer %player% pig_zombie setBaby %{disguise.baby.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
@@ -3852,7 +3852,7 @@ command /disguiseset [<text>]:
 				show "s;3;{@togWwolf};s;7;{@togTwolf}" with 1 row named "&2Wild or Tamed?" to player
 				wait 1 second
 				if {disguise.tamed.%player%} is "wild":
-					execute console command "/disguiseplayer %player%" wolf setBaby %{disguise.baby.%player%}% setTamed false"
+					execute console command "/disguiseplayer %player% wolf setBaby %{disguise.baby.%player%}% setTamed false"
 					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 					set {effects.disguises.wolf.%player%} to 1
 					set {disguise.set.%player%} to true
@@ -3894,14 +3894,14 @@ command /disguiseset [<text>]:
 				show "s;3;{@togWocelot};s;7;{@togTocelot}" with 1 row named "&2Wild or Tamed?" to player
 				wait 1 second
 				if {disguise.tamed.%player%} is "wild":
-					execute console command "/disguiseplayer %player%" ocelot setBaby %{disguise.baby.%player%}% setTamed false"
+					execute console command "/disguiseplayer %player% ocelot setBaby %{disguise.baby.%player%}% setTamed false"
 					set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 					set {effects.disguises.ocelot.%player%} to 1
 					set {disguise.set.%player%} to true
 					set {disguise.type.%player%} to "ocelot"
 					send "&eYou are now disguised as a ocelot." to player
 					stop
-				show "s;1;{@tog1ocelot};s;3;{@tog2ocelot};s;5;{@tog3ocelot};s;9;{@togRCocelot}" with 1 row named "&2Choose a type" to player
+				show "s;1;{@tog1ocelot};s;3;{@tog2ocelot};s;5;{@tog3ocelot};s;9;{@togRTocelot}" with 1 row named "&2Choose a type" to player
 				execute console command "/disguiseplayer %player% ocelot setBaby %{disguise.baby.%player%}% setTamed true setType %{disguise.cat.type.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 				set {effects.disguises.ocelot.%player%} to 1
