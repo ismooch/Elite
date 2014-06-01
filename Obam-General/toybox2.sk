@@ -60,115 +60,115 @@ options:
 	#
 	#replace dStop item with barrier after 1.8
 	#
-	togAzombie: i;zombie spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBzombie: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togAzombie: i;zombie spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBzombie: i;egg;n;&fBaby;c;csplit %player% dset baby 
 	#
-	togAslime: i;ghast tear;n;&fSmall;c;execute console command /dset size1 %player%
-	togBslime: i;snowball;n;&fMedium;c;execute console command /dset size2 %player%
-	togCslime: i;snow;n;&fLarge;c;execute console command /dset size3 %player%
+	togAslime: i;ghast tear;n;&fSmall;c;csplit %player% dset size1 
+	togBslime: i;snowball;n;&fMedium;c;csplit %player% dset size2 
+	togCslime: i;snow;n;&fLarge;c;csplit %player% dset size3 
 	#
-	togApigman: i;zombie pigman spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBpigman: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togApigman: i;zombie pigman spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBpigman: i;egg;n;&fBaby;c;csplit %player% dset baby 
 	#
-	togAmagma: i;ghast tear;n;&fSmall;c;execute console command /dset size1 %player%
-	togBmagma: i;snowball;n;&fMedium;c;execute console command /dset size2 %player%
-	togCmagma: i;snow;n;&fLarge;c;execute console command /dset size3 %player%
+	togAmagma: i;ghast tear;n;&fSmall;c;csplit %player% dset size1 
+	togBmagma: i;snowball;n;&fMedium;c;csplit %player% dset size2 
+	togCmagma: i;snow;n;&fLarge;c;csplit %player% dset size3 
 	#
-	togApig: i;pig spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBpig: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togApig: i;pig spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBpig: i;egg;n;&fBaby;c;csplit %player% dset baby 
 	#
-	togAsheep: i;sheep spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBsheep: i;egg;n;&fBaby;c;execute console command /dset adult %player%
-	tog1sheep: i;wool;n;&fDefault;c;execute console command /dset white %player%
-	tog2sheep: i;orange wool;n;&fOrange;c;execute console command /dset orange %player%
-	tog3sheep: i;magenta wool;n;&fMagenta;c;execute console command /dset magenta %player%
-	tog4sheep: i;light blue wool;n;&fLight Blue;c;execute console command /dset light_blue %player%
-	tog5sheep: i;yellow wool;n;&fYellow;c;execute console command /dset yellow %player%
-	tog6sheep: i;lime wool;n;&fLime;c;execute console command /dset lime %player%
-	tog7sheep: i;pink wool;n;&fPink;c;execute console command /dset pink %player%
-	tog8sheep: i;gray wool;n;&fGray;c;execute console command /dset gray %player%
-	tog9sheep: i;light gray wool;n;&fSilver;c;execute console command /dset silver %player%
-	tog10sheep: i;cyan wool;n;&fCyan;c;execute console command /dset cyan %player%
-	tog11sheep: i;purple wool;n;&fPurple;c;execute console command /dset purple %player%
-	tog12sheep: i;blue wool;n;&fBlue;c;execute console command /dset blue %player%
-	tog13sheep: i;brown wool;n;&fBrown;c;execute console command /dset brown %player%
-	tog14sheep: i;green wool;n;&fGreen;c;execute console command /dset green %player%
-	tog15sheep: i;red wool;n;&fRed;c;execute console command /dset red %player%
-	tog16sheep: i;black wool;n;&fBlack;c;execute console command /dset black %player%
-	togRCsheep: i;bookshelf;n;&fRandom Colour;c;execute console command /dset rc %player% 
+	togAsheep: i;sheep spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBsheep: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	tog1sheep: i;wool;n;&fDefault;c;csplit %player% dset white 
+	tog2sheep: i;orange wool;n;&fOrange;c;csplit %player% dset orange 
+	tog3sheep: i;magenta wool;n;&fMagenta;c;csplit %player% dset magenta 
+	tog4sheep: i;light blue wool;n;&fLight Blue;c;csplit %player% dset light_blue 
+	tog5sheep: i;yellow wool;n;&fYellow;c;csplit %player% dset yellow 
+	tog6sheep: i;lime wool;n;&fLime;c;csplit %player% dset lime 
+	tog7sheep: i;pink wool;n;&fPink;c;csplit %player% dset pink 
+	tog8sheep: i;gray wool;n;&fGray;c;csplit %player% dset gray 
+	tog9sheep: i;light gray wool;n;&fSilver;c;csplit %player% dset silver 
+	tog10sheep: i;cyan wool;n;&fCyan;c;csplit %player% dset cyan 
+	tog11sheep: i;purple wool;n;&fPurple;c;csplit %player% dset purple 
+	tog12sheep: i;blue wool;n;&fBlue;c;csplit %player% dset blue 
+	tog13sheep: i;brown wool;n;&fBrown;c;csplit %player% dset brown 
+	tog14sheep: i;green wool;n;&fGreen;c;csplit %player% dset green 
+	tog15sheep: i;red wool;n;&fRed;c;csplit %player% dset red 
+	tog16sheep: i;black wool;n;&fBlack;c;csplit %player% dset black 
+	togRCsheep: i;bookshelf;n;&fRandom Colour;c;csplit %player% dset rc  
 	#
-	togAcow: i;cow spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBcow: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togAcow: i;cow spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBcow: i;egg;n;&fBaby;c;csplit %player% dset baby 
 	#
-	togAchicken: i;chicken spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBchicken: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togAchicken: i;chicken spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBchicken: i;egg;n;&fBaby;c;csplit %player% dset baby 
 	#
-	togAwolf: i;wolf spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBwolf: i;egg;n;&fBaby;c;execute console command /dset adult %player%
-	togWwolf: i;raw salmon;n;&fWild;execute console command /dset wild %player%
-	togTwolf: i;lead;n;&fTamed;execute console command /dset tamed %player%
-	tog1wolf: i;red wool;n;&fDefault;c;execute console command /dset red %player%
-	tog2wolf: i;orange wool;n;&fOrange;c;execute console command /dset orange %player%
-	tog3wolf: i;magenta wool;n;&fMagenta;c;execute console command /dset magenta %player%
-	tog4wolf: i;light blue wool;n;&fLight Blue;c;execute console command /dset light_blue %player%
-	tog5wolf: i;yellow wool;n;&fYellow;c;execute console command /dset yellow %player%
-	tog6wolf: i;lime wool;n;&fLime;c;execute console command /dset lime %player%
-	tog7wolf: i;pink wool;n;&fPink;c;execute console command /dset pink %player%
-	tog8wolf: i;gray wool;n;&fGray;c;execute console command /dset gray %player%
-	tog9wolf: i;light gray wool;n;&fSilver;c;execute console command /dset silver %player%
-	tog10wolf: i;cyan wool;n;&fCyan;c;execute console command /dset cyan %player%
-	tog11wolf: i;purple wool;n;&fPurple;c;execute console command /dset purple %player%
-	tog12wolf: i;blue wool;n;&fBlue;c;execute console command /dset blue %player%
-	tog13wolf: i;brown wool;n;&fBrown;c;execute console command /dset brown %player%
-	tog14wolf: i;green wool;n;&fGreen;c;execute console command /dset green %player%
-	tog15wolf: i;black wool;n;&fBlack;c;execute console command /dset black %player%
-	togRCwolf: i;bookshelf;n;&fRandom Collar Colour;c;execute console command /dset rc %player% 
+	togAwolf: i;wolf spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBwolf: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togWwolf: i;raw salmon;n;&fWild;csplit %player% dset wild 
+	togTwolf: i;lead;n;&fTamed;csplit %player% dset tamed 
+	tog1wolf: i;red wool;n;&fDefault;c;csplit %player% dset red 
+	tog2wolf: i;orange wool;n;&fOrange;c;csplit %player% dset orange 
+	tog3wolf: i;magenta wool;n;&fMagenta;c;csplit %player% dset magenta 
+	tog4wolf: i;light blue wool;n;&fLight Blue;c;csplit %player% dset light_blue 
+	tog5wolf: i;yellow wool;n;&fYellow;c;csplit %player% dset yellow 
+	tog6wolf: i;lime wool;n;&fLime;c;csplit %player% dset lime 
+	tog7wolf: i;pink wool;n;&fPink;c;csplit %player% dset pink 
+	tog8wolf: i;gray wool;n;&fGray;c;csplit %player% dset gray 
+	tog9wolf: i;light gray wool;n;&fSilver;c;csplit %player% dset silver 
+	tog10wolf: i;cyan wool;n;&fCyan;c;csplit %player% dset cyan 
+	tog11wolf: i;purple wool;n;&fPurple;c;csplit %player% dset purple 
+	tog12wolf: i;blue wool;n;&fBlue;c;csplit %player% dset blue 
+	tog13wolf: i;brown wool;n;&fBrown;c;csplit %player% dset brown 
+	tog14wolf: i;green wool;n;&fGreen;c;csplit %player% dset green 
+	tog15wolf: i;black wool;n;&fBlack;c;csplit %player% dset black 
+	togRCwolf: i;bookshelf;n;&fRandom Collar Colour;c;csplit %player% dset rc  
 	#
-	togAmooshroom: i;mooshroom spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBmooshroom: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togAmooshroom: i;mooshroom spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBmooshroom: i;egg;n;&fBaby;c;csplit %player% dset baby 
 	#
-	togAocelot: i;ocelot spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBocelot: i;egg;n;&fBaby;c;execute console command /dset adult %player%
-	togWocelot: i;raw salmon;n;&fWild;c;execute console command /dset wild %player%
-	togTocelot: i;lead;n;&fTamed;c;execute console command /dset tamed %player%
-	tog1ocelot: i;black wool;n;&fBlack Cat;c;execute console command /dset ct2 %player%
-	tog2ocelot: i;red wool;n;&fRed Cat;c;execute console command /dset ct3 %player%
-	tog3ocelot: i;wool;n;&fSiamese Cat;c;execute console command /dset ct4 %player%
-	togRTocelot: i;bookshelf;n;&fRandom Type;c;execute console command /dset rt %player% 
+	togAocelot: i;ocelot spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset ocelot2
+	togBocelot: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset ocelot2
+	togWocelot: i;raw salmon;n;&fWild;c;csplit %player% dset wild disguiseset ocelot3
+	togTocelot: i;lead;n;&fTamed;c;csplit %player% dset tamed disguiseset ocelot3
+	tog1ocelot: i;black wool;n;&fBlack Cat;c;csplit %player% dset ct2 disguiseset ocelot4
+	tog2ocelot: i;red wool;n;&fRed Cat;c;csplit %player% dset ct3 disguiseset ocelot4
+	tog3ocelot: i;wool;n;&fSiamese Cat;c;csplit %player% dset ct4 disguiseset ocelot4
+	togRTocelot: i;bookshelf;n;&fRandom Type;c;csplit %player% dset rt disguiseset ocelot4
 	#
-	togHorse: i;horse spawn egg;n;&fHorse;c;execute console command /dset horse %player%
-	togDonkey: i;horse spawn egg;n;&fDonkey;c;execute console command /dset donkey %player%
-	togMule: i;horse spawn egg;n;&fMule;c;execute console command /dset mule %player%
-	togAhorse: i;horse spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBhorse: i;egg;n;&fBaby;c;execute console command /dset adult %player%
-	togC1horse: i;quartz block;n;&fWhite;c;execute console command /dset hc1 %player%
-	togC2horse: i;white stained clay;n;&fCreamy;c;execute console command /dset hc2 %player%
-	togC3horse: i;hardened clay;n;&fChestnut;c;execute console command /dset hc3 %player%
-	togC4horse: i;brown stained clay;n;&fBrown;c;execute console command /dset hc4 %player%
-	togC5horse: i;block of coal;n;&fBlack;c;execute console command /dset hc5 %player%
-	togC6horse: i;cyan stained clay;n;&fGray;c;execute console command /dset hc6 %player%
-	togC7horse: i;black stained clay;n;&fDark Brown;c;execute console command /dset hc7 %player%
-	togRChorse: i;bookshelf;n;&fRandom Colour;c;execute console command /dset rhc %player% 
-	togS1horse: i;brown wool;n;&fPlain;c;execute console command /dset hs1 %player%
-	togS2horse: i;nether quartz ore;n;&fWhite;c;execute console command /dset hs2 %player%
-	togS3horse: i;birch log;n;&fWhitefield;c;execute console command /dset hs3 %player%
-	togS4horse: i;pumpkin seeds;n;&fWhite Dots;c;execute console command /dset hs4 %player%
-	togS5horse: i;melon seeds;n;&fBlack Dots;c;execute console command /dset hs5 %player%
-	togRShorse: i;bookshelf;n;&fRandom Style;c;execute console command /dset rhs %player% 
-	togAdonkey: i;horse spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBdonkey: i;egg;n;&fBaby;c;execute console command /dset adult %player%
-	togAmule: i;horse spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBmule: i;egg;n;&fBaby;c;execute console command /dset adult %player%
+	togHorse: i;horse spawn egg;n;&fHorse;c;csplit %player% dset horse 
+	togDonkey: i;horse spawn egg;n;&fDonkey;c;csplit %player% dset donkey 
+	togMule: i;horse spawn egg;n;&fMule;c;csplit %player% dset mule 
+	togAhorse: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBhorse: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togC1horse: i;quartz block;n;&fWhite;c;csplit %player% dset hc1 
+	togC2horse: i;white stained clay;n;&fCreamy;c;csplit %player% dset hc2 
+	togC3horse: i;hardened clay;n;&fChestnut;c;csplit %player% dset hc3 
+	togC4horse: i;brown stained clay;n;&fBrown;c;csplit %player% dset hc4 
+	togC5horse: i;block of coal;n;&fBlack;c;csplit %player% dset hc5 
+	togC6horse: i;cyan stained clay;n;&fGray;c;csplit %player% dset hc6 
+	togC7horse: i;black stained clay;n;&fDark Brown;c;csplit %player% dset hc7 
+	togRChorse: i;bookshelf;n;&fRandom Colour;c;csplit %player% dset rhc  
+	togS1horse: i;brown wool;n;&fPlain;c;csplit %player% dset hs1 
+	togS2horse: i;nether quartz ore;n;&fWhite;c;csplit %player% dset hs2 
+	togS3horse: i;birch log;n;&fWhitefield;c;csplit %player% dset hs3 
+	togS4horse: i;pumpkin seeds;n;&fWhite Dots;c;csplit %player% dset hs4 
+	togS5horse: i;melon seeds;n;&fBlack Dots;c;csplit %player% dset hs5 
+	togRShorse: i;bookshelf;n;&fRandom Style;c;csplit %player% dset rhs  
+	togAdonkey: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBdonkey: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togAmule: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBmule: i;egg;n;&fBaby;c;csplit %player% dset baby 
 	
 	#
-	togAvillager: i;villager spawn egg;n;&fAdult;c;execute console command /dset adult %player%
-	togBvillager: i;egg;n;&fBaby;c;execute console command /dset adult %player%
-	tog1villager: i;wooden hoe;n;&fFarmer;c;execute console command /dset p1 %player%
-	tog2villager: i;book;n;&fLibrarian;c;execute console command /dset p2 %player%
-	tog3villager: i;nether star;n;&fPriest;c;execute console command /dset p3 %player%
-	tog4villager: i;anvil;n;&fBlacksmith;c;execute console command /dset p4 %player%
-	tog5villager: i;raw beef;n;&fButcher;c;execute console command /dset p5 %player%
-	togRPvillager: i;bookshelf;n;&fRandom Profession;c;execute console command /dset rp %player% 
+	togAvillager: i;villager spawn egg;n;&fAdult;c;csplit %player% dset adult 
+	togBvillager: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	tog1villager: i;wooden hoe;n;&fFarmer;c;csplit %player% dset p1 
+	tog2villager: i;book;n;&fLibrarian;c;csplit %player% dset p2 
+	tog3villager: i;nether star;n;&fPriest;c;csplit %player% dset p3 
+	tog4villager: i;anvil;n;&fBlacksmith;c;csplit %player% dset p4 
+	tog5villager: i;raw beef;n;&fButcher;c;csplit %player% dset p5 
+	togRPvillager: i;bookshelf;n;&fRandom Profession;c;csplit %player% dset rp  
 	#
 	eDspecial: s;45;i;dragon egg;n;&9Specials
 	dDspecial: s;45;i;dragon egg;n;&9Specials
@@ -390,6 +390,12 @@ command /sudo <player> <text>:
 	executable by: console
 	trigger:
 		make argument 1 execute command "%argument 2%"
+		
+command /csplit <player> <text> <text> <text> <text>:
+	executable by: console
+	trigger:
+		make console execute command "/%argument 2% %argument 3% %argument 1%"
+		make argument 1 execute command "/%argument 4% %argument 5%"
 		
 command /purge <text>:
 	executable by: players
@@ -3890,8 +3896,18 @@ command /disguiseset [<text>]:
 			if {db_effectshop.disguises.ocelot.%player%} is true:
 				wait 1 second
 				show "s;3;{@togAocelot};s;7;{@togBocelot}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.ocelot.%player%} is false:
+				send "&fYou need to unlock the ocelot to disguise as it." to player
+				stop
+		if argument is "ocelot2":
+			if {db_effectshop.disguises.ocelot.%player%} is true:
 				wait 1 second
 				show "s;3;{@togWocelot};s;7;{@togTocelot}" with 1 row named "&2Wild or Tamed?" to player
+			if {db_effectshop.disguises.ocelot.%player%} is false:
+				send "&fYou need to unlock the ocelot to disguise as it." to player
+				stop
+		if argument is "ocelot3":
+			if {db_effectshop.disguises.ocelot.%player%} is true:
 				wait 1 second
 				if {disguise.tamed.%player%} is "wild":
 					execute console command "/disguiseplayer %player% ocelot setBaby %{disguise.baby.%player%}% setTamed false"
@@ -3902,6 +3918,12 @@ command /disguiseset [<text>]:
 					send "&eYou are now disguised as a ocelot." to player
 					stop
 				show "s;1;{@tog1ocelot};s;3;{@tog2ocelot};s;5;{@tog3ocelot};s;9;{@togRTocelot}" with 1 row named "&2Choose a type" to player
+			if {db_effectshop.disguises.ocelot.%player%} is false:
+				send "&fYou need to unlock the ocelot to disguise as it." to player
+				stop
+		if argument is "ocelot4":
+			if {db_effectshop.disguises.ocelot.%player%} is true:
+				wait 1 second
 				execute console command "/disguiseplayer %player% ocelot setBaby %{disguise.baby.%player%}% setTamed true setType %{disguise.cat.type.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 				set {effects.disguises.ocelot.%player%} to 1
@@ -3911,6 +3933,7 @@ command /disguiseset [<text>]:
 				stop
 			if {db_effectshop.disguises.ocelot.%player%} is false:
 				send "&fYou need to unlock the ocelot to disguise as it." to player
+				stop
 		if argument is "horse":
 			if {db_effectshop.disguises.horse.%player%} is true:
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
