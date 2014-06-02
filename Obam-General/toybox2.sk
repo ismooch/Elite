@@ -60,72 +60,72 @@ options:
 	#
 	#replace dStop item with barrier after 1.8
 	#
-	togAzombie: i;zombie spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBzombie: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togAzombie: i;zombie spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset zombie2
+	togBzombie: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset zombie2
 	#
-	togAslime: i;ghast tear;n;&fSmall;c;csplit %player% dset size1 
-	togBslime: i;snowball;n;&fMedium;c;csplit %player% dset size2 
-	togCslime: i;snow;n;&fLarge;c;csplit %player% dset size3 
+	togAslime: i;ghast tear;n;&fSmall;c;csplit %player% dset size1 disguiseset slime2
+	togBslime: i;snowball;n;&fMedium;c;csplit %player% dset size2 disguiseset slime2
+	togCslime: i;snow;n;&fLarge;c;csplit %player% dset size3 disguiseset slime2
 	#
-	togApigman: i;zombie pigman spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBpigman: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togApigman: i;zombie pigman spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset pigman2
+	togBpigman: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset pigman2
 	#
-	togAmagma: i;ghast tear;n;&fSmall;c;csplit %player% dset size1 
-	togBmagma: i;snowball;n;&fMedium;c;csplit %player% dset size2 
-	togCmagma: i;snow;n;&fLarge;c;csplit %player% dset size3 
+	togAmagma: i;ghast tear;n;&fSmall;c;csplit %player% dset size1 disguiseset magma2
+	togBmagma: i;snowball;n;&fMedium;c;csplit %player% dset size2 disguiseset magma2
+	togCmagma: i;snow;n;&fLarge;c;csplit %player% dset size3 disguiseset magma2
 	#
-	togApig: i;pig spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBpig: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togApig: i;pig spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset pig2
+	togBpig: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset pig2
 	#
-	togAsheep: i;sheep spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBsheep: i;egg;n;&fBaby;c;csplit %player% dset baby 
-	tog1sheep: i;wool;n;&fDefault;c;csplit %player% dset white 
-	tog2sheep: i;orange wool;n;&fOrange;c;csplit %player% dset orange 
-	tog3sheep: i;magenta wool;n;&fMagenta;c;csplit %player% dset magenta 
-	tog4sheep: i;light blue wool;n;&fLight Blue;c;csplit %player% dset light_blue 
-	tog5sheep: i;yellow wool;n;&fYellow;c;csplit %player% dset yellow 
-	tog6sheep: i;lime wool;n;&fLime;c;csplit %player% dset lime 
-	tog7sheep: i;pink wool;n;&fPink;c;csplit %player% dset pink 
-	tog8sheep: i;gray wool;n;&fGray;c;csplit %player% dset gray 
-	tog9sheep: i;light gray wool;n;&fSilver;c;csplit %player% dset silver 
-	tog10sheep: i;cyan wool;n;&fCyan;c;csplit %player% dset cyan 
-	tog11sheep: i;purple wool;n;&fPurple;c;csplit %player% dset purple 
-	tog12sheep: i;blue wool;n;&fBlue;c;csplit %player% dset blue 
-	tog13sheep: i;brown wool;n;&fBrown;c;csplit %player% dset brown 
-	tog14sheep: i;green wool;n;&fGreen;c;csplit %player% dset green 
-	tog15sheep: i;red wool;n;&fRed;c;csplit %player% dset red 
-	tog16sheep: i;black wool;n;&fBlack;c;csplit %player% dset black 
-	togRCsheep: i;bookshelf;n;&fRandom Colour;c;csplit %player% dset rc  
+	togAsheep: i;sheep spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset sheep2
+	togBsheep: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset sheep2
+	tog1sheep: i;wool;n;&fDefault;c;csplit %player% dset white disguiseset sheep3
+	tog2sheep: i;orange wool;n;&fOrange;c;csplit %player% dset orange disguiseset sheep3
+	tog3sheep: i;magenta wool;n;&fMagenta;c;csplit %player% dset magenta disguiseset sheep3
+	tog4sheep: i;light blue wool;n;&fLight Blue;c;csplit %player% dset light_blue disguiseset sheep3
+	tog5sheep: i;yellow wool;n;&fYellow;c;csplit %player% dset yellow disguiseset sheep3
+	tog6sheep: i;lime wool;n;&fLime;c;csplit %player% dset lime disguiseset sheep3
+	tog7sheep: i;pink wool;n;&fPink;c;csplit %player% dset pink disguiseset sheep3
+	tog8sheep: i;gray wool;n;&fGray;c;csplit %player% dset gray disguiseset sheep3
+	tog9sheep: i;light gray wool;n;&fSilver;c;csplit %player% dset silver disguiseset sheep3
+	tog10sheep: i;cyan wool;n;&fCyan;c;csplit %player% dset cyan disguiseset sheep3
+	tog11sheep: i;purple wool;n;&fPurple;c;csplit %player% dset purple disguiseset sheep3
+	tog12sheep: i;blue wool;n;&fBlue;c;csplit %player% dset blue disguiseset sheep3
+	tog13sheep: i;brown wool;n;&fBrown;c;csplit %player% dset brown disguiseset sheep3
+	tog14sheep: i;green wool;n;&fGreen;c;csplit %player% dset green disguiseset sheep3
+	tog15sheep: i;red wool;n;&fRed;c;csplit %player% dset red disguiseset sheep3
+	tog16sheep: i;black wool;n;&fBlack;c;csplit %player% dset black disguiseset sheep3
+	togRCsheep: i;bookshelf;n;&fRandom Colour;c;csplit %player% dset rc  disguiseset sheep3
 	#
-	togAcow: i;cow spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBcow: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togAcow: i;cow spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset cow2
+	togBcow: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset cow2
 	#
-	togAchicken: i;chicken spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBchicken: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togAchicken: i;chicken spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset chicken2
+	togBchicken: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset chicken2
 	#
-	togAwolf: i;wolf spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBwolf: i;egg;n;&fBaby;c;csplit %player% dset baby 
-	togWwolf: i;raw salmon;n;&fWild;csplit %player% dset wild 
-	togTwolf: i;lead;n;&fTamed;csplit %player% dset tamed 
-	tog1wolf: i;red wool;n;&fDefault;c;csplit %player% dset red 
-	tog2wolf: i;orange wool;n;&fOrange;c;csplit %player% dset orange 
-	tog3wolf: i;magenta wool;n;&fMagenta;c;csplit %player% dset magenta 
-	tog4wolf: i;light blue wool;n;&fLight Blue;c;csplit %player% dset light_blue 
-	tog5wolf: i;yellow wool;n;&fYellow;c;csplit %player% dset yellow 
-	tog6wolf: i;lime wool;n;&fLime;c;csplit %player% dset lime 
-	tog7wolf: i;pink wool;n;&fPink;c;csplit %player% dset pink 
-	tog8wolf: i;gray wool;n;&fGray;c;csplit %player% dset gray 
-	tog9wolf: i;light gray wool;n;&fSilver;c;csplit %player% dset silver 
-	tog10wolf: i;cyan wool;n;&fCyan;c;csplit %player% dset cyan 
-	tog11wolf: i;purple wool;n;&fPurple;c;csplit %player% dset purple 
-	tog12wolf: i;blue wool;n;&fBlue;c;csplit %player% dset blue 
-	tog13wolf: i;brown wool;n;&fBrown;c;csplit %player% dset brown 
-	tog14wolf: i;green wool;n;&fGreen;c;csplit %player% dset green 
-	tog15wolf: i;black wool;n;&fBlack;c;csplit %player% dset black 
-	togRCwolf: i;bookshelf;n;&fRandom Collar Colour;c;csplit %player% dset rc  
+	togAwolf: i;wolf spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset wolf2
+	togBwolf: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset wolf2
+	togWwolf: i;raw salmon;n;&fWild;csplit %player% dset wild disguiseset wolf3
+	togTwolf: i;lead;n;&fTamed;csplit %player% dset tamed disguiseset wolf3
+	tog1wolf: i;red wool;n;&fDefault;c;csplit %player% dset red disguiseset wolf4
+	tog2wolf: i;orange wool;n;&fOrange;c;csplit %player% dset orange disguiseset wolf4
+	tog3wolf: i;magenta wool;n;&fMagenta;c;csplit %player% dset magenta disguiseset wolf4
+	tog4wolf: i;light blue wool;n;&fLight Blue;c;csplit %player% dset light_blue disguiseset wolf4
+	tog5wolf: i;yellow wool;n;&fYellow;c;csplit %player% dset yellow disguiseset wolf4
+	tog6wolf: i;lime wool;n;&fLime;c;csplit %player% dset lime disguiseset wolf4
+	tog7wolf: i;pink wool;n;&fPink;c;csplit %player% dset pink disguiseset wolf4
+	tog8wolf: i;gray wool;n;&fGray;c;csplit %player% dset gray disguiseset wolf4
+	tog9wolf: i;light gray wool;n;&fSilver;c;csplit %player% dset silver disguiseset wolf4
+	tog10wolf: i;cyan wool;n;&fCyan;c;csplit %player% dset cyan disguiseset wolf4
+	tog11wolf: i;purple wool;n;&fPurple;c;csplit %player% dset purple disguiseset wolf4
+	tog12wolf: i;blue wool;n;&fBlue;c;csplit %player% dset blue disguiseset wolf4
+	tog13wolf: i;brown wool;n;&fBrown;c;csplit %player% dset brown disguiseset wolf4
+	tog14wolf: i;green wool;n;&fGreen;c;csplit %player% dset green disguiseset wolf4
+	tog15wolf: i;black wool;n;&fBlack;c;csplit %player% dset black disguiseset wolf4
+	togRCwolf: i;bookshelf;n;&fRandom Collar Colour;c;csplit %player% dset rc disguiseset wolf4
 	#
-	togAmooshroom: i;mooshroom spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBmooshroom: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togAmooshroom: i;mooshroom spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset mooshroom2
+	togBmooshroom: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset mooshroom2
 	#
 	togAocelot: i;ocelot spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset ocelot2
 	togBocelot: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset ocelot2
@@ -136,42 +136,42 @@ options:
 	tog3ocelot: i;wool;n;&fSiamese Cat;c;csplit %player% dset ct4 disguiseset ocelot4
 	togRTocelot: i;bookshelf;n;&fRandom Type;c;csplit %player% dset rt disguiseset ocelot4
 	#
-	togHorse: i;horse spawn egg;n;&fHorse;c;csplit %player% dset horse 
-	togDonkey: i;horse spawn egg;n;&fDonkey;c;csplit %player% dset donkey 
-	togMule: i;horse spawn egg;n;&fMule;c;csplit %player% dset mule 
-	togAhorse: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBhorse: i;egg;n;&fBaby;c;csplit %player% dset baby 
-	togC1horse: i;quartz block;n;&fWhite;c;csplit %player% dset hc1 
-	togC2horse: i;white stained clay;n;&fCreamy;c;csplit %player% dset hc2 
-	togC3horse: i;hardened clay;n;&fChestnut;c;csplit %player% dset hc3 
-	togC4horse: i;brown stained clay;n;&fBrown;c;csplit %player% dset hc4 
-	togC5horse: i;block of coal;n;&fBlack;c;csplit %player% dset hc5 
-	togC6horse: i;cyan stained clay;n;&fGray;c;csplit %player% dset hc6 
-	togC7horse: i;black stained clay;n;&fDark Brown;c;csplit %player% dset hc7 
-	togRChorse: i;bookshelf;n;&fRandom Colour;c;csplit %player% dset rhc  
-	togS1horse: i;brown wool;n;&fPlain;c;csplit %player% dset hs1 
-	togS2horse: i;nether quartz ore;n;&fWhite;c;csplit %player% dset hs2 
-	togS3horse: i;birch log;n;&fWhitefield;c;csplit %player% dset hs3 
-	togS4horse: i;pumpkin seeds;n;&fWhite Dots;c;csplit %player% dset hs4 
-	togS5horse: i;melon seeds;n;&fBlack Dots;c;csplit %player% dset hs5 
-	togRShorse: i;bookshelf;n;&fRandom Style;c;csplit %player% dset rhs  
-	togAdonkey: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBdonkey: i;egg;n;&fBaby;c;csplit %player% dset baby 
-	togAmule: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBmule: i;egg;n;&fBaby;c;csplit %player% dset baby 
+	togHorse: i;horse spawn egg;n;&fHorse;c;sudo %player% disguiseset horse2
+	togDonkey: i;horse spawn egg;n;&fDonkey;c;sudo %player% disguiseset donkey2
+	togMule: i;horse spawn egg;n;&fMule;c;sudo %player% disguiseset mule2
+	togAhorse: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset horse3
+	togBhorse: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset horse3
+	togC1horse: i;quartz block;n;&fWhite;c;csplit %player% dset hc1 disguiseset horse4
+	togC2horse: i;white stained clay;n;&fCreamy;c;csplit %player% dset hc2 disguiseset horse4
+	togC3horse: i;hardened clay;n;&fChestnut;c;csplit %player% dset hc3 disguiseset horse4
+	togC4horse: i;brown stained clay;n;&fBrown;c;csplit %player% dset hc4 disguiseset horse4
+	togC5horse: i;block of coal;n;&fBlack;c;csplit %player% dset hc5 disguiseset horse4
+	togC6horse: i;cyan stained clay;n;&fGray;c;csplit %player% dset hc6 disguiseset horse4
+	togC7horse: i;black stained clay;n;&fDark Brown;c;csplit %player% dset hc7 disguiseset horse4
+	togRChorse: i;bookshelf;n;&fRandom Colour;c;csplit %player% dset rhc disguiseset horse4
+	togS1horse: i;brown wool;n;&fPlain;c;csplit %player% dset hs1 disguiseset horse5
+	togS2horse: i;nether quartz ore;n;&fWhite;c;csplit %player% dset hs2 disguiseset horse5
+	togS3horse: i;birch log;n;&fWhitefield;c;csplit %player% dset hs3 disguiseset horse5
+	togS4horse: i;pumpkin seeds;n;&fWhite Dots;c;csplit %player% dset hs4 disguiseset horse5
+	togS5horse: i;melon seeds;n;&fBlack Dots;c;csplit %player% dset hs5 disguiseset horse5
+	togRShorse: i;bookshelf;n;&fRandom Style;c;csplit %player% dset rhs disguiseset horse5
+	togAdonkey: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset donkey3
+	togBdonkey: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset donkey3
+	togAmule: i;horse spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset mule3
+	togBmule: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset mule3
 	
 	#
-	togAvillager: i;villager spawn egg;n;&fAdult;c;csplit %player% dset adult 
-	togBvillager: i;egg;n;&fBaby;c;csplit %player% dset baby 
-	tog1villager: i;wooden hoe;n;&fFarmer;c;csplit %player% dset p1 
-	tog2villager: i;book;n;&fLibrarian;c;csplit %player% dset p2 
-	tog3villager: i;nether star;n;&fPriest;c;csplit %player% dset p3 
-	tog4villager: i;anvil;n;&fBlacksmith;c;csplit %player% dset p4 
-	tog5villager: i;raw beef;n;&fButcher;c;csplit %player% dset p5 
-	togRPvillager: i;bookshelf;n;&fRandom Profession;c;csplit %player% dset rp  
+	togAvillager: i;villager spawn egg;n;&fAdult;c;csplit %player% dset adult disguiseset villager2
+	togBvillager: i;egg;n;&fBaby;c;csplit %player% dset baby disguiseset villager2
+	tog1villager: i;wooden hoe;n;&fFarmer;c;csplit %player% dset p1 disguiseset villager3
+	tog2villager: i;book;n;&fLibrarian;c;csplit %player% dset p2 disguiseset villager3
+	tog3villager: i;nether star;n;&fPriest;c;csplit %player% dset p3 disguiseset villager3
+	tog4villager: i;anvil;n;&fBlacksmith;c;csplit %player% dset p4 disguiseset villager3
+	tog5villager: i;raw beef;n;&fButcher;c;csplit %player% dset p5 disguiseset villager3
+	togRPvillager: i;bookshelf;n;&fRandom Profession;c;csplit %player% dset rp disguiseset villager3
 	#
-	eDspecial: s;45;i;dragon egg;n;&9Specials
-	dDspecial: s;45;i;dragon egg;n;&9Specials
+	eDspecial: s;45;i;dragon egg;n;&9Specials;c;sudo %player% disguiseset special
+	dDspecial: s;45;i;dragon egg;n;&9Specials;c;sudo %player% disguiseset special
 	
 on join:
 	#execute console command "/mv tp %player% Death-Hub"
@@ -3835,8 +3835,18 @@ command /disguiseset [<text>]:
 			if {db_effectshop.disguises.sheep.%player%} is true:
 				wait 1 second
 				show "s;3;{@togAsheep};s;7;{@togBsheep}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.sheep.%player%} is false:
+				send "&fYou need to unlock the sheep to disguise as it." to player
+				stop
+		if argument is "sheep2":
+			if {db_effectshop.disguises.sheep.%player%} is true:
 				wait 1 second
 				show "s;1;{@tog2sheep};s;3;{@tog3sheep};s;5;{@tog4sheep};s;7;{@tog5sheep};s;9;{@tog6sheep};s;10;{@tog7sheep};s;12;{@tog8sheep};s;14;{@tog9sheep};s;16;{@tog10sheep};s;18;{@tog11sheep};s;19;{@tog12sheep};s;21;{@tog13sheep};s;23;{@tog14sheep};s;25;{@tog15sheep};s;27;{@tog16sheep};s;37;{@tog1sheep};s;45;{@togRCsheep}" with 5 rows named "&2Select a colour" to player
+			if {db_effectshop.disguises.sheep.%player%} is false:
+				send "&fYou need to unlock the sheep to disguise as it." to player
+				stop
+		if argument is "sheep3":
+			if {db_effectshop.disguises.sheep.%player%} is true:
 				wait 1 second
 				execute console command "/disguiseplayer %player% sheep setBaby %{disguise.baby.%player%}% setColor %{disguise.color.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
@@ -3852,6 +3862,11 @@ command /disguiseset [<text>]:
 			if {db_effectshop.disguises.cow.%player%} is true:
 				wait 1 second
 				show "s;3;{@togAcow};s;7;{@togBcow}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.cow.%player%} is false:
+				send "&fYou need to unlock the cow to disguise as it." to player
+				stop
+		if argument is "cow2":
+			if {db_effectshop.disguises.cow.%player%} is true:
 				wait 1 second
 				execute console command "/disguiseplayer %player% cow setBaby %{disguise.baby.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
@@ -3867,6 +3882,11 @@ command /disguiseset [<text>]:
 			if {db_effectshop.disguises.chicken.%player%} is true:
 				wait 1 second
 				show "s;3;{@togAchicken};s;7;{@togBchicken}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.chicken.%player%} is false:
+				send "&fYou need to unlock the chicken to disguise as it." to player
+				stop
+		if argument is "chicken2":
+			if {db_effectshop.disguises.chicken.%player%} is true:
 				wait 1 second
 				execute console command "/disguiseplayer %player% chicken setBaby %{disguise.baby.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
@@ -3898,8 +3918,18 @@ command /disguiseset [<text>]:
 			if {db_effectshop.disguises.wolf.%player%} is true:
 				wait 1 second
 				show "s;3;{@togAwolf};s;7;{@togBwolf}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.wolf.%player%} is false:
+				send "&fYou need to unlock the wolf to disguise as it." to player
+				stop
+		if argument is "wolf2":
+			if {db_effectshop.disguises.wolf.%player%} is true:
 				wait 1 second
 				show "s;3;{@togWwolf};s;7;{@togTwolf}" with 1 row named "&2Wild or Tamed?" to player
+			if {db_effectshop.disguises.wolf.%player%} is false:
+				send "&fYou need to unlock the wolf to disguise as it." to player
+				stop
+		if argument is "wolf3":
+			if {db_effectshop.disguises.wolf.%player%} is true:
 				wait 1 second
 				if {disguise.tamed.%player%} is "wild":
 					execute console command "/disguiseplayer %player% wolf setBaby %{disguise.baby.%player%}% setTamed false"
@@ -3911,6 +3941,11 @@ command /disguiseset [<text>]:
 					send "&eYou are now disguised as a wolf." to player
 					stop
 				show "s;1;{@tog2sheep};s;3;{@tog3sheep};s;5;{@tog4sheep};s;7;{@tog5sheep};s;9;{@tog6sheep};s;10;{@tog7sheep};s;12;{@tog8sheep};s;14;{@tog9sheep};s;16;{@tog10sheep};s;18;{@tog11sheep};s;19;{@tog12sheep};s;21;{@tog13sheep};s;23;{@tog14sheep};s;25;{@tog15sheep};s;27;{@tog16sheep};s;37;{@tog1sheep};s;45;{@togRCsheep}" with 5 rows named "&2Select a colour" to player
+			if {db_effectshop.disguises.wolf.%player%} is false:
+				send "&fYou need to unlock the wolf to disguise as it." to player
+				stop
+		if argument is "wolf4":
+			if {db_effectshop.disguises.wolf.%player%} is true:
 				wait 1 second
 				execute console command "/disguiseplayer %player% sheep setBaby %{disguise.baby.%player%}% setCollarColor %{disguise.color.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
@@ -3927,6 +3962,11 @@ command /disguiseset [<text>]:
 			if {db_effectshop.disguises.mooshroom.%player%} is true:
 				wait 1 second
 				show "s;3;{@togAmooshroom};s;7;{@togBmooshroom}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.mooshroom.%player%} is false:
+				send "&fYou need to unlock the mooshroom to disguise as it." to player
+				stop
+		if argument is "mooshroom2":
+			if {db_effectshop.disguises.mooshroom.%player%} is true:
 				wait 1 second
 				execute console command "/disguiseplayer %player% mushroom_cow setBaby %{disguise.baby.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
@@ -3982,23 +4022,107 @@ command /disguiseset [<text>]:
 				stop
 		if argument is "horse":
 			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				show "s;2;{@togHorse};s;5;{@togDonkey};s;8;{@togMule}" with 1 row named "&2Choose an Animal" to player
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as it." to player
+				stop
+		if argument is "horse2":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				show "s;3;{@togAhorse};s;7;{@togBhorse}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as it." to player
+				stop
+		if argument is "horse3":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				show "s;1;{@togC1horse};s;2;{@togC2horse};s;3;{@togC3horse};s;4;{@togC4horse};s;5;{@togC5horse};s;6;{@togC6horse};s;7;{@togC7horse};s;9;{@togRChorse}" with 1 row named "&2Choose a color" to player
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as it." to player
+				stop
+		if argument is "horse4":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				show "s;1;{@togS1horse};s;3;{@togS2horse};s;4;{@togS3horse};s;5;{@togS4horse};s;6;{@togS5horse};s;9;{@togRShorse}" with 1 row named "&2Choose a style" to player
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as it." to player
+				stop
+		if argument is "horse5":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				execute console command "/disguiseplayer %player% horse setBaby %{disguise.baby.%player%}% setColor %{disguise.horse.color.%player%}% setStyle %{disguise.horse.style.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 				set {effects.disguises.horse.%player%} to 1
 				set {disguise.set.%player%} to true
 				set {disguise.type.%player%} to "horse"
-				execute console command "/disguiseplayer %player% horse"
 				send "&eYou are now disguised as a horse." to player
 				stop
 			if {db_effectshop.disguises.horse.%player%} is false:
 				send "&fYou need to unlock the horse to disguise as it." to player
 				stop
+		if argument is "donkey2":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				show "s;3;{@togAdonkey};s;7;{@togBdonkey}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as a donkey." to player
+				stop
+		if argument is "donkey3":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				execute console command "/disguiseplayer %player% donkey setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.horse.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "horse"
+				send "&eYou are now disguised as a donkey." to player
+				stop
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as a donkey." to player
+				stop
+		if argument is "mule2":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				show "s;3;{@togAmule};s;7;{@togBmule}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as a mule." to player
+				stop
+		if argument is "mule3":
+			if {db_effectshop.disguises.horse.%player%} is true:
+				wait 1 second
+				execute console command "/disguiseplayer %player% mule setBaby %{disguise.baby.%player%}%"
+				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
+				set {effects.disguises.horse.%player%} to 1
+				set {disguise.set.%player%} to true
+				set {disguise.type.%player%} to "horse"
+				send "&eYou are now disguised as a mule." to player
+				stop
+			if {db_effectshop.disguises.horse.%player%} is false:
+				send "&fYou need to unlock the horse to disguise as a mule." to player
+				stop
 		if argument is "villager":
 			if {db_effectshop.disguises.villager.%player%} is true:
+				wait 1 second
+				show "s;3;{@togAvillager};s;7;{@togBvillager}" with 1 row named "&2Choose an age" to player
+			if {db_effectshop.disguises.villager.%player%} is false:
+				send "&fYou need to unlock the villager to disguise as it." to player
+				stop
+		if argument is "villager2":
+			if {db_effectshop.disguises.villager.%player%} is true:
+				wait 1 second
+				show "s;2;{@tog1villager};s;3;{@tog2villager};s;4;{@tog3villager};s;5;{@tog4villager};s;6;{@tog5villager};s;9;{@togRPvillager};" with 1 row named "&2Choose a profession" to player
+			if {db_effectshop.disguises.villager.%player%} is false:
+				send "&fYou need to unlock the villager to disguise as it." to player
+				stop
+		if argument is "villager3":
+			if {db_effectshop.disguises.villager.%player%} is true:
+				wait 1 second
+				execute console command "/disguiseplayer %player% villager setBaby %{disguise.baby.%player%}% setProfession %{disguise.profession.%player%}%"
 				set {effects.disguises.%{disguise.type.%player%}%.%player%} to 0
 				set {effects.disguises.villager.%player%} to 1
 				set {disguise.set.%player%} to true
 				set {disguise.type.%player%} to "villager"
-				execute console command "/disguiseplayer %player% villager"
 				send "&eYou are now disguised as a villager." to player
 				stop
 			if {db_effectshop.disguises.villager.%player%} is false:
@@ -4271,12 +4395,3 @@ command /dset <text> <player>:
 			if {_temp.pick.rt.%argument 2%} is 3:
 				set {disguise.cat.type.%argument 2%} to "siamese_cat"
 				stop
-		if argument 1 is "horse":
-			set {disguise.horse.set.%argument 2%} to "1"
-			stop
-		if argument 1 is "donkey":
-			set {disguise.horse.set.%argument 2%} to "2"
-			stop
-		if argument 1 is "mule":
-			set {disguise.horse.set.%argument 2%} to "3"
-			stop
