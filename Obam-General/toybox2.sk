@@ -2716,7 +2716,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Creeper &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Creeper &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.creeper.%player%} to true
 					log "%player% bought Creeper Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseCreeper.log"
@@ -2732,7 +2732,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Skeleton &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Skeleton &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.skeleton.%player%} to true
 					log "%player% bought Skeleton Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSkeleton.log"
@@ -2748,7 +2748,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Spider &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Spider &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.spider.%player%} to true
 					log "%player% bought Spider Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSpider.log"
@@ -2764,7 +2764,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Zombie &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Zombie &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.zombie.%player%} to true
 					log "%player% bought Zombie Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseZombie.log"
@@ -2780,7 +2780,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Slime &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Slime &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.slime.%player%} to true
 					log "%player% bought Slime Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSlime.log"
@@ -2796,7 +2796,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Ghast &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Ghast &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.ghast.%player%} to true
 					log "%player% bought Ghast Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseGhast.log"
@@ -2812,7 +2812,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Zombie Pigman &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Zombie Pigman &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.zombiepigman.%player%} to true
 					log "%player% bought Zombie Pigman Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseZombiePigman.log"
@@ -2828,7 +2828,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Enderman &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Enderman &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.enderman.%player%} to true
 					log "%player% bought Enderman Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseEnderman.log"
@@ -2844,7 +2844,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Cave Spider &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Cave Spider &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.cavespider.%player%} to true
 					log "%player% bought Cave Spider Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseCaveSpider.log"
@@ -2860,7 +2860,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Silverfish &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Silverfish &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.silverfish.%player%} to true
 					log "%player% bought Silverfish Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSilverfish.log"
@@ -2876,7 +2876,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Blaze &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Blaze &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.blaze.%player%} to true
 					log "%player% bought Blaze Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseBlaze.log"
@@ -2892,7 +2892,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Magma Cube &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Magma Cube &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.magmacube.%player%} to true
 					log "%player% bought Magma Cube Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseMagmaCube.log"
@@ -2908,7 +2908,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Bat &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Bat &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.bat.%player%} to true
 					log "%player% bought Bat Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseBat.log"
@@ -2924,7 +2924,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Witch &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Witch &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.witch.%player%} to true
 					log "%player% bought Witch Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseWitch.log"
@@ -2940,7 +2940,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Pig &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Pig &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.pig.%player%} to true
 					log "%player% bought Pig Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguisePig.log"
@@ -2956,7 +2956,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Sheep &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Sheep &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.sheep.%player%} to true
 					log "%player% bought Sheep Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSheep.log"
@@ -2972,7 +2972,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Cow &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Cow &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.cow.%player%} to true
 					log "%player% bought Cow Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseCow.log"
@@ -2988,7 +2988,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Chicken &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Chicken &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.chicken.%player%} to true
 					log "%player% bought Chicken Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseChicken.log"
@@ -3004,7 +3004,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Squid &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Squid &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.squid.%player%} to true
 					log "%player% bought Squid Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseSquid.log"
@@ -3020,7 +3020,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Wolf &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Wolf &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.wolf.%player%} to true
 					log "%player% bought Wolf Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseWolf.log"
@@ -3036,7 +3036,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Mooshroom &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Mooshroom &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.mooshroom.%player%} to true
 					log "%player% bought Mooshroom Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseMooshroom.log"
@@ -3052,7 +3052,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Ocelot &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Ocelot &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.ocelot.%player%} to true
 					log "%player% bought Ocelot Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseOcelot.log"
@@ -3068,7 +3068,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Horse &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Horse &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.horse.%player%} to true
 					log "%player% bought Horse Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseHorse.log"
@@ -3084,7 +3084,7 @@ command /buy [<text>]:
 						stop
 					subtract 10000 from player's balance
 					set {_amount.%player%} to player's balance
-					send "&aYou have just purchased the &6Villager &fDisguise &afrom the Disguise - Effect Shop!" to player
+					send "&aYou have just purchased the &6Villager &fDisguise &afrom the Shop!" to player
 					send "&aYour new balance is now: &e%{_amount.%player%}%." to player
 					set {db_effectshop.disguises.villager.%player%} to true
 					log "%player% bought Villager Disguise for 10,000 tickets at %now%" to "/shop/effects/DisguiseVillager.log"
