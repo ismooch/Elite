@@ -657,7 +657,7 @@ on right click:
 					shoot firework rocket from targeted block at speed 1 upward
 					add 10 to y-coordinate of {_firework.loc.%player%}
 					wait 1 second
-					set {_ran.type.num.%player%} to a random number between 1 and 15
+					set {_ran.type.num.%player%} to a random integer between 1 and 15
 					wait 1 second
 					if {_ran.type.num.%player%} is 1:
 						pop ball colored gold at {_firework.loc.%player%}
@@ -716,7 +716,7 @@ on right click:
 					shoot firework rocket from targeted block at speed 1 upward
 					add 10 to y-coordinate of {_firework.loc.%player%}
 					wait 1 second
-					set {_ran.type.num.%player%} to a random number between 1 and 15
+					set {_ran.type.num.%player%} to a random integer between 1 and 15
 					wait 1 second
 					if {_ran.type.num.%player%} is 1:
 						pop ball colored gold at {_firework.loc.%player%}
@@ -4197,7 +4197,7 @@ command /dset <text> <player>:
 			set {disguise.color.%argument 2%} to "yellow"
 			stop
 		if argument 1 is "rc":
-			set {_temp.pick.rc.%argument 2%} to a random number between 1 and 16
+			set {_temp.pick.rc.%argument 2%} to a random integer between 1 and 16
 			if {_temp.pick.rc.%argument 2%} is 1:
 				set {disguise.color.%argument 2%} to "black"
 				stop
@@ -4283,7 +4283,7 @@ command /dset <text> <player>:
 			set {disguise.horse.color.%argument 2%} to "dark_brown"
 			stop
 		if argument 1 is "rhc":
-			set {_temp.pick.rhc.%argument 2%} to a random number between 1 and 7
+			set {_temp.pick.rhc.%argument 2%} to a random integer between 1 and 7
 			if {_temp.pick.rhc.%argument 2%} is 1:
 				set {disguise.horse.color.%argument 2%} to "white"
 				stop
@@ -4321,7 +4321,7 @@ command /dset <text> <player>:
 			set {disguise.horse.style.%argument 2%} to "black_dots"
 			stop
 		if argument 1 is "rhs":
-			set {_temp.pick.rhs.%argument 2%} to a random number between 1 and 5
+			set {_temp.pick.rhs.%argument 2%} to a random integer between 1 and 5
 			if {_temp.pick.rhs.%argument 2%} is 1:
 				set {disguise.horse.style.%argument 2%} to "none"
 				stop
@@ -4353,7 +4353,7 @@ command /dset <text> <player>:
 			set {disguise.profession.%argument 2%} to "butcher"
 			stop
 		if argument 1 is "rp":
-			set {_temp.pick.rp.%argument 2%} to a random number between 1 and 5
+			set {_temp.pick.rp.%argument 2%} to a random integer between 1 and 5
 			if {_temp.pick.rp.%argument 2%} is 1:
 				set {disguise.profession.%argument 2%} to "farmer"
 				stop
@@ -4382,7 +4382,7 @@ command /dset <text> <player>:
 			set {disguise.cat.type.%argument 2%} to "siamese_cat"
 			stop
 		if argument 1 is "rt":
-			set {_temp.pick.rt.%argument 2%} to a random number between 1 and 3
+			set {_temp.pick.rt.%argument 2%} to a random integer between 1 and 3
 			if {_temp.pick.rt.%argument 2%} is 1:
 				set {disguise.cat.type.%argument 2%} to "black_cat"
 				stop
