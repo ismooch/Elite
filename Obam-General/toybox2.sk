@@ -597,13 +597,23 @@ on place:
 			remove all {@tempslot3} from player's inventory
 			stop
 			
-on place of boat:
-	player is in "world":
-		if player has {@gBoat}:
-			remove all {@gBoat} from player's inventory
+on right click with boat:
+	player's tool is {@gboat}
+	player's world is "world"
+	targeted block is not water:
+		cancel event
+	targeted block is water:
+		cancel event
+		remove all {@gBoat} from player's inventory
 		set {boatstop.%player%} to true
 		set {toybox.boat.%player%} to 1
+		spawn boat at targeted block
+		set {owner.%spawned boat%} to player
 		stop
+
+on vehicle create:
+	{owner.%event-vehicle%} is set:
+		make {owner.%event-vehicle%} ride event-vehicle
 			
 on place of minecart:
 	player is in "world":
