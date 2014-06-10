@@ -608,12 +608,8 @@ on right click with boat:
 		set {boatstop.%player%} to true
 		set {toybox.boat.%player%} to 1
 		spawn boat at targeted block
-		set {owner.%spawned boat%} to player
+		make player ride spawned boat
 		stop
-
-on vehicle create:
-	{owner.%event-vehicle%} is set:
-		make {owner.%event-vehicle%} ride event-vehicle
 			
 on place of minecart:
 	player is in "world":
