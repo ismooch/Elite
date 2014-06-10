@@ -598,27 +598,28 @@ on place:
 			stop
 			
 on place of boat:
-	cancel event
-	if player has {@gBoat}:
-		remove all {@gBoat} from player's inventory
-	spawn boat at targeted block
-	wait 2 ticks
-	make player ride last spawned entity
-	set {boatstop.%player%} to true
-	set {toybox.boat.%player%} to 1
-	stop
+	player is in "world":
+		if player has {@gBoat}:
+			remove all {@gBoat} from player's inventory
+		set {boatstop.%player%} to true
+		set {toybox.boat.%player%} to 1
+		stop
 			
 on place of minecart:
-	cancel event
-	if player has {@gCart}:
-		remove all {@gCart} from player's inventory
-	spawn minecart at targeted block
-	wait 2 ticks
-	make player ride last spawned entity
-	set {cartstop.%player%} to true
-	set {toybox.cart.%player%} to 1	
-	stop
+	player is in "world":
+		if player has {@gCart}:
+			remove all {@gCart} from player's inventory
+		set {cartstop.%player%} to true
+		set {toybox.cart.%player%} to 1
+		stop
 	
+on vehicle create:
+	player is in "world":
+		vehicle is a boat:
+			make player ride vehicle
+		vehicle is a minecart:
+			make player ride vehicle
+			
 on vehicle exit:
 	#player is in "death-hub"
 	player is in "world":
