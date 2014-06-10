@@ -598,22 +598,24 @@ on place:
 			stop
 			
 on right click with boat:
-	player's tool is {@gboat}
-	player's world is "world"
-	targeted block is not water:
-		cancel event
-	targeted block is water:
-		cancel event
-		remove all {@gBoat} from player's inventory
-		set {boatstop.%player%} to true
-		set {toybox.boat.%player%} to 1
-		spawn boat at targeted block
-		set {owner.%spawned boat%} to player
-		stop
-
+	player's world is "world":
+		player's tool is {@gBoat}:
+			targeted block is not water:
+				cancel event
+			targeted block is water:
+				if distance between player and targeted block is less than 6:
+					cancel event
+					remove all {@gBoat} from player's inventory
+					set {boatstop.%player%} to true
+					set {toybox.boat.%player%} to 1
+					spawn boat at targeted block
+					set {owner.%spawned boat%} to player
+					stop
+				cancel event
+	
 on vehicle create:
-	{owner.%event-vehicle%} is set:
-		make {owner.%event-vehicle%} ride event-vehicle
+	{owner.%event-entity%} is set:
+		make {owner.%event-entity%} ride event-vehicle
 			
 on place of minecart:
 	player is in "world":
